@@ -8,14 +8,14 @@ export const Headers = styled.header`
   z-index: 1000;
 
   border-bottom: 1px solid var(--system-default-20, #dedede);
-  background-color: var(--blue);
+  background-color: var(--light-blue-1);
 
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1440px) {
     // padding-top: 24px;
-    // padding-bottom: 24px;
+    // padding-bottom: 10px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -44,7 +44,7 @@ export const HeaderNav = styled.nav`
 export const HeaderNavMenu = styled.a`
   @media screen and (min-width: 1440px) {
     position: relative;
-    color: var(--yellow);
+    color: var(--blue);
     font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
@@ -60,7 +60,7 @@ export const HeaderNavMenu = styled.a`
       right: 0;
       bottom: -5px;
       height: 2px;
-      background-color: var(--yellow, #1b3641);
+      background-color: var(--blue, #1b3641);
     }
   }
 
@@ -139,4 +139,19 @@ export const ButtonMobileHeader = styled.button`
 export const LogoImg = styled.img`
   width: 200px;
   height: 200px;
+`;
+
+export const TextHeader = styled.p`
+  width: 120px;
+  font-size: 12px;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: -28px;
+  color: var(--blue);
+`;
+
+export const ColorSpan = styled.span`
+  color: var(--yellow);
 `;
