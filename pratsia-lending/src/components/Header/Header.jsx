@@ -6,9 +6,10 @@ import {
   HeaderNavMenu,
   Headers,
   LogoImg,
+  TextHeader,
 } from "./Header.styled";
 import logo from "../../images/logo/logo1.png";
-// import sprite from "../../images/logo/sprite.svg";
+import sprite from "../../images/logo/sprite.svg";
 
 import { navItems } from "./HeaderNavdata";
 
@@ -24,11 +25,12 @@ const Header = () => {
             // onClick={(e) => handleSetActiveLink("home", e)}
             aria-label="Logo"
           >
-            {/* <svg width="40" height="40">
+            <svg width="100" height="100">
               <use href={`${sprite}#icon-logo1`} />
-            </svg> */}
+            </svg>
+            <TextHeader>Deine karriere, unsere mission</TextHeader>
 
-            <LogoImg src={logo} alt="Logo" />
+            {/* <LogoImg src={logo} alt="Logo" /> */}
           </a>
 
           <HeaderNav>
