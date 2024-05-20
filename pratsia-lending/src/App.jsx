@@ -1,5 +1,14 @@
+// import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+
 const App = () => {
-  return <div>HELLO PRATSIA</div>;
+  return (
+    <>
+      <Header />
+      {/* <main></main> */}
+      {/* <Footer /> */}
+    </>
+  );
 };
 
 export default App;
