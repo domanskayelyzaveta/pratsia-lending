@@ -11,7 +11,7 @@ import {
 
 const AboutUs = () => {
   return (
-    <SectionAboutUs className="container">
+    <SectionAboutUs id="aboutUs" className="container">
       <SectionAboutUsTitle>
         Entdecken Sie Pratsia: Experten für Personalbeschaffung und Integration
         in Deutschland.
