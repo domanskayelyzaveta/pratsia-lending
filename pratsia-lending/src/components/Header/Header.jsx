@@ -13,13 +13,21 @@ import { navItems } from "./HeaderNavdata";
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
 
+  const handleNavClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setActiveLink(id);
+    }
+  };
+
   return (
     <Headers>
       <div className="container">
         <HeaderDiv>
           <a
             href="#home"
-            // onClick={(e) => handleSetActiveLink("home", e)}
+            onClick={(e) => handleNavClick("home", e)}
             aria-label="Logo"
           >
             <svg width="100" height="100">
@@ -36,7 +44,7 @@ const Header = () => {
                 key={item.id}
                 href={`#${item.id}`}
                 className={activeLink === item.id ? "active" : ""}
-                // onClick={(e) => handleSetActiveLink(item.id, e)}
+                onClick={() => handleNavClick(item.id)}
               >
                 {item.label}
               </HeaderNavMenu>
