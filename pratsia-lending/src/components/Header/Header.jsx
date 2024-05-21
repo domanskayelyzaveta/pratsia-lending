@@ -1,14 +1,11 @@
 import { useState } from "react";
 import {
-  HeaderAddress,
   HeaderDiv,
   HeaderNav,
   HeaderNavMenu,
   Headers,
-  LogoImg,
   TextHeader,
 } from "./Header.styled";
-import logo from "../../images/logo/logo1.png";
 import sprite from "../../images/logo/sprite.svg";
 
 import { navItems } from "./HeaderNavdata";

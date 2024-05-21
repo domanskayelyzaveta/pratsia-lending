@@ -143,8 +143,9 @@ export const LogoImg = styled.img`
 
 export const TextHeader = styled.p`
   width: 120px;
-  font-size: 12px;
-  font-family: "Roboto Condensed";
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
