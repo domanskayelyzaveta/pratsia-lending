@@ -1,4 +1,4 @@
-// import Footer from "./components/Footer/Footer"; ..test
+// import Footer from "./components/Footer/Footer";
 import { Routes, Route } from "react-router-dom";
 
 // import MainInfo from "./components/MainInfo/MainInfo";
