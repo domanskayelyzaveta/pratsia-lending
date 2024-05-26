@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const Headers = styled.header`
   position: fixed;
@@ -41,7 +42,7 @@ export const HeaderNav = styled.nav`
   }
 `;
 
-export const HeaderNavMenu = styled.a`
+export const HeaderNavMenu = styled(NavLink)`
   @media screen and (min-width: 1440px) {
     position: relative;
     color: var(--blue);

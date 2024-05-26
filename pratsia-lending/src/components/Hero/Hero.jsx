@@ -2,7 +2,7 @@ import heroImg from "../../images/hero/guys.jpg";
 
 const Hero = () => {
   return (
-    <section id="home">
+    <section>
       <img src={heroImg} alt="Hero Image" />
     </section>
   );
