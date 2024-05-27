@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <Headers>
-      <div className="container">
+      <div>
         <HeaderDiv>
           <a href="/" onClick={(e) => handleNavClick("/", e)} aria-label="Logo">
             <svg width="100" height="100">

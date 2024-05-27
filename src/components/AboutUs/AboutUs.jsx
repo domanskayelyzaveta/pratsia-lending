@@ -3,7 +3,6 @@ import Hero from "../Hero/Hero";
 const AboutUs = () => {
   return (
     <div>
-      <Hero />
       <h2> Über uns</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid

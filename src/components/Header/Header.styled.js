@@ -15,8 +15,7 @@ export const Headers = styled.header`
   }
 
   @media screen and (min-width: 1440px) {
-    // padding-top: 24px;
-    // padding-bottom: 10px;
+    padding: 0px 40px;
   }
 
   @media screen and (min-width: 1920px) {
