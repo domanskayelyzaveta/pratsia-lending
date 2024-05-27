@@ -7,10 +7,10 @@ import {
   HeaderNavMenu as StyledHeaderNavMenu,
 } from "./Header.styled";
 import sprite from "../../images/logo/sprite.svg";
-import { navItems } from "./HeaderNavdata";
+import { navItems } from "./HeaderNavData";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState("/");
+  const [activeLink, setActiveLink] = useState("");
 
   const handleNavClick = (id) => {
     const section = document.getElementById(id);
@@ -36,7 +36,7 @@ const Header = () => {
               <StyledHeaderNavMenu
                 key={item.id}
                 to={`${item.id}`}
-                className={activeLink === item.id ? "active" : ""}
+                className={activeLink === item.id ? "active" : null}
                 onClick={() => handleNavClick(item.id)}
               >
                 {item.label}
