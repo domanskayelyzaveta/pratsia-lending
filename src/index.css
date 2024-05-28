@@ -10,7 +10,8 @@
   --light-blue-2: #d7e3ff;
   --light-blue-3: #9ebbff;
   --light-blue-4: #8baeff;
-  --orange: #ff9d43;
+  --orange: #ffb143;
+  --orange50: #ffcd43;
   --red: #ef5050;
   --yellow: #ffde59;
   --light-yellow: #f0df9b;
@@ -122,7 +123,7 @@ textarea {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    margin-top: 115px;
+    margin-top: 114px;
     padding-left: 112px;
     padding-right: 112px;
     padding-left: 90px;

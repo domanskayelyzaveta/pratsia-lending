@@ -83,7 +83,7 @@ export const BtnAboutUs = styled(NavLink)`
   height: auto;
 
   border: none;
-  border-radius: 100px;
+  border-radius: 14px;
 
   font-size: 14px;
   text-align: center;
