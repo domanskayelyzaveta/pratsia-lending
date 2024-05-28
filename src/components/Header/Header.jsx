@@ -7,7 +7,7 @@ import {
   HeaderNavMenu as StyledHeaderNavMenu,
 } from "./Header.styled";
 import sprite from "../../images/logo/sprite.svg";
-import { navItems } from "./HeaderNavData";
+import { navItems } from "../Header/HeaderNavData.js";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
