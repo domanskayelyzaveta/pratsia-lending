@@ -25,7 +25,12 @@ const ContactsForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    Cookies.set("formData", JSON.stringify(data), {
+      sameSite: "None",
+      secure: true,
+    });
+
+    console.log("Form Data:", data);
   };
 
   return (
