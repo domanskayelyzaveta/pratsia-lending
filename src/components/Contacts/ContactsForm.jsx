@@ -25,13 +25,16 @@ const ContactsForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    Cookies.set("formData", JSON.stringify(data), {
-      sameSite: "None",
-      secure: true,
-    });
+    // Cookies.set("formData", JSON.stringify(data), {
+    //   sameSite: "None",
+    //   secure: true,
+    // });
+
+    // AIzaSyCbGWCbmESBUxgdzxqOF7NEogsU1ApEquQ
 
     console.log("Form Data:", data);
   };
+  const address = "Garnstraße 12, 47798 Krefeld, Deutschland";
 
   return (
     <section
