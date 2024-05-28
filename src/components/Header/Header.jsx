@@ -7,7 +7,15 @@ import {
   HeaderNavMenu as StyledHeaderNavMenu,
 } from "./Header.styled";
 import sprite from "../../images/logo/sprite.svg";
-import navItems from "../Header/HeaderNavData.js";
+
+const navItems = [
+  { id: "/", label: "STARTSEITE" },
+  { id: "/about-us", label: "ÜBER UNS" },
+  { id: "unternehemen", label: "Für Unternehmen" },
+  { id: "arbeitnehmer", label: "Für Arbeitnehmer" },
+  { id: "INTERVIEWTERMIN", label: "interviewtermin" },
+  { id: "/contacts", label: "KONTAKT" },
+];
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
