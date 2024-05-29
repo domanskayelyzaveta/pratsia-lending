@@ -203,9 +203,6 @@ const ContactsForm = () => {
 
         <SubmitBtn type="submit">Absenden</SubmitBtn>
       </StyledForm>
-      <Svg>
-        <use href={`${sprite}#icon-linkedin`}></use>
-      </Svg>
 
       <div style={{ marginTop: "20px" }}>
         <iframe
