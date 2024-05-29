@@ -33,11 +33,8 @@ const ContactsForm = () => {
     //   secure: true,
     // });
 
-    // AIzaSyCbGWCbmESBUxgdzxqOF7NEogsU1ApEquQ
-
     console.log("Form Data:", data);
   };
-  // const address = "Garnstraße 12, 47798 Krefeld, Deutschland";
 
   return (
     <StyledSection className="container" id="contacts">
@@ -50,7 +47,7 @@ const ContactsForm = () => {
             <p>Bei Fragen, zögern Sie nicht, uns zu kontaktieren!</p>
             <StyledLink href="tel:+4901701481355">
               <Svg>
-                <use href={`${sprite}#icon-phone`}></use>
+                <use xlinkHref={`${sprite}#icon-phone`}></use>
               </Svg>
               +49 (0) 1701481355
             </StyledLink>
@@ -58,7 +55,7 @@ const ContactsForm = () => {
           <StyledListItem>
             <StyledLink href="tel:+380960976336">
               <Svg>
-                <use href={`${sprite}#icon-phone`}></use>
+                <use xlinkHref={`${sprite}#icon-phone`}></use>
               </Svg>
               +38 (0) 960976336
             </StyledLink>
@@ -72,7 +69,7 @@ const ContactsForm = () => {
               rel="noopener noreferrer"
             >
               <Svg>
-                <use href={`${sprite}#icon-location`}></use>
+                <use xlinkHref={`${sprite}#icon-location`}></use>
               </Svg>
               Garnstraße 12, 47798 Krefeld, Deutschland
             </StyledLink>
@@ -82,7 +79,7 @@ const ContactsForm = () => {
             <p>Wir freuen uns über Ihre Nachricht</p>
             <StyledLink href="mailto:@pratsia.de">
               <Svg style={{ width: "24px", height: "24px" }}>
-                <use href={`${sprite}#icon-message`}></use>
+                <use xlinkHref={`${sprite}#icon-message`}></use>
               </Svg>
               @pratsia.de
             </StyledLink>
