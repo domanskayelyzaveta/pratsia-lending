@@ -80,7 +80,7 @@ export const StyledTextArea = styled.textarea`
 export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
 `;
 
 export const StyledListItem = styled.li`
