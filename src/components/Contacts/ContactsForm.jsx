@@ -17,7 +17,7 @@ import {
   TextError,
   Title,
 } from "./Contacts.styled";
-import sprite from "../../../public/sprite.svg";
+import sprite from "../../assets/sprite.svg";
 import Star from "./Star";
 
 const ContactsForm = () => {
@@ -33,11 +33,8 @@ const ContactsForm = () => {
     //   secure: true,
     // });
 
-    // AIzaSyCbGWCbmESBUxgdzxqOF7NEogsU1ApEquQ
-
     console.log("Form Data:", data);
   };
-  // const address = "Garnstraße 12, 47798 Krefeld, Deutschland";
 
   return (
     <StyledSection className="container" id="contacts">
@@ -46,7 +43,7 @@ const ContactsForm = () => {
 
         <StyledList>
           <StyledListItem>
-            <Subtitle>Call us </Subtitle>
+            <Subtitle>Rufen Sie uns an</Subtitle>
             <p>Bei Fragen, zögern Sie nicht, uns zu kontaktieren!</p>
             <StyledLink href="tel:+4901701481355">
               <Svg>
@@ -54,17 +51,16 @@ const ContactsForm = () => {
               </Svg>
               +49 (0) 1701481355
             </StyledLink>
-          </StyledListItem>
-          <StyledListItem>
-            <StyledLink href="tel:+380960976336">
+            <StyledLink href="tel:+4901701481355">
               <Svg>
                 <use href={`${sprite}#icon-phone`}></use>
               </Svg>
               +38 (0) 960976336
             </StyledLink>
           </StyledListItem>
+
           <StyledListItem>
-            <Subtitle>Visit us </Subtitle>
+            <Subtitle>Besuchen Sie uns</Subtitle>
             <p>Sie können uns unter folgender Adresse finden:</p>
             <StyledLink
               href="https://maps.app.goo.gl/PU1fPay4NsMiAtSE7"
@@ -84,7 +80,7 @@ const ContactsForm = () => {
               <Svg style={{ width: "24px", height: "24px" }}>
                 <use href={`${sprite}#icon-message`}></use>
               </Svg>
-              @pratsia.de
+              info@pratsia.de
             </StyledLink>
           </StyledListItem>
         </StyledList>
