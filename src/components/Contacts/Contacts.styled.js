@@ -128,7 +128,7 @@ export const TextError = styled.p`
   bottom: -18px;
 
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
   font-size: 10px;
   font-weight: 400;
