@@ -47,13 +47,13 @@ const ContactsForm = () => {
             <p>Bei Fragen, zögern Sie nicht, uns zu kontaktieren!</p>
             <StyledLink href="tel:+4901701481355">
               <Svg>
-                <use href={`${sprite}#icon-linkedin`}></use>
+                <use href={`${sprite}#icon-phone`}></use>
               </Svg>
               +49 (0) 1701481355
             </StyledLink>
             <StyledLink href="tel:+4901701481355">
               <Svg>
-                <use href={`${sprite}#icon-linkedin`}></use>
+                <use href={`${sprite}#icon-phone`}></use>
               </Svg>
               +38 (0) 960976336
             </StyledLink>
@@ -203,6 +203,9 @@ const ContactsForm = () => {
 
         <SubmitBtn type="submit">Absenden</SubmitBtn>
       </StyledForm>
+      <Svg>
+        <use href={`${sprite}#icon-linkedin`}></use>
+      </Svg>
 
       <div style={{ marginTop: "20px" }}>
         <iframe
