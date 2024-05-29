@@ -1,4 +1,5 @@
-import sprite from "../../assets/sprite.svg";
+// import sprite from "../../assets/sprite.svg";
+import sprite from "../../../public/sprite.svg";
 
 const Star = () => {
   return (

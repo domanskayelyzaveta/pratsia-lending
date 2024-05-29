@@ -17,7 +17,7 @@ import {
   TextError,
   Title,
 } from "./Contacts.styled";
-import sprite from "../../images/sprite.svg";
+import sprite from "../../../public/sprite.svg";
 import Star from "./Star";
 
 const ContactsForm = () => {
