@@ -1,4 +1,15 @@
 import styled from "@emotion/styled";
+import InputMask from "react-input-mask";
+
+export const StyledSection = styled.section`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 60px;
+`;
 
 export const StyledForm = styled.form`
   width: 628px;
@@ -8,7 +19,7 @@ export const StyledForm = styled.form`
   flex-direction: column;
 
   align-items: flex-start;
-  row-gap: 20px;
+  row-gap: 24px;
   align-self: stretch;
 `;
 
@@ -30,9 +41,27 @@ export const StyledInput = styled.input`
 
   border: none;
   border-bottom: 1px solid var(--typography-blue);
+
+  ::placeholder {
+    color: var(--light-grey);
+  }
+`;
+export const StyledPhoneInput = styled(InputMask)`
+  width: 284px;
+
+  border: none;
+  border-bottom: 1px solid var(--typography-blue);
+
+  color: var(--light-grey);
+
+  ::placeholder {
+    color: var(--light-grey);
+  }
 `;
 
 export const StyledLabel = styled.label`
+  position: relative;
+
   display: inline-grid;
   gap: 8px;
 
@@ -45,6 +74,7 @@ export const StyledLabel = styled.label`
 
 export const StyledTextArea = styled.textarea`
   height: 160px;
+  padding: 6px;
 `;
 
 export const StyledList = styled.ul`
@@ -91,4 +121,21 @@ export const SubmitBtn = styled.button`
   text-align: center;
   background-color: var(--blue);
   color: var(--white);
+`;
+
+export const TextError = styled.p`
+  position: absolute;
+  bottom: -18px;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: var(--red);
+
+  @media screen and (min-width: 1440px) {
+    font-size: 12px;
+  }
 `;

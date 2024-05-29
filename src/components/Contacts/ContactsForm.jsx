@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-// import Hero from "../Hero/Hero";
+
 import {
   StyledForm,
   StyledInput,
@@ -9,13 +9,16 @@ import {
   StyledList,
   StyledListItem,
   StyledMainInfoDiv,
+  StyledSection,
   StyledTextArea,
   SubmitBtn,
   Subtitle,
   Svg,
+  TextError,
   Title,
 } from "./Contacts.styled";
 import sprite from "../../assets/sprite.svg";
+import Star from "./Star";
 
 const ContactsForm = () => {
   const {
@@ -34,21 +37,10 @@ const ContactsForm = () => {
 
     console.log("Form Data:", data);
   };
-  const address = "Garnstraße 12, 47798 Krefeld, Deutschland";
+  // const address = "Garnstraße 12, 47798 Krefeld, Deutschland";
 
   return (
-    <section
-      className="container"
-      id="contacts"
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-between",
-        paddingTop: "20px",
-        gap: "60px",
-      }}
-    >
+    <StyledSection className="container" id="contacts">
       <StyledMainInfoDiv>
         <Title>In Kontakt kommen</Title>
 
@@ -104,33 +96,45 @@ const ContactsForm = () => {
             Vorname
             <StyledInput
               type="text"
-              placeholder="Введіть своє ім’я"
+              placeholder="Geben Sie Ihren Vornamen ein"
               {...register("name", {
-                required: "Це поле обов'язкове для заповнення",
+                required: "Dieses Feld ist obligatorisch",
                 pattern: {
                   value:
                     /^(?:\s*[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,32}(?:\s+[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,32})?|\s*[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,64})\s*$/,
                   message: "Поле повинно містити одне або два слова",
                 },
               })}
+              error={errors.name}
             />
-            {errors.name && <p>{errors.name.message}</p>}
+            {errors.name && (
+              <TextError>
+                <Star />
+                {errors.name.message}
+              </TextError>
+            )}
           </StyledLabel>
           <StyledLabel>
             Nachname
             <StyledInput
               type="text"
-              placeholder="Введіть Nachname"
+              placeholder="Geben Sie Ihren Nachnamen ein"
               {...register("surname", {
-                required: "Це поле обов'язкове для заповнення",
+                required: "Dieses Feld ist obligatorisch",
                 pattern: {
                   value:
                     /^(?:\s*[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,32}(?:\s+[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,32})?|\s*[a-zA-Zа-яА-ЯґҐєЄіІїЇ'-]{1,64})\s*$/,
                   message: "Поле повинно містити одне або два слова",
                 },
               })}
+              error={errors.surname}
             />
-            {errors.surname && <p>{errors.surname.message}</p>}
+            {errors.surname && (
+              <TextError>
+                <Star />
+                {errors.surname.message}
+              </TextError>
+            )}
           </StyledLabel>
         </StyledInputWrapper>
 
@@ -139,51 +143,69 @@ const ContactsForm = () => {
             Email
             <StyledInput
               type="text"
-              placeholder="Введіть Email"
+              placeholder="mail@pratsia.de"
               {...register("email", {
-                required: "Це поле обов'язкове для заповнення",
+                required: "Dieses Feld ist obligatorisch",
                 pattern: {
                   value: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-                  message: "Введіть коректний емейл",
+                  message: "Geben Sie eine gültige E-Mail-Adresse ein",
                 },
               })}
+              error={errors.email}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && (
+              <TextError>
+                <Star />
+                {errors.email.message}
+              </TextError>
+            )}
           </StyledLabel>
+
           <StyledLabel>
             Telefon
             <StyledInput
               type="text"
-              placeholder="Введіть nummer"
-              mask="+38(099)999-99-99"
-              {...register("nummer", {
-                required: "Це поле обов'язкове для заповнення",
+              placeholder="Die Nummer muss mit +49 oder +380 beginnen"
+              {...register("number", {
+                required: "Dieses Feld ist obligatorisch",
                 pattern: {
-                  value: /^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$/,
-                  message: "Введіть коректний номер телефона",
+                  value: /^\+49\d{10}$|^\+380\d{9}$/,
+                  message: "Geben Sie eine gültige Telefonnummer ein",
                 },
               })}
+              error={errors.number}
             />
-            {errors.nummer && <p>{errors.nummer.message}</p>}
+            {errors.number && (
+              <TextError>
+                <Star />
+                {errors.number.message}
+              </TextError>
+            )}
           </StyledLabel>
         </StyledInputWrapper>
 
         <StyledLabel>
-          Повідомлення
+          Nachricht
           <StyledTextArea
             name="comment"
-            placeholder="Введіть ваше повідомлення"
+            placeholder="Geben Sie Ihre Nachricht ein"
             {...register("comment", {
               maxLength: {
                 value: 500,
-                message: "Максимальна кількість 500 символів",
+                message: "Maximale Anzahl von 500 Zeichen",
               },
             })}
+            errors={errors.comment}
           ></StyledTextArea>
-          {errors.comment && <p>{errors.comment.message}</p>}
+          {errors.comment && (
+            <TextError>
+              <Star />
+              {errors.comment.message}
+            </TextError>
+          )}
         </StyledLabel>
 
-        <SubmitBtn type="submit">Submit</SubmitBtn>
+        <SubmitBtn type="submit">Absenden</SubmitBtn>
       </StyledForm>
 
       <div style={{ marginTop: "20px" }}>
@@ -197,7 +219,7 @@ const ContactsForm = () => {
           sandbox="allow-scripts allow-same-origin"
         ></iframe>
       </div>
-    </section>
+    </StyledSection>
   );
 };
 

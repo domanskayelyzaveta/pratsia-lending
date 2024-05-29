@@ -1,5 +1,3 @@
-import Hero from "../Hero/Hero";
-
 const AboutUs = () => {
   return (
     <div>
