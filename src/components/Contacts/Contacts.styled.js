@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
-  gap: 60px;
+  gap: 40px;
 `;
 
 export const StyledForm = styled.form`
@@ -19,14 +19,19 @@ export const StyledForm = styled.form`
   flex-direction: column;
 
   align-items: flex-start;
-  row-gap: 24px;
+  row-gap: 32px;
   align-self: stretch;
+`;
+
+export const StarWrapper = styled.div`
+  display: flex;
+  gap: 4px;
 `;
 
 export const StyledMainInfoDiv = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 46px;
 
   padding: 20px;
 `;
@@ -67,7 +72,7 @@ export const StyledLabel = styled.label`
 
   width: 100%;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 
   color: var(--light-blue);
 `;
@@ -90,8 +95,20 @@ export const StyledListItem = styled.li`
 `;
 
 export const Title = styled.h2`
-  font-size: 36px;
+  position: relative;
+  font-size: 34px;
   color: var(--blue);
+
+  ::after {
+    width: 200px;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 473px;
+    height: 1px;
+    background-color: var(--blue);
+  }
 `;
 
 export const Subtitle = styled.h3`

@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 
 import {
+  StarWrapper,
   StyledForm,
   StyledInput,
   StyledInputWrapper,
@@ -39,7 +40,10 @@ const ContactsForm = () => {
   return (
     <StyledSection className="container" id="contacts">
       <StyledMainInfoDiv>
-        <Title>In Kontakt kommen</Title>
+        <StarWrapper>
+          <Title>Werden Sie Teil des Teams</Title>
+        </StarWrapper>
+        {/* <Title>In Kontakt kommen</Title> */}
 
         <StyledList>
           <StyledListItem>
