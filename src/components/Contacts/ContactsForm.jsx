@@ -80,7 +80,7 @@ const ContactsForm = () => {
           <StyledListItem>
             <Subtitle>Eine Nachricht schicken</Subtitle>
             <p>Wir freuen uns über Ihre Nachricht</p>
-            <StyledLink href="mailto:@pratsia.de">
+            <StyledLink style={{ display: "flex" }} href="mailto:@pratsia.de">
               <Svg style={{ width: "24px", height: "24px" }}>
                 <use href={`${sprite}#icon-message`}></use>
               </Svg>
