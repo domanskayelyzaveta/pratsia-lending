@@ -11,9 +11,9 @@ import sprite from "../../images/logo/sprite.svg";
 const navItems = [
   { id: "/", label: "STARTSEITE" },
   { id: "/about-us", label: "ÜBER UNS" },
-  { id: "unternehemen", label: "Für Unternehmen" },
-  { id: "bewerber", label: "Für Bewerber" },
-  { id: "INTERVIEWTERMIN", label: "interviewtermin" },
+  { id: "unternehemen", label: "FÜR UNTERNEHMEN" },
+  { id: "bewerber", label: "FÜR BEWERBER" },
+  { id: "INTERVIEWTERMIN", label: "INTERVIEWTERMIN" },
   { id: "/contacts", label: "KONTAKT" },
 ];
 
