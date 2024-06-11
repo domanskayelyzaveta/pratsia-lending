@@ -39,10 +39,12 @@ export const HeaderNav = styled.nav`
   }
 `;
 
-export const SvgDropDown = styled.svg`
+export const Svg = styled.svg`
   width: 24px;
   height: 24px;
 `;
+
+// export const DivSelect = styled.div``
 
 export const HeaderNavMenu = styled(NavLink)`
   @media screen and (min-width: 1440px) {

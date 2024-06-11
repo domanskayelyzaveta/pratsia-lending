@@ -1,8 +1,7 @@
-import React, { useState, useRef } from "react";
-import { HeaderDiv, Headers, SvgDropDown } from "./Header.styled";
+import { HeaderDiv, Headers, Svg } from "./Header.styled";
 import logosprite from "../../images/logo/sprite.svg";
 import sprite from "../../assets/sprite.svg";
-import { SvgDE, SvgUA } from "./SvgFlags";
+import { SvgDEU, SvgUA } from "./SvgFlags";
 import Select, { components } from "react-select";
 // import { useTranslation } from "react-i18next";
 
@@ -34,9 +33,9 @@ const CustomDropdownIndicator = (props) => {
         transform: selectProps.menuIsOpen ? "rotate(180deg)" : null,
       }}
     >
-      <SvgDropDown>
+      <Svg>
         <use href={`${sprite}#icon-chevron-bar`}></use>
-      </SvgDropDown>
+      </Svg>
     </div>
   );
 };
@@ -44,29 +43,46 @@ const CustomDropdownIndicator = (props) => {
 const customStyles = {
   menu: (provided) => ({
     ...provided,
-    width: "72px",
+    width: "104px",
+    height: "auto",
     border: "transparent",
+    borderRadius: "0px 0px 8px 8px",
     backgroundColor: "var(--beige-200)",
+    boxShadow: "none",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "row",
+    // gap: "4px",
+    marginBottom: "4px",
   }),
   control: (provided, state) => ({
     ...provided,
     padding: "0px",
-    width: "50px",
-    border: "none",
-    boxShadow: state.isFocused ? null : "none",
+    width: "100px",
+    fontSize: "12px",
     cursor: "pointer",
+
+    boxShadow: state.isFocused ? null : "none",
     backgroundColor: "var(--beige-200)",
-    ":hover": {
-      border: "1px solid transparent",
-    },
     borderColor: "transparent",
   }),
   indicatorSeparator: () => ({ display: "none" }),
-  option: (provided) => ({
+  option: (provided, state) => ({
     ...provided,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "4px",
     width: "72px",
-    border: "transparent",
-    backgroundColor: "var(--beige-200)",
+    height: "29px",
+    padding: "4px",
+    // borderBottom: "1px solid var(--blue-100)",
+
+    backgroundColor: state.isFocused ? "var(--beige-300)" : "var(--beige-200)",
+    ":hover": {
+      backgroundColor: "var(--beige-100)",
+      borderBottom: "1px solid var(--blue-100)",
+    },
   }),
   dropdownIndicator: (provided, state) => ({
     ...provided,
@@ -76,8 +92,13 @@ const customStyles = {
   }),
   singleValue: (provided) => ({
     ...provided,
+    display: "flex",
+    alignItems: "center",
+    gap: "4px",
+
+    width: "62px",
+
     color: "var(--black-200)",
-    width: "40px",
     backgroundColor: "var(--beige-200)",
   }),
   valueContainer: (provided) => ({
@@ -113,17 +134,17 @@ const Header = () => {
   // };
 
   const options = [
+    { value: "deu", label: "DEU" },
     { value: "ua", label: "UA" },
-    { value: "de", label: "DE" },
     { value: "ru", label: "RU" },
   ];
 
   const getFlagIcon = (value) => {
     switch (value) {
+      case "deu":
+        return <SvgDEU />;
       case "ua":
         return <SvgUA />;
-      case "de":
-        return <SvgDE />;
       case "ru":
         return null;
       default:
@@ -134,11 +155,22 @@ const Header = () => {
   const CustomOption = (props) => {
     return (
       <components.Option {...props}>
-        {getFlagIcon(props.data.value)}
-        <span style={{ marginLeft: "8px" }}>{props.data.label}</span>
+        <span style={{ fontSize: "12px", color: "var(--black-200)" }}>
+          {props.data.label}
+        </span>
+        <div style={{ height: "21px", overflow: "hidden" }}>
+          {getFlagIcon(props.data.value)}
+        </div>
       </components.Option>
     );
   };
+
+  const CustomSingleValue = ({ children, ...props }) => (
+    <components.SingleValue {...props}>
+      {children}
+      {getFlagIcon(props.data.value)}
+    </components.SingleValue>
+  );
 
   return (
     <Headers className="container">
@@ -150,22 +182,28 @@ const Header = () => {
             </svg>
           </a>
 
-          <p>DEU</p>
-          <svg width="32px" height="29px">
-            <use href={`${sprite}#icon-Flag-Germany`} />
-          </svg>
-
           <Select
             components={{
               DropdownIndicator: CustomDropdownIndicator,
               Option: CustomOption,
+              SingleValue: CustomSingleValue,
             }}
             options={options}
             styles={customStyles}
+            defaultValue={options.find((option) => option.value === "deu")}
+            // menuIsOpen={true}
 
             // onChange={handleChangeLanguage}
             // value={selectedLanguage}
           />
+
+          <Svg>
+            <use href={`${sprite}#icon-Menu`} />
+          </Svg>
+
+          {/* <svg>
+            <use href={`${sprite}#icon-Menu-2`} />
+          </svg> */}
 
           {/* <HeaderNav>
             {navItems.map((item) => (
