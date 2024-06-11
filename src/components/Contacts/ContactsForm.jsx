@@ -43,7 +43,6 @@ const ContactsForm = () => {
         <StarWrapper>
           <Title>Werden Sie Teil des Teams</Title>
         </StarWrapper>
-        {/* <Title>In Kontakt kommen</Title> */}
 
         <StyledList>
           <StyledListItem>

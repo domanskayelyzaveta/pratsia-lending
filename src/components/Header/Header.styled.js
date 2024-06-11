@@ -8,19 +8,17 @@ export const Headers = styled.header`
   width: 100%;
   z-index: 1000;
 
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   border-bottom: 1px solid var(--system-default-20, #dedede);
-  background-color: var(--light-blue-1);
+  background-color: var(--beige-200);
 
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1440px) {
     padding: 0px 40px;
-  }
-
-  @media screen and (min-width: 1920px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 `;
 
@@ -39,6 +37,11 @@ export const HeaderNav = styled.nav`
 
   @media screen and (min-width: 1920px) {
   }
+`;
+
+export const SvgDropDown = styled.svg`
+  width: 24px;
+  height: 24px;
 `;
 
 export const HeaderNavMenu = styled(NavLink)`
@@ -155,4 +158,26 @@ export const TextHeader = styled.p`
 
 export const ColorSpan = styled.span`
   color: var(--yellow);
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+`;
+
+export const DropdownItem = styled(NavLink)`
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+  &.active {
+    font-weight: bold;
+  }
 `;
