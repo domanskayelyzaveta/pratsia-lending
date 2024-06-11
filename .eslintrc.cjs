@@ -22,9 +22,10 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "react/react-in-jsx-scope": "off",
-    indent: ["error", 2],
+    indent: ["error", 6],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
+    "react/prop-types": "off",
   },
 };
