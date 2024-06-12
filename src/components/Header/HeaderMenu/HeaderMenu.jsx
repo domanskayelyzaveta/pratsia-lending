@@ -1,6 +1,11 @@
 import { createPortal } from "react-dom";
 import { useMediaQuery } from "react-responsive";
-import { ModalMenuWrapper, StyledLinkA, SvgMenu } from "./HeaderMenu.styled";
+import {
+  BntClose,
+  ModalMenuWrapper,
+  StyledLinkA,
+  SvgMenu,
+} from "./HeaderMenu.styled";
 import sprite from "../../../assets/sprite.svg";
 
 const modalRoot = document.getElementById("modal");
@@ -10,6 +15,12 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
 
   return createPortal(
     <ModalMenuWrapper>
+      <BntClose type="button" onClick={() => onClose()}>
+        <SvgMenu style={{ fill: "var(--blue-200)" }}>
+          <use href={`${sprite}#icon-close`}></use>
+        </SvgMenu>
+      </BntClose>
+
       <StyledLinkA
         href="#home"
         onClick={(e) => {
@@ -82,17 +93,6 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         </SvgMenu>
         Kontakt
       </StyledLinkA>
-      <button
-        type="button"
-        onClick={() => onClose()}
-        style={{ width: "20px", height: "10px" }}
-      >
-        <svg
-          name="icon-close"
-          stroke={"var(--primary-black)"}
-          //   width={isMobile ? 40 : 70}
-        />
-      </button>
     </ModalMenuWrapper>,
     modalRoot
   );

@@ -8,7 +8,7 @@ export const ModalMenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 8px;
 
   width: 220px;
 
@@ -27,10 +27,26 @@ export const StyledLinkA = styled.a`
   display: flex;
   gap: 12px;
 
+  padding: 8px;
+  width: 100%;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
   color: var(--black-200);
 
   border-bottom: 1px solid var(--blue-100);
+`;
+
+export const BntClose = styled.button`
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  background: none;
+
+  align-self: end;
 `;
