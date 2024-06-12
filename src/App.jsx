@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 
 const App = () => {
   const handleSetActiveLink = (link, event) => {
@@ -13,7 +14,9 @@ const App = () => {
   return (
     <>
       <Header handleSetActiveLink={handleSetActiveLink} />
-      <main></main>
+      <main>
+        <Hero />
+      </main>
       {/* <Footer /> */}
     </>
   );

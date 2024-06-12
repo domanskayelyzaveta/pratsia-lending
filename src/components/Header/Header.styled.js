@@ -8,17 +8,17 @@ export const Headers = styled.header`
   width: 100%;
   z-index: 1000;
 
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 20px;
 
   border-bottom: 1px solid var(--system-default-20, #dedede);
   background-color: var(--beige-200);
 
   @media screen and (min-width: 768px) {
+    padding: 8px 24px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 0px 40px;
+    padding: 8px 84px;
   }
 `;
 
@@ -26,6 +26,10 @@ export const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    height: 80px;
+  }
 `;
 
 export const HeaderNav = styled.nav`
@@ -33,9 +37,6 @@ export const HeaderNav = styled.nav`
     display: flex;
     gap: 40px;
     align-items: center;
-  }
-
-  @media screen and (min-width: 1920px) {
   }
 `;
 
@@ -58,6 +59,50 @@ export const BtnBurgerMenu = styled.button`
   }
 `;
 
+export const Text = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+
+  color: var(--black-200);
+`;
+
+export const StyledNav = styled.nav`
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+`;
+
+export const StyledNavLinkA = styled.a`
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    color: var(--black-200);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    &:hover::after,
+    &:focus::after,
+    &.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      background-color: var(--blue-200);
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: var(--blue-200);
+    }
+  }
+`;
 ////////////////////////////////////
 
 export const HeaderNavMenu = styled(NavLink)`

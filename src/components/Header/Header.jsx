@@ -1,4 +1,12 @@
-import { BtnBurgerMenu, HeaderDiv, Headers, Svg } from "./Header.styled";
+import {
+  BtnBurgerMenu,
+  HeaderDiv,
+  Headers,
+  StyledNav,
+  StyledNavLinkA,
+  Svg,
+  Text,
+} from "./Header.styled";
 import logosprite from "../../images/logo/sprite.svg";
 import sprite from "../../assets/sprite.svg";
 import { SvgDEU, SvgUA } from "./SvgFlags";
@@ -6,6 +14,7 @@ import Select, { components } from "react-select";
 import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
+import { navItems } from "./HeaderMenu/DataNavMenu";
 // import { useTranslation } from "react-i18next";
 
 // const navItems = [
@@ -128,10 +137,12 @@ const Header = ({ handleSetActiveLink }) => {
   // const [selectedLanguage, setSelectedLanguage] = useState(null);
   // const localStorageRef = useRef(localStorage);
 
-  // const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("");
   // const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
+  const isDesktop1440 = useMediaQuery({ query: "(min-width: 1440px)" });
 
   // const isDesktop1440 = useMediaQuery({ query: "(min-width: 1440px)" });
 
@@ -202,6 +213,23 @@ const Header = ({ handleSetActiveLink }) => {
               <use href={`${logosprite}#icon-logo-remake`} />
             </svg>
           </a>
+
+          {isTablet && <Text>Telefon: 0170 1481355</Text>}
+
+          {isDesktop1440 && (
+            <StyledNav>
+              {navItems.map((item) => (
+                <StyledNavLinkA
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={activeLink === item.id ? "active" : ""}
+                  onClick={(e) => handleSetActiveLink(item.id, e)}
+                >
+                  {item.label}
+                </StyledNavLinkA>
+              ))}
+            </StyledNav>
+          )}
 
           <Select
             components={{
