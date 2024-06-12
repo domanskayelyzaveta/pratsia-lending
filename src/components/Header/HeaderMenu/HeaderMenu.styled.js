@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ModalMenuWrapper = styled.div`
   position: fixed;
+  top: 0;
   margin-top: 61px;
 
   padding: 8px 20px 20px 20px;
