@@ -1,8 +1,11 @@
-import { HeaderDiv, Headers, Svg } from "./Header.styled";
+import { BtnBurgerMenu, HeaderDiv, Headers, Svg } from "./Header.styled";
 import logosprite from "../../images/logo/sprite.svg";
 import sprite from "../../assets/sprite.svg";
 import { SvgDEU, SvgUA } from "./SvgFlags";
 import Select, { components } from "react-select";
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
 // import { useTranslation } from "react-i18next";
 
 // const navItems = [
@@ -43,7 +46,7 @@ const CustomDropdownIndicator = (props) => {
 const customStyles = {
   menu: (provided) => ({
     ...provided,
-    width: "104px",
+    width: "108px",
     height: "auto",
     border: "transparent",
     borderRadius: "0px 0px 8px 8px",
@@ -67,23 +70,27 @@ const customStyles = {
     borderColor: "transparent",
   }),
   indicatorSeparator: () => ({ display: "none" }),
-  option: (provided, state) => ({
-    ...provided,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: "4px",
-    width: "72px",
-    height: "29px",
-    padding: "4px",
-    // borderBottom: "1px solid var(--blue-100)",
-
-    backgroundColor: state.isFocused ? "var(--beige-300)" : "var(--beige-200)",
-    ":hover": {
-      backgroundColor: "var(--beige-100)",
-      borderBottom: "1px solid var(--blue-100)",
-    },
-  }),
+  option: (provided, state) => {
+    const gap = state.data.value === "ua" ? "13.4px" : "4px";
+    return {
+      ...provided,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "flex-start",
+      gap: gap,
+      width: "100px",
+      height: "29px",
+      padding: "4px",
+      paddingLeft: "3px",
+      backgroundColor: state.isFocused
+        ? "var(--beige-300)"
+        : "var(--beige-200)",
+      ":hover": {
+        backgroundColor: "var(--beige-100)",
+        borderBottom: "1px solid var(--blue-100)",
+      },
+    };
+  },
   dropdownIndicator: (provided, state) => ({
     ...provided,
     transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : null,
@@ -95,6 +102,7 @@ const customStyles = {
     display: "flex",
     alignItems: "center",
     gap: "4px",
+    margin: "0px",
 
     width: "62px",
 
@@ -104,11 +112,18 @@ const customStyles = {
   valueContainer: (provided) => ({
     ...provided,
     padding: "0px",
+    justifyContent: "center",
     backgroundColor: "var(--beige-200)",
+  }),
+  input: (provided) => ({
+    ...provided,
+    margin: "0",
+    padding: "0",
   }),
 };
 
-const Header = () => {
+const Header = ({ handleSetActiveLink }) => {
+  const [shownModal, setShownModal] = useState(false);
   // const { i18n } = useTranslation();
   // const [selectedLanguage, setSelectedLanguage] = useState(null);
   // const localStorageRef = useRef(localStorage);
@@ -116,12 +131,18 @@ const Header = () => {
   // const [activeLink, setActiveLink] = useState("");
   // const [dropdownOpen, setDropdownOpen] = useState(null);
 
+  const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
+
+  // const isDesktop1440 = useMediaQuery({ query: "(min-width: 1440px)" });
+
   const handleNavClick = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const onModal = () => setShownModal(!shownModal);
 
   // const toggleDropdown = (id) => {
   //   setDropdownOpen(dropdownOpen === id ? null : id);
@@ -158,7 +179,7 @@ const Header = () => {
         <span style={{ fontSize: "12px", color: "var(--black-200)" }}>
           {props.data.label}
         </span>
-        <div style={{ height: "21px", overflow: "hidden" }}>
+        <div style={{ height: "29px", overflow: "hidden" }}>
           {getFlagIcon(props.data.value)}
         </div>
       </components.Option>
@@ -197,9 +218,17 @@ const Header = () => {
             // value={selectedLanguage}
           />
 
-          <Svg>
-            <use href={`${sprite}#icon-Menu`} />
-          </Svg>
+          {isMobileAndTablet && (
+            <BtnBurgerMenu
+              aria-label="Menu Button"
+              onClick={onModal}
+              type="button"
+            >
+              <Svg>
+                <use href={`${sprite}#icon-Menu`} />
+              </Svg>
+            </BtnBurgerMenu>
+          )}
 
           {/* <svg>
             <use href={`${sprite}#icon-Menu-2`} />
@@ -238,6 +267,12 @@ const Header = () => {
           </HeaderNav> */}
         </HeaderDiv>
       </div>
+      {isMobileAndTablet && shownModal && (
+        <HeaderMenu
+          onClose={onModal}
+          handleSetActiveLink={handleSetActiveLink}
+        />
+      )}
     </Headers>
   );
 };

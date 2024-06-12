@@ -75,6 +75,7 @@ p {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -98,6 +99,11 @@ b {
 
 textarea {
   resize: none;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container {

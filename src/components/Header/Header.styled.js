@@ -44,7 +44,16 @@ export const Svg = styled.svg`
   height: 24px;
 `;
 
-// export const DivSelect = styled.div``
+export const BtnBurgerMenu = styled.button`
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+`;
+
+////////////////////////////////////
 
 export const HeaderNavMenu = styled(NavLink)`
   @media screen and (min-width: 1440px) {
