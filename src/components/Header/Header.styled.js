@@ -51,6 +51,11 @@ export const BtnBurgerMenu = styled.button`
   text-decoration: none;
   cursor: pointer;
   background: none;
+  transition: transform 0.3s linear;
+
+  svg {
+    transition: transform 0.3s linear;
+  }
 `;
 
 ////////////////////////////////////

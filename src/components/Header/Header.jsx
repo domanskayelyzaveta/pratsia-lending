@@ -224,15 +224,26 @@ const Header = ({ handleSetActiveLink }) => {
               onClick={onModal}
               type="button"
             >
-              <Svg>
-                <use href={`${sprite}#icon-Menu`} />
-              </Svg>
+              {!shownModal ? (
+                <Svg
+                  style={{
+                    transition: "transform 0.2s ease-in-out",
+                  }}
+                >
+                  <use href={`${sprite}#icon-Menu`} />
+                </Svg>
+              ) : (
+                <Svg
+                  style={{
+                    transform: "rotate(90deg)",
+                    transition: "transform 0.2s ease-in-out",
+                  }}
+                >
+                  <use href={`${sprite}#icon-Menu`} />
+                </Svg>
+              )}
             </BtnBurgerMenu>
           )}
-
-          {/* <svg>
-            <use href={`${sprite}#icon-Menu-2`} />
-          </svg> */}
 
           {/* <HeaderNav>
             {navItems.map((item) => (
