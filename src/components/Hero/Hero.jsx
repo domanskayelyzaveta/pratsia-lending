@@ -1,20 +1,24 @@
 import {
   BtnHero,
+  HeroAndTitleDiv,
   HeroSection,
   HeroText,
   ImgDiv,
   SubText,
   TitleHero,
+  TitleSubTextDiv,
 } from "./Hero.styled";
 
 const Hero = () => {
   return (
-    <HeroSection>
-      <div className="container">
-        <TitleHero>Deine karriere - Unsere mission</TitleHero>
-        <SubText>Entdecken Sie Pratsia</SubText>
-      </div>
-      <ImgDiv />
+    <HeroSection id="home">
+      <HeroAndTitleDiv>
+        <TitleSubTextDiv className="container">
+          <TitleHero>Deine karriere - &nbsp;Unsere mission</TitleHero>
+          <SubText>Entdecken Sie Pratsia</SubText>
+        </TitleSubTextDiv>
+        <ImgDiv />
+      </HeroAndTitleDiv>
       <HeroText>
         Willkommen bei der führenden Personalagentur Pratsia - Ihrem
         zuverlässigen Partner bei der Vermittlung von hochqualifizierten
