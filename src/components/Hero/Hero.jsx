@@ -1,5 +1,6 @@
 import {
   BtnHero,
+  BtnHeroDiv,
   HeroAndTitleDiv,
   HeroSection,
   HeroText,
@@ -19,14 +20,16 @@ const Hero = () => {
         </TitleSubTextDiv>
         <ImgDiv />
       </HeroAndTitleDiv>
+
       <HeroText>
         Willkommen bei der führenden Personalagentur Pratsia - Ihrem
         zuverlässigen Partner bei der Vermittlung von hochqualifizierten
         Fachkräften aus der Ukraine nach Deutschland
       </HeroText>
-      <div className="container">
+
+      <BtnHeroDiv className="container">
         <BtnHero>Interviewtermin</BtnHero>
-      </div>
+      </BtnHeroDiv>
     </HeroSection>
   );
 };

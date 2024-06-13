@@ -73,6 +73,7 @@ const customStyles = {
     width: "100px",
     fontSize: "12px",
     cursor: "pointer",
+    marginRight: "-60px",
 
     boxShadow: state.isFocused ? null : "none",
     backgroundColor: "var(--beige-200)",

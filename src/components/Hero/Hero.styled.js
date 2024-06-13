@@ -24,6 +24,10 @@ export const TitleHero = styled.h1`
     font-size: 40px;
     width: 319px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 72px;
+    width: 576px;
+  }
 `;
 
 export const SubText = styled.p`
@@ -39,6 +43,10 @@ export const SubText = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-right: 86px;
+    margin-bottom: 4px;
   }
 `;
 
@@ -58,6 +66,10 @@ export const ImgDiv = styled.div`
 
     border-radius: 0px 0px 0px 24px;
   }
+  @media screen and (min-width: 1440px) {
+    width: 601px;
+    height: 565px;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -66,11 +78,22 @@ export const HeroText = styled.p`
   line-height: 150%;
   color: var(--blue-dark);
 
-  padding: 0px 20px 24px 20px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     font-weight: 400;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 731px;
+
+    position: absolute;
+    top: 420px;
+    left: 84px;
   }
 `;
 
@@ -80,13 +103,40 @@ export const HeroAndTitleDiv = styled.div`
     align-items: center;
     gap: 24px;
   }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
 `;
 
 export const TitleSubTextDiv = styled.div`
+  position: relative;
+
   @media screen and (min-width: 768px) {
     width: 372px;
     display: flex;
     flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 110px;
+
+    position: relative !important;
+    width: 815px;
+  }
+`;
+
+export const BtnHeroDiv = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: -80px;
+
+    justify-content: flex-start;
   }
 `;
 
@@ -104,4 +154,13 @@ export const BtnHero = styled.button`
 
   border-radius: 8px;
   background: var(--blue-200);
+
+  @media screen and (min-width: 768px) {
+    width: 502px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 648px;
+    padding: 16px;
+  }
 `;
