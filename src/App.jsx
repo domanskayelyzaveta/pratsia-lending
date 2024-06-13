@@ -1,3 +1,4 @@
+import AboutUs from "./components/AboutUs/AboutUs";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 
@@ -16,6 +17,7 @@ const App = () => {
       <Header handleSetActiveLink={handleSetActiveLink} />
       <main>
         <Hero />
+        <AboutUs />
       </main>
       {/* <Footer /> */}
     </>
