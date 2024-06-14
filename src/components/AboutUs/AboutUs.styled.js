@@ -65,11 +65,11 @@ export const TextAboutUs = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    margin-bottom: 0px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 624px;
-    margin-bottom: 0px;
   }
 `;
 
@@ -85,6 +85,7 @@ export const ImgAboutUs = styled.img`
     height: 270px;
 
     border-radius: 16px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1440px) {
     width: 624px;
@@ -107,6 +108,8 @@ export const BtnListAboutUs = styled.button`
 
 export const ListWrapper = styled.div`
   display: flex;
+  align-items: center;
+  gap: 12px;
 `;
 
 export const AboutUsList = styled.ul`
@@ -115,6 +118,10 @@ export const AboutUsList = styled.ul`
   gap: 20px;
 
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -126,6 +133,12 @@ export const AboutUsText = styled.p`
   font-weight: 400;
   line-height: 150%;
   color: var(--black-200);
+
+  color: var(--Black-200, #1d1c20);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const AboutUsDescText = styled.p`
@@ -134,6 +147,11 @@ export const AboutUsDescText = styled.p`
   line-height: 150%;
 
   color: var(--black-200);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 348px;
+  }
 `;
 
 export const AboutSubTitle = styled.h3`
@@ -141,6 +159,10 @@ export const AboutSubTitle = styled.h3`
   font-weight: 400;
   line-height: 150%;
   color: var(--blue-dark);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const HighlightedText = styled.p`
@@ -148,12 +170,22 @@ export const HighlightedText = styled.p`
   font-weight: 400;
   line-height: 150%;
   color: var(--blue-300);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    color: var(--blue-dark);
+  }
 `;
 
 export const AboutUsDescriptionPartDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+    align-items: center;
+  }
 `;
 
 export const WerdenSieDiv = styled.div`
