@@ -157,6 +157,9 @@ export const BtnHero = styled.button`
 
   @media screen and (min-width: 768px) {
     width: 502px;
+    height: 52px;
+    border-radius: 12px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1440px) {

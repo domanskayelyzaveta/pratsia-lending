@@ -121,13 +121,6 @@ const AboutUs = () => {
         </div>
 
         <AboutUsDescriptionPartDiv>
-          <AboutUsDescText>
-            Unsere langjährige Erfahrung, unser umfassendes Branchenwissen und
-            unser internationales Netzwerk ermöglichen es uns, maßgeschneiderte
-            Rekrutierungslösungen anzubieten, die den Bedürfnissen unserer
-            Kunden entsprechen.
-          </AboutUsDescText>
-
           <TextAndPhotoDiv>
             <ImgAboutUs src={meeting}></ImgAboutUs>
             <WerdenSieDiv>
