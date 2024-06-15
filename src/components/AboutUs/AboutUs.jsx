@@ -11,6 +11,7 @@ import {
   ImgAboutUs,
   ListItem,
   ListWrapper,
+  SectionAboutUs,
   TextAboutUs,
   TextAndPhotoDiv,
   TitleWrapper,
@@ -33,7 +34,7 @@ const AboutUs = () => {
   };
 
   return (
-    <section>
+    <SectionAboutUs>
       <TitleWrapper>
         <AboutUsTitle>Über uns</AboutUsTitle>
         <AboutUsSubTitle>
@@ -139,7 +140,7 @@ const AboutUs = () => {
           <BtnHero>Interviewtermin</BtnHero>
         </AboutUsDescriptionPartDiv>
       </div>
-    </section>
+    </SectionAboutUs>
   );
 };
 
