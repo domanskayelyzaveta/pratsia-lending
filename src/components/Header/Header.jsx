@@ -206,7 +206,7 @@ const Header = ({ handleSetActiveLink }) => {
   );
 
   return (
-    <Headers className="container">
+    <Headers>
       <div>
         <HeaderDiv>
           <a href="/" onClick={(e) => handleNavClick("/", e)} aria-label="Logo">

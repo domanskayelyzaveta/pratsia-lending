@@ -10,7 +10,6 @@ export const Headers = styled.header`
 
   padding: 8px 20px;
 
-  border-bottom: 1px solid var(--system-default-20, #dedede);
   background-color: var(--beige-200);
 
   @media screen and (min-width: 768px) {
@@ -18,6 +17,7 @@ export const Headers = styled.header`
   }
 
   @media screen and (min-width: 1440px) {
+    width: 100vw;
     padding: 8px 84px;
   }
 `;
