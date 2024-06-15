@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const SectionAboutUs = styled.section`
+  padding-top: 32px;
+`;
+
 export const TitleWrapper = styled.div`
   margin-bottom: 20px;
 
@@ -12,7 +16,7 @@ export const TitleWrapper = styled.div`
 `;
 
 export const AboutUsTitle = styled.h2`
-  padding: 32px 20px 16px 20px;
+  padding: 0px 20px 16px 20px;
 
   font-size: 20px;
   font-weight: 400;
@@ -104,6 +108,7 @@ export const BtnListAboutUs = styled.button`
   text-decoration: none;
   cursor: pointer;
   background: none;
+  text-align: left;
 `;
 
 export const ListWrapper = styled.div`
@@ -133,8 +138,6 @@ export const AboutUsText = styled.p`
   font-weight: 400;
   line-height: 150%;
   color: var(--black-200);
-
-  color: var(--Black-200, #1d1c20);
 
   @media screen and (min-width: 768px) {
     font-size: 24px;

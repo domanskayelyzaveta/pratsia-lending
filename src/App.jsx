@@ -1,4 +1,6 @@
 import AboutUs from "./components/AboutUs/AboutUs";
+import ForApplicants from "./components/ForApplicants/ForApplicants";
+import ForCompanies from "./components/ForCompanies/ForCompanies";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 
@@ -18,6 +20,8 @@ const App = () => {
       <main>
         <Hero />
         <AboutUs />
+        <ForCompanies />
+        <ForApplicants />
       </main>
       {/* <Footer /> */}
     </>
