@@ -4,6 +4,7 @@ import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {
+  Form,
   Input,
   InputWrapper,
   Label,
@@ -12,6 +13,8 @@ import {
   TitleAppointmentForm,
   TitlesWrapper,
 } from "./AppointmentForm.styled";
+import customStyles from "./FormCustomStyles";
+import Star from "./Star";
 
 const AppointmentForm = () => {
   const {
@@ -38,7 +41,7 @@ const AppointmentForm = () => {
         </SubTitleAppointmentForm>
       </TitlesWrapper>
 
-      <form
+      <Form
         onSubmit={handleSubmit(onSubmit)}
         style={{ maxWidth: "400px", margin: "auto" }}
       >
@@ -56,14 +59,18 @@ const AppointmentForm = () => {
               <Select
                 {...field}
                 options={options}
-                // styles={customStyles}
+                styles={customStyles}
                 placeholder="Auswählen"
               />
             )}
           />
         </InputWrapper>
         <InputWrapper>
-          <Label>Vorname*</Label>
+          <Label>
+            Vorname
+            <Star />
+          </Label>
+
           <Input
             {...register("vorname", { required: true })}
             placeholder="Vorname"
@@ -71,7 +78,10 @@ const AppointmentForm = () => {
           {errors.vorname && <span>This field is required</span>}
         </InputWrapper>
         <InputWrapper>
-          <Label>Nachname*</Label>
+          <Label>
+            Nachname <Star />
+          </Label>
+
           <Input
             {...register("nachname", { required: true })}
             placeholder="Nachname"
@@ -79,7 +89,10 @@ const AppointmentForm = () => {
           {errors.nachname && <span>This field is required</span>}
         </InputWrapper>
         <InputWrapper>
-          <Label>E-Mail*</Label>
+          <Label>
+            E-Mail
+            <Star />
+          </Label>
           <Input
             {...register("email", { required: true })}
             placeholder="E-Mail"
@@ -87,7 +100,11 @@ const AppointmentForm = () => {
           {errors.email && <span>This field is required</span>}
         </InputWrapper>
         <InputWrapper>
-          <Label>Telefon*</Label>
+          <Label>
+            Telefon
+            <Star />
+          </Label>
+
           <Input
             {...register("telefon", { required: true })}
             placeholder="Telefon"
@@ -95,7 +112,11 @@ const AppointmentForm = () => {
           {errors.telefon && <span>This field is required</span>}
         </InputWrapper>
         <InputWrapper>
-          <Label>Ihr Wunschtermin*</Label>
+          <Label>
+            Ihr Wunschtermin
+            <Star />
+          </Label>
+
           <Controller
             name="wunschtermin"
             control={control}
@@ -111,7 +132,11 @@ const AppointmentForm = () => {
           {errors.wunschtermin && <span>This field is required</span>}
         </InputWrapper>
         <InputWrapper>
-          <Label>Gewünschte Zeit**</Label>
+          <Label>
+            Gewünschte Zeit
+            <Star />
+          </Label>
+
           <Input {...register("zeit", { required: true })} type="time" />
           {errors.zeit && <span>This field is required</span>}
         </InputWrapper>
@@ -123,7 +148,7 @@ const AppointmentForm = () => {
           />
         </InputWrapper>
         <button type="submit">Absenden</button>
-      </form>
+      </Form>
     </SectionAppointmentForm>
   );
 };
