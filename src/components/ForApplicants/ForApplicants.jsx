@@ -12,6 +12,8 @@ import sprite from "../../assets/sprite.svg";
 import { useState } from "react";
 import { toggleContent } from "../../helpers/toggleContent";
 import photo from "../../images/works/handshake.jpg";
+import { SubText } from "./ForApplicants.styled";
+import { BtnHero, BtnHeroDiv } from "../Hero/Hero.styled";
 
 const ForApplicants = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -21,7 +23,7 @@ const ForApplicants = () => {
       <ForCompaniesTitle>Für Bewerber</ForCompaniesTitle>
 
       <div>
-        <p>Traumjob? Wir helfen!</p>
+        <SubText>Traumjob? Wir helfen!</SubText>
         <ImgAboutUs src={photo} alt="Team" />
       </div>
       <SecondList>
@@ -100,6 +102,9 @@ const ForApplicants = () => {
           )}
         </ListItemsSecond>
       </SecondList>
+      <BtnHeroDiv>
+        <BtnHero>Interviewtermin</BtnHero>
+      </BtnHeroDiv>
     </SectionCompanies>
   );
 };
