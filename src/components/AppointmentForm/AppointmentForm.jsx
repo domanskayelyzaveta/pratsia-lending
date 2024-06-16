@@ -4,6 +4,9 @@ import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {
+  Input,
+  InputWrapper,
+  Label,
   SectionAppointmentForm,
   SubTitleAppointmentForm,
   TitleAppointmentForm,
@@ -39,55 +42,60 @@ const AppointmentForm = () => {
         onSubmit={handleSubmit(onSubmit)}
         style={{ maxWidth: "400px", margin: "auto" }}
       >
-        <div>
-          <label>Firma</label>
-          <input {...register("firma")} placeholder="Firma" />
-        </div>
-        <div>
-          <label>Anrede</label>
+        <InputWrapper>
+          <Label>Firma</Label>
+          <Input {...register("firma")} placeholder="Firma" />
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Anrede</Label>
           <Controller
             name="anrede"
             control={control}
             defaultValue=""
             render={({ field }) => (
-              <Select {...field} options={options} placeholder="Auswählen" />
+              <Select
+                {...field}
+                options={options}
+                // styles={customStyles}
+                placeholder="Auswählen"
+              />
             )}
           />
-        </div>
-        <div>
-          <label>Vorname*</label>
-          <input
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Vorname*</Label>
+          <Input
             {...register("vorname", { required: true })}
             placeholder="Vorname"
           />
           {errors.vorname && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>Nachname*</label>
-          <input
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Nachname*</Label>
+          <Input
             {...register("nachname", { required: true })}
             placeholder="Nachname"
           />
           {errors.nachname && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>E-Mail*</label>
-          <input
+        </InputWrapper>
+        <InputWrapper>
+          <Label>E-Mail*</Label>
+          <Input
             {...register("email", { required: true })}
             placeholder="E-Mail"
           />
           {errors.email && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>Telefon*</label>
-          <input
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Telefon*</Label>
+          <Input
             {...register("telefon", { required: true })}
             placeholder="Telefon"
           />
           {errors.telefon && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>Ihr Wunschtermin*</label>
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Ihr Wunschtermin*</Label>
           <Controller
             name="wunschtermin"
             control={control}
@@ -101,19 +109,19 @@ const AppointmentForm = () => {
             )}
           />
           {errors.wunschtermin && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>Gewünschte Zeit**</label>
-          <input {...register("zeit", { required: true })} type="time" />
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Gewünschte Zeit**</Label>
+          <Input {...register("zeit", { required: true })} type="time" />
           {errors.zeit && <span>This field is required</span>}
-        </div>
-        <div>
-          <label>Nachricht</label>
+        </InputWrapper>
+        <InputWrapper>
+          <Label>Nachricht</Label>
           <textarea
             {...register("nachricht")}
             placeholder="Thema des Termins"
           />
-        </div>
+        </InputWrapper>
         <button type="submit">Absenden</button>
       </form>
     </SectionAppointmentForm>
