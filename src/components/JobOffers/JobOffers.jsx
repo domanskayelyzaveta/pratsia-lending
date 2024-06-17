@@ -32,8 +32,8 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers>
-              Fachkraft in Zeitarbeitfirma (Einsatzort -
-              Seniorenzentrum/Altenheim)
+              Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
+              Altenheim)
             </SubTitleJobOffers>
           </BtnJobOffers>
 
@@ -105,8 +105,8 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers onClick={() => toggleContent(3)}>
-              Pflegehilfskraft in Zeitarbeitfirma (Einsatzort -
-              Seniorenzentrum/Altenheim/Klinikum)
+              Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
+              Altenheim/ Klinikum)
             </SubTitleJobOffers>
           </BtnJobOffers>
           {isOpen === 3 && (
