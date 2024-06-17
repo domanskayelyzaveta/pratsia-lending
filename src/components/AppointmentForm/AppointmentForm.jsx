@@ -4,6 +4,7 @@ import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 
 import {
+  BtnForm,
   Form,
   Input,
   InputWrapper,
@@ -19,7 +20,7 @@ import customStyles from "./FormCustomStyles";
 import Star from "./Star";
 
 import { DesktopTimePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import dayjs from "dayjs";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
@@ -172,7 +173,7 @@ const AppointmentForm = () => {
             placeholder="Thema des Termins"
           />
         </InputWrapper>
-        <button type="submit">Absenden</button>
+        <BtnForm type="submit">Absenden</BtnForm>
       </Form>
     </SectionAppointmentForm>
   );

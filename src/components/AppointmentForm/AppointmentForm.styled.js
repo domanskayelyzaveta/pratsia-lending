@@ -85,13 +85,31 @@ export const TextArea = styled.textarea`
   height: 80px;
   padding: 8px 16px;
 
+  margin-bottom: 32px;
+
   border-radius: 8px;
   border: 1px solid var(--blue-dark);
   background: var(--white);
 `;
 
+export const BtnForm = styled.button`
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--blue-200);
+
+  width: 280px;
+  height: 40px;
+  padding: 8px;
+
+  border-radius: 8px;
+  border: 1px solid var(--blue-200);
+  background: var(--beige-100);
+`;
+
 export const StyledDatePicker = styled(DatePicker)`
-  width: 100%;
+  width: 280px;
   height: 100%;
   border: none;
   outline: none;
