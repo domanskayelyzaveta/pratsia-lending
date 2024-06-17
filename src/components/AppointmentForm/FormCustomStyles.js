@@ -1,7 +1,7 @@
 const customStyles = {
   container: (provided) => ({
     ...provided,
-    width: "100%",
+    width: "280px",
   }),
 
   control: (provided, state) => {
