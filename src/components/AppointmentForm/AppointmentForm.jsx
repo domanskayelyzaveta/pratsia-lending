@@ -1,14 +1,16 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 import {
   Form,
   Input,
   InputWrapper,
   Label,
   SectionAppointmentForm,
+  StyledDatePicker,
+  StyledTimeInput,
   SubTitleAppointmentForm,
   TitleAppointmentForm,
   TitlesWrapper,
@@ -122,24 +124,35 @@ const AppointmentForm = () => {
             control={control}
             defaultValue={null}
             render={({ field }) => (
-              <DatePicker
+              <StyledDatePicker
                 {...field}
+                selected={field.value}
+                onChange={(date) => field.onChange(date)}
                 placeholderText="Datum wählen"
                 dateFormat="dd.MM.yyyy"
+                calendarStartDay={1}
+                formatWeekDay={(day) => day.substr(0, 2)}
               />
             )}
           />
           {errors.wunschtermin && <span>This field is required</span>}
         </InputWrapper>
+
         <InputWrapper>
           <Label>
             Gewünschte Zeit
             <Star />
           </Label>
 
-          <Input {...register("zeit", { required: true })} type="time" />
+          <StyledTimeInput
+            {...register("zeit", { required: true })}
+            type="time"
+          />
+          <TimePicker label="Basic time picker" />
+
           {errors.zeit && <span>This field is required</span>}
         </InputWrapper>
+
         <InputWrapper>
           <Label>Nachricht</Label>
           <textarea

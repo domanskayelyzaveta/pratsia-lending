@@ -1,3 +1,4 @@
+import DatePicker from "react-datepicker";
 import styled from "styled-components";
 
 export const SectionAppointmentForm = styled.section`
@@ -73,5 +74,59 @@ export const Input = styled.input`
   }
 
   &:focus {
+  }
+`;
+
+export const StyledTimeInput = styled.input`
+  /* стили для поля ввода времени */
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: #888;
+  }
+
+  &:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  }
+`;
+
+export const StyledDatePicker = styled(DatePicker)`
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  height: 44px;
+
+  border: 1px solid var(--blue-dark);
+  border-radius: 8px;
+  background-color: var(--white);
+
+  &::placeholder {
+    color: var(--black-100);
+  }
+
+  .react-datepicker__header {
+    background-color: transparent;
+  }
+
+  .react-datepicker__day--selected {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+
+  .react-datepicker__day--keyboard-selected {
+    background-color: var(--blue-dark);
+    color: var(--white);
   }
 `;
