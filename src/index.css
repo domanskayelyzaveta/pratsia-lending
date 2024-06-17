@@ -244,7 +244,7 @@ textarea {
 
   border-radius: 8px;
   border: 1px solid var(--blue-200);
-  background: var(--backgraund);
+  background: var(--background);
 }
 
 .react-datepicker__day--outside-month {
@@ -283,3 +283,68 @@ textarea {
 .react-datepicker__navigation-icon.react-datepicker__navigation-icon--previous {
   display: none;
 }
+
+/* Time Picker Styled */
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 280px;
+  height: 44px;
+  padding: 8px 16px;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid var(--blue-dark);
+
+  background-color: var(--white);
+}
+
+.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedEnd.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+
+  padding: 0px;
+
+  color: var(--black-100);
+}
+
+.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMultiSectionDigitalClockSection-item {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 4px;
+
+  color: var(--black-100);
+  background-color: #cfdbee;
+}
+
+.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.Mui-selected.MuiMultiSectionDigitalClockSection-item {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+
+  color: var(--black-100);
+}
+
+.MuiSvgIcon-root {
+  fill: var(--blue-200) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* .MuiTypography-root.MuiTypography-body2 {
+  display: flex;
+  flex-direction: row;
+
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 150%;
+} */
