@@ -11,6 +11,7 @@ import {
   SectionAppointmentForm,
   StyledDatePicker,
   SubTitleAppointmentForm,
+  TextArea,
   TitleAppointmentForm,
   TitlesWrapper,
 } from "./AppointmentForm.styled";
@@ -166,7 +167,7 @@ const AppointmentForm = () => {
 
         <InputWrapper>
           <Label>Nachricht</Label>
-          <textarea
+          <TextArea
             {...register("nachricht")}
             placeholder="Thema des Termins"
           />

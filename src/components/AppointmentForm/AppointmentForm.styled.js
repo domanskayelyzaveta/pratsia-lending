@@ -76,27 +76,18 @@ export const Input = styled.input`
   &:focus {
   }
 `;
+export const TextArea = styled.textarea`
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
 
-export const StyledTimeInput = styled.input`
-  /* стили для поля ввода времени */
-  width: 200px;
-  height: 40px;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  width: 280px;
+  height: 80px;
+  padding: 8px 16px;
 
-  &:hover {
-    border-color: #888;
-  }
-
-  &:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
-  }
+  border-radius: 8px;
+  border: 1px solid var(--blue-dark);
+  background: var(--white);
 `;
 
 export const StyledDatePicker = styled(DatePicker)`
