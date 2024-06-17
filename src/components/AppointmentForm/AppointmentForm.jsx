@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
-import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+
 import {
   Form,
   Input,
@@ -10,13 +10,17 @@ import {
   Label,
   SectionAppointmentForm,
   StyledDatePicker,
-  StyledTimeInput,
   SubTitleAppointmentForm,
   TitleAppointmentForm,
   TitlesWrapper,
 } from "./AppointmentForm.styled";
 import customStyles from "./FormCustomStyles";
 import Star from "./Star";
+
+import { DesktopTimePicker, LocalizationProvider } from "@mui/x-date-pickers";
+import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
+import dayjs from "dayjs";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 const AppointmentForm = () => {
   const {
@@ -143,12 +147,19 @@ const AppointmentForm = () => {
             Gewünschte Zeit
             <Star />
           </Label>
-
-          <StyledTimeInput
+          {/* <StyledTimeInput
             {...register("zeit", { required: true })}
             type="time"
-          />
-          <TimePicker label="Basic time picker" />
+          /> */}
+          {/* <ResponsiveTimePickers /> */}
+
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={["TimePicker"]}>
+              {/* <DemoItem label="Gewünschte Zeit"> */}
+              <DesktopTimePicker defaultValue={dayjs("2022-04-17T15:30")} />
+              {/* </DemoItem> */}
+            </DemoContainer>
+          </LocalizationProvider>
 
           {errors.zeit && <span>This field is required</span>}
         </InputWrapper>
