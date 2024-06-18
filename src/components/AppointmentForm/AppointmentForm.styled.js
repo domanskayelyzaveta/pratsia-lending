@@ -36,6 +36,7 @@ export const Form = styled.form`
 export const Label = styled.label`
   display: flex;
   flex-direction: row;
+  gap: 2px;
 
   font-size: 11px;
   font-weight: 400;
