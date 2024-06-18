@@ -1,11 +1,16 @@
 import React from "react";
 import { DataLink, DataSectionDiv } from "./DataCompany.styled";
+import { Link } from "react-router-dom";
 
 const DataCompany = () => {
   return (
     <DataSectionDiv>
-      <DataLink>Impressum</DataLink>
-      <DataLink>Datenschutzerklärung</DataLink>
+      <DataLink as={Link} to="/impressum">
+        Impressum
+      </DataLink>
+      <DataLink as={Link} to="/datenschutzerklarung">
+        Datenschutzerklärung
+      </DataLink>
     </DataSectionDiv>
   );
 };
