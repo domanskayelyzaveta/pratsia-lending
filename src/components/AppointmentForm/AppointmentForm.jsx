@@ -147,7 +147,7 @@ const AppointmentForm = () => {
         <InputWrapper>
           <Label> Gewünschte Zeit</Label>
           <Controller
-            name="anrede"
+            name="time"
             control={control}
             defaultValue=""
             render={({ field }) => (
