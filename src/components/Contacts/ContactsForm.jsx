@@ -19,6 +19,7 @@ import {
   Title,
 } from "./Contacts.styled";
 import sprite from "../../assets/sprite.svg";
+
 import Star from "./Star";
 
 const ContactsForm = () => {
