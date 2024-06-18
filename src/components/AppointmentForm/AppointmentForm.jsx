@@ -19,11 +19,6 @@ import {
 import customStyles from "./FormCustomStyles";
 import Star from "./Star";
 
-import { DesktopTimePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
-import dayjs from "dayjs";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-
 const AppointmentForm = () => {
   const {
     control,
@@ -36,6 +31,11 @@ const AppointmentForm = () => {
   const options = [
     { value: "Herr", label: "Herr" },
     { value: "Frau", label: "Frau" },
+  ];
+
+  const optionsTime = [
+    { value: "Nachmittag", label: "Nachmittag" },
+    { value: "Vormittag", label: "Vormittag" },
   ];
 
   return (
@@ -145,24 +145,20 @@ const AppointmentForm = () => {
         </InputWrapper>
 
         <InputWrapper>
-          <Label>
-            Gewünschte Zeit
-            <Star />
-          </Label>
-          {/* <StyledTimeInput
-            {...register("zeit", { required: true })}
-            type="time"
-          /> */}
-          {/* <ResponsiveTimePickers /> */}
-
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={["TimePicker"]}>
-              {/* <DemoItem label="Gewünschte Zeit"> */}
-              <DesktopTimePicker defaultValue={dayjs("2022-04-17T15:30")} />
-              {/* </DemoItem> */}
-            </DemoContainer>
-          </LocalizationProvider>
-
+          <Label> Gewünschte Zeit</Label>
+          <Controller
+            name="anrede"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <Select
+                {...field}
+                options={optionsTime}
+                styles={customStyles}
+                placeholder="Nachmittag"
+              />
+            )}
+          />
           {errors.zeit && <span>This field is required</span>}
         </InputWrapper>
 
