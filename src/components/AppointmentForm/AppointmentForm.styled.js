@@ -7,6 +7,10 @@ export const SectionAppointmentForm = styled.section`
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+  }
 `;
 
 export const TitlesWrapper = styled.section`
@@ -43,6 +47,10 @@ export const SubTitleAppointmentForm = styled.p`
     font-size: 20px;
     margin-bottom: 24px;
   }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Form = styled.form`
@@ -56,6 +64,24 @@ export const Form = styled.form`
   @media screen and (min-width: 768px) {
     width: 534px;
     gap: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1272px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+`;
+
+export const Block = styled.div`
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    width: 624px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 `;
 
@@ -79,6 +105,10 @@ export const Label = styled.label`
     & :nth-child(1) {
       margin-top: 4px;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
   }
 `;
 
@@ -133,6 +163,11 @@ export const Input = styled.input`
       font-size: 18px;
     }
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 516px;
+    height: 56px;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -177,6 +212,11 @@ export const TextArea = styled.textarea`
     &::placeholder {
       font-size: 18px;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 516px;
+    height: 167px;
   }
 `;
 
@@ -223,6 +263,12 @@ export const BtnForm = styled.button`
     font-size: 20px;
     height: 52px;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 640px;
+    margin-top: 40px;
+    height: 62px;
+  }
 `;
 
 export const StyledDatePicker = styled(DatePicker)`
@@ -261,5 +307,10 @@ export const StyledDatePicker = styled(DatePicker)`
     font-size: 18px;
     height: 52px;
     border-radius: 12px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 516px;
+    height: 56px;
   }
 `;

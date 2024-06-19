@@ -6,6 +6,10 @@ const customStyles = {
     "@media screen and (min-width: 768px)": {
       width: "534px",
     },
+
+    "@media screen and (min-width: 1440px)": {
+      width: "516px",
+    },
   }),
 
   control: (provided, state) => {
@@ -49,11 +53,7 @@ const customStyles = {
       },
 
       "@media screen and (min-width: 1440px)": {
-        padding: "19px 16px",
-      },
-
-      "@media screen and (min-width: 1920px)": {
-        padding: "16px 16px",
+        height: "56px",
       },
     };
   },

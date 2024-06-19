@@ -5,6 +5,7 @@ import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 
 import {
+  Block,
   BtnForm,
   Form,
   SectionAppointmentForm,
@@ -48,139 +49,145 @@ const AppointmentForm = () => {
       </TitlesWrapper>
 
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <FormField
-          label="Firma"
-          name="firma"
-          register={register}
-          errors={errors}
-          placeholder="Firma"
-        />
-        <FormField
-          label="Anrede"
-          name="anrede"
-          errors={errors}
-          component={
-            <Controller
-              name="anrede"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <Select
-                  {...field}
-                  options={options}
-                  isSearchable={false}
-                  $errors={!!errors.anrede}
-                  styles={customStyles}
-                  placeholder="Auswählen"
-                  value={options.find((option) => option.value === field.value)}
-                  onChange={(selectedOption) =>
-                    field.onChange(selectedOption.value)
-                  }
-                />
-              )}
-            />
-          }
-        />
-        <FormField
-          label="Vorname"
-          name="vorname"
-          register={register}
-          errors={errors}
-          required
-          placeholder="Vorname"
-        />
-        <FormField
-          label="Nachname"
-          name="nachname"
-          register={register}
-          errors={errors}
-          required
-          placeholder="Nachname"
-        />
-        <FormField
-          label="E-Mail"
-          name="email"
-          register={register}
-          errors={errors}
-          required
-          placeholder="E-Mail"
-        />
-        <FormField
-          label="Telefon"
-          name="telefon"
-          register={register}
-          errors={errors}
-          required
-          placeholder="Telefon"
-        />
-        <FormField
-          label="Ihr Wunschtermin"
-          name="wunschtermin"
-          errors={errors}
-          required
-          component={
-            <Controller
-              name="wunschtermin"
-              control={control}
-              defaultValue={null}
-              render={({ field }) => (
-                <StyledDatePicker
-                  {...field}
-                  selected={field.value}
-                  onChange={(date) => field.onChange(date)}
-                  placeholderText="Datum wählen"
-                  dateFormat="dd.MM.yyyy"
-                  calendarStartDay={1}
-                  formatWeekDay={(day) => day.substr(0, 2)}
-                  $errors={!!errors.wunschtermin}
-                />
-              )}
-            />
-          }
-        />
-        <FormField
-          label="Gewünschte Zeit"
-          name="zeit"
-          errors={errors}
-          component={
-            <Controller
-              name="zeit"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <Select
-                  {...field}
-                  options={optionsTime}
-                  isSearchable={false}
-                  styles={customStyles}
-                  $errors={!!errors.zeit}
-                  placeholder="Nachmittag"
-                  value={optionsTime.find(
-                    (option) => option.value === field.value
-                  )}
-                  onChange={(selectedOption) =>
-                    field.onChange(selectedOption.value)
-                  }
-                />
-              )}
-            />
-          }
-        />
-        <FormField
-          label="Nachricht"
-          name="nachricht"
-          register={register}
-          errors={errors}
-          placeholder="Thema des Termins"
-          component={
-            <TextArea
-              name="nachricht"
-              {...register("nachricht")}
-              placeholder="Thema des Termins"
-              $errors={!!errors.nachricht}
-            />
-          }
-        />
+        <Block>
+          <FormField
+            label="Firma"
+            name="firma"
+            register={register}
+            errors={errors}
+            placeholder="Firma"
+          />
+          <FormField
+            label="Anrede"
+            name="anrede"
+            errors={errors}
+            component={
+              <Controller
+                name="anrede"
+                control={control}
+                defaultValue=""
+                render={({ field }) => (
+                  <Select
+                    {...field}
+                    options={options}
+                    isSearchable={false}
+                    $errors={!!errors.anrede}
+                    styles={customStyles}
+                    placeholder="Auswählen"
+                    value={options.find(
+                      (option) => option.value === field.value
+                    )}
+                    onChange={(selectedOption) =>
+                      field.onChange(selectedOption.value)
+                    }
+                  />
+                )}
+              />
+            }
+          />
+          <FormField
+            label="Vorname"
+            name="vorname"
+            register={register}
+            errors={errors}
+            required
+            placeholder="Vorname"
+          />
+          <FormField
+            label="Nachname"
+            name="nachname"
+            register={register}
+            errors={errors}
+            required
+            placeholder="Nachname"
+          />
+          <FormField
+            label="E-Mail"
+            name="email"
+            register={register}
+            errors={errors}
+            required
+            placeholder="E-Mail"
+          />
+        </Block>
+        <Block>
+          <FormField
+            label="Telefon"
+            name="telefon"
+            register={register}
+            errors={errors}
+            required
+            placeholder="Telefon"
+          />
+          <FormField
+            label="Ihr Wunschtermin"
+            name="wunschtermin"
+            errors={errors}
+            required
+            component={
+              <Controller
+                name="wunschtermin"
+                control={control}
+                defaultValue={null}
+                render={({ field }) => (
+                  <StyledDatePicker
+                    {...field}
+                    selected={field.value}
+                    onChange={(date) => field.onChange(date)}
+                    placeholderText="Datum wählen"
+                    dateFormat="dd.MM.yyyy"
+                    calendarStartDay={1}
+                    formatWeekDay={(day) => day.substr(0, 2)}
+                    $errors={!!errors.wunschtermin}
+                  />
+                )}
+              />
+            }
+          />
+          <FormField
+            label="Gewünschte Zeit"
+            name="zeit"
+            errors={errors}
+            component={
+              <Controller
+                name="zeit"
+                control={control}
+                defaultValue=""
+                render={({ field }) => (
+                  <Select
+                    {...field}
+                    options={optionsTime}
+                    isSearchable={false}
+                    styles={customStyles}
+                    $errors={!!errors.zeit}
+                    placeholder="Nachmittag"
+                    value={optionsTime.find(
+                      (option) => option.value === field.value
+                    )}
+                    onChange={(selectedOption) =>
+                      field.onChange(selectedOption.value)
+                    }
+                  />
+                )}
+              />
+            }
+          />
+          <FormField
+            label="Nachricht"
+            name="nachricht"
+            register={register}
+            errors={errors}
+            placeholder="Thema des Termins"
+            component={
+              <TextArea
+                name="nachricht"
+                {...register("nachricht")}
+                placeholder="Thema des Termins"
+                $errors={!!errors.nachricht}
+              />
+            }
+          />
+        </Block>
         <BtnForm type="submit">Absenden</BtnForm>
       </Form>
     </SectionAppointmentForm>
