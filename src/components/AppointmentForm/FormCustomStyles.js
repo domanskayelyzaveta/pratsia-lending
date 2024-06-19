@@ -2,6 +2,10 @@ const customStyles = {
   container: (provided) => ({
     ...provided,
     width: "280px",
+
+    "@media screen and (min-width: 768px)": {
+      width: "534px",
+    },
   }),
 
   control: (provided, state) => {
@@ -12,13 +16,13 @@ const customStyles = {
     return {
       ...provided,
       display: "flex",
-      height: "48px",
-      padding: "12px 16px",
+      height: "44px",
+      padding: "8px 16px",
       alignItems: "center",
       flexShrink: "0",
       gap: "8px",
       alignSelf: "stretch",
-      alignContent: "flex-start",
+      alignContent: "center",
       borderRadius: "8px",
       outline: "none",
       boxShadow: "none",
@@ -39,8 +43,9 @@ const customStyles = {
       },
 
       "@media screen and (min-width: 768px)": {
-        padding: "17px 16px",
-        height: "56px",
+        borderRadius: "12px",
+        padding: "8px 16px",
+        height: "52px",
       },
 
       "@media screen and (min-width: 1440px)": {
@@ -53,10 +58,12 @@ const customStyles = {
     };
   },
 
-  dropdownIndicator: (provided) => ({
+  dropdownIndicator: (provided, state) => ({
     ...provided,
     color: "var(--blue-200)",
     padding: "0",
+    transition: "transform 0.3s ease",
+    transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : "rotate(0deg)",
   }),
 
   indicatorSeparator: () => ({
@@ -72,14 +79,20 @@ const customStyles = {
     fontWeight: "400",
     backgroundColor: "var(--white)",
     color: "var(--black-100)",
+    borderBottom: "1px solid var(--blue-100)",
 
     "&:hover": {
+      borderRadius: "8px",
       backgroundColor: "rgba(27, 54, 65, 0.2)",
     },
 
     "@media screen and (min-width: 768px)": {
-      fontSize: "15px",
+      fontSize: "16px",
       lineHeight: "1.47",
+
+      "&:hover": {
+        borderRadius: "12px",
+      },
     },
 
     "@media screen and (min-width: 1920px)": {
@@ -91,11 +104,16 @@ const customStyles = {
   menu: (provided) => ({
     ...provided,
     height: "auto",
-    marginTop: "0",
+    marginTop: "2px",
+    padding: "20px",
     border: "none",
-    borderRadius: "2px 2px 8px 8px",
+    borderRadius: "8px",
     color: "var(--black-100)",
     backgroundColor: "var(--white)",
+
+    "@media screen and (min-width: 768px)": {
+      marginTop: "4px",
+    },
   }),
 
   singleValue: (provided) => ({
@@ -108,6 +126,10 @@ const customStyles = {
     flex: "1 0 0",
     color: "var(--black-200)",
     backgroundColor: "var(--white)",
+
+    "@media screen and (min-width: 768px)": {
+      fontSize: "18px",
+    },
   }),
 
   valueContainer: (provided, state) => ({
@@ -120,10 +142,14 @@ const customStyles = {
     const isError = state.selectProps.$errors;
     return {
       ...provided,
-      fontSize: state.isFocused ? "14px" : "12px",
+      fontSize: "12px",
       fontWeight: "400",
       lineHeight: "1.8",
       color: isError ? "var(--red)" : "var(--black-100)",
+
+      "@media screen and (min-width: 768px)": {
+        fontSize: "18px",
+      },
     };
   },
 };
