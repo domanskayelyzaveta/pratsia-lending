@@ -16,8 +16,12 @@ export const DatenList = styled.ul`
   }
 `;
 
-export const ListItemImp = styled.li`
-  //   display: flex;
+export const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 12px;
 `;
 
 export const AboutUsText = styled.p`
@@ -48,6 +52,8 @@ export const ListWrapper = styled.div`
 `;
 
 export const DatenText = styled.p`
+  width: 244px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
