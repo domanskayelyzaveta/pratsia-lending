@@ -47,10 +47,7 @@ const AppointmentForm = () => {
         </SubTitleAppointmentForm>
       </TitlesWrapper>
 
-      <Form
-        onSubmit={handleSubmit(onSubmit)}
-        style={{ maxWidth: "400px", margin: "auto" }}
-      >
+      <Form onSubmit={handleSubmit(onSubmit)}>
         <FormField
           label="Firma"
           name="firma"
@@ -71,6 +68,7 @@ const AppointmentForm = () => {
                 <Select
                   {...field}
                   options={options}
+                  isSearchable={false}
                   $errors={!!errors.anrede}
                   styles={customStyles}
                   placeholder="Auswählen"
@@ -153,6 +151,7 @@ const AppointmentForm = () => {
                 <Select
                   {...field}
                   options={optionsTime}
+                  isSearchable={false}
                   styles={customStyles}
                   $errors={!!errors.zeit}
                   placeholder="Nachmittag"
