@@ -6,16 +6,16 @@ const telefonRegexp = /^\+380\d{9}$/;
 export const formaSchema = yup.object().shape({
   firma: yup
     .string()
-    .required("Firma is required")
+    .required("This field is required")
     .min(3, "Firma must be at least 3 characters")
     .max(64, "Firma must be at most 64 characters"),
   anrede: yup
     .string()
-    .required("Anrede is required")
+    .required("This field is required")
     .oneOf(["Herr", "Frau"], "Anrede must be either 'Herr' or 'Frau'"),
   vorname: yup
     .string()
-    .required("Vorname is required")
+    .required("This field is required")
     .min(3, "Vorname must be at least 3 characters")
     .max(64, "Vorname must be at most 64 characters"),
   nachname: yup
@@ -25,11 +25,11 @@ export const formaSchema = yup.object().shape({
     .max(64, "Nachname must be at most 64 characters"),
   email: yup
     .string()
-    .required("Email is required")
+    .required("This field is required")
     .matches(emailRegexp, "Email is not valid"),
   telefon: yup
     .string()
-    .required("Telefon is required")
+    .required("This field is required")
     .matches(telefonRegexp, "Telefon must be a valid phone number"),
   wunschtermin: yup
     .date()
@@ -37,14 +37,14 @@ export const formaSchema = yup.object().shape({
     .min(Date(), "Wunschtermin cannot be in the past"),
   zeit: yup
     .string()
-    .required("Zeit is required")
+    .required("This field is required")
     .oneOf(
       ["Nachmittag", "Vormittag"],
       "Zeit must be either 'Nachmittag' or 'Vormittag'"
     ),
   nachricht: yup
     .string()
-    .required("Nachricht is required")
+    .required("This field is required")
     .min(3, "Nachricht must be at least 3 characters")
     .max(500, "Nachricht must be at most 500 characters"),
 });
