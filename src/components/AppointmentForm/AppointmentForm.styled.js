@@ -8,6 +8,7 @@ export const SectionAppointmentForm = styled.section`
 export const TitlesWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 `;
 
@@ -30,7 +31,8 @@ export const SubTitleAppointmentForm = styled.p`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 15px;
 `;
 
 export const Label = styled.label`
