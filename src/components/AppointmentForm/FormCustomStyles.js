@@ -5,7 +5,7 @@ const customStyles = {
   }),
 
   control: (provided, state) => {
-    const isError = state.selectProps.errors;
+    const isError = state.selectProps.$errors;
     const isFocused = state.isFocused;
     //    const hasValue = state.hasValue; //hover
 
@@ -27,7 +27,7 @@ const customStyles = {
           ? "var(--red)"
           : isFocused
           ? "var(--blue-300)"
-          : "var(--black-100)"
+          : "var(--blue-dark)"
       }`,
       backgroundColor: "var(--white)",
 
@@ -116,13 +116,16 @@ const customStyles = {
     fontSize: state.isFocused ? "14px" : "12px",
   }),
 
-  placeholder: (provided, state) => ({
-    ...provided,
-    fontSize: state.isFocused ? "14px" : "12px",
-    fontWeight: "400",
-    lineHeight: "1.8",
-    color: "var(--black-100)",
-  }),
+  placeholder: (provided, state) => {
+    const isError = state.selectProps.$errors;
+    return {
+      ...provided,
+      fontSize: state.isFocused ? "14px" : "12px",
+      fontWeight: "400",
+      lineHeight: "1.8",
+      color: isError ? "var(--red)" : "var(--black-100)",
+    };
+  },
 };
 
 export default customStyles;

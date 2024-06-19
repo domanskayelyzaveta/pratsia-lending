@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@hookform/resolvers": "^3.6.0",
     "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.15.20",
     "@mui/x-date-pickers": "^7.7.0",
@@ -34,7 +35,8 @@
     "react-select": "^5.8.0",
     "react-toastify": "^10.0.5",
     "redux-persist": "^6.0.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.11.0",
