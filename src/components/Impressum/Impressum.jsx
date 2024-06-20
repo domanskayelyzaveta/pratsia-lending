@@ -1,7 +1,6 @@
 import React from "react";
 import sprite from "../../assets/sprite.svg";
 import { Svg } from "../Header/Header.styled";
-
 import {
   BtnImpress,
   BtnTextImpress,
@@ -10,6 +9,8 @@ import {
   TextImpressWrapper,
   TitleImpress,
 } from "./Impressum.styled";
+import impressumData from "./impressumdata.json";
+
 import { useNavigate } from "react-router-dom";
 
 const Impressum = () => {
@@ -31,29 +32,39 @@ const Impressum = () => {
 
       <TextImpressWrapper>
         <div>
-          <TextImpress>Pratsia UG (haftungsbeschränkt)</TextImpress>
-          <TextImpress>Garnstraße 12</TextImpress>
-          <TextImpress>47798 Krefeld</TextImpress>
+          <TextImpress>{impressumData.companyInfo.name}</TextImpress>
+          <TextImpress>{impressumData.companyInfo.address}</TextImpress>
+          <TextImpress>{impressumData.companyInfo.city}</TextImpress>
         </div>
 
         <div>
-          <TextImpress>Handelsregister: HRB</TextImpress>
-          <TextImpress>Registergericht: Amtsgericht Krefeld</TextImpress>
+          <TextImpress>{impressumData.registryInfo.register}</TextImpress>
+          <TextImpress>{impressumData.registryInfo.court}</TextImpress>
         </div>
 
         <div>
           <TextImpress>Vertreten durch:</TextImpress>
-          <TextImpress>Mykola Sytnyk</TextImpress>
+          <TextImpress>{impressumData.representative.name}</TextImpress>
           <TextImpress>Kontakt</TextImpress>
-          <TextImpress>Telefon: 0170 1481355</TextImpress>
-          <TextImpress>E-Mail: info@pratsia.de</TextImpress>
-          <TextImpress>EU-Streitschlichtung</TextImpress>
           <TextImpress>
-            Die Europäische Kommission stellt eine Plattform zur
-            Online-Streitbeilegung (OS) bereit:
+            Telefon: {impressumData.representative.contact.phone}
           </TextImpress>
-          <TextImpress>https://ec.europa.eu/consumers/odr/.</TextImpress>
-          <TextImpress>Quelle: eRecht24</TextImpress>
+          <TextImpress>
+            E-Mail: {impressumData.representative.contact.email}
+          </TextImpress>
+          <TextImpress>
+            {impressumData.euDisputeResolution.description}
+          </TextImpress>
+          <TextImpress>
+            <a
+              href={impressumData.euDisputeResolution.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {impressumData.euDisputeResolution.link}
+            </a>
+          </TextImpress>
+          <TextImpress>{impressumData.source}</TextImpress>
         </div>
       </TextImpressWrapper>
     </ImpressWrapper>
