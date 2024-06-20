@@ -10,6 +10,27 @@ export const FooterSection = styled.footer`
 
   border-bottom: 1px solid var(--Blue-Dark, #301678);
   background-color: var(--beige-200);
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    padding-bottom: 24px;
+  }
+`;
+
+export const SvgLogo = styled.svg`
+  width: 52px;
+  height: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 72px;
+    height: 50px;
+  }
 `;
 
 export const SvgTitleFooterWrapper = styled.div`
@@ -17,6 +38,10 @@ export const SvgTitleFooterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
 `;
 
 export const ListFooter = styled.ul`
@@ -24,6 +49,11 @@ export const ListFooter = styled.ul`
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    bottom: 40px;
+  }
 `;
 
 export const FooterText = styled.p`
@@ -33,6 +63,13 @@ export const FooterText = styled.p`
   line-height: 150%;
 
   width: 150px;
+
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    font-size: 16px;
+
+    text-align: start;
+  }
 `;
 
 export const PhoneEmailDiv = styled.div`
@@ -43,6 +80,10 @@ export const PhoneEmailDiv = styled.div`
   gap: 2px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
 `;
 
 export const LinkFooterText = styled.a`
@@ -50,4 +91,64 @@ export const LinkFooterText = styled.a`
   font-size: 11px;
   font-weight: 500;
   line-height: 150%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+`;
+
+export const SvgFooter = styled.svg`
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
+`;
+
+export const ImgIcon = styled.img`
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
+`;
+
+export const TitleFooter = styled.h3`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  color: var(--blue-dark);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const HolderDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;
+
+export const ContactInfoFooterDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 120px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 636px;
+  }
 `;

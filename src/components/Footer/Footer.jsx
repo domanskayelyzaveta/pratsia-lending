@@ -1,48 +1,57 @@
 import sprite from "../../assets/sprite.svg";
 import {
+  ContactInfoFooterDiv,
   FooterSection,
   FooterText,
+  HolderDiv,
+  ImgIcon,
   LinkFooterText,
   ListFooter,
   PhoneEmailDiv,
+  SvgFooter,
+  SvgLogo,
   SvgTitleFooterWrapper,
+  TitleFooter,
 } from "./Footer.styled";
+import logosprite from "../../images/logo/sprite.svg";
+
+import whatsapp from "../../images/social-icons/icon-whatsApp.svg";
+import instagram from "../../images/social-icons/Icon-Instagram.svg";
 
 const Footer = () => {
   return (
     <FooterSection className="container">
       <SvgTitleFooterWrapper>
-        {/* <svg>
-          <use href></use>
-        </svg> */}
-        <p>Zeit Für Veränderung</p>
+        <SvgLogo>
+          <use href={`${logosprite}#icon-logo-remake`} />
+        </SvgLogo>
+        <TitleFooter>Zeit Für Veränderung</TitleFooter>
       </SvgTitleFooterWrapper>
       <ListFooter>
         <li>
           <a
-            // href="info@pratsia.de"
-            target="_blank"
+            href="mailto:info@pratsia.de"
+            // target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open mail"
           >
-            <svg width="24" height="24">
+            <SvgFooter width="24" height="24">
               <use href={`${sprite}#icon-GadgetTablet`} />
-            </svg>
+            </SvgFooter>
           </a>
         </li>
 
         <li>
           <a
-            href="https://www.facebook.com"
+            href="https://wa.me/+491701481355"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Whats App"
           >
-            <svg width="24" height="24">
-              <use href={`${sprite}#icon-GadgetTablet-1`} />
-            </svg>
+            <ImgIcon src={whatsapp} alt="Icon Whats App"></ImgIcon>
           </a>
         </li>
+
         <li>
           <a
             href="https://www.facebook.com"
@@ -50,37 +59,41 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Link to open Facebook"
           >
-            <svg width="24" height="24">
+            <SvgFooter>
               <use href={`${sprite}#icon-GadgetTablet-2`} />
-            </svg>
+            </SvgFooter>
           </a>
         </li>
         <li>
           <a
-            href="https://www.facebook.com"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Instagram"
           >
-            <svg width="24" height="24">
-              <use href={`${sprite}#icon-GadgetTablet-3`} />
-            </svg>
+            <ImgIcon src={instagram} alt="Icon Instagram"></ImgIcon>
           </a>
         </li>
       </ListFooter>
 
-      <FooterText>
-        Inhaber: Mykola Sytnyk Garnstraße 12 47798 Krefeld
-      </FooterText>
+      <ContactInfoFooterDiv>
+        <HolderDiv>
+          <FooterText>Inhaber: Mykola Sytnyk</FooterText>
+          <FooterText>
+            Garnstraße 12 <br />
+            47798 Krefeld
+          </FooterText>
+        </HolderDiv>
 
-      <PhoneEmailDiv>
-        <LinkFooterText href="tel:+491701481355">
-          Telefon: 0170 1481355
-        </LinkFooterText>
-        <LinkFooterText href="mailto:info@pratsia.de">
-          E-Mail: info@pratsia.de
-        </LinkFooterText>
-      </PhoneEmailDiv>
+        <PhoneEmailDiv>
+          <LinkFooterText href="tel:+491701481355">
+            Telefon: 0170 1481355
+          </LinkFooterText>
+          <LinkFooterText href="mailto:info@pratsia.de">
+            E-Mail: info@pratsia.de
+          </LinkFooterText>
+        </PhoneEmailDiv>
+      </ContactInfoFooterDiv>
     </FooterSection>
   );
 };
