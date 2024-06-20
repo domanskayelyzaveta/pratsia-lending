@@ -1,7 +1,20 @@
 import styled from "styled-components";
 
 export const DatenWrapper = styled.div`
-  margin-top: 80px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+`;
+
+export const BtnTextDaten = styled.p`
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+
+  color: var(--blue-200);
 `;
 
 export const DatenList = styled.ul`
@@ -61,6 +74,10 @@ export const DatenText = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
+    width: 720px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 100%;
   }
 `;
 
@@ -69,11 +86,47 @@ export const TextDaten = styled.p`
   font-weight: 400;
   line-height: 150%;
 
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1272px;
+  }
+`;
+
+export const ListDaten = styled.ul`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ListItemDaten = styled.li`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  padding-left: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: var(--blue-300);
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1440px) {

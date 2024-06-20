@@ -1,0 +1,23 @@
+{
+  "companyInfo": {
+    "name": "Pratsia UG (haftungsbeschränkt)",
+    "address": "Garnstraße 12",
+    "city": "47798 Krefeld"
+  },
+  "registryInfo": {
+    "register": "Handelsregister: HRB",
+    "court": "Registergericht: Amtsgericht Krefeld"
+  },
+  "representative": {
+    "name": "Mykola Sytnyk",
+    "contact": {
+      "phone": "0170 1481355",
+      "email": "info@pratsia.de"
+    }
+  },
+  "euDisputeResolution": {
+    "description": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+    "link": "https://ec.europa.eu/consumers/odr/"
+  },
+  "source": "Quelle: eRecht24"
+}
