@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import {
   BntClose,
   ModalMenuWrapper,
@@ -11,7 +11,7 @@ import sprite from "../../../assets/sprite.svg";
 const modalRoot = document.getElementById("modal");
 
 const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
-  const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
+  // const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
 
   return createPortal(
     <ModalMenuWrapper>
@@ -22,10 +22,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
       </BntClose>
 
       <StyledLinkA
-        href="#home"
+        href="#starseite"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("home", e);
+          handleSetActiveLink("starseite", e);
         }}
       >
         <SvgMenu>
@@ -34,10 +34,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         Starseite
       </StyledLinkA>
       <StyledLinkA
-        href="#aboutUs"
+        href="#überUns"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("contact", e);
+          handleSetActiveLink("überUns", e);
         }}
       >
         <SvgMenu>
@@ -46,10 +46,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         Über uns
       </StyledLinkA>
       <StyledLinkA
-        href="#forCompanies"
+        href="#unternehemen"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("forCompanies", e);
+          handleSetActiveLink("unternehemen", e);
         }}
       >
         <SvgMenu>
@@ -58,10 +58,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         Für Unternehmen
       </StyledLinkA>
       <StyledLinkA
-        href="#forApplicants"
+        href="#bewerber"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("forApplicants", e);
+          handleSetActiveLink("bewerber", e);
         }}
       >
         <SvgMenu>
@@ -70,10 +70,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         Für Bewerber
       </StyledLinkA>
       <StyledLinkA
-        href="#appointment"
+        href="#interviewtermin"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("appointment", e);
+          handleSetActiveLink("interviewtermin", e);
         }}
       >
         <SvgMenu>
@@ -82,10 +82,10 @@ const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
         Interviewtermin
       </StyledLinkA>
       <StyledLinkA
-        href="#contact"
+        href="#kontakt"
         onClick={(e) => {
           onClose();
-          handleSetActiveLink("contact", e);
+          handleSetActiveLink("kontakt", e);
         }}
       >
         <SvgMenu>

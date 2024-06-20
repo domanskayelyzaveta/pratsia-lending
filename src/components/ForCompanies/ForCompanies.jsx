@@ -19,7 +19,7 @@ const ForCompanies = () => {
   const [isOpen, setIsOpen] = useState(null);
 
   return (
-    <SectionCompanies className="container">
+    <SectionCompanies className="container" id="unternehemen">
       <ForCompaniesTitle>Für Unternehmen</ForCompaniesTitle>
 
       <div>

@@ -19,7 +19,7 @@ const ForApplicants = () => {
   const [isOpen, setIsOpen] = useState(null);
 
   return (
-    <SectionCompanies className="container">
+    <SectionCompanies id="bewerber" className="container">
       <ForCompaniesTitle>Für Bewerber</ForCompaniesTitle>
 
       <div>
