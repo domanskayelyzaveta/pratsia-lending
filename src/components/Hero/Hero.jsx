@@ -12,10 +12,10 @@ import {
 
 const Hero = () => {
   return (
-    <HeroSection id="home">
+    <HeroSection id="starseite">
       <HeroAndTitleDiv>
         <TitleSubTextDiv className="container">
-          <TitleHero>Deine karriere - &nbsp;Unsere mission</TitleHero>
+          <TitleHero>Deine Karriere - &nbsp;Unsere Mission</TitleHero>
           <SubText>Entdecken Sie Pratsia</SubText>
         </TitleSubTextDiv>
         <ImgDiv />
