@@ -14,6 +14,7 @@ import JobOffers from "./components/JobOffers/JobOffers";
 import Location from "./components/Location/Location";
 import ImpressumPage from "./Pages/ImpressumPage/ImpressumPage";
 import DatenschutzerklärungPage from "./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage";
+import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
 
 const App = () => {
   const handleSetActiveLink = (link, event) => {
@@ -52,6 +53,7 @@ const App = () => {
             }
           />
         </Routes>
+        <BtnGoUp />
       </main>
       <Footer />
       <DataCompany />
