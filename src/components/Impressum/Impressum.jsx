@@ -4,15 +4,25 @@ import { Svg } from "../Header/Header.styled";
 import {
   BtnImpress,
   BtnTextImpress,
+  ImpressWrapper,
   TextImpress,
   TextImpressWrapper,
   TitleImpress,
 } from "./Impressum.styled";
+import impressumData from "./impressumdata.json";
+
+import { useNavigate } from "react-router-dom";
 
 const Impressum = () => {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
   return (
-    <div className="container">
-      <BtnImpress>
+    <ImpressWrapper className="container">
+      <BtnImpress onClick={handleBackClick}>
         <Svg>
           <use href={`${sprite}#icon-arrow-left-short`}></use>
         </Svg>
@@ -21,22 +31,43 @@ const Impressum = () => {
       <TitleImpress>Impressum</TitleImpress>
 
       <TextImpressWrapper>
-        <TextImpress>
-          Pratsia UG (haftungsbeschränkt) Garnstraße 12 47798 Krefeld
-        </TextImpress>
+        <div>
+          <TextImpress>{impressumData.companyInfo.name}</TextImpress>
+          <TextImpress>{impressumData.companyInfo.address}</TextImpress>
+          <TextImpress>{impressumData.companyInfo.city}</TextImpress>
+        </div>
 
-        <TextImpress>
-          Handelsregister: HRB Registergericht: Amtsgericht Krefeld
-        </TextImpress>
-        <TextImpress>
-          Vertreten durch: Mykola Sytnyk Kontakt Telefon: 0170 1481355 E-Mail:
-          info@pratsia.de EU-Streitschlichtung Die Europäische Kommission stellt
-          eine Plattform zur Online-Streitbeilegung (OS) bereit:
-          https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse finden Sie
-          oben im Impressum. Quelle: eRecht24
-        </TextImpress>
+        <div>
+          <TextImpress>{impressumData.registryInfo.register}</TextImpress>
+          <TextImpress>{impressumData.registryInfo.court}</TextImpress>
+        </div>
+
+        <div>
+          <TextImpress>Vertreten durch:</TextImpress>
+          <TextImpress>{impressumData.representative.name}</TextImpress>
+          <TextImpress>Kontakt</TextImpress>
+          <TextImpress>
+            Telefon: {impressumData.representative.contact.phone}
+          </TextImpress>
+          <TextImpress>
+            E-Mail: {impressumData.representative.contact.email}
+          </TextImpress>
+          <TextImpress>
+            {impressumData.euDisputeResolution.description}
+          </TextImpress>
+          <TextImpress>
+            <a
+              href={impressumData.euDisputeResolution.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {impressumData.euDisputeResolution.link}
+            </a>
+          </TextImpress>
+          <TextImpress>{impressumData.source}</TextImpress>
+        </div>
       </TextImpressWrapper>
-    </div>
+    </ImpressWrapper>
   );
 };
 
