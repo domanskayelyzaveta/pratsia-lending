@@ -50,7 +50,7 @@ const AboutUs = () => {
             Rekrutierungslösungen anzubieten, die den Bedürfnissen unserer
             Kunden entsprechen
           </TextAboutUs>
-          <ImgAboutUs src={photo}></ImgAboutUs>
+          <ImgAboutUs src={photo} alt="photo of business meeting"></ImgAboutUs>
         </TextAndPhotoDiv>
 
         <div>
