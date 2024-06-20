@@ -38,7 +38,7 @@ const AppointmentForm = () => {
   };
 
   return (
-    <SectionAppointmentForm className="container">
+    <SectionAppointmentForm id="kontakt" className="container">
       <TitlesWrapper>
         <TitleAppointmentForm>
           Wir beraten Sie gerne persönlich!

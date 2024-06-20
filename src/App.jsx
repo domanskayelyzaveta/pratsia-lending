@@ -21,8 +21,28 @@ const App = () => {
     event.preventDefault();
     const section = document.getElementById(link);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      event.target.blur();
+      const rect = section.getBoundingClientRect();
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      let targetOffset;
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 768) {
+        targetOffset = rect.top + scrollTop - 40;
+      } else if (screenWidth <= 1440) {
+        targetOffset = rect.top + scrollTop - 50;
+      } else {
+        targetOffset = rect.top + scrollTop - 60;
+      }
+
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "smooth",
+        onComplete: () => {
+          event.target.blur();
+        },
+      });
     }
   };
 
