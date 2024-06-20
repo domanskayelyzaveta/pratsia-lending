@@ -4,7 +4,9 @@ import {
   DatenList,
   DatenText,
   DatenWrapper,
+  ListDaten,
   ListItem,
+  ListItemDaten,
   ListWrapper,
   TextDaten,
 } from "./Daten.styled";
@@ -17,9 +19,15 @@ import {
   BtnTextImpress,
   TitleImpress,
 } from "../Impressum/Impressum.styled";
+import { useNavigate } from "react-router-dom";
 
 const Daten = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
 
   const toggleContent = (index) => {
     setIsOpen(isOpen === index ? null : index);
@@ -27,7 +35,7 @@ const Daten = () => {
 
   return (
     <DatenWrapper className="container">
-      <BtnImpress>
+      <BtnImpress onClick={handleBackClick}>
         <Svg>
           <use href={`${sprite}#icon-arrow-left-short`}></use>
         </Svg>
@@ -161,13 +169,13 @@ const Daten = () => {
           {isOpen === 7 && (
             <div>
               <TextDaten>{texts.massgebliche_rechtsgrundlagen_text}</TextDaten>
-              <ul>
+              <ListDaten>
                 {texts.massgebliche_rechtsgrundlagen_list.map((item, index) => (
-                  <li key={index}>
-                    <p>{item}</p>
-                  </li>
+                  <ListItemDaten key={index}>
+                    <TextDaten>{item}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
               <TextDaten>{texts.massgebliche_text}</TextDaten>
               {texts.massgebliche_text.map((paragraph, index) => (
                 <TextDaten key={index}>{paragraph}</TextDaten>
@@ -224,16 +232,17 @@ const Daten = () => {
           {isOpen === 10 && (
             <div>
               <TextDaten>{texts.rechte_betroffener_text}</TextDaten>
-              <ul>
+              <ListDaten>
                 {texts.rechte_betroffener_list.map((item, index) => (
-                  <li key={index}>
-                    <p>{item}</p>
-                  </li>
+                  <ListItemDaten key={index}>
+                    <TextDaten>{item}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
+
         <ListItem>
           <BtnListDaten onClick={() => toggleContent(11)}>
             <ListWrapper>
@@ -248,30 +257,15 @@ const Daten = () => {
               {texts.geschaftliche_leistungen_text.map((paragraph, index) => (
                 <TextDaten key={index}>{paragraph}</TextDaten>
               ))}
-              <ul>
+              <ListDaten>
                 {texts.geschaftliche_leistungen_detail_list.map(
                   (item, index) => (
-                    <li key={index}>
-                      <TextDaten>
-                        <strong>Verarbeitete Datenarten:</strong>
-                        {item.verarbeitete_datenarten}
-                      </TextDaten>
-                      <TextDaten>
-                        <strong>Betroffene Personen:</strong>
-                        {item.betroffene_personen}
-                      </TextDaten>
-                      <TextDaten>
-                        <strong>Zwecke der Verarbeitung:</strong>
-                        {item.zwecke_verarbeitung}
-                      </TextDaten>
-                      <TextDaten>
-                        <strong>Rechtsgrundlagen:</strong>
-                        {item.rechtsgrundlagen}
-                      </TextDaten>
-                    </li>
+                    <ListItemDaten key={index}>
+                      <TextDaten>{item}</TextDaten>
+                    </ListItemDaten>
                   )
                 )}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
@@ -306,7 +300,6 @@ const Daten = () => {
           </BtnListDaten>
           {isOpen === 13 && (
             <div>
-              <TextDaten>{texts.einsts_cookie_title}</TextDaten>
               {texts.content_list.map((text, index) => (
                 <TextDaten key={index}>{text}</TextDaten>
               ))}
@@ -325,15 +318,15 @@ const Daten = () => {
           </BtnListDaten>
           {isOpen === 14 && (
             <div>
-              <ul>
+              <ListDaten>
                 {texts.speicherdauer_content.map((item) => (
-                  <li key={item.id}>
-                    <p>{item.text}</p>
-                  </li>
+                  <ListItemDaten key={item.id}>
+                    <TextDaten>{item.text}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
-              <DatenText>{texts.speicherdauer_content[2].text}</DatenText>
-              <DatenText>{texts.speicherdauer_content[3].text}</DatenText>
+              </ListDaten>
+              <TextDaten>{texts.speicherdauer_content[2].text}</TextDaten>
+              <TextDaten>{texts.speicherdauer_content[3].text}</TextDaten>
             </div>
           )}
         </ListItem>
@@ -368,13 +361,13 @@ const Daten = () => {
           {isOpen === 16 && (
             <div>
               <TextDaten>{texts.kontakt_content.text}</TextDaten>
-              <ul>
+              <ListDaten>
                 {texts.kontakt_content.list_items.map((item) => (
-                  <li key={item.id}>
-                    <p>{item.text}</p>
-                  </li>
+                  <ListItemDaten key={item.id}>
+                    <TextDaten>{item.text}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
@@ -414,12 +407,13 @@ const Daten = () => {
                   )}
                   {content.type === "list" && (
                     <>
-                      <TextDaten>{content.title}</TextDaten>
-                      <ul>
+                      <ListDaten>
                         {content.items.map((item, idx) => (
-                          <li key={idx}>{item}</li>
+                          <ListItemDaten key={idx}>
+                            <TextDaten> {item}</TextDaten>
+                          </ListItemDaten>
                         ))}
-                      </ul>
+                      </ListDaten>
                     </>
                   )}
                 </div>
@@ -443,13 +437,13 @@ const Daten = () => {
                 <TextDaten key={index}>{item.text}</TextDaten>
               ))}
 
-              <ul>
+              <ListDaten>
                 {texts.list.map((item, index) => (
-                  <li key={index}>
-                    <p>{item.text}</p>
-                  </li>
+                  <ListItemDaten key={index}>
+                    <TextDaten>{item.text}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
@@ -486,13 +480,13 @@ const Daten = () => {
               {texts.plug_ins__content.texts.map((item, index) => (
                 <TextDaten key={index}>{item.text}</TextDaten>
               ))}
-              <ul>
+              <ListDaten>
                 {texts.plug_ins__content.list.map((item, index) => (
-                  <li key={index}>
-                    <p>{item.text}</p>
-                  </li>
+                  <ListItemDaten key={index}>
+                    <TextDaten>{item.text}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
@@ -543,13 +537,13 @@ const Daten = () => {
           {isOpen === 24 && (
             <div>
               <TextDaten>{texts.plug_ins_text}</TextDaten>
-              <ul>
+              <ListDaten>
                 {texts.plugins_content.map((item, index) => (
-                  <li key={index}>
-                    <p>{item.description}</p>
-                  </li>
+                  <ListItemDaten key={index}>
+                    <TextDaten>{item.description}</TextDaten>
+                  </ListItemDaten>
                 ))}
-              </ul>
+              </ListDaten>
             </div>
           )}
         </ListItem>
