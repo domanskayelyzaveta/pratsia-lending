@@ -85,7 +85,6 @@ export const StyledNavLinkA = styled.a`
     line-height: 150%;
 
     &:hover::after,
-    &:focus::after,
     &.active::after {
       content: "";
       position: absolute;
@@ -97,7 +96,6 @@ export const StyledNavLinkA = styled.a`
     }
 
     &:hover,
-    &:focus,
     &.active {
       color: var(--blue-200);
     }
