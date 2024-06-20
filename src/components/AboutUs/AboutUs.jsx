@@ -34,7 +34,7 @@ const AboutUs = () => {
   };
 
   return (
-    <SectionAboutUs>
+    <SectionAboutUs id="überUns">
       <TitleWrapper>
         <AboutUsTitle>Über uns</AboutUsTitle>
         <AboutUsSubTitle>
