@@ -1,20 +1,29 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Appointment from "./components/Appointment/Appointment";
-import AppointmentForm from "./components/AppointmentForm/AppointmentForm";
-import DataCompany from "./components/DataCompany/DataCompany";
-import Footer from "./components/Footer/Footer";
-import ForApplicants from "./components/ForApplicants/ForApplicants";
-import ForCompanies from "./components/ForCompanies/ForCompanies";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Industries from "./components/Industries/Industries";
-import JobOffers from "./components/JobOffers/JobOffers";
-import Location from "./components/Location/Location";
-import ImpressumPage from "./Pages/ImpressumPage/ImpressumPage";
-import DatenschutzerklärungPage from "./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
+
+const Hero = lazy(() => import("./components/Hero/Hero"));
+const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
+const ForCompanies = lazy(() =>
+  import("./components/ForCompanies/ForCompanies")
+);
+const ForApplicants = lazy(() =>
+  import("./components/ForApplicants/ForApplicants")
+);
+const Industries = lazy(() => import("./components/Industries/Industries"));
+const JobOffers = lazy(() => import("./components/JobOffers/JobOffers"));
+const Appointment = lazy(() => import("./components/Appointment/Appointment"));
+const AppointmentForm = lazy(() =>
+  import("./components/AppointmentForm/AppointmentForm")
+);
+const Location = lazy(() => import("./components/Location/Location"));
+const ImpressumPage = lazy(() => import("./Pages/ImpressumPage/ImpressumPage"));
+const DatenschutzerklärungPage = lazy(() =>
+  import("./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage")
+);
+const Footer = lazy(() => import("./components/Footer/Footer"));
+const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
+const Header = lazy(() => import("./components/Header/Header"));
 
 const App = () => {
   const handleSetActiveLink = (link, event) => {
@@ -48,35 +57,37 @@ const App = () => {
 
   return (
     <>
-      <Header handleSetActiveLink={handleSetActiveLink} />
-      <main>
-        <Routes>
-          <Route path="/impressum" element={<ImpressumPage />} />
-          <Route
-            path="/datenschutzerklarung"
-            element={<DatenschutzerklärungPage />}
-          />
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <AboutUs />
-                <ForCompanies />
-                <ForApplicants />
-                <Industries />
-                <JobOffers />
-                <Appointment />
-                <AppointmentForm />
-                <Location />
-              </>
-            }
-          />
-        </Routes>
-        <BtnGoUp />
-      </main>
-      <Footer />
-      <DataCompany />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header handleSetActiveLink={handleSetActiveLink} />
+        <main>
+          <Routes>
+            <Route path="/impressum" element={<ImpressumPage />} />
+            <Route
+              path="/datenschutzerklarung"
+              element={<DatenschutzerklärungPage />}
+            />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <AboutUs />
+                  <ForCompanies />
+                  <ForApplicants />
+                  <Industries />
+                  <JobOffers />
+                  <Appointment />
+                  <AppointmentForm />
+                  <Location />
+                </>
+              }
+            />
+          </Routes>
+          <BtnGoUp />
+        </main>
+        <Footer />
+        <DataCompany />
+      </Suspense>
     </>
   );
 };
