@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import LocalStorageBackend from "i18next-localstorage-backend";
+// import LocalStorageBackend from "i18next-localstorage-backend";
 
 const resources = {
   de: {
@@ -14,9 +14,13 @@ const resources = {
       menuAppointment: "Interviewtermin",
       menuContact: "Kontakt",
       heroTitle: "Entdecken Sie Pratsia",
+      slogan: "Deine Karriere - Unsere Mission",
       textHero:
         "Willkommen bei der führenden Personalagentur Pratsia - Ihrem zuverlässigen Partner bei der Vermittlung von hochqualifizierten Fachkräften aus der Ukraine nach Deutschland",
       btn: "Interviewtermin",
+
+      // About us
+
       aboutUsSect: "Über uns",
       aboutUsSubTitle:
         "Wir bauen langfristige und erfolgreiche Partnerschaften auf, die auf Vertrauen und Respekt basieren",
@@ -38,6 +42,8 @@ const resources = {
       teilTeamSubText:
         "Bewerben Sie sich jetzt und entdecken Sie Ihre Zukunft mit uns!",
 
+      // Für Unternehment
+
       forUnternehmentTitle: "Für Unternehment",
       unternehmentText1: "Ethische Standards",
       unternehmentText2: "Transparenz in allen Geschäftsbeziehungen",
@@ -57,7 +63,7 @@ const resources = {
       integrierter:
         "Das Unternehmen bietet einen umfassenden Ansatz, der nicht nur die Suche nach dem perfekten Job umfasst, sondern auch zusätzliche Dienstleistungen wie Deutschkurse und Unterstützung bei der Anerkennung, damit die Integration erfolgreich verläuft.",
       branchenwissen:
-        "Prästra verfügt über umfangreiche Branchenkenntnisse in Bereichen wie Medizin, Pflege, Sozialarbeit, Facility Management, Sanitär, Elektrotechnik und Kfz - Mechanik / Mechatronik. Dies ermöglicht es ihr, individuelle Lösungen für die Bewerber zu finden. Grundlage ist die individuelle Beratung über Karrieremöglichkeiten und Entwicklungsperspektiven sowie die anschließende Identifizierung geeigneter Stellenangebote, die den Qualifikationen und Neigungen der Bewerber entsprechen.",
+        "Pratsia verfügt über umfangreiche Branchenkenntnisse in Bereichen wie Medizin, Pflege, Sozialarbeit, Facility Management, Sanitär, Elektrotechnik und Kfz - Mechanik / Mechatronik. Dies ermöglicht es ihr, individuelle Lösungen für die Bewerber zu finden. Grundlage ist die individuelle Beratung über Karrieremöglichkeiten und Entwicklungsperspektiven sowie die anschließende Identifizierung geeigneter Stellenangebote, die den Qualifikationen und Neigungen der Bewerber entsprechen.",
       unterstutzung:
         "Um den Bedürfnissen und Anforderungen beider Seiten optimal gerecht zu werden, legt die Agentur für Arbeit großen Wert auf eine individuelle Betreuung sowohl der Unternehmen als auch der Arbeitnehmer. Dazu gehört die Beratung und Unterstützung bei Visa- und Einwanderungsverfahren, einschließlich der Erlangung von Arbeits - und Aufenthaltsgenehmigungen, sowie die Unterstützung bei Umzugsvorbereitungen, Wohnungssuche und anderen praktischen Aspekten des Umzugs nach Deutschland.",
 
@@ -229,9 +235,19 @@ const resources = {
       menuForApp: "Для кандидатів",
       menuAppointment: "Запис на співбесіду",
       menuContact: "Контакти",
-      heroTitle: "Відкрийте Працю",
+      heroTitle: "Відкрийте 'Pratsia'",
+      slogan: "Ваша кар'єра - Наша місія",
       textHero:
         "Ласкаво просимо до провідного кадрового агентства Pratsia - вашого надійного партнера у пошуку висококваліфікованих фахівців з України для роботодавців у Німеччині",
+      btn: "Записатися на співбесіду",
+
+      // About us
+
+      aboutUsSect: "Про нас",
+      aboutUsSubTitle:
+        "Ми будуємо довгострокові та успішні партнерські відносини, засновані на довірі та повазі",
+      aboutUsText:
+        "Наш багаторічний досвід, глибокі галузеві знання та міжнародна мережа дозволяють нам пропонувати індивідуальні рішення для підбору персоналу, які відповідають потребам наших клієнтів.",
       aboutUsItemList1: "Спеціалізація",
       aboutUsItemList2: "Інтегрований підхід",
       aboutUsItemList3: "Фундаментальна робота",
@@ -242,11 +258,13 @@ const resources = {
       fundierte_text:
         "Наша робота базується на етичних бізнес-практиках та прозорості в комунікації. 'Pratsia' може допомогти вам залучити найкращі таланти для вашої компанії та досягти ваших цілей щодо найму персоналу. Ми допоможемо забезпечити безпроблемну інтеграцію на німецький ринок праці.",
 
-      teilTeam: "Станьте частью команды!",
+      teilTeam: "Станьте частиною команди!",
       teilTeamText:
-        "Ищете новые профессиональные вызовы? Наше кадровое агентство предлагает привлекательные карьерные возможности в различных областях.",
+        "Шукаєте нові професійні виклики? Наше кадрове агентство пропонує привабливі кар'єрні можливості в різних галузях.",
       teilTeamSubText:
         "Залиште заявку зараз і почніть будувати своє майбутнє разом з нами!",
+
+      // Für Unternehment
 
       forUnternehmentTitle: "Для підприємств",
       unternehmentText1: "Етичні стандарти",
@@ -440,9 +458,11 @@ const resources = {
       menuForApp: "Для кандидатов",
       menuAppointment: "Запись на собеседование",
       menuContact: "Контакты",
-      heroTitle: "Откройте Работу",
+      heroTitle: "Откройте 'Pratsia'",
+      slogan: "Ваша карьера - Наша миссия",
       textHero:
         "Добро пожаловать в ведущую кадровую агенцию Pratsia - вашего надежного партнера в поиске высококвалифицированных специалистов из Украины для работодателей в Германии",
+      btn: "Записаться на собеседование",
       aboutUsItemList1: "Специализация",
       aboutUsItemList2: "Интегрированный подход",
       aboutUsItemList3: "Фундаментальная работа",
@@ -617,7 +637,7 @@ const resources = {
 i18n
   .use(initReactI18next)
   .use(LanguageDetector)
-  .use(LocalStorageBackend)
+  // .use(LocalStorageBackend)
   .init({
     resources,
     lng: localStorage.getItem("i18next_lng") || "de",

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   BtnHero,
   BtnHeroDiv,
@@ -11,24 +12,33 @@ import {
 } from "./Hero.styled";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <HeroSection id="starseite">
       <HeroAndTitleDiv>
         <TitleSubTextDiv className="container">
-          <TitleHero>Deine Karriere - &nbsp;Unsere Mission</TitleHero>
-          <SubText>Entdecken Sie Pratsia</SubText>
+          <TitleHero>
+            {t("slogan")}
+            {/* Deine Karriere - &nbsp;Unsere Mission */}
+          </TitleHero>
+          <SubText>
+            {t("heroTitle")}
+            {/* Entdecken Sie Pratsia */}
+          </SubText>
         </TitleSubTextDiv>
         <ImgDiv />
       </HeroAndTitleDiv>
 
       <HeroText>
-        Willkommen bei der führenden Personalagentur Pratsia - Ihrem
+        {t("textHero")}
+        {/* Willkommen bei der führenden Personalagentur Pratsia - Ihrem
         zuverlässigen Partner bei der Vermittlung von hochqualifizierten
-        Fachkräften aus der Ukraine nach Deutschland
+        Fachkräften aus der Ukraine nach Deutschland */}
       </HeroText>
 
       <BtnHeroDiv className="container">
-        <BtnHero>Interviewtermin</BtnHero>
+        <BtnHero>{t("btn")}</BtnHero>
       </BtnHeroDiv>
     </HeroSection>
   );

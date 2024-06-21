@@ -14,27 +14,36 @@ import {
   SubTitleSecondListComp,
   TextListCompanies,
 } from "./ForCompanies.styled";
+import { useTranslation } from "react-i18next";
 
 const ForCompanies = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(null);
 
   return (
     <SectionCompanies className="container" id="unternehemen">
-      <ForCompaniesTitle>Für Unternehmen</ForCompaniesTitle>
+      <ForCompaniesTitle>
+        {t("forUnternehmentTitle")}
+        {/* Für Unternehmen */}
+      </ForCompaniesTitle>
 
       <div>
         <StyledFistList>
           <li>
-            <TextListCompanies>Ethische Standards</TextListCompanies>
-          </li>
-          <li>
             <TextListCompanies>
-              Transparenz in allen Geschäftsbeziehungen
+              {t("unternehmentText1")} {/* Ethische Standards */}
             </TextListCompanies>
           </li>
           <li>
             <TextListCompanies>
-              Hochwertiger Einstellungsprozess
+              {t("unternehmentText2")}
+              {/* Transparenz in allen Geschäftsbeziehungen */}
+            </TextListCompanies>
+          </li>
+          <li>
+            <TextListCompanies>
+              {t("unternehmentText3")}
+              {/* Hochwertiger Einstellungsprozess */}
             </TextListCompanies>
           </li>
         </StyledFistList>
@@ -53,21 +62,23 @@ const ForCompanies = () => {
               </Svg>
 
               <SubTitleSecondListComp>
-                Unsere Fähigkeiten
+                {t("unternehmentListItem1")}
+                {/* Unsere Fähigkeiten */}
               </SubTitleSecondListComp>
             </ListItemDiv>
           </BtnListAboutUs>
           {isOpen === 0 && (
             <div>
               <p>
-                Pratsia bietet seine Dienstleistungen Unternehmen in ganz
+                {t("fahigkeitenText")}
+                {/* Pratsia bietet seine Dienstleistungen Unternehmen in ganz
                 Deutschland an. Unser umfangreiches Netzwerk und effektive
                 Rekrutierungsstrategien ermöglichen es uns, hochqualifizierte
                 ukrainische Fachkräfte an Unternehmen in verschiedenen Städten
                 und Regionen Deutschlands zu vermitteln. Mit einem starken
                 Netzwerk in der Ukraine und in Deutschland hat Pratsia Zugang zu
                 einem breiten Spektrum hochqualifizierter Fachkräfte und bringt
-                diese effektiv mit Unternehmen in Deutschland zusammen.
+                diese effektiv mit Unternehmen in Deutschland zusammen. */}
               </p>
             </div>
           )}
@@ -83,14 +94,16 @@ const ForCompanies = () => {
                 <use href={`${sprite}#icon-chevron-bar`}></use>
               </Svg>
               <SubTitleSecondListComp>
-                Unsere Dienstleistungen
+                {t("unternehmentListItem2")}
+                {/* Unsere Dienstleistungen */}
               </SubTitleSecondListComp>
             </ListItemDiv>
           </BtnListAboutUs>
           {isOpen === 1 && (
             <div>
               <p>
-                Unser Engagement für exzellenten Service kennt keine Grenzen und
+                {t("dienstText")}
+                {/* Unser Engagement für exzellenten Service kennt keine Grenzen und
                 wir sind stolz darauf, unseren Kunden in ganz Deutschland
                 erstklassige Unterstützung zu bieten. Unsere Dienstleistungen
                 umfassen Rekrutierung, Beratung und Bedarfsanalyse,
@@ -98,7 +111,7 @@ const ForCompanies = () => {
                 -vorauswahl, Unterstützung bei Visum und Arbeitserlaubnis,
                 Onboarding, Dienstleistungen nach der Pensionierung,
                 Deutschkurse und Unterstützung bei der Anerkennung von
-                Qualifikationen.
+                Qualifikationen. */}
               </p>
             </div>
           )}
