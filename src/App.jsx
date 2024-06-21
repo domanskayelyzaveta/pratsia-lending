@@ -11,8 +11,6 @@ const ForCompanies = lazy(() =>
 const ForApplicants = lazy(() =>
   import("./components/ForApplicants/ForApplicants")
 );
-const Industries = lazy(() => import("./components/Industries/Industries"));
-const JobOffers = lazy(() => import("./components/JobOffers/JobOffers"));
 const Appointment = lazy(() => import("./components/Appointment/Appointment"));
 const AppointmentForm = lazy(() =>
   import("./components/AppointmentForm/AppointmentForm")
@@ -75,8 +73,6 @@ const App = () => {
                   <AboutUs />
                   <ForCompanies />
                   <ForApplicants />
-                  <Industries />
-                  <JobOffers />
                   <Appointment />
                   <AppointmentForm />
                   <Location />
