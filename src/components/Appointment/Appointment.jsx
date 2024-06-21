@@ -1,46 +1,34 @@
 import sprite from "../../assets/sprite.svg";
-import { Svg } from "../Header/Header.styled";
 import {
+  Bg,
   ListAppointment,
   ListItemsAppointment,
   SectionAppointment,
   TextAppointment,
   TitleAppointment,
+  Svg,
 } from "./Appointment.styled";
+import { dataAppointment } from "./dataAppointment";
 
 const Appointment = () => {
   return (
     <SectionAppointment id="interviewtermin" className="container">
       <TitleAppointment>Interviewtermin</TitleAppointment>
-      <ListAppointment>
-        <ListItemsAppointment>
-          <Svg>
-            <use href={`${sprite}#icon-info-square-Max`}></use>
-          </Svg>
-          <div>
-            <TextAppointment>Haben Sie Fragen? </TextAppointment>
-            <TextAppointment>Wir geben Antworten</TextAppointment>
-          </div>
-        </ListItemsAppointment>
-        <ListItemsAppointment>
-          <Svg>
-            <use href={`${sprite}#icon-clipboard-check-Max`}></use>
-          </Svg>
-          <div>
-            <TextAppointment>Haben Sie ein Problem?</TextAppointment>
-            <TextAppointment>Wir finden Lösungen</TextAppointment>
-          </div>
-        </ListItemsAppointment>
-        <ListItemsAppointment>
-          <Svg>
-            <use href={`${sprite}#icon-journal-Max`}></use>
-          </Svg>
-          <div>
-            <TextAppointment>Brauchen Sie Urkunde?</TextAppointment>
-            <TextAppointment>Wir organisieren das</TextAppointment>
-          </div>
-        </ListItemsAppointment>
-      </ListAppointment>
+      <Bg>
+        <ListAppointment>
+          {dataAppointment.map(({ icon, text1, text2 }) => (
+            <ListItemsAppointment key={icon}>
+              <Svg>
+                <use href={`${sprite}#${icon}`} />
+              </Svg>
+              <div>
+                <TextAppointment>{text1}</TextAppointment>
+                <TextAppointment>{text2}</TextAppointment>
+              </div>
+            </ListItemsAppointment>
+          ))}
+        </ListAppointment>
+      </Bg>
     </SectionAppointment>
   );
 };
