@@ -14,6 +14,8 @@ import { toggleContent } from "../../helpers/toggleContent";
 import photo from "../../images/works/handshake.jpg";
 import { SubText } from "./ForApplicants.styled";
 import { BtnHero, BtnHeroDiv } from "../Hero/Hero.styled";
+import Industries from "../Industries/Industries";
+import JobOffers from "../JobOffers/JobOffers";
 
 const ForApplicants = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -117,6 +119,8 @@ const ForApplicants = () => {
       <BtnHeroDiv>
         <BtnHero>Interviewtermin</BtnHero>
       </BtnHeroDiv>
+      <Industries />
+      <JobOffers />
     </SectionCompanies>
   );
 };
