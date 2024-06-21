@@ -46,6 +46,7 @@ const Header = ({ handleSetActiveLink }) => {
       "überUns",
       "unternehemen",
       "bewerber",
+      "industries",
       "interviewtermin",
       "kontakt",
     ];
@@ -53,7 +54,7 @@ const Header = ({ handleSetActiveLink }) => {
       const sectionElement = document.getElementById(section);
       if (sectionElement) {
         const rect = sectionElement.getBoundingClientRect();
-        return rect.top <= 120 && rect.bottom >= 120;
+        return rect.top <= 80 && rect.bottom >= 80;
       }
       return sectionElement;
     });
