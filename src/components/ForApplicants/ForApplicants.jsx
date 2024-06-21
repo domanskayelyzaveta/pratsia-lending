@@ -71,7 +71,7 @@ const ForApplicants = () => {
           {isOpen === 1 && (
             <div>
               <p>
-                Prästra verfügt über umfangreiche Branchenkenntnisse in
+                Pratsia verfügt über umfangreiche Branchenkenntnisse in
                 Bereichen wie Medizin, Pflege, Sozialarbeit, Facility
                 Management, Sanitär, Elektrotechnik und Kfz - Mechanik /
                 Mechatronik. Dies ermöglicht es ihr, individuelle Lösungen für

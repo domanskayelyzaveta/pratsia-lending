@@ -33,7 +33,7 @@ export const industriesData = [
     image: logistik,
     alt: "logistic photo",
     description:
-      "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen und wünschst dir neue Herausforderungen in Bereichen wie Maschinenbau, Fahrzeugtechnik oder alternativen Energien? Als Experte in Solartechnik, Automotive, Industriemontage, Stahlbau, Produktion, Logistik, Schweißtechnik oder Elektrotechnik und auf der Suche nach Veränderung oder einem guten Start in Deutschland könnte ein Umzug oder Wechsel genau das Richtige für dich sein!",
+      "Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen. Bist du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
   },
   {
     title: "Facility",
