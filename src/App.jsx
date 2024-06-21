@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
+import Loader from "./components/Loader/Loader";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -10,8 +11,6 @@ const ForCompanies = lazy(() =>
 const ForApplicants = lazy(() =>
   import("./components/ForApplicants/ForApplicants")
 );
-const Industries = lazy(() => import("./components/Industries/Industries"));
-const JobOffers = lazy(() => import("./components/JobOffers/JobOffers"));
 const Appointment = lazy(() => import("./components/Appointment/Appointment"));
 const AppointmentForm = lazy(() =>
   import("./components/AppointmentForm/AppointmentForm")
@@ -57,7 +56,7 @@ const App = () => {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Header handleSetActiveLink={handleSetActiveLink} />
         <main>
           <Routes>
@@ -74,8 +73,6 @@ const App = () => {
                   <AboutUs />
                   <ForCompanies />
                   <ForApplicants />
-                  <Industries />
-                  <JobOffers />
                   <Appointment />
                   <AppointmentForm />
                   <Location />

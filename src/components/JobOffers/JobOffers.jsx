@@ -19,7 +19,7 @@ const JobOffers = () => {
   };
 
   return (
-    <SectionJobOffers className="container">
+    <SectionJobOffers>
       <TitleJobOffers>Aktuelle Jobangebote</TitleJobOffers>
       <ListLobOffers>
         <ListItemsLobOffers>

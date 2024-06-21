@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionIndustries = styled.section`
+export const SectionIndustries = styled.div`
   padding-top: 32px;
 `;
 

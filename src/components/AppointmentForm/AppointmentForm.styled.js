@@ -76,6 +76,15 @@ export const Form = styled.form`
 `;
 
 export const Block = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+
   @media screen and (min-width: 1440px) {
     display: flex;
     width: 624px;
