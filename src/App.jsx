@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
+import Loader from "./components/Loader/Loader";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -57,7 +58,7 @@ const App = () => {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Header handleSetActiveLink={handleSetActiveLink} />
         <main>
           <Routes>
