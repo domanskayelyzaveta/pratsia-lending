@@ -25,8 +25,10 @@ import sprite from "../../assets/sprite.svg";
 import { Svg } from "../Header/Header.styled";
 import { useState } from "react";
 import { BtnHero } from "../Hero/Hero.styled";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleContent = (index) => {
@@ -36,19 +38,24 @@ const AboutUs = () => {
   return (
     <SectionAboutUs id="überUns">
       <TitleWrapper>
-        <AboutUsTitle>Über uns</AboutUsTitle>
+        <AboutUsTitle>
+          {t("menuAboutUs")}
+          {/* Über uns */}
+        </AboutUsTitle>
         <AboutUsSubTitle>
-          Wir bauen langfristige und erfolgreiche Partnerschaften auf, die auf
-          Vertrauen und Respekt basieren
+          {t("aboutUsSubTitle")}
+          {/* Wir bauen langfristige und erfolgreiche Partnerschaften auf, die auf
+          Vertrauen und Respekt basieren */}
         </AboutUsSubTitle>
       </TitleWrapper>
       <div className="container">
         <TextAndPhotoDiv>
           <TextAboutUs>
-            Unsere langjährige Erfahrung, unser umfassendes Branchenwissen und
+            {t("aboutUsText")}
+            {/* Unsere langjährige Erfahrung, unser umfassendes Branchenwissen und
             unser internationales Netzwerk ermöglichen es uns, maßgeschneiderte
             Rekrutierungslösungen anzubieten, die den Bedürfnissen unserer
-            Kunden entsprechen
+            Kunden entsprechen */}
           </TextAboutUs>
           <ImgAboutUs src={photo} alt="photo of business meeting"></ImgAboutUs>
         </TextAndPhotoDiv>
@@ -61,16 +68,20 @@ const AboutUs = () => {
                   <Svg>
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
-                  <AboutUsText> Spezialisierung </AboutUsText>
+                  <AboutUsText>
+                    {t("aboutUsItemList1")}
+                    {/* Spezialisierung */}
+                  </AboutUsText>
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 0 && (
                 <div>
                   <AboutUsDescText>
-                    Wir sind spezialisiert auf die Vermittlung von talentierten
+                    {t("spezial_text")}
+                    {/* Wir sind spezialisiert auf die Vermittlung von talentierten
                     Fachkräften in Branchen wie Medizin, Pflege, Sozialarbeit,
                     Facility Management, Sanitär, Elektro und Automechanik / -
-                    mechatronik
+                    mechatronik */}
                   </AboutUsDescText>
                 </div>
               )}
@@ -81,17 +92,21 @@ const AboutUs = () => {
                   <Svg>
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
-                  <AboutUsText>Ein integrierter Ansatz</AboutUsText>
+                  <AboutUsText>
+                    {t("aboutUsItemList2")}
+                    {/* Ein integrierter Ansatz */}
+                  </AboutUsText>
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 1 && (
                 <div>
                   <AboutUsDescText>
-                    Unser ganzheitlicher Ansatz umfasst nicht nur die
+                    {t("ein_text")}
+                    {/* Unser ganzheitlicher Ansatz umfasst nicht nur die
                     Personalvermittlung, sondern auch zusätzliche
                     Dienstleistungen wie vorbereitende und vertiefende
                     Deutschkurse und Unterstützung bei der Anerkennung von
-                    Qualifikationen der jeweiligen Branchen
+                    Qualifikationen der jeweiligen Branchen */}
                   </AboutUsDescText>
                 </div>
               )}
@@ -102,18 +117,22 @@ const AboutUs = () => {
                   <Svg>
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
-                  <AboutUsText>Fundierte Arbeit</AboutUsText>
+                  <AboutUsText>
+                    {t("aboutUsItemList3")}
+                    {/* Fundierte Arbeit */}
+                  </AboutUsText>
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 2 && (
                 <div>
                   <AboutUsDescText>
-                    Fundierte Arbeit Unsere Arbeit basiert auf ethischen
+                    {t("fundierte_text")}
+                    {/* Fundierte Arbeit Unsere Arbeit basiert auf ethischen
                     Geschäftspraktiken und Transparenz in der Kommunikation.
                     Pratsia kann Ihnen helfen, die besten Talente für Ihr
                     Unternehmen zu gewinnen und Ihre Einstellungsziele zu
                     erreichen. Wir helfen Ihnen, eine reibungslose Integration
-                    in den deutschen Arbeitsmarkt zu gewährleisten
+                    in den deutschen Arbeitsmarkt zu gewährleisten */}
                   </AboutUsDescText>
                 </div>
               )}
@@ -125,19 +144,24 @@ const AboutUs = () => {
           <TextAndPhotoDiv>
             <ImgAboutUs src={meeting}></ImgAboutUs>
             <WerdenSieDiv>
-              <AboutSubTitle>Werden Sie Teil des Teams!</AboutSubTitle>
+              <AboutSubTitle>
+                {t("teilTeam")}
+                {/* Werden Sie Teil des Teams! */}
+              </AboutSubTitle>
               <AboutUsDescText>
-                Auf der Suche nach neuen beruflichen Herausforderungen? Unser
+                {t("teilTeamText")}
+                {/* Auf der Suche nach neuen beruflichen Herausforderungen? Unser
                 Personalvermittlungsunternehmen bietet spannende
-                Karrieremöglichkeiten in verschiedenen Branchen.
+                Karrieremöglichkeiten in verschiedenen Branchen. */}
               </AboutUsDescText>
             </WerdenSieDiv>
           </TextAndPhotoDiv>
 
           <HighlightedText>
-            Bewerben Sie sich jetzt und entdecken Sie Ihre Zukunft mit uns!
+            {t("teilTeamSubText")}
+            {/* Bewerben Sie sich jetzt und entdecken Sie Ihre Zukunft mit uns! */}
           </HighlightedText>
-          <BtnHero>Interviewtermin</BtnHero>
+          <BtnHero> {t("btn")}</BtnHero>
         </AboutUsDescriptionPartDiv>
       </div>
     </SectionAboutUs>

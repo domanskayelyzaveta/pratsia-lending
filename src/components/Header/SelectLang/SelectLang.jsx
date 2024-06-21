@@ -4,6 +4,7 @@ import {
   CustomDropdownIndicator,
   customStyles,
 } from "../CustomDropdownIndicator/CustomDropdownIndicator";
+import i18n from "../../../i18n";
 
 const SelectLang = () => {
   const options = [
@@ -23,6 +24,10 @@ const SelectLang = () => {
       default:
         return null;
     }
+  };
+
+  const handleChangeLanguage = (selectedOption) => {
+    i18n.changeLanguage(selectedOption.value);
   };
 
   const CustomOption = (props) => {
@@ -54,9 +59,7 @@ const SelectLang = () => {
       options={options}
       styles={customStyles}
       defaultValue={options.find((option) => option.value === "de")}
-      // menuIsOpen={true}
-
-      // onChange={handleChangeLanguage}
+      onChange={handleChangeLanguage}
       // value={selectedLanguage}
     />
   );
