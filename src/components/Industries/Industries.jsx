@@ -38,7 +38,7 @@ const Industries = () => {
   }, [isVisible]);
 
   return (
-    <SectionIndustries className="container">
+    <SectionIndustries>
       <TitleIndustries>Branchen</TitleIndustries>
       <IndustriesList>
         {industriesData.map((industry, index) => (
