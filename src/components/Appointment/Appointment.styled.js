@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const SectionAppointment = styled.section`
-  width: 100vw;
+  width: 100%;
   margin: 0;
-  max-width: fit-content;
   padding: 32px 0 0 0;
 
   @media screen and (min-width: 768px) {
@@ -37,7 +36,7 @@ export const TitleAppointment = styled.h2`
 export const Bg = styled.div`
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   padding: 20px;
   margin-top: 20px;
   background-color: var(--beige-200);
