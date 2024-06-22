@@ -3,18 +3,22 @@ import { ImgAboutUs } from "../AboutUs/AboutUs.styled";
 import {
   BtnIndustries,
   IndustriesList,
+  IndustryListItems,
   SectionIndustries,
   SlideWrapper,
+  SubTextSlider,
   TextIndustries,
   TextShowMore,
   TextSlider,
   TitleIndustries,
 } from "./Industries.styled";
-import sprite from "../../assets/sprite.svg";
+import sprite from "../../assets/sprite.svg"; // Путь к вашему спрайту
 import { Svg } from "../Header/Header.styled";
 import { industriesData } from "./industriesData";
+import { useTranslation } from "react-i18next";
 
 const Industries = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState([]);
   const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
@@ -39,7 +43,7 @@ const Industries = () => {
 
   return (
     <SectionIndustries>
-      <TitleIndustries>Branchen</TitleIndustries>
+      <TitleIndustries>{t("branchenTitle")}</TitleIndustries>
       <IndustriesList>
         {industriesData.map((industry, index) => (
           <li key={index}>
@@ -78,6 +82,13 @@ const Industries = () => {
                 height={heights[index]}
               >
                 <TextSlider>{industry.description}</TextSlider>
+                <ul>
+                  {Array.isArray(industry.list) &&
+                    industry.list.map((item, idx) => (
+                      <IndustryListItems key={idx}>{item}</IndustryListItems>
+                    ))}
+                </ul>
+                <SubTextSlider>{industry.text}</SubTextSlider>
               </SlideWrapper>
             </div>
           </li>
