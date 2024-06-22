@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
 import Loader from "./components/Loader/Loader";
+import "./i18n";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
