@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SectionAppointment = styled.section`
   width: 100vw;
-  max-width: max-content;
+  margin: 0;
+  max-width: fit-content;
   padding: 32px 0 0 0;
 
   @media screen and (min-width: 768px) {
