@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Select from "react-select";
@@ -19,8 +19,12 @@ import customStyles from "./FormCustomStyles";
 import { formaSchema } from "../../helpers/validation";
 import { options, optionsTime } from "../../helpers/optionsSelect";
 import FormField from "./FormField";
+import Modal from "../Modal/Modal";
+import MessageForm from "../Modal/MessageForm/MessageForm";
 
 const AppointmentForm = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [status, setStatus] = useState(null);
   const {
     control,
     register,
@@ -33,8 +37,16 @@ const AppointmentForm = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
+    try {
+      console.log(data);
+      setStatus("success");
+      reset();
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    } finally {
+      setShowModal(true);
+    }
   };
 
   return (
@@ -190,6 +202,10 @@ const AppointmentForm = () => {
         </Block>
         <BtnForm type="submit">Absenden</BtnForm>
       </Form>
+
+      <Modal show={showModal} handleClose={() => setShowModal(false)}>
+        <MessageForm status={status} />
+      </Modal>
     </SectionAppointmentForm>
   );
 };
