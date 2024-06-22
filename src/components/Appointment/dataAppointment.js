@@ -1,7 +1,7 @@
 export const dataAppointment = [
   {
     icon: "icon-info-square-Max",
-    text1: "appointment.questions",
+    text1: "Haben Sie Fragen?",
     text2: "Wir geben Antworten",
   },
   {

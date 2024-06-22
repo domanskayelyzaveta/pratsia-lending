@@ -43,6 +43,7 @@ const ForApplicants = () => {
               <Svg
                 style={{
                   transform: isOpen === 0 ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
                 }}
               >
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -71,6 +72,7 @@ const ForApplicants = () => {
               <Svg
                 style={{
                   transform: isOpen === 1 ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
                 }}
               >
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -103,6 +105,7 @@ const ForApplicants = () => {
               <Svg
                 style={{
                   transform: isOpen === 2 ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
                 }}
               >
                 <use href={`${sprite}#icon-chevron-bar`}></use>

@@ -6,13 +6,20 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   de: {
     translation: {
+      // Header
       telefon: "Telefon",
-      menuStart: "Starseite",
-      menuAboutUs: "Über uns",
-      menuForCompanies: "Für Unternehmen",
-      menuForApp: "Für Bewerber",
-      menuAppointment: "Interviewtermin",
-      menuContact: "Kontakt",
+
+      nav: {
+        menuStart: "Starseite",
+        menuAboutUs: "Über uns",
+        menuForCompanies: "Für Unternehmen",
+        menuForApp: "Für Bewerber",
+        menuAppointment: "Interviewtermin",
+        menuContact: "Kontakt",
+      },
+
+      // Hero
+
       heroTitle: "Entdecken Sie Pratsia",
       slogan: "Deine Karriere - Unsere Mission",
       textHero:
@@ -42,9 +49,9 @@ const resources = {
       teilTeamSubText:
         "Bewerben Sie sich jetzt und entdecken Sie Ihre Zukunft mit uns!",
 
-      // Für Unternehment
+      // Für Unternehmen
 
-      forUnternehmentTitle: "Für Unternehment",
+      forUnternehmentTitle: "Für Unternehmen",
       unternehmentText1: "Ethische Standards",
       unternehmentText2: "Transparenz in allen Geschäftsbeziehungen",
       unternehmentText3: "Hochwertiger Einstellungsprozess",
@@ -84,149 +91,150 @@ const resources = {
       pflegeJobList7: "Keine Perspektive auf eine Führungsposition",
       duSuchstInDE:
         "Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen. Wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
+
+      medizin: "Medizin",
+      medizinText:
+        "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden?",
+      medizinJobText:
+        "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      medizinJobList1: "Fachkräftemangel in den Einrichtungen",
+      medizinJobList2: "Bürokratie und administrative Belastung",
+      medizinJobList3: "Mangel an Zeit für Patienten",
+      medizinJobList4: "Vereinbarkeit von Familie und Beruf",
+      medizinJobList5: "Unzureichende Digitalisierung",
+      medizinJobList6: "Fehlende Weiterbildungsmöglichkeiten",
+      medizinJobList7: "Unterfinanzierung des Gesundheitswesens",
+
+      sozialarbeit: "Sozialarbeit",
+      sozialarbeitText:
+        "Im Bereich Soziales & Pädagogik steht der Mensch stets im Zentrum des Handelns. Weiterlesen",
+      sozialarbeitJobText:
+        "Egal, ob in der Kindererziehung oder der Erwachsenenbildung – die Arbeit mit Menschen benötigt ein ganz besonderes Feingefühl. Um Erwachsene, Jugendliche oder Kinder richtig zu begleiten, braucht es die richtige Mischung aus Empathie und Fachwissen. Wir wissen genau, worauf es bei sozialen und pädagogischen Berufen ankommt und bieten Ihnen qualifiziertes Personal, das immer das richtige Händchen hat und auch in stressigen Situationen die Ruhe bewahrt.Bist Du Erzieher / in, Sozialpädagoge /in, Heilerziehungspfleger / in, Kinderpfleger / in und suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! ",
+
+      technik: "Technik und Logistik",
+      technikText:
+        "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? ",
+      technikJobText:
+        "Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen. Bist du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+
+      facility: "Facility",
+      facilityText:
+        "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
+      facilityJobText:
+        " Die Vermittlung von technischen Fachkräften – egal ob zur Planung, Wartung, Instandhaltung, Energiemanagement oder Betrieb der kompletten technischen Infrastruktur von Immobilien – gehört zu unsere Domäne.Du bist Facility Manager/in oder Objektleiter / in? Oder Du bist direkt beim Kunden vor Ort als Anlagenmechaniker/in HKLS, Servicetechniker / in HKLS, Elektriker / in oder Kälteanlagenmechaniker / in im Einsatz? Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+
+      sanitar: "Sanitär",
+      sanitarText:
+        "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland. ",
+      sanitarJobText:
+        "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!Einstürzen",
+
+      mechanik: "Automechanik / mechatronik",
+      mechanikText:
+        "Zünde jetzt deinen Karriere-Booster, mit uns erhältst du Zugang zum exklusiven Jobmarkt – kostenlos und für dich maßgeschneidert.",
+      mechanikJobText:
+        "Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig!",
+
+      // * Aktuelle Jobangebote
+
+      aktuelleJob: "Aktuelle Jobangebote",
+      aktuelleJobItem1:
+        "Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum /Altenheim)",
+      aktuelleJobItem1T:
+        "Stundenlohn 24-28 € je nach Berufserfahrung, ob Sie in ganz Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100% , 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
+
+      aktuelleJobItem2:
+        "Fachkraft in Zeitarbeitfirma (Einsatzort - Krankenhaus /Klinikum)",
+      aktuelleJobItem2T:
+        "Stundenlohn 30-34 € je nach Berufserfahrung, ob Sie in ganz Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
+
+      aktuelleJobItem3:
+        "Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)",
+      aktuelleJobItem3T:
+        "Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
+
+      aktuelleJobItem4:
+        "Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum / Altenheim /Klinikum)",
+      aktuelleJobItem4T:
+        "Stundenlohn 17 €. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
+
+      aktuelleJobItem5:
+        "Arzthelferin in Gynäkologie (41061 Mönchengladbach) ab 1.07.2024",
+      aktuelleJobItem5T:
+        "Stundenlohn 25€. Midivertrag / 2 Vormittage pro Woche",
+
+      appointment: {
+        questions: "Haben Sie Fragen?",
+        answers: "Wir geben Antworten",
+        problem: "Haben Sie ein Problem?",
+        solutions: "Wir finden Lösungen",
+        certificate: "Brauchen Sie Urkunde?",
+        organize: "Wir organisieren das",
+      },
+
+      beraten: "Wir beraten Sie gerne persönlich!",
+      vereinbaren: "Vereinbaren Sie einen Termin mit uns",
+
+      // FORMA
+
+      label1: "Firma",
+      placeholder1: "Firma",
+
+      label2: "Anrede",
+      placeholder2: "Auswählen",
+      select1H: "Herr",
+      select1F: "Frau",
+
+      label3: "Vorname",
+      placeholder3: "Vorname",
+
+      label4: "Nachname",
+      placeholder4: "Nachname",
+
+      label5: "E-Mail",
+      placeholder5: "E-Mail",
+
+      label6: "Telefon",
+      placeholder6: "Telefon",
+
+      label7: "Ihr Wunschtermin",
+      placeholder7: "Datum wählen",
+
+      label8: "Gewünschte Zeit",
+      placeholder8: "",
+      select3N: "Nachmittag",
+      select3V: "Vormittag",
+
+      label9: "Nachricht",
+      placeholder9: "Thema des Termins",
+
+      // Calendar
+
+      sun: "Sonntag",
+      mon: "Montag",
+      tue: "Dienstag",
+      wed: "Mittwoch",
+      thu: "Donnerstag",
+      fri: "Freitag",
+      sat: "Samstag",
+
+      jan: "Januar",
+      feb: "Februar",
+      mar: "März",
+      apr: "April",
+      may: "Mai",
+      jun: "Juni",
+      jul: "Juli",
+      aug: "August",
+      sep: "September",
+      oct: "Oktober",
+      nov: "November",
+      dec: "Dezember",
+
+      // Map
+
+      location: "Wir sind in Krefeld, unsere Arbeit ist überall",
     },
-
-    medizin: "Medizin",
-    medizinText:
-      "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden?",
-    pflegeJobText:
-      "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
-    medizinJobList1: "Fachkräftemangel in den Einrichtungen",
-    medizinJobList2: "Bürokratie und administrative Belastung",
-    medizinJobList3: "Mangel an Zeit für Patienten",
-    medizinJobList4: "Vereinbarkeit von Familie und Beruf",
-    medizinJobList5: "Unzureichende Digitalisierung",
-    medizinJobList6: "Fehlende Weiterbildungsmöglichkeiten",
-    medizinJobList7: "Unterfinanzierung des Gesundheitswesens",
-
-    sozialarbeit: "Sozialarbeit",
-    sozialarbeitText:
-      "Im Bereich Soziales & Pädagogik steht der Mensch stets im Zentrum des Handelns. Weiterlesen",
-    sozialarbeitJobText:
-      "Egal, ob in der Kindererziehung oder der Erwachsenenbildung – die Arbeit mit Menschen benötigt ein ganz besonderes Feingefühl. Um Erwachsene, Jugendliche oder Kinder richtig zu begleiten, braucht es die richtige Mischung aus Empathie und Fachwissen. Wir wissen genau, worauf es bei sozialen und pädagogischen Berufen ankommt und bieten Ihnen qualifiziertes Personal, das immer das richtige Händchen hat und auch in stressigen Situationen die Ruhe bewahrt.Bist Du Erzieher / in, Sozialpädagoge /in, Heilerziehungspfleger / in, Kinderpfleger / in und suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! ",
-
-    technik: "Technik und Logistik",
-    technikText:
-      "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? ",
-    technikJobText:
-      "Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen. Bist du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-
-    facility: "Facility",
-    facilityText:
-      "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
-    facilityJobText:
-      " Die Vermittlung von technischen Fachkräften – egal ob zur Planung, Wartung, Instandhaltung, Energiemanagement oder Betrieb der kompletten technischen Infrastruktur von Immobilien – gehört zu unsere Domäne.Du bist Facility Manager/in oder Objektleiter / in? Oder Du bist direkt beim Kunden vor Ort als Anlagenmechaniker/in HKLS, Servicetechniker / in HKLS, Elektriker / in oder Kälteanlagenmechaniker / in im Einsatz? Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-
-    sanitar: "Sanitär",
-    sanitarText:
-      "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland. ",
-    sanitarJobText:
-      "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!Einstürzen",
-
-    mechanik: "Automechanik / mechatronik",
-    mechanikText:
-      "Zünde jetzt deinen Karriere-Booster, mit uns erhältst du Zugang zum exklusiven Jobmarkt – kostenlos und für dich maßgeschneidert.",
-    mechanikJobText:
-      "Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig!",
-
-    // * Aktuelle Jobangebote
-
-    aktuelleJob: "Aktuelle Jobangebote",
-    aktuelleJobItem1:
-      "Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum /Altenheim)",
-    aktuelleJobItem1T:
-      "Stundenlohn 24-28 € je nach Berufserfahrung, ob Sie in ganz Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100% , 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
-
-    aktuelleJobItem2:
-      "Fachkraft in Zeitarbeitfirma (Einsatzort - Krankenhaus /Klinikum)",
-    aktuelleJobItem2T:
-      "Stundenlohn 30-34 € je nach Berufserfahrung, ob Sie in ganz Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
-
-    aktuelleJobItem3:
-      "Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)",
-    aktuelleJobItem3T:
-      "Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
-
-    aktuelleJobItem4:
-      "Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum / Altenheim /Klinikum)",
-    aktuelleJobItem4T:
-      "Stundenlohn 17 €. Möglichkeit, einen Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung + Unterkunft.",
-
-    aktuelleJobItem5:
-      "Arzthelferin in Gynäkologie (41061 Mönchengladbach) ab 1.07.2024",
-    aktuelleJobItem5T: "Stundenlohn 25€. Midivertrag / 2 Vormittage pro Woche",
-
-    appointment: {
-      questions: "Haben Sie Fragen?",
-      answers: "Wir geben Antworten",
-      problem: "Haben Sie ein Problem?",
-      solutions: "Wir finden Lösungen",
-      certificate: "Brauchen Sie Urkunde?",
-      organize: "Wir organisieren das",
-    },
-
-    beraten: "Wir beraten Sie gerne persönlich!",
-    vereinbaren: "Vereinbaren Sie einen Termin mit uns",
-
-    // FORMA
-
-    label1: "Firma",
-    placeholder1: "Firma",
-
-    label2: "Anrede",
-    placeholder2: "Auswählen",
-    select1H: "Herr",
-    select1F: "Frau",
-
-    label3: "Vorname",
-    placeholder3: "Vorname",
-
-    label4: "Nachname",
-    placeholder4: "Nachname",
-
-    label5: "E-Mail",
-    placeholder5: "E-Mail",
-
-    label6: "Telefon",
-    placeholder6: "Telefon",
-
-    label7: "Ihr Wunschtermin",
-    placeholder7: "Datum wählen",
-
-    label8: "Gewünschte Zeit",
-    placeholder8: "",
-    select3N: "Nachmittag",
-    select3V: "Vormittag",
-
-    label9: "Nachricht",
-    placeholder9: "Thema des Termins",
-
-    // Calendar
-
-    sun: "Sonntag",
-    mon: "Montag",
-    tue: "Dienstag",
-    wed: "Mittwoch",
-    thu: "Donnerstag",
-    fri: "Freitag",
-    sat: "Samstag",
-
-    jan: "Januar",
-    feb: "Februar",
-    mar: "März",
-    apr: "April",
-    may: "Mai",
-    jun: "Juni",
-    jul: "Juli",
-    aug: "August",
-    sep: "September",
-    oct: "Oktober",
-    nov: "November",
-    dec: "Dezember",
-
-    // Map
-
-    location: "Wir sind in Krefeld, unsere Arbeit ist überall",
   },
 
   // UKRAINIAN
@@ -234,12 +242,16 @@ const resources = {
   ua: {
     translation: {
       telefon: "Телефон",
-      menuStart: "Головна сторінка",
-      menuAboutUs: "Про нас",
-      menuForCompanies: "Для компаній",
-      menuForApp: "Для кандидатів",
-      menuAppointment: "Запис на співбесіду",
-      menuContact: "Контакти",
+
+      nav: {
+        menuStart: "Головна сторінка",
+        menuAboutUs: "Про нас",
+        menuForCompanies: "Для компаній",
+        menuForApp: "Для кандидатів",
+        menuAppointment: "Запис на співбесіду",
+        menuContact: "Контакти",
+      },
+
       heroTitle: "Відкрийте 'Pratsia'",
       slogan: "Ваша кар'єра - Наша місія",
       textHero:
@@ -460,12 +472,16 @@ const resources = {
   ru: {
     translation: {
       telefon: "Телефон",
-      menuStart: "Главная страница",
-      menuAboutUs: "О нас",
-      menuForCompanies: "Для компаний",
-      menuForApp: "Для кандидатов",
-      menuAppointment: "Запись на собеседование",
-      menuContact: "Контакты",
+
+      nav: {
+        menuStart: "Главная страница",
+        menuAboutUs: "О нас",
+        menuForCompanies: "Для компаний",
+        menuForApp: "Для кандидатов",
+        menuAppointment: "Запись на собеседование",
+        menuContact: "Контакты",
+      },
+
       heroTitle: "Откройте 'Pratsia'",
       slogan: "Ваша карьера - Наша миссия",
       textHero:

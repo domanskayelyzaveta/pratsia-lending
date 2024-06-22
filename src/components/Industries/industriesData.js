@@ -12,14 +12,34 @@ export const industriesData = [
     image: pflege,
     alt: "care photo",
     description:
-      "Als Pflegefachkraft in Deutschland möchtest du stets eine angemessene Versorgung der Patienten sicherstellen, mehr Anerkennung für deine tägliche Arbeit erhalten und in einem Job arbeiten, der deine Entwicklung fördert, wobei 'Work-Life-Balance' mehr als nur ein Schlagwort ist. Dabei bist du sicherlich auf folgende Herausforderungen gestoßen: Personalmangel, hoher bürokratischer Aufwand, mangelnde Wertschätzung, niedrige Vergütung, fehlende Weiterbildungsmöglichkeiten, schlechte Arbeitsbedingungen und keine Perspektive auf eine Führungsposition. Suchst du eine Veränderung oder einen guten Start in Deutschland? Dann könnte ein Umzug oder Wechsel genau das Richtige für dich sein! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen und wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
+      "Als Pflegefachkraft in Deutschland möchtest du stets eine angemessene Versorgung der Patienten sicherstellen, mehr Anerkennung für deine tägliche Arbeit erhalten und in einem Job arbeiten, der deine Entwicklung fördert, wobei 'Work-Life-Balance' mehr als nur ein Schlagwort ist. Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+    list: [
+      "Personalmangel",
+      "Hoher bürokratischer Aufwand",
+      "Mangelnde Wertschätzung",
+      "Niedrige Vergütung",
+      "Fehlende Weiterbildungsmöglichkeiten",
+      "Schlechte Arbeitsbedingungen",
+      "Keine Perspektive auf eine Führungsposition",
+    ],
+    text: "Suchst du eine Veränderung oder einen guten Start in Deutschland? Dann könnte ein Umzug oder Wechsel genau das Richtige für dich sein! Mit Pratsia Recruiting wirst du bei den Top- Arbeitgebern des Landes vorgeschlagen und wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
   },
   {
     title: "Medizin",
     image: medizin,
     alt: "medicine photo",
     description:
-      "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen: Fachkräftemangel in den Einrichtungen, Bürokratie und administrative Belastung, Mangel an Zeit für Patienten, Vereinbarkeit von Familie und Beruf, Unzureichende Digitalisierung, Fehlende Weiterbildungsmöglichkeiten, Unterfinanzierung des Gesundheitswesens. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen. Wir suchen für dich einen idealen Arbeitgeber, der deinen Erwartungen gerecht wird.",
+      "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+    list: [
+      "Fachkräftemangel in den Einrichtungen",
+      "Bürokratie und administrative Belastung",
+      "Mangel an Zeit für Patienten",
+      "Vereinbarkeit von Familie und Beruf",
+      "Unzureichende Digitalisierung",
+      "Fehlende Weiterbildungsmöglichkeiten",
+      "Unterfinanzierung des Gesundheitswesens",
+    ],
+    text: " Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top- Arbeitgebern des Landes vorgeschlagen.Wir suchen für dich einen idealen Arbeitgeber, der deinen Erwartungen gerecht wird.",
   },
   {
     title: "Sozialarbeit",

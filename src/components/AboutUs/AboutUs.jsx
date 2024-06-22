@@ -39,7 +39,7 @@ const AboutUs = () => {
     <SectionAboutUs id="überUns">
       <TitleWrapper>
         <AboutUsTitle>
-          {t("menuAboutUs")}
+          {t("aboutUsSect")}
           {/* Über uns */}
         </AboutUsTitle>
         <AboutUsSubTitle>
@@ -65,9 +65,16 @@ const AboutUs = () => {
             <ListItem>
               <BtnListAboutUs onClick={() => toggleContent(0)}>
                 <ListWrapper>
-                  <Svg>
+                  <Svg
+                    style={{
+                      transform:
+                        isOpen === 0 ? "rotate(180deg)" : "rotate(0deg)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
+
                   <AboutUsText>
                     {t("aboutUsItemList1")}
                     {/* Spezialisierung */}
@@ -89,7 +96,13 @@ const AboutUs = () => {
             <ListItem>
               <BtnListAboutUs onClick={() => toggleContent(1)}>
                 <ListWrapper>
-                  <Svg>
+                  <Svg
+                    style={{
+                      transform:
+                        isOpen === 1 ? "rotate(180deg)" : "rotate(0deg)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
                   <AboutUsText>
@@ -114,7 +127,13 @@ const AboutUs = () => {
             <ListItem>
               <BtnListAboutUs onClick={() => toggleContent(2)}>
                 <ListWrapper>
-                  <Svg>
+                  <Svg
+                    style={{
+                      transform:
+                        isOpen === 2 ? "rotate(180deg)" : "rotate(0deg)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
                     <use href={`${sprite}#icon-chevron-bar`}></use>
                   </Svg>
                   <AboutUsText>
