@@ -67,6 +67,8 @@ const resources = {
       unterstutzung:
         "Um den Bedürfnissen und Anforderungen beider Seiten optimal gerecht zu werden, legt die Agentur für Arbeit großen Wert auf eine individuelle Betreuung sowohl der Unternehmen als auch der Arbeitnehmer. Dazu gehört die Beratung und Unterstützung bei Visa- und Einwanderungsverfahren, einschließlich der Erlangung von Arbeits - und Aufenthaltsgenehmigungen, sowie die Unterstützung bei Umzugsvorbereitungen, Wohnungssuche und anderen praktischen Aspekten des Umzugs nach Deutschland.",
 
+      // * Branchen
+
       branchenTitle: "Branchen",
       pflege: "Pflege",
       pflegeText:
@@ -127,6 +129,8 @@ const resources = {
     mechanikJobText:
       "Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig!",
 
+    // * Aktuelle Jobangebote
+
     aktuelleJob: "Aktuelle Jobangebote",
     aktuelleJobItem1:
       "Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum /Altenheim)",
@@ -152,13 +156,14 @@ const resources = {
       "Arzthelferin in Gynäkologie (41061 Mönchengladbach) ab 1.07.2024",
     aktuelleJobItem5T: "Stundenlohn 25€. Midivertrag / 2 Vormittage pro Woche",
 
-    interviewtermin: "Interviewtermin",
-    fragen: "Haben Sie Fragen?",
-    antw: "Wir geben Antworten",
-    problem: "Haben Sie ein Problem?",
-    losungen: "Wir finden Lösungen",
-    urkunde: "Brauchen Sie Urkunde?",
-    organiz: "Wir organisieren das",
+    appointment: {
+      questions: "Haben Sie Fragen?",
+      answers: "Wir geben Antworten",
+      problem: "Haben Sie ein Problem?",
+      solutions: "Wir finden Lösungen",
+      certificate: "Brauchen Sie Urkunde?",
+      organize: "Wir organisieren das",
+    },
 
     beraten: "Wir beraten Sie gerne persönlich!",
     vereinbaren: "Vereinbaren Sie einen Termin mit uns",
@@ -373,13 +378,16 @@ const resources = {
       aktuelleJobItem5T:
         "Погодинна оплата 25 євро. Часткова зайнятість / 2 передполудні на тиждень.",
 
-      interviewtermin: "Записатися на співбесіду",
-      fragen: "Маєте питання?",
-      antw: "Ми надаємо відповіді",
-      problem: "У вас є проблема?",
-      losungen: "Ми знаходимо рішення",
-      urkunde: "Потрібен сертифікат?",
-      organiz: "Ми це організуємо.",
+      // Appointment
+
+      appointment: {
+        questions: "Маєте питання?",
+        answers: "Ми надамо відповіді",
+        problem: "У вас є проблема??",
+        solutions: "Ми знаходимо рішення",
+        certificate: "Потрібен сертифікат?",
+        organize: "Ми це організуємо.",
+      },
 
       beraten: "Ми з радістю проконсультуємо особисто!",
       vereinbaren: "Запишіться на зустріч з нами",
@@ -573,12 +581,16 @@ const resources = {
       aktuelleJobItem5T:
         "Почасовая оплата 25 евро. Частичная занятость / 2 дополуденных смены в неделю.",
       interviewtermin: "Записаться на собеседование",
-      fragen: "Есть вопросы?",
-      antw: "Мы предоставляем ответы",
-      problem: "У вас есть проблема?",
-      losungen: "Мы находим решения",
-      urkunde: "Нужен сертификат?",
-      organiz: "Мы это организуем.",
+
+      appointment: {
+        questions: "Есть вопросы?",
+        answers: "Мы предоставляем ответы",
+        problem: "У вас есть проблема?",
+        solutions: "Мы находим решения",
+        certificate: "Нужен сертификат?",
+        organize: "Мы это организуем.",
+      },
+
       beraten: "Мы с радостью проконсультируем лично!",
       vereinbaren: "Запишитесь на встречу с нами",
 

@@ -10,8 +10,10 @@ import {
   SubTitleJobOffers,
   TitleJobOffers,
 } from "./JobOffers.styled";
+import { useTranslation } from "react-i18next";
 
 const JobOffers = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(null);
 
   const toggleContent = (index) => {
@@ -20,7 +22,10 @@ const JobOffers = () => {
 
   return (
     <SectionJobOffers>
-      <TitleJobOffers>Aktuelle Jobangebote</TitleJobOffers>
+      <TitleJobOffers>
+        {t("aktuelleJob")}
+        {/* Aktuelle Jobangebote */}
+      </TitleJobOffers>
       <ListLobOffers>
         <ListItemsLobOffers>
           <BtnJobOffers onClick={() => toggleContent(0)}>
@@ -32,19 +37,21 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers>
-              Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
-              Altenheim)
+              {t("aktuelleJobItem1")}
+              {/* Fachkraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
+              Altenheim) */}
             </SubTitleJobOffers>
           </BtnJobOffers>
 
           {isOpen === 0 && (
             <p>
-              Stundenlohn 24-28 € je nach Berufserfahrung, ob Sie in ganz
+              {t("aktuelleJobItem1T")}
+              {/* Stundenlohn 24-28 € je nach Berufserfahrung, ob Sie in ganz
               Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen
               Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen -
               Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%,
               Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub,
-              Arbeitszeitkonto, Verpflegung +Unterkunft.
+              Arbeitszeitkonto, Verpflegung +Unterkunft. */}
             </p>
           )}
         </ListItemsLobOffers>
@@ -58,17 +65,19 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers onClick={() => toggleContent(1)}>
-              Fachkraft in Zeitarbeitfirma (Einsatzort - Krankenhaus/Klinikum)
+              {t("aktuelleJobItem2")}
+              {/* Fachkraft in Zeitarbeitfirma (Einsatzort - Krankenhaus/Klinikum) */}
             </SubTitleJobOffers>
           </BtnJobOffers>
           {isOpen === 1 && (
             <p>
-              Stundenlohn 30-34 € je nach Berufserfahrung, ob Sie in ganz
+              {t("aktuelleJobItem2T")}
+              {/* Stundenlohn 30-34 € je nach Berufserfahrung, ob Sie in ganz
               Deutschland oder nur in Ihrer Region arbeiten. Möglichkeit, einen
               Firmenwagen zu bekommen, wenn Sie Ihr eigenes Auto benutzen -
               Erstattung von 30 Cent pro Kilometer. Zuschläge: Samstag 25%,
               Sonntag 50%, Nacht 25%, Feiertage 100%, 30 Tage Urlaub,
-              Arbeitszeitkonto, Verpflegung +Unterkunft.
+              Arbeitszeitkonto, Verpflegung +Unterkunft. */}
             </p>
           )}
         </ListItemsLobOffers>
@@ -82,15 +91,17 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers onClick={() => toggleContent(2)}>
-              Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)
+              {t("aktuelleJobItem3")}
+              {/* Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus) */}
             </SubTitleJobOffers>
           </BtnJobOffers>
           {isOpen === 2 && (
             <p>
-              Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom
+              {t("aktuelleJobItem3T")}
+              {/* Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom
               anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie
               während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch
-              eine Unterkunft zur Verfügung gestellt.
+              eine Unterkunft zur Verfügung gestellt. */}
             </p>
           )}
         </ListItemsLobOffers>
@@ -105,17 +116,19 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers onClick={() => toggleContent(3)}>
-              Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
-              Altenheim/ Klinikum)
+              {t("aktuelleJobItem4")}
+              {/* Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum/
+              Altenheim/ Klinikum) */}
             </SubTitleJobOffers>
           </BtnJobOffers>
           {isOpen === 3 && (
             <p>
-              Stundenlohn 17 €. Möglichkeit, einen Firmenwagen zu bekommen, wenn
+              {t("aktuelleJobItem4T")}
+              {/* Stundenlohn 17 €. Möglichkeit, einen Firmenwagen zu bekommen, wenn
               Sie Ihr eigenes Auto benutzen - Erstattung von 30 Cent pro
               Kilometer. Zuschläge: Samstag 25%, Sonntag 50%, Nacht 25%,
               Feiertage 100%, 30 Tage Urlaub, Arbeitszeitkonto, Verpflegung +
-              Unterkunft.
+              Unterkunft. */}
             </p>
           )}
         </ListItemsLobOffers>
@@ -130,11 +143,15 @@ const JobOffers = () => {
               <use href={`${sprite}#icon-chevron-bar`}></use>
             </Svg>
             <SubTitleJobOffers onClick={() => toggleContent(4)}>
-              Arzthelferin in Gynäkologie (41061 Mönchengladbach) ab 1.07.2024
+              {t("aktuelleJobItem5")}
+              {/* Arzthelferin in Gynäkologie (41061 Mönchengladbach) ab 1.07.2024 */}
             </SubTitleJobOffers>
           </BtnJobOffers>
           {isOpen === 4 && (
-            <p>Stundenlohn 25€. Midivertrag / 2 Vormittage pro Woche</p>
+            <p>
+              {t("aktuelleJobItem5T")}
+              {/* Stundenlohn 25€. Midivertrag / 2 Vormittage pro Woche */}
+            </p>
           )}
         </ListItemsLobOffers>
       </ListLobOffers>
