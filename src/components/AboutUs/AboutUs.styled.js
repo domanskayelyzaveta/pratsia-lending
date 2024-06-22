@@ -56,7 +56,7 @@ export const TextAndPhotoDiv = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    flex-direction: row;
+    align-items: flex-start;
   }
 `;
 
@@ -91,6 +91,7 @@ export const ImgAboutUs = styled.img`
     border-radius: 16px;
     margin-bottom: 0px;
   }
+
   @media screen and (min-width: 1440px) {
     width: 624px;
     height: 320px;
@@ -126,11 +127,26 @@ export const AboutUsList = styled.ul`
 
   @media screen and (min-width: 768px) {
     margin-top: 24px;
+    margin-bottom: 40px;
+    gap: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    margin-bottom: 56px;
   }
 `;
 
 export const ListItem = styled.li`
-  //   display: flex;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--blue-100);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 12px;
+  }
 `;
 
 export const AboutUsText = styled.p`
@@ -155,6 +171,10 @@ export const AboutUsDescText = styled.p`
     font-size: 20px;
     width: 348px;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 624px;
+  }
 `;
 
 export const AboutSubTitle = styled.h3`
@@ -178,6 +198,14 @@ export const HighlightedText = styled.p`
     font-size: 20px;
     color: var(--blue-dark);
   }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 232px;
+    left: 0px;
+
+    width: 518px;
+  }
 `;
 
 export const AboutUsDescriptionPartDiv = styled.div`
@@ -189,10 +217,18 @@ export const AboutUsDescriptionPartDiv = styled.div`
     gap: 40px;
     align-items: center;
   }
+  @media screen and (min-width: 1440px) {
+    position: relative;
+  }
 `;
 
 export const WerdenSieDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 28px;
+    gap: 24px;
+  }
 `;

@@ -54,7 +54,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61560061553623"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Facebook"
@@ -66,7 +66,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/pratsia_recruiting/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Instagram"
