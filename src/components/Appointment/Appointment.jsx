@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import sprite from "../../assets/sprite.svg";
 import {
   Bg,
@@ -11,9 +12,10 @@ import {
 import { dataAppointment } from "./dataAppointment";
 
 const Appointment = () => {
+  const { t } = useTranslation();
   return (
     <SectionAppointment id="interviewtermin" className="container">
-      <TitleAppointment>Interviewtermin</TitleAppointment>
+      <TitleAppointment>{t("btn")}</TitleAppointment>
       <Bg>
         <ListAppointment>
           {dataAppointment.map(({ icon, text1, text2 }) => (
