@@ -14,7 +14,7 @@ import { dataAppointment } from "./dataAppointment";
 const Appointment = () => {
   const { t } = useTranslation();
   return (
-    <SectionAppointment id="interviewtermin" className="container">
+    <SectionAppointment id="interviewtermin">
       <TitleAppointment>{t("btn")}</TitleAppointment>
       <Bg>
         <ListAppointment>
