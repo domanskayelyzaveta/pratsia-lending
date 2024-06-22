@@ -12,7 +12,7 @@ import {
   TextSlider,
   TitleIndustries,
 } from "./Industries.styled";
-import sprite from "../../assets/sprite.svg"; // Путь к вашему спрайту
+import sprite from "../../assets/sprite.svg";
 import { Svg } from "../Header/Header.styled";
 import { industriesData } from "./industriesData";
 import { useTranslation } from "react-i18next";

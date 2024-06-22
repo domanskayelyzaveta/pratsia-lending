@@ -1,8 +1,8 @@
 export const navItems = [
-  { id: "starseite", label: "Starseite" },
-  { id: "überUns", label: "Über uns" },
-  { id: "unternehemen", label: "Für Unternehmen" },
-  { id: "bewerber", label: "Für Bewerber" },
-  { id: "interviewtermin", label: "Interviewtermin" },
-  { id: "kontakt", label: "Kontakt" },
+  { id: "starseite", label: "nav.menuStart" },
+  { id: "überUns", label: "nav.menuAboutUs" },
+  { id: "unternehemen", label: "nav.menuForCompanies" },
+  { id: "bewerber", label: "nav.menuForApp" },
+  { id: "interviewtermin", label: "nav.menuAppointment" },
+  { id: "kontakt", label: "nav.menuContact" },
 ];
