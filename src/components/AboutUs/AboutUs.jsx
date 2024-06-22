@@ -14,6 +14,7 @@ import {
   SectionAboutUs,
   TextAboutUs,
   TextAndPhotoDiv,
+  TextAndPhotoSecondDiv,
   TitleWrapper,
   WerdenSieDiv,
 } from "./AboutUs.styled";
@@ -49,7 +50,7 @@ const AboutUs = () => {
         </AboutUsSubTitle>
       </TitleWrapper>
       <div className="container">
-        <TextAndPhotoDiv>
+        <TextAndPhotoSecondDiv>
           <TextAboutUs>
             {t("aboutUsText")}
             {/* Unsere langjährige Erfahrung, unser umfassendes Branchenwissen und
@@ -58,7 +59,7 @@ const AboutUs = () => {
             Kunden entsprechen */}
           </TextAboutUs>
           <ImgAboutUs src={photo} alt="photo of business meeting"></ImgAboutUs>
-        </TextAndPhotoDiv>
+        </TextAndPhotoSecondDiv>
 
         <div>
           <AboutUsList>
@@ -67,6 +68,8 @@ const AboutUs = () => {
                 <ListWrapper>
                   <Svg
                     style={{
+                      width: "26px",
+                      height: "26px",
                       transform:
                         isOpen === 0 ? "rotate(180deg)" : "rotate(0deg)",
                       transition: "transform 0.3s ease",
@@ -98,6 +101,8 @@ const AboutUs = () => {
                 <ListWrapper>
                   <Svg
                     style={{
+                      width: "26px",
+                      height: "26px",
                       transform:
                         isOpen === 1 ? "rotate(180deg)" : "rotate(0deg)",
                       transition: "transform 0.3s ease",
@@ -129,6 +134,8 @@ const AboutUs = () => {
                 <ListWrapper>
                   <Svg
                     style={{
+                      width: "26px",
+                      height: "26px",
                       transform:
                         isOpen === 2 ? "rotate(180deg)" : "rotate(0deg)",
                       transition: "transform 0.3s ease",
