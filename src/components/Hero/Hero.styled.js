@@ -164,6 +164,5 @@ export const BtnHero = styled.button`
 
   @media screen and (min-width: 1440px) {
     width: 648px;
-    padding: 16px;
   }
 `;

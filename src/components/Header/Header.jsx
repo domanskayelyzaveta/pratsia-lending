@@ -14,11 +14,11 @@ import {
   Svg,
   Text,
 } from "./Header.styled";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ handleSetActiveLink }) => {
+  const { t } = useTranslation();
   const [shownModal, setShownModal] = useState(false);
-  // const { i18n } = useTranslation();
   // const [selectedLanguage, setSelectedLanguage] = useState(null);
   // const localStorageRef = useRef(localStorage);
 
@@ -101,7 +101,7 @@ const Header = ({ handleSetActiveLink }) => {
                   onClick={(e) => handleSetActiveLink(item.id, e)}
                   className={activeLink === item.id ? "active" : ""}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </StyledNavLinkA>
               ))}
             </StyledNav>
