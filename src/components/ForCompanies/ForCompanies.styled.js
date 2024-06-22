@@ -62,7 +62,7 @@ export const SecondList = styled.ul`
   flex-direction: column;
   gap: 20px;
 
-  margin-bottom: 32px;
+  margin-bottom: 0px;
 
   @media screen and (min-width: 768px) {
     margin-top: 24px;
