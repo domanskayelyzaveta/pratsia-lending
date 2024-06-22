@@ -30,6 +30,7 @@ export const BtnJobOffers = styled.button`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 13px;
 
   border: none;
   padding: 0;

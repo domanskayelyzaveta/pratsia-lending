@@ -2,7 +2,7 @@ import Select, { components } from "react-select";
 import { SvgDEU, SvgUA } from "../SvgFlags";
 import {
   CustomDropdownIndicator,
-  customStyles,
+  CustomStyles,
 } from "../CustomDropdownIndicator/CustomDropdownIndicator";
 import i18n from "../../../i18n";
 
@@ -57,7 +57,7 @@ const SelectLang = () => {
         SingleValue: CustomSingleValue,
       }}
       options={options}
-      styles={customStyles}
+      styles={CustomStyles}
       defaultValue={options.find((option) => option.value === "de")}
       onChange={handleChangeLanguage}
       // value={selectedLanguage}
