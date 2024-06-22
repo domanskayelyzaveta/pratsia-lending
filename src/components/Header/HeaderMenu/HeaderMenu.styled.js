@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ModalMenuWrapper = styled.div`
   position: fixed;
   top: 0;
-  margin-top: 61px;
+  right: 0;
+  margin-top: 60px;
 
   padding: 8px 20px 20px 20px;
   display: flex;
@@ -11,10 +12,22 @@ export const ModalMenuWrapper = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  width: 220px;
+  width: 222px;
 
   border-radius: 0px 0px 8px 8px;
   background: var(--beige-200);
+`;
+
+export const Backdrop = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+export const ModalContainer = styled.div`
+  width: 100%;
 `;
 
 export const SvgMenu = styled.svg`

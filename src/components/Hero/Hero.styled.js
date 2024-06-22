@@ -3,7 +3,7 @@ import styled from "styled-components";
 import HeroImg from "../../images/hero/guys.jpg";
 
 export const HeroSection = styled.section`
-  margin-top: 61px;
+  margin-top: 60px;
   padding-top: 20px;
 
   @media screen and (min-width: 768px) {

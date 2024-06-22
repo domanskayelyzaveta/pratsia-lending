@@ -20,7 +20,7 @@ export const CustomDropdownIndicator = (props) => {
   );
 };
 
-export const customStyles = {
+export const CustomStyles = {
   menu: (provided) => ({
     ...provided,
     width: "108px",
@@ -32,7 +32,6 @@ export const customStyles = {
     display: "flex",
     justifyContent: "center",
     flexDirection: "row",
-    // gap: "4px",
     marginBottom: "4px",
   }),
   control: (provided, state) => ({
@@ -49,13 +48,12 @@ export const customStyles = {
   }),
   indicatorSeparator: () => ({ display: "none" }),
   option: (provided, state) => {
-    const gap = state.data.value === "ua" ? "13.4px" : "4px";
     return {
       ...provided,
       display: "flex",
       alignItems: "center",
       justifyContent: "flex-start",
-      gap: gap,
+      gap: "14px",
       width: "100px",
       height: "29px",
       padding: "4px",
@@ -79,7 +77,7 @@ export const customStyles = {
     ...provided,
     display: "flex",
     alignItems: "center",
-    gap: "4px",
+    gap: "14px",
     margin: "0px",
 
     width: "62px",
