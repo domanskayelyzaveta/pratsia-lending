@@ -284,3 +284,7 @@ textarea {
 .react-datepicker__navigation-icon.react-datepicker__navigation-icon--previous {
   display: none;
 }
+
+/* * {
+  outline: 1px solid red;
+} */
