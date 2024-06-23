@@ -151,6 +151,7 @@ import {
   StyledFistList,
   SubTitleSecondListComp,
   TextListCompanies,
+  TextSecondListComp,
 } from "./ForCompanies.styled";
 import { useTranslation } from "react-i18next";
 import { BtnListAboutUs } from "../AboutUs/AboutUs.styled";
@@ -199,7 +200,7 @@ const ForCompanies = () => {
           </BtnListAboutUs>
           {isOpen === 0 && (
             <div>
-              <p>{t("fahigkeitenText")}</p>
+              <TextSecondListComp>{t("fahigkeitenText")}</TextSecondListComp>
             </div>
           )}
         </ListItemsSecond>
@@ -223,7 +224,7 @@ const ForCompanies = () => {
           </BtnListAboutUs>
           {isOpen === 1 && (
             <div>
-              <p>{t("dienstText")}</p>
+              <TextSecondListComp>{t("dienstText")}</TextSecondListComp>
             </div>
           )}
         </ListItemsSecond>
