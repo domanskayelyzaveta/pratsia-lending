@@ -4,6 +4,7 @@ import {
   AboutUsDescriptionPartDiv,
   AboutUsList,
   AboutUsSubTitle,
+  AboutUsTeamText,
   AboutUsText,
   AboutUsTitle,
   BtnListAboutUs,
@@ -86,13 +87,13 @@ const AboutUs = () => {
               </BtnListAboutUs>
               {isOpen === 0 && (
                 <div>
-                  <AboutUsDescText>
+                  <AboutUsTeamText>
                     {t("spezial_text")}
                     {/* Wir sind spezialisiert auf die Vermittlung von talentierten
                     Fachkräften in Branchen wie Medizin, Pflege, Sozialarbeit,
                     Facility Management, Sanitär, Elektro und Automechanik / -
                     mechatronik */}
-                  </AboutUsDescText>
+                  </AboutUsTeamText>
                 </div>
               )}
             </ListItem>
@@ -118,14 +119,14 @@ const AboutUs = () => {
               </BtnListAboutUs>
               {isOpen === 1 && (
                 <div>
-                  <AboutUsDescText>
+                  <AboutUsTeamText>
                     {t("ein_text")}
                     {/* Unser ganzheitlicher Ansatz umfasst nicht nur die
                     Personalvermittlung, sondern auch zusätzliche
                     Dienstleistungen wie vorbereitende und vertiefende
                     Deutschkurse und Unterstützung bei der Anerkennung von
                     Qualifikationen der jeweiligen Branchen */}
-                  </AboutUsDescText>
+                  </AboutUsTeamText>
                 </div>
               )}
             </ListItem>
@@ -151,7 +152,7 @@ const AboutUs = () => {
               </BtnListAboutUs>
               {isOpen === 2 && (
                 <div>
-                  <AboutUsDescText>
+                  <AboutUsTeamText>
                     {t("fundierte_text")}
                     {/* Fundierte Arbeit Unsere Arbeit basiert auf ethischen
                     Geschäftspraktiken und Transparenz in der Kommunikation.
@@ -159,7 +160,7 @@ const AboutUs = () => {
                     Unternehmen zu gewinnen und Ihre Einstellungsziele zu
                     erreichen. Wir helfen Ihnen, eine reibungslose Integration
                     in den deutschen Arbeitsmarkt zu gewährleisten */}
-                  </AboutUsDescText>
+                  </AboutUsTeamText>
                 </div>
               )}
             </ListItem>

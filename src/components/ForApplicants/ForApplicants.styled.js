@@ -120,10 +120,19 @@ export const BtnAppDiv = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 48px;
   }
   @media screen and (min-width: 1440px) {
     margin-top: 64px;
     justify-content: center;
+  }
+`;
+
+export const TextSecondListApp = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
 `;
