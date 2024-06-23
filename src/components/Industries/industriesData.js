@@ -78,7 +78,7 @@ export const industriesData = [
     description:
       "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagements in ganz Deutschland zusammen, vermittelt technische Fachkräfte für Planung, Wartung, Instandhaltung, Energiemanagement und den Betrieb der technischen Infrastruktur von Immobilien. Bist du Facility Manager/in, Objektleiter/in oder direkt beim Kunden als Anlagenmechaniker/in HKLS, Servicetechniker/in HKLS, Elektriker/in oder Kälteanlagenmechaniker/in im Einsatz und suchst eine Veränderung oder einen guten Start in Deutschland?",
     tabletText:
-      "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen. Weiterlesen",
+      "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
     tabletSubText:
       "Die Vermittlung von technischen Fachkräften – egal ob zur Planung, Wartung, Instandhaltung, Energiemanagement oder Betrieb der kompletten technischen Infrastruktur von Immobilien – gehört zu unsere Domäne. Du bist Facility Manager/in oder Objektleiter / in? Oder Du bist direkt beim Kunden vor Ort als Anlagenmechaniker/in HKLS, Servicetechniker / in HKLS, Elektriker / in oder Kälteanlagenmechaniker / in im Einsatz? Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
   },
@@ -89,7 +89,7 @@ export const industriesData = [
     description:
       "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär-, Heizungs- und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich über ganz Deutschland. Wir kennen die SHK-Branche in allen Bereichen und Facetten, von der Industrie über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
     tabletText:
-      "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland. Weiterlesen",
+      "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland.",
     tabletSubText:
       "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
   },
