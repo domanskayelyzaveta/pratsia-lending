@@ -29,7 +29,7 @@ const Industries = () => {
 
   // const isDesktopOrTablet = useMediaQuery({ minWidth: 768 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTabletOrDesctop = useMediaQuery({ minWidth: 768 });
+  const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
 
   useEffect(() => {
     setIsVisible(Array(industriesData.length).fill(false));
@@ -64,7 +64,7 @@ const Industries = () => {
               <IndustryContent>
                 <TextIndustries>{industry.title}</TextIndustries>
 
-                {isTabletOrDesctop && (
+                {isTabletOrDesktop && (
                   <TextSliderTablet>{industry.tabletText}</TextSliderTablet>
                 )}
 
@@ -104,7 +104,7 @@ const Industries = () => {
                       {isMobile && (
                         <TextSlider>{industry.description}</TextSlider>
                       )}
-                      {isTabletOrDesctop && (
+                      {isTabletOrDesktop && (
                         <TextSlider>{industry.tabletSubText}</TextSlider>
                       )}
 
@@ -123,7 +123,7 @@ const Industries = () => {
               </IndustryContent>
             </IndustryItemDiv>
 
-            {isTabletOrDesctop && (
+            {isTabletOrDesktop && (
               <div
                 style={{
                   position: "relative",
@@ -132,7 +132,7 @@ const Industries = () => {
               >
                 <BtnIndustries
                   style={{
-                    top: isVisible[index] ? "101%" : "-20px",
+                    top: isVisible[index] ? "101%" : "-30px",
                   }}
                   onClick={() => toggleVisibility(index)}
                   $isOpened={isVisible[index]}
@@ -157,7 +157,7 @@ const Industries = () => {
                   height={heights[index]}
                 >
                   {isMobile && <TextSlider>{industry.description}</TextSlider>}
-                  {isTabletOrDesctop && (
+                  {isTabletOrDesktop && (
                     <TextSlider>{industry.tabletSubText}</TextSlider>
                   )}
 
