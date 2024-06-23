@@ -135,6 +135,7 @@ const Industries = () => {
                     top: isVisible[index] ? "101%" : "-20px",
                   }}
                   onClick={() => toggleVisibility(index)}
+                  $isOpened={isVisible[index]}
                 >
                   <Svg
                     style={{
