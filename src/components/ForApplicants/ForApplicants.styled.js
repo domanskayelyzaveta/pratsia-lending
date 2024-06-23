@@ -47,7 +47,9 @@ export const PhotoAndTitleDiv = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const ApplicantImg = styled.img`
@@ -67,8 +69,7 @@ export const ApplicantImg = styled.img`
 
   @media screen and (min-width: 1440px) {
     width: 516px;
-    // height: 320px;
-    height: ${({ $isOpen }) => ($isOpen !== null ? "440px" : "320px")};
+    height: ${({ $isOpen }) => ($isOpen !== null ? "570px" : "320px")};
     transition: height 0.3s ease;
 
     object-fit: cover;
