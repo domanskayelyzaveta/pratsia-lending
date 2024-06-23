@@ -100,7 +100,7 @@ export const ImgAboutUs = styled.img`
     width: 348px;
     height: 270px;
 
-    border-radius: 16px;
+    border-radius: 20px;
     margin-bottom: 0px;
   }
 
@@ -184,6 +184,27 @@ export const AboutUsDescText = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 20px;
     width: 348px;
+
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 16px;
+    width: 624px;
+  }
+`;
+export const AboutUsTeamText = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-top: 8px;
+
+  color: var(--black-200);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 720px;
 
     margin-top: 12px;
   }

@@ -17,6 +17,7 @@ import {
   ListItems,
   PhotoAndTitleDiv,
   SubText,
+  TextSecondListApp,
   TitleWrapper,
 } from "./ForApplicants.styled";
 import { BtnHero } from "../Hero/Hero.styled";
@@ -65,13 +66,13 @@ const ForApplicants = () => {
           </BtnListAboutUs>
           {isOpen === 0 && (
             <div>
-              <p>
+              <TextSecondListApp>
                 {t("integrierter")}
                 {/* Das Unternehmen bietet einen umfassenden Ansatz, der nicht nur
                 die Suche nach dem perfekten Job umfasst, sondern auch
                 zusätzliche Dienstleistungen wie Deutschkurse und Unterstützung
                 bei der Anerkennung, damit die Integration erfolgreich verläuft. */}
-              </p>
+              </TextSecondListApp>
             </div>
           )}
         </ListItems>
@@ -94,7 +95,7 @@ const ForApplicants = () => {
           </BtnListAboutUs>
           {isOpen === 1 && (
             <div>
-              <p>
+              <TextSecondListApp>
                 {t("branchenwissen")}
                 {/* Pratsia verfügt über umfangreiche Branchenkenntnisse in
                 Bereichen wie Medizin, Pflege, Sozialarbeit, Facility
@@ -104,7 +105,7 @@ const ForApplicants = () => {
                 über Karrieremöglichkeiten und Entwicklungsperspektiven sowie
                 die anschließende Identifizierung geeigneter Stellenangebote,
                 die den Qualifikationen und Neigungen der Bewerber entsprechen. */}
-              </p>
+              </TextSecondListApp>
             </div>
           )}
         </ListItems>
@@ -127,7 +128,7 @@ const ForApplicants = () => {
           </BtnListAboutUs>
           {isOpen === 2 && (
             <div>
-              <p>
+              <TextSecondListApp>
                 {t("unterstutzung")}
                 {/* Um den Bedürfnissen und Anforderungen beider Seiten optimal
                 gerecht zu werden, legt die Agentur für Arbeit großen Wert auf
@@ -137,7 +138,7 @@ const ForApplicants = () => {
                 von Arbeits - und Aufenthaltsgenehmigungen, sowie die
                 Unterstützung bei Umzugsvorbereitungen, Wohnungssuche und
                 anderen praktischen Aspekten des Umzugs nach Deutschland. */}
-              </p>
+              </TextSecondListApp>
             </div>
           )}
         </ListItems>
