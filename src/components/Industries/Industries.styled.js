@@ -171,7 +171,7 @@ export const IndustryListItems = styled.li`
 export const ImgIndustries = styled.img`
   height: 200px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   border-radius: 8px;
 

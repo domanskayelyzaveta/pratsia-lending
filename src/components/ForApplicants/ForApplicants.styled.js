@@ -47,7 +47,9 @@ export const PhotoAndTitleDiv = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const ApplicantImg = styled.img`
