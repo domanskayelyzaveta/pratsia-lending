@@ -197,6 +197,7 @@ export const AboutUsTeamText = styled.p`
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  transition: height 0.8s linear;
 
   margin-top: 8px;
 
@@ -269,4 +270,8 @@ export const WerdenSieDiv = styled.div`
     padding: 28px;
     gap: 24px;
   }
+`;
+
+export const TransitionDiv = styled.div`
+  transition: height 0.3s linear;
 `;

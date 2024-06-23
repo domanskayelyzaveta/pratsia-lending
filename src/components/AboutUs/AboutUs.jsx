@@ -17,6 +17,7 @@ import {
   TextAndPhotoDiv,
   TextAndPhotoSecondDiv,
   TitleWrapper,
+  TransitionDiv,
   WerdenSieDiv,
 } from "./AboutUs.styled";
 
@@ -86,7 +87,7 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 0 && (
-                <div>
+                <TransitionDiv>
                   <AboutUsTeamText>
                     {t("spezial_text")}
                     {/* Wir sind spezialisiert auf die Vermittlung von talentierten
@@ -94,7 +95,7 @@ const AboutUs = () => {
                     Facility Management, Sanitär, Elektro und Automechanik / -
                     mechatronik */}
                   </AboutUsTeamText>
-                </div>
+                </TransitionDiv>
               )}
             </ListItem>
             <ListItem>
@@ -118,7 +119,7 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 1 && (
-                <div>
+                <TransitionDiv>
                   <AboutUsTeamText>
                     {t("ein_text")}
                     {/* Unser ganzheitlicher Ansatz umfasst nicht nur die
@@ -127,7 +128,7 @@ const AboutUs = () => {
                     Deutschkurse und Unterstützung bei der Anerkennung von
                     Qualifikationen der jeweiligen Branchen */}
                   </AboutUsTeamText>
-                </div>
+                </TransitionDiv>
               )}
             </ListItem>
             <ListItem>
@@ -151,7 +152,7 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 2 && (
-                <div>
+                <TransitionDiv>
                   <AboutUsTeamText>
                     {t("fundierte_text")}
                     {/* Fundierte Arbeit Unsere Arbeit basiert auf ethischen
@@ -161,7 +162,7 @@ const AboutUs = () => {
                     erreichen. Wir helfen Ihnen, eine reibungslose Integration
                     in den deutschen Arbeitsmarkt zu gewährleisten */}
                   </AboutUsTeamText>
-                </div>
+                </TransitionDiv>
               )}
             </ListItem>
           </AboutUsList>
