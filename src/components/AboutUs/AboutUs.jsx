@@ -4,6 +4,7 @@ import {
   AboutUsDescriptionPartDiv,
   AboutUsList,
   AboutUsSubTitle,
+  AboutUsTeamText,
   AboutUsText,
   AboutUsTitle,
   BtnListAboutUs,
@@ -16,6 +17,7 @@ import {
   TextAndPhotoDiv,
   TextAndPhotoSecondDiv,
   TitleWrapper,
+  TransitionDiv,
   WerdenSieDiv,
 } from "./AboutUs.styled";
 
@@ -85,15 +87,15 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 0 && (
-                <div>
-                  <AboutUsDescText>
+                <TransitionDiv>
+                  <AboutUsTeamText>
                     {t("spezial_text")}
                     {/* Wir sind spezialisiert auf die Vermittlung von talentierten
                     Fachkräften in Branchen wie Medizin, Pflege, Sozialarbeit,
                     Facility Management, Sanitär, Elektro und Automechanik / -
                     mechatronik */}
-                  </AboutUsDescText>
-                </div>
+                  </AboutUsTeamText>
+                </TransitionDiv>
               )}
             </ListItem>
             <ListItem>
@@ -117,16 +119,16 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 1 && (
-                <div>
-                  <AboutUsDescText>
+                <TransitionDiv>
+                  <AboutUsTeamText>
                     {t("ein_text")}
                     {/* Unser ganzheitlicher Ansatz umfasst nicht nur die
                     Personalvermittlung, sondern auch zusätzliche
                     Dienstleistungen wie vorbereitende und vertiefende
                     Deutschkurse und Unterstützung bei der Anerkennung von
                     Qualifikationen der jeweiligen Branchen */}
-                  </AboutUsDescText>
-                </div>
+                  </AboutUsTeamText>
+                </TransitionDiv>
               )}
             </ListItem>
             <ListItem>
@@ -150,8 +152,8 @@ const AboutUs = () => {
                 </ListWrapper>
               </BtnListAboutUs>
               {isOpen === 2 && (
-                <div>
-                  <AboutUsDescText>
+                <TransitionDiv>
+                  <AboutUsTeamText>
                     {t("fundierte_text")}
                     {/* Fundierte Arbeit Unsere Arbeit basiert auf ethischen
                     Geschäftspraktiken und Transparenz in der Kommunikation.
@@ -159,8 +161,8 @@ const AboutUs = () => {
                     Unternehmen zu gewinnen und Ihre Einstellungsziele zu
                     erreichen. Wir helfen Ihnen, eine reibungslose Integration
                     in den deutschen Arbeitsmarkt zu gewährleisten */}
-                  </AboutUsDescText>
-                </div>
+                  </AboutUsTeamText>
+                </TransitionDiv>
               )}
             </ListItem>
           </AboutUsList>
