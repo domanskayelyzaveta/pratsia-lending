@@ -25,6 +25,10 @@ export const IndustriesList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
 `;
 
 export const TextIndustries = styled.p`
@@ -58,7 +62,7 @@ export const BtnIndustries = styled.button`
   z-index: 1;
 
   @media screen and (min-width: 768px) {
-    left: 302px;
+    left: ${({ $isOpened }) => ($isOpened ? "0px" : "292px")};
   }
 `;
 
