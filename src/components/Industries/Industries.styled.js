@@ -49,6 +49,8 @@ export const BtnIndustries = styled.button`
   align-items: center;
   justify-content: center;
 
+  top: ${(props) => (props.$isVisible ? "101%" : "-30px")};
+
   border: none;
   padding: 0;
   margin: 0;
@@ -63,6 +65,10 @@ export const BtnIndustries = styled.button`
 
   @media screen and (min-width: 768px) {
     left: ${({ $isOpened }) => ($isOpened ? "0px" : "292px")};
+  }
+  @media screen and (min-width: 1440px) {
+    left: ${({ $isOpened }) => ($isOpened ? "0px" : "640px")};
+    top: ${(props) => (props.$isVisible ? "101%" : "-144px")};
   }
 `;
 

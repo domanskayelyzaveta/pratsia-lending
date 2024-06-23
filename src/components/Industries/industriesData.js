@@ -12,11 +12,9 @@ export const industriesData = [
     image: pflege,
     alt: "care photo",
     description: "pflegeText",
-    tabletText:
-      "Als Pflegefachkraft in Deutschland… Du möchtest in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
+    tabletText: "pflegeText",
     mobileText: "pflegeMobileText",
-    tabletSubText:
-      "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein. Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+    tabletSubText: "pflegeJobText",
     list: [
       "pflegeJobList1",
       "pflegeJobList2",
@@ -33,11 +31,9 @@ export const industriesData = [
     image: medizin,
     alt: "medicine photo",
     description: "medizinMobileText",
-    tabletText:
-      "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? ",
+    tabletText: "medizinText",
     mobileText: "medizinMobileText",
-    tabletSubText:
-      "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+    tabletSubText: "medizinJobText",
     list: [
       "medizinJobList1",
       "medizinJobList2",
@@ -62,14 +58,14 @@ export const industriesData = [
     image: logistik,
     alt: "logistic photo",
     description: "technikJobText",
-    tabletText: " technikText",
+    tabletText: "technikText",
     tabletSubText: "technikJobText",
   },
   {
     title: "facility",
     image: facility,
     alt: "facility photo",
-    description: "facilityText",
+    description: "facilityJobText",
     tabletText: "facilityText",
     tabletSubText: "facilityJobText",
   },
@@ -78,19 +74,15 @@ export const industriesData = [
     image: sanitär,
     alt: "sanitär photo",
     description: "sanitarFullText",
-    tabletText:
-      "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland.",
-    tabletSubText:
-      "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+    tabletText: "sanitarText",
+    tabletSubText: "sanitarJobText",
   },
   {
     title: "mechanik",
     image: automechanik,
     alt: "automechanik photo",
     description: "mechanikFullText",
-    tabletText:
-      "Zünde jetzt deinen Karriere-Booster, mit uns erhältst du Zugang zum exklusiven Jobmarkt – kostenlos und für dich maßgeschneidert.",
-    tabletSubText:
-      "Im Land der Weltmarktführer der Automobilindustrie. Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig! Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst Du bei den Top - Arbeitgebern des Landes vorgeschlagen. Wir suchen Dir einen idealen Arbeitgeber, der Deinen Erwartungen gerecht wird.",
+    tabletText: "mechanikText",
+    tabletSubText: "mechanikJobText",
   },
 ];
