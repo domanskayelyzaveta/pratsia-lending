@@ -56,13 +56,16 @@ const Industries = () => {
         {industriesData.map((industry, index) => (
           <li key={index}>
             <IndustryItemDiv>
+              {isMobile && <TextIndustries>{industry.title}</TextIndustries>}
               <ImgIndustries
                 src={industry.image}
                 alt={industry.alt}
                 loading="lazy"
               />
               <IndustryContent>
-                <TextIndustries>{industry.title}</TextIndustries>
+                {isTabletOrDesktop && (
+                  <TextIndustries>{industry.title}</TextIndustries>
+                )}
 
                 {isTabletOrDesktop && (
                   <TextSliderTablet>{industry.tabletText}</TextSliderTablet>
@@ -71,7 +74,6 @@ const Industries = () => {
                 {isMobile && (
                   <div
                     style={{
-                      backgroundColor: "red",
                       position: "relative",
                       marginBottom: "12px",
                     }}
