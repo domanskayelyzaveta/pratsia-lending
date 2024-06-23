@@ -4,7 +4,7 @@ import {
   ImgIndustries,
   IndustriesList,
   IndustryContent,
-  IndustryItem,
+  IndustryItemDiv,
   IndustryListItems,
   SectionIndustries,
   SlideWrapper,
@@ -55,7 +55,7 @@ const Industries = () => {
       <IndustriesList>
         {industriesData.map((industry, index) => (
           <li key={index}>
-            <IndustryItem>
+            <IndustryItemDiv>
               <ImgIndustries
                 src={industry.image}
                 alt={industry.alt}
@@ -68,52 +68,108 @@ const Industries = () => {
                   <TextSliderTablet>{industry.tabletText}</TextSliderTablet>
                 )}
 
-                <div style={{ position: "relative", marginBottom: "12px" }}>
-                  <BtnIndustries
+                {isMobile && (
+                  <div
                     style={{
-                      top: isVisible[index] ? "101%" : "auto",
+                      backgroundColor: "red",
+                      position: "relative",
+                      marginBottom: "12px",
                     }}
-                    onClick={() => toggleVisibility(index)}
                   >
-                    <Svg
+                    <BtnIndustries
                       style={{
-                        fill: "var(--blue-200)",
-                        transform: isVisible[index]
-                          ? "rotate(180deg)"
-                          : "rotate(0deg)",
-                        transition: "transform 0.3s ease",
+                        top: isVisible[index] ? "101%" : "auto",
                       }}
+                      onClick={() => toggleVisibility(index)}
                     >
-                      <use href={`${sprite}#icon-arrow-down`}></use>
-                    </Svg>
-                    <TextShowMore>
-                      {isVisible[index] ? "Einstürzen" : "Weiterlesen"}
-                    </TextShowMore>
-                  </BtnIndustries>
-                  <SlideWrapper
-                    ref={(ref) => (contentRefs.current[index] = ref)}
-                    height={heights[index]}
-                  >
-                    {isMobile && (
-                      <TextSlider>{industry.description}</TextSlider>
-                    )}
-                    {isTabletOrDesctop && (
-                      <TextSlider>{industry.tabletSubText}</TextSlider>
-                    )}
+                      <Svg
+                        style={{
+                          fill: "var(--blue-200)",
+                          transform: isVisible[index]
+                            ? "rotate(180deg)"
+                            : "rotate(0deg)",
+                          transition: "transform 0.3s ease",
+                        }}
+                      >
+                        <use href={`${sprite}#icon-arrow-down`}></use>
+                      </Svg>
+                      <TextShowMore>
+                        {isVisible[index] ? "Einstürzen" : "Weiterlesen"}
+                      </TextShowMore>
+                    </BtnIndustries>
+                    <SlideWrapper
+                      ref={(ref) => (contentRefs.current[index] = ref)}
+                      height={heights[index]}
+                    >
+                      {isMobile && (
+                        <TextSlider>{industry.description}</TextSlider>
+                      )}
+                      {isTabletOrDesctop && (
+                        <TextSlider>{industry.tabletSubText}</TextSlider>
+                      )}
 
-                    <ul>
-                      {Array.isArray(industry.list) &&
-                        industry.list.map((item, idx) => (
-                          <IndustryListItems key={idx}>
-                            {item}
-                          </IndustryListItems>
-                        ))}
-                    </ul>
-                    <SubTextSlider>{industry.text}</SubTextSlider>
-                  </SlideWrapper>
-                </div>
+                      <ul>
+                        {Array.isArray(industry.list) &&
+                          industry.list.map((item, idx) => (
+                            <IndustryListItems key={idx}>
+                              {item}
+                            </IndustryListItems>
+                          ))}
+                      </ul>
+                      <SubTextSlider>{industry.text}</SubTextSlider>
+                    </SlideWrapper>
+                  </div>
+                )}
               </IndustryContent>
-            </IndustryItem>
+            </IndustryItemDiv>
+
+            {isTabletOrDesctop && (
+              <div
+                style={{
+                  position: "relative",
+                  marginBottom: "12px",
+                }}
+              >
+                <BtnIndustries
+                  style={{
+                    top: isVisible[index] ? "101%" : "-20px",
+                  }}
+                  onClick={() => toggleVisibility(index)}
+                >
+                  <Svg
+                    style={{
+                      fill: "var(--blue-200)",
+                      transform: isVisible[index]
+                        ? "rotate(180deg)"
+                        : "rotate(0deg)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
+                    <use href={`${sprite}#icon-arrow-down`}></use>
+                  </Svg>
+                  <TextShowMore>
+                    {isVisible[index] ? "Einstürzen" : "Weiterlesen"}
+                  </TextShowMore>
+                </BtnIndustries>
+                <SlideWrapper
+                  ref={(ref) => (contentRefs.current[index] = ref)}
+                  height={heights[index]}
+                >
+                  {isMobile && <TextSlider>{industry.description}</TextSlider>}
+                  {isTabletOrDesctop && (
+                    <TextSlider>{industry.tabletSubText}</TextSlider>
+                  )}
+
+                  <ul>
+                    {Array.isArray(industry.list) &&
+                      industry.list.map((item, idx) => (
+                        <IndustryListItems key={idx}>{item}</IndustryListItems>
+                      ))}
+                  </ul>
+                  <SubTextSlider>{industry.text}</SubTextSlider>
+                </SlideWrapper>
+              </div>
+            )}
           </li>
         ))}
       </IndustriesList>

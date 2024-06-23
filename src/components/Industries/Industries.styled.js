@@ -56,6 +56,10 @@ export const BtnIndustries = styled.button`
   position: absolute;
   top: -14px;
   z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    left: 302px;
+  }
 `;
 
 export const SlideWrapper = styled.div`
@@ -119,10 +123,11 @@ export const TextShowMore = styled.p`
   }
 `;
 
-export const IndustryItem = styled.div`
+export const IndustryItemDiv = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
+    gap: 24px;
   }
 `;
 
