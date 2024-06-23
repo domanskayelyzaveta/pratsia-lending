@@ -69,7 +69,7 @@ const Industries = () => {
                 )}
 
                 {isTabletOrDesktop && (
-                  <TextSliderTablet>{industry.tabletText}</TextSliderTablet>
+                  <TextSliderTablet>{t(industry.tabletText)}</TextSliderTablet>
                 )}
 
                 {isMobile && (
@@ -136,9 +136,7 @@ const Industries = () => {
                 }}
               >
                 <BtnIndustries
-                  style={{
-                    top: isVisible[index] ? "101%" : "-30px",
-                  }}
+                  $isVisible={isVisible[index]}
                   onClick={() => toggleVisibility(index)}
                   $isOpened={isVisible[index]}
                 >
@@ -176,7 +174,7 @@ const Industries = () => {
                         </IndustryListItems>
                       ))}
                   </ul>
-                  <SubTextSlider>{industry.text}</SubTextSlider>
+                  <SubTextSlider>{t(industry.text)}</SubTextSlider>
                 </SlideWrapper>
               </div>
             )}
