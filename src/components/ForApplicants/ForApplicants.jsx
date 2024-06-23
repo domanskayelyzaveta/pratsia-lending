@@ -1,9 +1,6 @@
-import { BtnListAboutUs, ImgAboutUs } from "../AboutUs/AboutUs.styled";
+import { BtnListAboutUs } from "../AboutUs/AboutUs.styled";
 import {
-  ForCompaniesTitle,
   ListItemDiv,
-  ListItemsSecond,
-  SecondList,
   SectionCompanies,
   SubTitleSecondListComp,
 } from "../ForCompanies/ForCompanies.styled";
@@ -12,8 +9,17 @@ import sprite from "../../assets/sprite.svg";
 import { useState } from "react";
 import { toggleContent } from "../../helpers/toggleContent";
 import photo from "../../images/works/handshake.jpg";
-import { SubText } from "./ForApplicants.styled";
-import { BtnHero, BtnHeroDiv } from "../Hero/Hero.styled";
+import {
+  ApplicantImg,
+  ApplicantsList,
+  BtnAppDiv,
+  ForAppTitle,
+  ListItems,
+  PhotoAndTitleDiv,
+  SubText,
+  TitleWrapper,
+} from "./ForApplicants.styled";
+import { BtnHero } from "../Hero/Hero.styled";
 import Industries from "../Industries/Industries";
 import JobOffers from "../JobOffers/JobOffers";
 import { useTranslation } from "react-i18next";
@@ -24,20 +30,23 @@ const ForApplicants = () => {
 
   return (
     <SectionCompanies id="bewerber" className="container">
-      <ForCompaniesTitle>
-        {t("forBewerberitle")}
-        {/* Für Bewerber */}
-      </ForCompaniesTitle>
+      <PhotoAndTitleDiv>
+        <TitleWrapper>
+          <ForAppTitle>
+            {t("forBewerberitle")}
+            {/* Für Bewerber */}
+          </ForAppTitle>
+          <SubText>
+            {t("forBewerberSubitle")}
+            {/* Traumjob? Wir helfen! */}
+          </SubText>
+        </TitleWrapper>
 
-      <div>
-        <SubText>
-          {t("forBewerberSubitle")}
-          {/* Traumjob? Wir helfen! */}
-        </SubText>
-        <ImgAboutUs src={photo} alt="Team" />
-      </div>
-      <SecondList>
-        <ListItemsSecond>
+        <ApplicantImg src={photo} alt="Team" $isOpen={isOpen} />
+      </PhotoAndTitleDiv>
+
+      <ApplicantsList>
+        <ListItems>
           <BtnListAboutUs onClick={toggleContent(0, isOpen, setIsOpen)}>
             <ListItemDiv>
               <Svg
@@ -65,8 +74,8 @@ const ForApplicants = () => {
               </p>
             </div>
           )}
-        </ListItemsSecond>
-        <ListItemsSecond>
+        </ListItems>
+        <ListItems>
           <BtnListAboutUs onClick={toggleContent(1, isOpen, setIsOpen)}>
             <ListItemDiv>
               <Svg
@@ -98,8 +107,8 @@ const ForApplicants = () => {
               </p>
             </div>
           )}
-        </ListItemsSecond>
-        <ListItemsSecond>
+        </ListItems>
+        <ListItems>
           <BtnListAboutUs onClick={toggleContent(2, isOpen, setIsOpen)}>
             <ListItemDiv>
               <Svg
@@ -131,11 +140,11 @@ const ForApplicants = () => {
               </p>
             </div>
           )}
-        </ListItemsSecond>
-      </SecondList>
-      <BtnHeroDiv>
+        </ListItems>
+      </ApplicantsList>
+      <BtnAppDiv>
         <BtnHero> {t("btn")}</BtnHero>
-      </BtnHeroDiv>
+      </BtnAppDiv>
       <Industries />
       <JobOffers />
     </SectionCompanies>
