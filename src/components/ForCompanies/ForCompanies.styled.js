@@ -190,7 +190,7 @@ export const ImgCompanies = styled.img`
 
   @media screen and (min-width: 1440px) {
     width: 624px;
-    height: ${({ $isOpen }) => ($isOpen !== null ? "420px" : "320px")};
+    height: ${({ $isOpen }) => ($isOpen !== null ? "510px" : "320px")};
     transition: height 0.3s ease;
 
     object-fit: cover;
