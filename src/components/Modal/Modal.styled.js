@@ -14,16 +14,22 @@ export const Backdrop = styled.div`
 `;
 
 export const Content = styled.div`
-  width: fit-content;
-  padding: 20px 40px 40px 40px;
-  border-radius: 24px;
+  width: 280px;
+  padding: 8px 20px 20px 20px;
+  border-radius: 8px;
   background: var(--background);
+
+  @media screen and (min-width: 768px) {
+    width: fit-content;
+    border-radius: 24px;
+    padding: 20px 40px 40px 40px;
+  }
 `;
 
 export const Button = styled.button`
   display: flex;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   margin-left: auto;
   border: none;
   background: transparent;
@@ -35,5 +41,9 @@ export const Button = styled.button`
 
   &:hover {
     transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
   }
 `;
