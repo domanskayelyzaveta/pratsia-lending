@@ -79,7 +79,7 @@ export const TextSlider = styled.p`
   color: var(--black-200);
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 19px;
   }
 `;
 
@@ -93,7 +93,8 @@ export const TextSliderTablet = styled.p`
   color: var(--black-200);
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    width: 426px;
+    font-size: 19px;
     margin-top: 0px;
   }
 `;
@@ -106,7 +107,7 @@ export const SubTextSlider = styled.p`
   color: var(--black-200);
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 0px;
   }
 `;
@@ -118,7 +119,7 @@ export const TextShowMore = styled.p`
   color: var(--blue-200);
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 0px;
   }
 `;
@@ -159,7 +160,7 @@ export const IndustryListItems = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 19px;
   }
 `;
 
@@ -171,8 +172,8 @@ export const ImgIndustries = styled.img`
   border-radius: 8px;
 
   @media screen and (min-width: 768px) {
-    width: 280px;
-    height: 200px;
+    width: 270px;
+    height: 210px;
 
     border-radius: 20px;
     margin-bottom: 0px;
