@@ -56,7 +56,8 @@ const Industries = () => {
         {industriesData.map((industry, index) => (
           <li key={index}>
             <IndustryItemDiv>
-              {isMobile && <TextIndustries>{industry.title}</TextIndustries>}
+              {/* {isMobile && <TextIndustries>{industry.title}</TextIndustries>} */}
+              {isMobile && <TextIndustries>{t(industry.title)}</TextIndustries>}
               <ImgIndustries
                 src={industry.image}
                 alt={industry.alt}
@@ -64,7 +65,7 @@ const Industries = () => {
               />
               <IndustryContent>
                 {isTabletOrDesktop && (
-                  <TextIndustries>{industry.title}</TextIndustries>
+                  <TextIndustries>{t(industry.title)}</TextIndustries>
                 )}
 
                 {isTabletOrDesktop && (
@@ -96,7 +97,8 @@ const Industries = () => {
                         <use href={`${sprite}#icon-arrow-down`}></use>
                       </Svg>
                       <TextShowMore>
-                        {isVisible[index] ? "Einstürzen" : "Weiterlesen"}
+                        {/* {isVisible[index] ? "Einstürzen" : "Weiterlesen"} */}
+                        {isVisible[index] ? t("einstürzen") : t("weiterlesen")}
                       </TextShowMore>
                     </BtnIndustries>
                     <SlideWrapper
@@ -104,7 +106,8 @@ const Industries = () => {
                       height={heights[index]}
                     >
                       {isMobile && (
-                        <TextSlider>{industry.description}</TextSlider>
+                        <TextSlider>{t(industry.description)}</TextSlider>
+                        // <TextSlider>{t(industry.mobileText)}</TextSlider>
                       )}
                       {isTabletOrDesktop && (
                         <TextSlider>{industry.tabletSubText}</TextSlider>
@@ -114,11 +117,11 @@ const Industries = () => {
                         {Array.isArray(industry.list) &&
                           industry.list.map((item, idx) => (
                             <IndustryListItems key={idx}>
-                              {item}
+                              {t(item)}
                             </IndustryListItems>
                           ))}
                       </ul>
-                      <SubTextSlider>{industry.text}</SubTextSlider>
+                      <SubTextSlider>{t(industry.text)}</SubTextSlider>
                     </SlideWrapper>
                   </div>
                 )}
@@ -151,22 +154,26 @@ const Industries = () => {
                     <use href={`${sprite}#icon-arrow-down`}></use>
                   </Svg>
                   <TextShowMore>
-                    {isVisible[index] ? "Einstürzen" : "Weiterlesen"}
+                    {isVisible[index] ? t("einstürzen") : t("weiterlesen")}
                   </TextShowMore>
                 </BtnIndustries>
                 <SlideWrapper
                   ref={(ref) => (contentRefs.current[index] = ref)}
                   height={heights[index]}
                 >
-                  {isMobile && <TextSlider>{industry.description}</TextSlider>}
+                  {isMobile && (
+                    <TextSlider>{t(industry.description)}</TextSlider>
+                  )}
                   {isTabletOrDesktop && (
-                    <TextSlider>{industry.tabletSubText}</TextSlider>
+                    <TextSlider>{t(industry.tabletSubText)}</TextSlider>
                   )}
 
                   <ul>
                     {Array.isArray(industry.list) &&
                       industry.list.map((item, idx) => (
-                        <IndustryListItems key={idx}>{item}</IndustryListItems>
+                        <IndustryListItems key={idx}>
+                          {t(item)}
+                        </IndustryListItems>
                       ))}
                   </ul>
                   <SubTextSlider>{industry.text}</SubTextSlider>
