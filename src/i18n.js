@@ -166,7 +166,7 @@ const resources = {
       aktuelleJobItem3:
         "Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)",
       aktuelleJobItem3T:
-        "Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
+        "Stundenlohn 17 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
 
       aktuelleJobItem4:
         "Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum / Altenheim /Klinikum)",
@@ -190,7 +190,7 @@ const resources = {
       beraten: "Wir beraten Sie gerne persönlich!",
       vereinbaren: "Vereinbaren Sie einen Termin mit uns",
 
-      // FORMA
+      // FORM
 
       label1: "Firma",
       placeholder1: "Firma",
@@ -216,12 +216,28 @@ const resources = {
       placeholder7: "Datum wählen",
 
       label8: "Gewünschte Zeit",
-      placeholder8: "",
+      placeholder8: "Nachmittag",
+
       select3N: "Nachmittag",
       select3V: "Vormittag",
 
       label9: "Nachricht",
       placeholder9: "Thema des Termins",
+
+      absenden: "Absenden",
+
+      // Errors
+
+      max64: "Darf maximal 64 Zeichen lang sein",
+      requiredField: "Dieses Feld ist erforderlich",
+      vornameMinLength: "Vorname muss mindestens 3 Zeichen lang sein",
+      vornameMaxLength: "Vorname darf maximal 64 Zeichen lang sein",
+      nachnameMinLength: "Nachname muss mindestens 3 Zeichen lang sein",
+      nachnameMaxLength: "Nachname darf maximal 64 Zeichen lang sein",
+      notValidEmail: "E-Mail ist ungültig",
+      phoneValid: "Telefonnummer muss gültig sein",
+      timeInThePast: "Wunschtermin darf nicht in der Vergangenheit liegen",
+      message: "Nachricht darf maximal 500 Zeichen lang sein",
 
       // Calendar
 
@@ -249,6 +265,7 @@ const resources = {
       // Map
 
       location: "Wir sind in Krefeld, unsere Arbeit ist überall",
+      timeToChange: "Zeit Für Veränderung",
     },
   },
 
@@ -399,22 +416,22 @@ const resources = {
 
       aktuelleJob: "Поточні вакансії ",
       aktuelleJobItem1:
-        "Фахівець у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих)",
+        "Медсестра у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих)",
       aktuelleJobItem1T:
         "Погодинна оплата 24-28 € в залежності від досвіду роботи, незалежно від того, працюєте ви по всій Німеччині чи тільки у своєму регіоні. Можливість отримати службовий автомобіль, якщо користуєтеся власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%, 30 днів відпустки, робочий час на рахунок, харчування + проживання.",
 
       aktuelleJobItem2:
-        "Фахівець у компанії тимчасової зайнятості (місце роботи - лікарня / клініка)",
+        "Медсестра у компанії тимчасової зайнятості (місце роботи - лікарня / клініка)",
       aktuelleJobItem2T:
         "Погодинна оплата 30-34 € залежно від досвіду роботи, незалежно від того, працюєте ви по всій Німеччині чи тільки у своєму регіоні. Можливість отримати службовий автомобіль, а при користуванні власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%. 30 днів відпустки, облік робочого часу, харчування + проживання.",
 
       aktuelleJobItem3:
-        "Фахівець зі визнання кваліфікації (центр для людей похилого віку або лікарня)",
+        "Медсестра зі визнання кваліфікації (центр для людей похилого віку або лікарня)",
       aktuelleJobItem3T:
-        "Погодинна оплата 21 €. Pratsia знайде місце, де буде визнано ваш диплом, і підтримає вас у проходженні мовних курсів, поки ви працюєте на повну ставку протягом періоду визнання. Зазвичай також надається проживання.",
+        "Погодинна оплата 17 €. Pratsia знайде місце, де буде визнано ваш диплом, і підтримає вас у проходженні мовних курсів, поки ви працюєте на повну ставку протягом періоду визнання. Зазвичай також надається проживання.",
 
       aktuelleJobItem4:
-        "Допоміжний медичний персонал у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих / лікарня)",
+        "Помічник медичної сестри у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих / лікарня)",
       aktuelleJobItem4T:
         "Погодинна оплата 17 €. Можливість отримати службовий автомобіль, а при користуванні власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%. 30 днів відпустки, облік робочого часу, харчування + проживання.",
 
@@ -434,10 +451,10 @@ const resources = {
         organize: "Ми це організуємо.",
       },
 
-      beraten: "Ми з радістю проконсультуємо особисто!",
+      beraten: "Ми з радістю проконсультуємо!",
       vereinbaren: "Запишіться на зустріч з нами",
 
-      // FORMA
+      // FORM
 
       label1: "Компанія",
       placeholder1: "Компанія",
@@ -461,15 +478,30 @@ const resources = {
 
       label7: "Бажана дата",
       placeholder7: "Оберіть дату",
-      select2: "",
 
       label8: "Бажаний час",
-      placeholder8: "",
+      placeholder8: "Після обіду",
+
       select3N: "Після обіду",
       select3V: "До обіду",
 
       label9: "Коментар",
       placeholder9: "Тема зустрічі",
+
+      absenden: "Відправили",
+
+      // Errors
+
+      max64: "Максимальна довжина поля - 64 символи",
+      requiredField: "Це поле обов'язкове",
+      vornameMinLength: "Ім'я повинно містити щонайменше 3 символи",
+      vornameMaxLength: "Ім'я повинно містити не більше 64 символів",
+      nachnameMinLength: "Прізвище повинно містити щонайменше 3 символи",
+      nachnameMaxLength: "Прізвище повинно містити не більше 64 символів",
+      notValidEmail: "Електронна адреса недійсна",
+      phoneValid: "Номер телефону повинен бути коректним",
+      timeInThePast: "Обраний термін не може бути у минулому",
+      message: "Повідомлення повинно містити не більше 500 символів",
 
       // Calendar
 
@@ -497,6 +529,7 @@ const resources = {
       // Map
 
       location: "Ми знаходимося у Крефельді, але працюємо повсюди",
+      timeToChange: "Час для змін",
     },
   },
 
@@ -638,7 +671,7 @@ const resources = {
       aktuelleJobItem3:
         "Специалист по признанию квалификации (центр для пожилых людей или больница)",
       aktuelleJobItem3T:
-        "Почасовая оплата 21 €. Pratsia найдет место, где будет признан ваш диплом, и поддержит вас в прохождении языковых курсов, пока вы работаете на полную ставку в течение периода признания. Обычно также предоставляется проживание.",
+        "Почасовая оплата 17 €. Pratsia найдет место, где будет признан ваш диплом, и поддержит вас в прохождении языковых курсов, пока вы работаете на полную ставку в течение периода признания. Обычно также предоставляется проживание.",
       aktuelleJobItem4:
         "Вспомогательный медицинский персонал в компании временной занятости (место работы - центр для пожилых людей / дом престарелых / больница)",
       aktuelleJobItem4T:
@@ -661,7 +694,8 @@ const resources = {
       beraten: "Мы с радостью проконсультируем лично!",
       vereinbaren: "Запишитесь на встречу с нами",
 
-      // FORMA
+      // FORM
+
       label1: "Компания",
       placeholder1: "Компания",
       label2: "Обращение",
@@ -678,13 +712,27 @@ const resources = {
       placeholder6: "Телефон",
       label7: "Желаемая дата",
       placeholder7: "Выберите дату",
-      select2: "",
       label8: "Желаемое время",
-      placeholder8: "",
+      placeholder8: "После обеда",
       select3N: "После обеда",
       select3V: "До обеда",
       label9: "Комментарий",
       placeholder9: "Тема встречи",
+
+      absenden: "Отправить",
+
+      // Errors
+
+      max64: "Максимальная длина поля - 64 символа",
+      requiredField: "Это поле обязательно для заполнения",
+      vornameMinLength: "Имя должно содержать не менее 3 символов",
+      vornameMaxLength: "Имя должно содержать не более 64 символов",
+      nachnameMinLength: "Фамилия должна содержать не менее 3 символов",
+      nachnameMaxLength: "Фамилия должна содержать не более 64 символов",
+      notValidEmail: "Электронная почта указана неверно",
+      phoneValid: "Номер телефона должен быть корректным",
+      timeInThePast: "Выбранная дата не может быть в прошлом",
+      message: "Сообщение должно содержать не более 500 символов",
 
       // Calendar
       sun: "Воскресенье",
@@ -709,6 +757,7 @@ const resources = {
 
       // Map
       location: "Мы находимся в Крефельде, но работаем повсюду",
+      timeToChange: "Время перемен",
     },
   },
 };

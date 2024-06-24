@@ -21,8 +21,11 @@ import { options, optionsTime } from "../../helpers/optionsSelect";
 import FormField from "./FormField";
 import Modal from "../Modal/Modal";
 import MessageForm from "../Modal/MessageForm/MessageForm";
+import { useTranslation } from "react-i18next";
+import { CalendarGlobalStyles } from "./StylesDatePicker";
 
 const AppointmentForm = () => {
+  const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
   const [status, setStatus] = useState(null);
   const {
@@ -33,7 +36,7 @@ const AppointmentForm = () => {
     reset,
   } = useForm({
     mode: "all",
-    resolver: yupResolver(formaSchema),
+    resolver: yupResolver(formaSchema(t)),
   });
 
   const onSubmit = (data) => {
@@ -52,25 +55,21 @@ const AppointmentForm = () => {
   return (
     <SectionAppointmentForm id="kontakt" className="container">
       <TitlesWrapper>
-        <TitleAppointmentForm>
-          Wir beraten Sie gerne persönlich!
-        </TitleAppointmentForm>
-        <SubTitleAppointmentForm>
-          Vereinbaren Sie einen Termin mit uns
-        </SubTitleAppointmentForm>
+        <TitleAppointmentForm>{t("beraten")}</TitleAppointmentForm>
+        <SubTitleAppointmentForm>{t("vereinbaren")}</SubTitleAppointmentForm>
       </TitlesWrapper>
 
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Block>
           <FormField
-            label="Firma"
+            label={t("label1")}
             name="firma"
             register={register}
             errors={errors}
-            placeholder="Firma"
+            placeholder={t("placeholder1")}
           />
           <FormField
-            label="Anrede"
+            label={t("label2")}
             name="anrede"
             errors={errors}
             component={
@@ -81,12 +80,12 @@ const AppointmentForm = () => {
                 render={({ field }) => (
                   <Select
                     {...field}
-                    options={options}
+                    options={options()}
                     isSearchable={false}
                     $errors={!!errors.anrede}
                     styles={customStyles}
-                    placeholder="Auswählen"
-                    value={options.find(
+                    placeholder={t("placeholder2")}
+                    value={options().find(
                       (option) => option.value === field.value
                     )}
                     onChange={(selectedOption) =>
@@ -98,41 +97,41 @@ const AppointmentForm = () => {
             }
           />
           <FormField
-            label="Vorname"
+            label={t("label3")}
             name="vorname"
             register={register}
             errors={errors}
             required
-            placeholder="Vorname"
+            placeholder={t("placeholder3")}
           />
           <FormField
-            label="Nachname"
+            label={t("label4")}
             name="nachname"
             register={register}
             errors={errors}
             required
-            placeholder="Nachname"
+            placeholder={t("placeholder4")}
           />
           <FormField
-            label="E-Mail"
+            label={t("label5")}
             name="email"
             register={register}
             errors={errors}
             required
-            placeholder="E-Mail"
+            placeholder={t("placeholder5")}
           />
         </Block>
         <Block>
           <FormField
-            label="Telefon"
+            label={t("label6")}
             name="telefon"
             register={register}
             errors={errors}
             required
-            placeholder="Telefon"
+            placeholder={t("placeholder6")}
           />
           <FormField
-            label="Ihr Wunschtermin"
+            label={t("label7")}
             name="wunschtermin"
             errors={errors}
             required
@@ -144,9 +143,10 @@ const AppointmentForm = () => {
                 render={({ field }) => (
                   <StyledDatePicker
                     {...field}
+                    locale="de"
                     selected={field.value}
                     onChange={(date) => field.onChange(date)}
-                    placeholderText="Datum wählen"
+                    placeholderText={t("placeholder7")}
                     dateFormat="dd.MM.yyyy"
                     calendarStartDay={1}
                     formatWeekDay={(day) => day.substr(0, 2)}
@@ -156,8 +156,10 @@ const AppointmentForm = () => {
               />
             }
           />
+          <CalendarGlobalStyles />
+
           <FormField
-            label="Gewünschte Zeit"
+            label={t("label8")}
             name="zeit"
             errors={errors}
             component={
@@ -168,12 +170,12 @@ const AppointmentForm = () => {
                 render={({ field }) => (
                   <Select
                     {...field}
-                    options={optionsTime}
+                    options={optionsTime()}
                     isSearchable={false}
                     styles={customStyles}
                     $errors={!!errors.zeit}
-                    placeholder="Nachmittag"
-                    value={optionsTime.find(
+                    placeholder={t("placeholder8")}
+                    value={optionsTime().find(
                       (option) => option.value === field.value
                     )}
                     onChange={(selectedOption) =>
@@ -185,22 +187,22 @@ const AppointmentForm = () => {
             }
           />
           <FormField
-            label="Nachricht"
+            label={t("label9")}
             name="nachricht"
             register={register}
             errors={errors}
-            placeholder="Thema des Termins"
+            placeholder={t("placeholder9")}
             component={
               <TextArea
                 name="nachricht"
                 {...register("nachricht")}
-                placeholder="Thema des Termins"
+                placeholder={t("placeholder9")}
                 $errors={!!errors.nachricht}
               />
             }
           />
         </Block>
-        <BtnForm type="submit">Absenden</BtnForm>
+        <BtnForm type="submit">{t("absenden")}</BtnForm>
       </Form>
 
       <Modal show={showModal} handleClose={() => setShowModal(false)}>
