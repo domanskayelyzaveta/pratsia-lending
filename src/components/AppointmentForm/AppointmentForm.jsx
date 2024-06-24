@@ -22,6 +22,7 @@ import FormField from "./FormField";
 import Modal from "../Modal/Modal";
 import MessageForm from "../Modal/MessageForm/MessageForm";
 import { useTranslation } from "react-i18next";
+import { CalendarGlobalStyles } from "./StylesDatePicker";
 
 const AppointmentForm = () => {
   const { t } = useTranslation();
@@ -155,6 +156,8 @@ const AppointmentForm = () => {
               />
             }
           />
+          <CalendarGlobalStyles />
+
           <FormField
             label={t("label8")}
             name="zeit"
