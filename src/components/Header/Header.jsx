@@ -90,7 +90,7 @@ const Header = ({ handleSetActiveLink }) => {
             </svg>
           </a>
 
-          {isTablet && <Text>Telefon: 0170 1481355</Text>}
+          {isTablet && <Text>{t("telefon")}: 0170 1481355</Text>}
 
           {isDesktop1440 && (
             <StyledNav>

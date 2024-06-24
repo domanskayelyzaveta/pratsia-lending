@@ -33,10 +33,14 @@ export const TitleLocation = styled.h3`
   font-weight: 400;
   line-height: 150%;
 
+  width: 312px;
+
   color: var(--blue-dark);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+
+    width: 100%;
   }
 
   @media screen and (min-width: 1440px) {
