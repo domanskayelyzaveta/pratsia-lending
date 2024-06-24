@@ -1,8 +1,16 @@
-import React, { Suspense, lazy } from "react";
+import React, {
+  // Suspense,
+  lazy,
+  useState,
+  useEffect,
+  useRef,
+} from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
-import Loader from "./components/Loader/Loader";
+// import Loader from "./components/Loader/Loader";
 import "./i18n";
+import Animation from "./components/Animation/Animation";
+import gsap from "gsap";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -26,6 +34,35 @@ const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
 const Header = lazy(() => import("./components/Header/Header"));
 
 const App = () => {
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    if (isAnimationComplete) {
+      gsap.fromTo(
+        mainContentRef.current,
+        { opacity: 0, y: "100vh" },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          onComplete: () => {
+            gsap.set(mainContentRef.current, {
+              opacity: 0,
+              duration: 1,
+              ease: "power2.out",
+              clearProps: "all",
+            });
+          },
+        }
+      );
+    }
+  }, [isAnimationComplete]);
+
+  const handleAnimationComplete = () => {
+    setIsAnimationComplete(true);
+  };
+
   const handleSetActiveLink = (link, event) => {
     event.preventDefault();
     const section = document.getElementById(link);
@@ -33,7 +70,6 @@ const App = () => {
       const rect = section.getBoundingClientRect();
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-
       let targetOffset;
       const screenWidth = window.innerWidth;
 
@@ -48,44 +84,58 @@ const App = () => {
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",
-        onComplete: () => {
-          event.target.blur();
-        },
       });
+
+      const handleScroll = () => {
+        if (window.pageYOffset === targetOffset) {
+          window.removeEventListener("scroll", handleScroll);
+          event.target.blur();
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
     }
   };
 
   return (
     <>
-      <Suspense fallback={<Loader />}>
-        <Header handleSetActiveLink={handleSetActiveLink} />
-        <main>
-          <Routes>
-            <Route path="/impressum" element={<ImpressumPage />} />
-            <Route
-              path="/datenschutzerklarung"
-              element={<DatenschutzerklärungPage />}
-            />
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <AboutUs />
-                  <ForCompanies />
-                  <ForApplicants />
-                  <Appointment />
-                  <AppointmentForm />
-                  <Location />
-                </>
-              }
-            />
-          </Routes>
-          <BtnGoUp />
-        </main>
-        <Footer />
-        <DataCompany />
-      </Suspense>
+      {!isAnimationComplete ? (
+        <Animation onComplete={handleAnimationComplete} />
+      ) : (
+        <>
+          {/* <Suspense fallback={<Loader />}> */}
+          <Header handleSetActiveLink={handleSetActiveLink} />
+          <div ref={mainContentRef}>
+            <main>
+              <Routes>
+                <Route path="/impressum" element={<ImpressumPage />} />
+                <Route
+                  path="/datenschutzerklarung"
+                  element={<DatenschutzerklärungPage />}
+                />
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Hero />
+                      <AboutUs />
+                      <ForCompanies />
+                      <ForApplicants />
+                      <Appointment />
+                      <AppointmentForm />
+                      <Location />
+                    </>
+                  }
+                />
+              </Routes>
+              <BtnGoUp />
+            </main>
+            <Footer />
+            <DataCompany />
+          </div>
+          {/* </Suspense> */}
+        </>
+      )}
     </>
   );
 };
