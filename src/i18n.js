@@ -190,7 +190,7 @@ const resources = {
       beraten: "Wir beraten Sie gerne persönlich!",
       vereinbaren: "Vereinbaren Sie einen Termin mit uns",
 
-      // FORMA
+      // FORM
 
       label1: "Firma",
       placeholder1: "Firma",
@@ -216,12 +216,28 @@ const resources = {
       placeholder7: "Datum wählen",
 
       label8: "Gewünschte Zeit",
-      placeholder8: "",
+      placeholder8: "Nachmittag",
+
       select3N: "Nachmittag",
       select3V: "Vormittag",
 
       label9: "Nachricht",
       placeholder9: "Thema des Termins",
+
+      absenden: "Absenden",
+
+      // Errors
+
+      max64: "Darf maximal 64 Zeichen lang sein",
+      requiredField: "Dieses Feld ist erforderlich",
+      vornameMinLength: "Vorname muss mindestens 3 Zeichen lang sein",
+      vornameMaxLength: "Vorname darf maximal 64 Zeichen lang sein",
+      nachnameMinLength: "Nachname muss mindestens 3 Zeichen lang sein",
+      nachnameMaxLength: "Nachname darf maximal 64 Zeichen lang sein",
+      notValidEmail: "E-Mail ist ungültig",
+      phoneValid: "Telefonnummer muss gültig sein",
+      timeInThePast: "Wunschtermin darf nicht in der Vergangenheit liegen",
+      message: "Nachricht darf maximal 500 Zeichen lang sein",
 
       // Calendar
 
@@ -434,10 +450,10 @@ const resources = {
         organize: "Ми це організуємо.",
       },
 
-      beraten: "Ми з радістю проконсультуємо особисто!",
+      beraten: "Ми з радістю проконсультуємо!",
       vereinbaren: "Запишіться на зустріч з нами",
 
-      // FORMA
+      // FORM
 
       label1: "Компанія",
       placeholder1: "Компанія",
@@ -461,15 +477,30 @@ const resources = {
 
       label7: "Бажана дата",
       placeholder7: "Оберіть дату",
-      select2: "",
 
       label8: "Бажаний час",
-      placeholder8: "",
+      placeholder8: "Після обіду",
+
       select3N: "Після обіду",
       select3V: "До обіду",
 
       label9: "Коментар",
       placeholder9: "Тема зустрічі",
+
+      absenden: "Відправили",
+
+      // Errors
+
+      max64: "Максимальна довжина поля - 64 символи",
+      requiredField: "Це поле обов'язкове",
+      vornameMinLength: "Ім'я повинно містити щонайменше 3 символи",
+      vornameMaxLength: "Ім'я повинно містити не більше 64 символів",
+      nachnameMinLength: "Прізвище повинно містити щонайменше 3 символи",
+      nachnameMaxLength: "Прізвище повинно містити не більше 64 символів",
+      notValidEmail: "Електронна адреса недійсна",
+      phoneValid: "Номер телефону повинен бути коректним",
+      timeInThePast: "Обраний термін не може бути у минулому",
+      message: "Повідомлення повинно містити не більше 500 символів",
 
       // Calendar
 
@@ -661,7 +692,8 @@ const resources = {
       beraten: "Мы с радостью проконсультируем лично!",
       vereinbaren: "Запишитесь на встречу с нами",
 
-      // FORMA
+      // FORM
+
       label1: "Компания",
       placeholder1: "Компания",
       label2: "Обращение",
@@ -678,13 +710,27 @@ const resources = {
       placeholder6: "Телефон",
       label7: "Желаемая дата",
       placeholder7: "Выберите дату",
-      select2: "",
       label8: "Желаемое время",
-      placeholder8: "",
+      placeholder8: "После обеда",
       select3N: "После обеда",
       select3V: "До обеда",
       label9: "Комментарий",
       placeholder9: "Тема встречи",
+
+      absenden: "Отправить",
+
+      // Errors
+
+      max64: "Максимальная длина поля - 64 символа",
+      requiredField: "Это поле обязательно для заполнения",
+      vornameMinLength: "Имя должно содержать не менее 3 символов",
+      vornameMaxLength: "Имя должно содержать не более 64 символов",
+      nachnameMinLength: "Фамилия должна содержать не менее 3 символов",
+      nachnameMaxLength: "Фамилия должна содержать не более 64 символов",
+      notValidEmail: "Электронная почта указана неверно",
+      phoneValid: "Номер телефона должен быть корректным",
+      timeInThePast: "Выбранная дата не может быть в прошлом",
+      message: "Сообщение должно содержать не более 500 символов",
 
       // Calendar
       sun: "Воскресенье",
