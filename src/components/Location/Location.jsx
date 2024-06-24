@@ -6,17 +6,17 @@ import {
   TitleLocation,
 } from "./Location.styled";
 import sprite from "../../assets/sprite.svg";
+import { useTranslation } from "react-i18next";
 
 const Location = () => {
+  const { t } = useTranslation();
   return (
     <SectionLocation className="container">
       <SvgTextWrapper>
         <SvgGeo>
           <use href={`${sprite}#icon-geo-alt-Max`} />
         </SvgGeo>
-        <TitleLocation>
-          Wir sind in Krefeld, unsere Arbeit ist überall
-        </TitleLocation>
+        <TitleLocation>{t("location")}</TitleLocation>
       </SvgTextWrapper>
 
       <MapWrapper>

@@ -36,7 +36,6 @@ const AppointmentForm = () => {
     reset,
   } = useForm({
     mode: "all",
-    // resolver: yupResolver(formaSchema),
     resolver: yupResolver(formaSchema(t)),
   });
 
@@ -144,6 +143,7 @@ const AppointmentForm = () => {
                 render={({ field }) => (
                   <StyledDatePicker
                     {...field}
+                    locale="de"
                     selected={field.value}
                     onChange={(date) => field.onChange(date)}
                     placeholderText={t("placeholder7")}
