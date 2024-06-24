@@ -29,6 +29,10 @@ export const IndustriesList = styled.ul`
   @media screen and (min-width: 768px) {
     gap: 24px;
   }
+
+  @media screen and (min-width: 1440px) {
+    gap: 32px;
+  }
 `;
 
 export const TextIndustries = styled.p`

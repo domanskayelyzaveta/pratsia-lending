@@ -82,6 +82,7 @@ export const ApplicantsList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     margin-top: 24px;

@@ -212,7 +212,7 @@ export const AboutUsTeamText = styled.p`
 
   @media screen and (min-width: 1440px) {
     margin-top: 16px;
-    width: 624px;
+    width: 100%;
   }
 `;
 

@@ -33,14 +33,8 @@ const ForApplicants = () => {
     <SectionCompanies id="bewerber" className="container">
       <PhotoAndTitleDiv>
         <TitleWrapper>
-          <ForAppTitle>
-            {t("forBewerberitle")}
-            {/* Für Bewerber */}
-          </ForAppTitle>
-          <SubText>
-            {t("forBewerberSubitle")}
-            {/* Traumjob? Wir helfen! */}
-          </SubText>
+          <ForAppTitle>{t("forBewerberitle")}</ForAppTitle>
+          <SubText>{t("forBewerberSubitle")}</SubText>
         </TitleWrapper>
 
         <ApplicantImg src={photo} alt="Team" $isOpen={isOpen} />
@@ -60,19 +54,12 @@ const ForApplicants = () => {
               </Svg>
               <SubTitleSecondListComp>
                 {t("bewerberListItem1")}
-                {/* Ein integrierter Ansatz */}
               </SubTitleSecondListComp>
             </ListItemDiv>
           </BtnListAboutUs>
           {isOpen === 0 && (
             <div>
-              <TextSecondListApp>
-                {t("integrierter")}
-                {/* Das Unternehmen bietet einen umfassenden Ansatz, der nicht nur
-                die Suche nach dem perfekten Job umfasst, sondern auch
-                zusätzliche Dienstleistungen wie Deutschkurse und Unterstützung
-                bei der Anerkennung, damit die Integration erfolgreich verläuft. */}
-              </TextSecondListApp>
+              <TextSecondListApp>{t("integrierter")}</TextSecondListApp>
             </div>
           )}
         </ListItems>
@@ -89,23 +76,12 @@ const ForApplicants = () => {
               </Svg>
               <SubTitleSecondListComp>
                 {t("bewerberListItem2")}
-                {/* Breites Branchenwissen */}
               </SubTitleSecondListComp>
             </ListItemDiv>
           </BtnListAboutUs>
           {isOpen === 1 && (
             <div>
-              <TextSecondListApp>
-                {t("branchenwissen")}
-                {/* Pratsia verfügt über umfangreiche Branchenkenntnisse in
-                Bereichen wie Medizin, Pflege, Sozialarbeit, Facility
-                Management, Sanitär, Elektrotechnik und Kfz - Mechanik /
-                Mechatronik. Dies ermöglicht es ihr, individuelle Lösungen für
-                die Bewerber zu finden. Grundlage ist die individuelle Beratung
-                über Karrieremöglichkeiten und Entwicklungsperspektiven sowie
-                die anschließende Identifizierung geeigneter Stellenangebote,
-                die den Qualifikationen und Neigungen der Bewerber entsprechen. */}
-              </TextSecondListApp>
+              <TextSecondListApp>{t("branchenwissen")}</TextSecondListApp>
             </div>
           )}
         </ListItems>
@@ -122,23 +98,12 @@ const ForApplicants = () => {
               </Svg>
               <SubTitleSecondListComp>
                 {t("bewerberListItem3")}
-                {/* Unterstützung für Unternehmen und Mitarbeiter */}
               </SubTitleSecondListComp>
             </ListItemDiv>
           </BtnListAboutUs>
           {isOpen === 2 && (
             <div>
-              <TextSecondListApp>
-                {t("unterstutzung")}
-                {/* Um den Bedürfnissen und Anforderungen beider Seiten optimal
-                gerecht zu werden, legt die Agentur für Arbeit großen Wert auf
-                eine individuelle Betreuung sowohl der Unternehmen als auch der
-                Arbeitnehmer. Dazu gehört die Beratung und Unterstützung bei
-                Visa- und Einwanderungsverfahren, einschließlich der Erlangung
-                von Arbeits - und Aufenthaltsgenehmigungen, sowie die
-                Unterstützung bei Umzugsvorbereitungen, Wohnungssuche und
-                anderen praktischen Aspekten des Umzugs nach Deutschland. */}
-              </TextSecondListApp>
+              <TextSecondListApp>{t("unterstutzung")}</TextSecondListApp>
             </div>
           )}
         </ListItems>
