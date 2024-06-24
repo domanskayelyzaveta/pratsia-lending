@@ -76,12 +76,17 @@ const resources = {
 
       // * Branchen
 
+      weiterlesen: "Weiterlesen",
+      einstürzen: "Einstürzen",
+
       branchenTitle: "Branchen",
       pflege: "Pflege",
       pflegeText:
         "Als Pflegefachkraft in Deutschland…Du möchtest in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
       pflegeJobText:
         "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      pflegeMobileText:
+        "Als Pflegefachkraft in Deutschland… Du möchtest in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen? Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       pflegeJobList1: "Personalmangel",
       pflegeJobList2: "Hoher bürokratischer Aufwand",
       pflegeJobList3: "Mangelnde Wertschätzung",
@@ -97,6 +102,8 @@ const resources = {
         "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden?",
       medizinJobText:
         "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      medizinMobileText:
+        "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       medizinJobList1: "Fachkräftemangel in den Einrichtungen",
       medizinJobList2: "Bürokratie und administrative Belastung",
       medizinJobList3: "Mangel an Zeit für Patienten",
@@ -106,8 +113,10 @@ const resources = {
       medizinJobList7: "Unterfinanzierung des Gesundheitswesens",
 
       sozialarbeit: "Sozialarbeit",
+      sozialarbeitFullText:
+        "Im Bereich Soziales & Pädagogik steht der Mensch stets im Zentrum des Handelns. Egal, ob in der Kindererziehung oder der Erwachsenenbildung – die Arbeit mit Menschen benötigt ein ganz besonderes Feingefühl. Um Erwachsene, Jugendliche oder Kinder richtig zu begleiten, braucht es die richtige Mischung aus Empathie und Fachwissen. Wir wissen genau, worauf es bei sozialen und pädagogischen Berufen ankommt und bieten Ihnen qualifiziertes Personal, das immer das richtige Händchen hat und auch in stressigen Situationen die Ruhe bewahrt.Bist Du Erzieher / in, Sozialpädagoge /in, Heilerziehungspfleger / in, Kinderpfleger / in und suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! ",
       sozialarbeitText:
-        "Im Bereich Soziales & Pädagogik steht der Mensch stets im Zentrum des Handelns. Weiterlesen",
+        "Im Bereich Soziales & Pädagogik steht der Mensch stets im Zentrum des Handelns.",
       sozialarbeitJobText:
         "Egal, ob in der Kindererziehung oder der Erwachsenenbildung – die Arbeit mit Menschen benötigt ein ganz besonderes Feingefühl. Um Erwachsene, Jugendliche oder Kinder richtig zu begleiten, braucht es die richtige Mischung aus Empathie und Fachwissen. Wir wissen genau, worauf es bei sozialen und pädagogischen Berufen ankommt und bieten Ihnen qualifiziertes Personal, das immer das richtige Händchen hat und auch in stressigen Situationen die Ruhe bewahrt.Bist Du Erzieher / in, Sozialpädagoge /in, Heilerziehungspfleger / in, Kinderpfleger / in und suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! ",
 
@@ -115,25 +124,31 @@ const resources = {
       technikText:
         "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? ",
       technikJobText:
-        "Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen. Bist du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+        "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+      // technikFullText:
+      //   "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
 
       facility: "Facility",
       facilityText:
         "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
       facilityJobText:
-        " Die Vermittlung von technischen Fachkräften – egal ob zur Planung, Wartung, Instandhaltung, Energiemanagement oder Betrieb der kompletten technischen Infrastruktur von Immobilien – gehört zu unsere Domäne.Du bist Facility Manager/in oder Objektleiter / in? Oder Du bist direkt beim Kunden vor Ort als Anlagenmechaniker/in HKLS, Servicetechniker / in HKLS, Elektriker / in oder Kälteanlagenmechaniker / in im Einsatz? Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+        "Die Vermittlung von technischen Fachkräften – egal ob zur Planung, Wartung, Instandhaltung, Energiemanagement oder Betrieb der kompletten technischen Infrastruktur von Immobilien – gehört zu unsere Domäne.Du bist Facility Manager/in oder Objektleiter / in? Oder Du bist direkt beim Kunden vor Ort als Anlagenmechaniker/in HKLS, Servicetechniker / in HKLS, Elektriker / in oder Kälteanlagenmechaniker / in im Einsatz? Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
 
       sanitar: "Sanitär",
       sanitarText:
-        "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland. ",
+        "Pratsia unterstützt dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland.",
       sanitarJobText:
-        "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!Einstürzen",
+        "Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
+      sanitarFullText:
+        "Pratsia unterstützt Dich bei der Suche nach Top Stellen in der Sanitär, Heizungs und Klimabranche (SHK). Unser Tätigkeitsbereich erstreckt sich von Deutschland. Wir kennen die SHK -Branche in allen Bereichen und Facetten, von der Industrie, über den Großhandel bis hin zum Anlagenbauer und Installationsbetrieb. Denn jeder Bereich hat seine spezifischen Anforderungen und Gegebenheiten, die es zu erfüllen gilt. Fachkompetenz und Branchenkenntnisse sowie langjährige Erfahrung im Markt – das ist unsere Kernkompetenz, für die wir tagtäglich einstehen und unser Bestes geben. Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! ",
 
-      mechanik: "Automechanik / mechatronik",
+      mechanik: "Automechanik / Mechatronik",
       mechanikText:
         "Zünde jetzt deinen Karriere-Booster, mit uns erhältst du Zugang zum exklusiven Jobmarkt – kostenlos und für dich maßgeschneidert.",
       mechanikJobText:
-        "Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig!",
+        "Im Land der Weltmarktführer der Automobilindustrie. Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig! Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst Du bei den Top - Arbeitgebern des Landes vorgeschlagen. Wir suchen Dir einen idealen Arbeitgeber, der Deinen Erwartungen gerecht wird.",
+      mechanikFullText:
+        "Zünde jetzt deinen Karriere-Booster, mit uns erhältst du Zugang zum exklusiven Jobmarkt – kostenlos und für dich maßgeschneidert. Im Land der Weltmarktführer der Automobilindustrie. Benzin im Blut und technisches Verständnis? Eine hervorragende Kombination! Und genau eine solche suchen wir! Wenn Dich zudem neue Technologien der Automobilbranche faszinieren, bist Du bei uns als gelernter Mechaniker oder Mechatroniker genau richtig! Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst Du bei den Top - Arbeitgebern des Landes vorgeschlagen. Wir suchen Dir einen idealen Arbeitgeber, der Deinen Erwartungen gerecht wird.",
 
       // * Aktuelle Jobangebote
 
@@ -151,7 +166,7 @@ const resources = {
       aktuelleJobItem3:
         "Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)",
       aktuelleJobItem3T:
-        "Stundenlohn 21 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
+        "Stundenlohn 17 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
 
       aktuelleJobItem4:
         "Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum / Altenheim /Klinikum)",
@@ -175,7 +190,7 @@ const resources = {
       beraten: "Wir beraten Sie gerne persönlich!",
       vereinbaren: "Vereinbaren Sie einen Termin mit uns",
 
-      // FORMA
+      // FORM
 
       label1: "Firma",
       placeholder1: "Firma",
@@ -201,12 +216,28 @@ const resources = {
       placeholder7: "Datum wählen",
 
       label8: "Gewünschte Zeit",
-      placeholder8: "",
+      placeholder8: "Nachmittag",
+
       select3N: "Nachmittag",
       select3V: "Vormittag",
 
       label9: "Nachricht",
       placeholder9: "Thema des Termins",
+
+      absenden: "Absenden",
+
+      // Errors
+
+      max64: "Darf maximal 64 Zeichen lang sein",
+      requiredField: "Dieses Feld ist erforderlich",
+      vornameMinLength: "Vorname muss mindestens 3 Zeichen lang sein",
+      vornameMaxLength: "Vorname darf maximal 64 Zeichen lang sein",
+      nachnameMinLength: "Nachname muss mindestens 3 Zeichen lang sein",
+      nachnameMaxLength: "Nachname darf maximal 64 Zeichen lang sein",
+      notValidEmail: "E-Mail ist ungültig",
+      phoneValid: "Telefonnummer muss gültig sein",
+      timeInThePast: "Wunschtermin darf nicht in der Vergangenheit liegen",
+      message: "Nachricht darf maximal 500 Zeichen lang sein",
 
       // Calendar
 
@@ -234,6 +265,7 @@ const resources = {
       // Map
 
       location: "Wir sind in Krefeld, unsere Arbeit ist überall",
+      timeToChange: "Zeit Für Veränderung",
     },
   },
 
@@ -307,11 +339,18 @@ const resources = {
         "Для оптимального вирішення потреб і вимог обох сторін, агентство з працевлаштування надає велике значення індивідуальному супроводу як підприємств, так і працівників. Це включає консультації та підтримку з питань візових та імміграційних процедур, зокрема отримання дозволу на роботу і проживання, а також допомогу в підготовці до переїзду, пошуку житла та інших практичних аспектів переїзду до Німеччини.",
       branchenTitle: "Галузі",
 
+      // * Branchen
+
+      weiterlesen: "Читати далі",
+      einstürzen: "Згорнути",
+
       pflege: "Догляд",
       pflegeText:
         "Як медичний фахівець в Німеччині ти бажаєш завжди забезпечувати відповідний догляд за пацієнтами у своїй професії? Ти прагнеш отримати більше визнання за свою щоденну роботу?",
       pflegeJobText:
-        "Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work - Life - Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
+        "Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work-Life-Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
+      pflegeMobileText:
+        "Як медичний фахівець в Німеччині... Ти бажаєш завжди забезпечувати адекватний догляд за пацієнтами у своїй професії? Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work-Life-Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
       pflegeJobList1: "Кадровий дефіцит",
       pflegeJobList2: "Бюрократичні складності",
       pflegeJobList3: "Відсутність визнання",
@@ -320,13 +359,15 @@ const resources = {
       pflegeJobList6: "Погані умови праці",
       pflegeJobList7: "Відсутність перспективи на керівну посаду",
       duSuchstInDE:
-        "Ти шукаєш зміну або вдалий старт в Німеччині? Тоді, можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! Ми знайдемо для вас ідеального роботодавця, який відповідає вашим очікуванням.",
+        "Ти шукаєш зміни або вдалий старт в Німеччині? Тоді, можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
 
       medizin: "Медицина",
       medizinText:
         "Хочеш бути впевненим, що твої пацієнти завжди отримують відповідну медичну допомогу?",
       medizinJobText:
         "Хочеш активно допомагати людям і не витрачати час на бюрократію? Мрієш, щоб 'Work-Life-Balance' був більше, ніж просто фраза від твого роботодавця?Ти, безсумнівно, зіткнувся з такими проблемами:",
+      medizinMobileText:
+        "Ти шукаєш зміни або успішний старт в Німеччині? Тоді можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! З Pratsia Recruiting ти будеш рекомендований до найкращих роботодавців країни. Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
       medizinJobList1: "Недостатній кадровий потенціал у галузі",
       medizinJobList2: "Бюрократія та адміністративні навантаження",
       medizinJobList3: "Недостатність часу для пацієнтів",
@@ -336,6 +377,8 @@ const resources = {
       medizinJobList7: "Недофінансування системи охорони здоров'я",
 
       sozialarbeit: "Соціальна робота",
+      sozialarbeitFullText:
+        "В галузі соціальної роботи та педагогіки людина завжди знаходиться в центрі уваги. Незалежно від того, чи йдеться про виховання дітей чи навчання дорослих, робота з людьми потребує особливого відчуття відповідальності і тонкої взаємодії. Для належного супроводу дорослих, підлітків або дітей потрібне правильне поєднання співчуття і професійних знань. Ми розуміємо, що важливо в соціальних і педагогічних професіях і пропонуємо кваліфікований персонал, який завжди має відчуття відповідальності і зберігає спокій у стресових ситуаціях.Ти вихователь / вихователька, соціальний педагог / педагогиня, педагог-дефектолог / дефектолог, або доглядальник / доглядальниця за дітьми і шукаєш зміну або успішний старт в Німеччині? Тоді, можливо, переїзд або зміна робочого місця саме те, що тобі потрібно!",
       sozialarbeitText:
         "В галузі соціальної роботи та педагогіки людина завжди знаходиться в центрі уваги.",
       sozialarbeitJobText:
@@ -345,43 +388,50 @@ const resources = {
       technikText:
         "Ти мрієш про захоплюючі проекти в провідних високотехнологічних компаніях?",
       technikJobText:
-        "Ти мрієш про цікаві проєкти у провідних високотехнологічних компаніях і шукаєте нові виклики в таких галузях, як машинобудування, автомобілебудування або альтернативна енергетика? Якщо ви є експертом у галузі сонячної енергетики, автомобілебудування, промислової збірки, металоконструкцій, виробництва, логістики, зварювальних технологій або електротехніки і прагнете змін або гарного старту в Німеччині, переїзд або переведення може бути саме тим, що вам потрібно!",
+        "Ти мрієш про захоплюючі проекти в провідних високотехнологічних компаніях? Ти бажаєш нових викликів у машинобудуванні, автомобільній техніці або альтернативних джерелах енергії? Ти разом з командою розробляєш світово визнані рішення, виготовлені в Німеччині, які формують інновації майбутнього. Якщо ти експерт у сонячній енергетиці, автомобільній промисловості, промисловому монтажі, стальному будівництві, виробництві та логістиці, зварюванні або електротехніці і шукаєщ зміни або успішний старт у Німеччині, то переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
+      // technikFullText:
+      //   "Ти мрієш про захоплюючі проекти в провідних високотехнологічних компаніях? Ти бажаєш нових викликів у машинобудуванні, автомобільній техніці або альтернативних джерелах енергії? Ти разом з командою розробляєш світово визнані рішення, виготовлені в Німеччині, які формують інновації майбутнього. Якщо ви експерт у сонячній енергетиці, автомобільній промисловості, промисловому монтажі, стальному будівництві, виробництві та логістиці, зварюванні або електротехніці і шукаєте зміни або успішний старт у Німеччині, то переїзд або зміна робочого місця може бути саме тим, що вам потрібно!",
 
       facility: "Керування обʼєктами",
       facilityText:
-        "Pratsia об'єднує кваліфікований фаховий персонал з інноваційними компаніями у сфері управління обʼєктами по всій Німеччині.",
+        "Pratsia об'єднує кваліфікований фаховий персонал з інноваційними компаніями у сфері управління будівлями по всій Німеччині. Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості.Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
       facilityJobText:
-        "Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості.Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
+        "Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості. Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
 
       sanitar: "Сантехніка",
       sanitarText:
-        "Pratsia підтримує тебе у пошуку топових вакансій в галузі сантехніки, опалення та кондиціонування повітря (SHK). Наша діяльність охоплює всю Німеччину.",
+        "'Pratsia' підтримає тебе у пошуку топових вакансій в галузі сантехніки, опалення та кондиціонування повітря (SHK). Наша діяльність охоплює всю Німеччину.",
       sanitarJobText:
         "Ми знаємо галузь SHK у всіх її аспектах: від промисловості та оптової торгівлі - до виробників устаткування та монтажних підприємств. Кожен з цих сегментів має свої специфічні вимоги і умови, які необхідно виконувати. Наша основна компетенція - це фаховість і знання галузі, а також багаторічний досвід на ринку. Ми щоденно віддано працюємо для того, щоб надавати найкращі послуги. Ти шукаєш зміни або успішний старт в Німеччині? Тоді переїзд або зміна місця роботи може бути тим, що тобі потрібно!",
+      sanitarFullText:
+        "'Pratsia' підтримає тебе у пошуку топових вакансій в галузі сантехніки, опалення та кондиціонування повітря (SHK). Наша діяльність охоплює всю Німеччину. Ми знаємо галузь SHK у всіх її аспектах: від промисловості та оптової торгівлі до виробників устаткування та монтажних підприємств. Кожен з цих сегментів має свої специфічні вимоги і умови, які необхідно виконувати. Наша основна компетенція - це фаховість і знання галузі, а також багаторічний досвід на ринку. Ми щоденно відданий працюємо для цього, щоб надавати найкращі послуги. Ти шукаєш змін або успішний старт в Німеччині? Тоді переїзд або зміна місця роботи може бути тим, що тобі потрібно!",
+
       mechanik: "Автомеханік / мехатронік",
       mechanikText:
         "Запали свій кар'єрний бустер прямо зараз - з нами ти отримаєш доступ до ексклюзивного ринку праці, безкоштовно і налаштовано під тебе.",
       mechanikJobText:
         "В країні світових лідерів автомобільної промисловості. Бензин у крові і технічне розуміння? Відмінна комбінація! І саме такого ми шукаємо! Якщо тебе також цікавлять нові технології автомобільної галузі, то ти на правильному шляху, як досвідчений механік або мехатронікер! Ти шукаєш змін або успішний старт в Німеччині? Тоді переїзд або зміна місця роботи може бути саме тим, що потрібно для тебе! З Pratsia Recruiting ми запропонуємо тобі вакансії в провідних компаніях країни. Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
+      mechanikFullText:
+        "Запали свій кар'єрний бустер прямо зараз - з нами ти отримаєш доступ до ексклюзивного ринку праці підлаштованого під тебе. В країні світових лідерів автомобільної промисловості. Бензин у крові і технічне розуміння? Відмінна комбінація! І саме такого ми шукаємо! Якщо тебе також цікавлять нові технології автомобільної галузі, то ти на правильному шляху, як досвідчений механік або мехатронікер! Ти шукаєш змін або успішний старт в Німеччині? Тоді переїзд або зміна місця роботи може бути саме тим, що потрібно для тебе! З Pratsia Recruiting ми запропонуємо тобі вакансії в провідних компаніях країни. Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
 
       aktuelleJob: "Поточні вакансії ",
       aktuelleJobItem1:
-        "Фахівець у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих)",
+        "Медсестра у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих)",
       aktuelleJobItem1T:
         "Погодинна оплата 24-28 € в залежності від досвіду роботи, незалежно від того, працюєте ви по всій Німеччині чи тільки у своєму регіоні. Можливість отримати службовий автомобіль, якщо користуєтеся власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%, 30 днів відпустки, робочий час на рахунок, харчування + проживання.",
 
       aktuelleJobItem2:
-        "Фахівець у компанії тимчасової зайнятості (місце роботи - лікарня / клініка)",
+        "Медсестра у компанії тимчасової зайнятості (місце роботи - лікарня / клініка)",
       aktuelleJobItem2T:
         "Погодинна оплата 30-34 € залежно від досвіду роботи, незалежно від того, працюєте ви по всій Німеччині чи тільки у своєму регіоні. Можливість отримати службовий автомобіль, а при користуванні власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%. 30 днів відпустки, облік робочого часу, харчування + проживання.",
 
       aktuelleJobItem3:
-        "Фахівець зі визнання кваліфікації (центр для людей похилого віку або лікарня)",
+        "Медсестра зі визнання кваліфікації (центр для людей похилого віку або лікарня)",
       aktuelleJobItem3T:
-        "Погодинна оплата 21 €. Pratsia знайде місце, де буде визнано ваш диплом, і підтримає вас у проходженні мовних курсів, поки ви працюєте на повну ставку протягом періоду визнання. Зазвичай також надається проживання.",
+        "Погодинна оплата 17 €. Pratsia знайде місце, де буде визнано ваш диплом, і підтримає вас у проходженні мовних курсів, поки ви працюєте на повну ставку протягом періоду визнання. Зазвичай також надається проживання.",
 
       aktuelleJobItem4:
-        "Допоміжний медичний персонал у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих / лікарня)",
+        "Помічник медичної сестри у компанії тимчасової зайнятості (місце роботи - центр для людей похилого віку / будинок престарілих / лікарня)",
       aktuelleJobItem4T:
         "Погодинна оплата 17 €. Можливість отримати службовий автомобіль, а при користуванні власним — відшкодування 30 центів за кілометр. Доплати: субота 25%, неділя 50%, ніч 25%, святкові дні 100%. 30 днів відпустки, облік робочого часу, харчування + проживання.",
 
@@ -401,10 +451,10 @@ const resources = {
         organize: "Ми це організуємо.",
       },
 
-      beraten: "Ми з радістю проконсультуємо особисто!",
+      beraten: "Ми з радістю проконсультуємо!",
       vereinbaren: "Запишіться на зустріч з нами",
 
-      // FORMA
+      // FORM
 
       label1: "Компанія",
       placeholder1: "Компанія",
@@ -428,15 +478,30 @@ const resources = {
 
       label7: "Бажана дата",
       placeholder7: "Оберіть дату",
-      select2: "",
 
       label8: "Бажаний час",
-      placeholder8: "",
+      placeholder8: "Після обіду",
+
       select3N: "Після обіду",
       select3V: "До обіду",
 
       label9: "Коментар",
       placeholder9: "Тема зустрічі",
+
+      absenden: "Відправили",
+
+      // Errors
+
+      max64: "Максимальна довжина поля - 64 символи",
+      requiredField: "Це поле обов'язкове",
+      vornameMinLength: "Ім'я повинно містити щонайменше 3 символи",
+      vornameMaxLength: "Ім'я повинно містити не більше 64 символів",
+      nachnameMinLength: "Прізвище повинно містити щонайменше 3 символи",
+      nachnameMaxLength: "Прізвище повинно містити не більше 64 символів",
+      notValidEmail: "Електронна адреса недійсна",
+      phoneValid: "Номер телефону повинен бути коректним",
+      timeInThePast: "Обраний термін не може бути у минулому",
+      message: "Повідомлення повинно містити не більше 500 символів",
 
       // Calendar
 
@@ -464,6 +529,7 @@ const resources = {
       // Map
 
       location: "Ми знаходимося у Крефельді, але працюємо повсюди",
+      timeToChange: "Час для змін",
     },
   },
 
@@ -522,6 +588,12 @@ const resources = {
         "Pratsia имеет широкие отраслевые знания в таких сферах, как медицина, уход, социальная работа, управление объектами, сантехника, электротехника и автомеханика. Это позволяет нам находить индивидуальные решения для кандидатов. Основой является индивидуальная консультация по вопросам карьерных возможностей и перспектив развития, а также дальнейший подбор вакансий, соответствующих квалификациям и интересам кандидатов.",
       unterstutzung:
         "Для оптимального решения потребностей и требований обеих сторон агентство по трудоустройству придает большое значение индивидуальному сопровождению как предприятий, так и работников. Это включает консультации и поддержку по вопросам визовых и иммиграционных процедур, включая получение разрешения на работу и проживание, а также помощь в подготовке к переезду, поиске жилья и другим практическим аспектам переезда в Германию.",
+
+      // * Branchen
+
+      weiterlesen: "Читать далее",
+      einstürzen: "Свернуть",
+
       branchenTitle: "Отрасли",
       pflege: "Уход",
       pflegeText:
@@ -550,6 +622,8 @@ const resources = {
       medizinJobList6: "Отсутствие возможностей для профессионального роста",
       medizinJobList7: "Недофинансирование системы здравоохранения",
       sozialarbeit: "Социальная работа",
+      sozialarbeitFullText:
+        "В области социального и педагогического труда человек всегда находится в центре внимания. Независимо от того, идет ли речь о воспитании детей или образовании взрослых, работа с людьми требует особой чуткости. Чтобы правильно сопровождать взрослых, подростков или детей, необходим правильный баланс между эмпатией и профессиональными знаниями. Мы точно знаем, что важно в социальных и педагогических профессиях, и предлагаем вам квалифицированный персонал, который всегда находит правильный подход и сохраняет спокойствие даже в стрессовых ситуациях.Вы воспитатель, социальный педагог, специалист по уходу за людьми с ограниченными возможностями, помощник воспитателя и ищете изменения или хороший старт в Германии? Тогда переезд или смена работы может быть именно тем, что вам нужно!",
       sozialarbeitText:
         "В области социальной работы и педагогики человек всегда находится в центре внимания.",
       sozialarbeitJobText:
@@ -559,22 +633,32 @@ const resources = {
         "Вы мечтаете о захватывающих проектах в ведущих высокотехнологичных компаниях?",
       technikJobText:
         "Вы мечтаете о интересных проектах в ведущих высокотехнологичных компаниях и ищете новые вызовы в таких областях, как машиностроение, автомобилестроение или альтернативная энергетика? Если вы являетесь экспертом в области солнечной энергетики, автомобилестроения, промышленной сборки, металлоконструкций, производства, логистики, сварочных технологий или электротехники и стремитесь к изменениям или хорошему старту в Германии, переезд или перевод может быть именно тем, что вам нужно!",
+      // technikFullText:
+      //   "Ты мечтаешь о захватывающих проектах в ведущих высокотехнологичных компаниях? Ты хочешь новых вызовов, например, в машиностроении, автомобильной технике или альтернативных источниках энергии? Ты разрабатываешь в команде всемирно признанные решения Made in Germany, которые формируют инновации завтрашнего дня. Ты эксперт в области солнечной техники, автомобилестроения, промышленного монтажа, сталестроения, производства и логистики, сварочной техники или электротехники и ищешь перемен или хорошего старта в Германии? Тогда переезд или смена работы могут быть именно тем, что тебе нужно!",
+
       facility: "Управление объектами",
       facilityText:
         "Pratsia объединяет квалифицированный профессиональный персонал с инновационными компаниями в сфере управления объектами по всей Германии.",
       facilityJobText:
         "Мы специализируемся на посредничестве технических специалистов, независимо от того, идет ли речь о проектировании, техническом обслуживании, хранении, энергоменеджменте или управлении технической инфраструктурой недвижимости. Вы специалист по управлению объектами или объектный менеджер? Или вы работаете напрямую с клиентом как механик-монтажник HKLS, техник по обслуживанию HKLS, электрик или механик-монтажник холодильных систем? Ищете смену или успешный старт в Германии? Тогда переезд или смена рабочего места может быть правильным решением!",
+      facilityFullJobText: "",
 
       sanitar: "Сантехник",
       sanitarText:
         "Pratsia поддерживает тебя в поиске топовых вакансий в области сантехники, отопления и кондиционирования воздуха (SHK). Наша деятельность охватывает всю Германию.",
       sanitarJobText:
         "Мы знаем отрасль SHK во всех её аспектах: от промышленности и оптовой торговли до производителей оборудования и монтажных предприятий. Каждый из этих сегментов имеет свои специфические требования и условия, которые необходимо выполнять. Наша основная компетенция - это профессионализм и знание отрасли, а также многолетний опыт на рынке. Мы ежедневно преданно работаем, чтобы предоставлять лучшие услуги. Ты ищешь изменения или успешный старт в Германии? Тогда переезд или смена места работы может быть тем, что тебе нужно!",
+      sanitarFullText:
+        "'Pratsia' поддерживает тебя в поиске лучших вакансий в сфере сантехники, отопления и кондиционирования воздуха (SHK). Наша деятельность охватывает Германию. Мы знаем отрасль SHK во всех её областях и аспектах, от промышленности и оптовой торговли до проектирования и установки систем. Ведь каждая область имеет свои специфические требования и условия, которым необходимо соответствовать. Профессиональная компетентность, знание отрасли и многолетний опыт на рынке – это наша основная компетенция, за которую мы ежедневно отвечаем и прикладываем все усилия. Ты ищешь перемен или хороший старт в Германии? Тогда переезд или смена работы могут быть именно тем, что тебе нужно!",
+
       mechanik: "Автомеханик / мехатроник",
       mechanikText:
         "Запусти свою карьеру прямо сейчас - с нами ты получишь доступ к эксклюзивному рынку труда, бесплатно и настроено под тебя.",
       mechanikJobText:
         "В стране мировых лидеров автомобильной промышленности. Бензин в крови и техническое понимание? Отличная комбинация! И именно такого мы ищем! Если тебя также интересуют новые технологии автомобильной отрасли, то ты на правильном пути, как опытный механик или мехатроник! Ты ищешь изменений или успешный старт в Германии? Тогда переезд или смена места работы может быть именно тем, что тебе нужно! С Pratsia Recruiting мы предложим тебе вакансии в ведущих компаниях страны. Мы найдем для тебя идеального работодателя, который соответствует твоим ожиданиям.",
+      mechanikFullText:
+        "Запусти свой карьерный бустер сейчас, с нами ты получишь доступ к эксклюзивному рынку вакансий – бесплатно и специально для тебя. В стране мировых лидеров автомобильной промышленности. Бензин в крови и техническое понимание? Отличное сочетание! И именно такое сочетание мы ищем! Если тебя также увлекают новые технологии в автомобильной отрасли, то у нас ты как раз на своем месте в качестве квалифицированного механика или мехатроника! Ты ищешь перемен или хороший старт в Германии? Тогда переезд или смена работы могут быть именно тем, что тебе нужно! С Pratsia Recruiting ты будешь предложен лучшим работодателям страны. Мы найдем тебе идеального работодателя, который соответствует твоим ожиданиям.",
+
       aktuelleJob: "Текущие вакансии",
       aktuelleJobItem1:
         "Специалист в компании временной занятости (место работы - центр для пожилых людей / дом престарелых)",
@@ -587,7 +671,7 @@ const resources = {
       aktuelleJobItem3:
         "Специалист по признанию квалификации (центр для пожилых людей или больница)",
       aktuelleJobItem3T:
-        "Почасовая оплата 21 €. Pratsia найдет место, где будет признан ваш диплом, и поддержит вас в прохождении языковых курсов, пока вы работаете на полную ставку в течение периода признания. Обычно также предоставляется проживание.",
+        "Почасовая оплата 17 €. Pratsia найдет место, где будет признан ваш диплом, и поддержит вас в прохождении языковых курсов, пока вы работаете на полную ставку в течение периода признания. Обычно также предоставляется проживание.",
       aktuelleJobItem4:
         "Вспомогательный медицинский персонал в компании временной занятости (место работы - центр для пожилых людей / дом престарелых / больница)",
       aktuelleJobItem4T:
@@ -610,7 +694,8 @@ const resources = {
       beraten: "Мы с радостью проконсультируем лично!",
       vereinbaren: "Запишитесь на встречу с нами",
 
-      // FORMA
+      // FORM
+
       label1: "Компания",
       placeholder1: "Компания",
       label2: "Обращение",
@@ -627,13 +712,27 @@ const resources = {
       placeholder6: "Телефон",
       label7: "Желаемая дата",
       placeholder7: "Выберите дату",
-      select2: "",
       label8: "Желаемое время",
-      placeholder8: "",
+      placeholder8: "После обеда",
       select3N: "После обеда",
       select3V: "До обеда",
       label9: "Комментарий",
       placeholder9: "Тема встречи",
+
+      absenden: "Отправить",
+
+      // Errors
+
+      max64: "Максимальная длина поля - 64 символа",
+      requiredField: "Это поле обязательно для заполнения",
+      vornameMinLength: "Имя должно содержать не менее 3 символов",
+      vornameMaxLength: "Имя должно содержать не более 64 символов",
+      nachnameMinLength: "Фамилия должна содержать не менее 3 символов",
+      nachnameMaxLength: "Фамилия должна содержать не более 64 символов",
+      notValidEmail: "Электронная почта указана неверно",
+      phoneValid: "Номер телефона должен быть корректным",
+      timeInThePast: "Выбранная дата не может быть в прошлом",
+      message: "Сообщение должно содержать не более 500 символов",
 
       // Calendar
       sun: "Воскресенье",
@@ -658,6 +757,7 @@ const resources = {
 
       // Map
       location: "Мы находимся в Крефельде, но работаем повсюду",
+      timeToChange: "Время перемен",
     },
   },
 };

@@ -17,15 +17,17 @@ import logosprite from "../../images/logo/sprite.svg";
 
 import whatsapp from "../../images/social-icons/icon-whatsApp.svg";
 import instagram from "../../images/social-icons/Icon-Instagram.svg";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <FooterSection className="container">
       <SvgTitleFooterWrapper>
         <SvgLogo>
           <use href={`${logosprite}#icon-logo-remake`} />
         </SvgLogo>
-        <TitleFooter>Zeit Für Veränderung</TitleFooter>
+        <TitleFooter>{t("timeToChange")}</TitleFooter>
       </SvgTitleFooterWrapper>
       <ListFooter>
         <li>
