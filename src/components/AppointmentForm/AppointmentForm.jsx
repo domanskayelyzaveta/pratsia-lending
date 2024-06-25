@@ -143,7 +143,6 @@ const AppointmentForm = () => {
                 render={({ field }) => (
                   <StyledDatePicker
                     {...field}
-                    locale="de"
                     selected={field.value}
                     onChange={(date) => field.onChange(date)}
                     placeholderText={t("placeholder7")}
