@@ -3,8 +3,10 @@ import i18n from "../../../i18n";
 import { SvgDEU, SvgUA } from "../../Header/SvgFlags";
 import { Title, Block } from "./ModalLangSwitch.styled";
 import LangButton from "./LangButton";
+import { useTranslation } from "react-i18next";
 
 const ModalLangSwitch = ({ selectedLanguage, setSelectedLanguage }) => {
+  const { t } = useTranslation();
   const handleChangeLanguage = (language) => {
     setSelectedLanguage(language);
     i18n.changeLanguage(language);
@@ -12,7 +14,7 @@ const ModalLangSwitch = ({ selectedLanguage, setSelectedLanguage }) => {
 
   return (
     <>
-      <Title>Wählen Sie bitte die Sprache der Website</Title>
+      <Title>{t("choiceLanguage")}</Title>
       <Block>
         <LangButton
           language="de"

@@ -125,9 +125,6 @@ const resources = {
         "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? ",
       technikJobText:
         "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-      // technikFullText:
-      //   "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-
       facility: "Facility",
       facilityText:
         "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
@@ -266,6 +263,16 @@ const resources = {
 
       location: "Wir sind in Krefeld, unsere Arbeit ist überall",
       timeToChange: "Zeit Für Veränderung",
+
+      // Language Modal
+
+      choiceLanguage: "Wählen Sie bitte die Sprache der Website",
+
+      // Footer
+
+      inhaber: "Inhaber: Mykola Sytnyk",
+      street: "Garnstraße 12",
+      city: "47798 Krefeld",
     },
   },
 
@@ -394,7 +401,9 @@ const resources = {
 
       facility: "Керування обʼєктами",
       facilityText:
-        "Pratsia об'єднує кваліфікований фаховий персонал з інноваційними компаніями у сфері управління будівлями по всій Німеччині. Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості.Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
+        "Pratsia об'єднує кваліфікований фаховий персонал з інноваційними компаніями у сфері управління спорудами по всій Німеччині.",
+      // facilityText:
+      //   "Pratsia об'єднує кваліфікований фаховий персонал з інноваційними компаніями у сфері управління будівлями по всій Німеччині. Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості.Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
       facilityJobText:
         "Ми спеціалізуємося на посередництві технічних фахівців, незалежно від того, чи йдеться про проектування, технічне обслуговування, зберігання, енергоменеджмент або управління технічною інфраструктурою нерухомості. Ти фахівець з управління об'єктами чи об'єктний менеджер? Або ти працюєш безпосередньо з клієнтом як механік-монтажник HKLS, технік з обслуговування HKLS, електрик або механік-монтажник холодильних систем? Ти шукаєш зміни або успішний початок у Німеччині? Тоді переїзд або зміна робочого місця може бути саме тим, що тобі потрібно!",
 
@@ -445,7 +454,7 @@ const resources = {
       appointment: {
         questions: "Маєте питання?",
         answers: "Ми надамо відповіді",
-        problem: "У вас є проблема??",
+        problem: "У вас є проблема?",
         solutions: "Ми знаходимо рішення",
         certificate: "Потрібен сертифікат?",
         organize: "Ми це організуємо.",
@@ -530,6 +539,16 @@ const resources = {
 
       location: "Ми знаходимося у Крефельді, але працюємо повсюди",
       timeToChange: "Час для змін",
+
+      // Language Modal
+
+      choiceLanguage: "Будь ласка, оберіть мову сайту",
+
+      // Footer
+
+      inhaber: "Власник: Микола Ситник",
+      street: "Вулиця Гарн, 12",
+      city: "47798 Крефельд",
     },
   },
 
@@ -553,6 +572,13 @@ const resources = {
       textHero:
         "Добро пожаловать в ведущую кадровую агенцию Pratsia - вашего надежного партнера в поиске высококвалифицированных специалистов из Украины для работодателей в Германии",
       btn: "Записаться на собеседование",
+
+      aboutUsSect: "Про нас",
+      aboutUsSubTitle:
+        "Мы строим долгосрочные и успешные партнерские отношения, основанные на доверии и уважении",
+      aboutUsText:
+        "Наш многолетний опыт, глубокие отраслевые знания и международная сеть позволяют нам предлагать индивидуальные решения по подбору персонала, которые соответствуют потребностям наших клиентов.",
+
       aboutUsItemList1: "Специализация",
       aboutUsItemList2: "Интегрированный подход",
       aboutUsItemList3: "Фундаментальная работа",
@@ -633,15 +659,12 @@ const resources = {
         "Вы мечтаете о захватывающих проектах в ведущих высокотехнологичных компаниях?",
       technikJobText:
         "Вы мечтаете о интересных проектах в ведущих высокотехнологичных компаниях и ищете новые вызовы в таких областях, как машиностроение, автомобилестроение или альтернативная энергетика? Если вы являетесь экспертом в области солнечной энергетики, автомобилестроения, промышленной сборки, металлоконструкций, производства, логистики, сварочных технологий или электротехники и стремитесь к изменениям или хорошему старту в Германии, переезд или перевод может быть именно тем, что вам нужно!",
-      // technikFullText:
-      //   "Ты мечтаешь о захватывающих проектах в ведущих высокотехнологичных компаниях? Ты хочешь новых вызовов, например, в машиностроении, автомобильной технике или альтернативных источниках энергии? Ты разрабатываешь в команде всемирно признанные решения Made in Germany, которые формируют инновации завтрашнего дня. Ты эксперт в области солнечной техники, автомобилестроения, промышленного монтажа, сталестроения, производства и логистики, сварочной техники или электротехники и ищешь перемен или хорошего старта в Германии? Тогда переезд или смена работы могут быть именно тем, что тебе нужно!",
 
       facility: "Управление объектами",
       facilityText:
         "Pratsia объединяет квалифицированный профессиональный персонал с инновационными компаниями в сфере управления объектами по всей Германии.",
       facilityJobText:
         "Мы специализируемся на посредничестве технических специалистов, независимо от того, идет ли речь о проектировании, техническом обслуживании, хранении, энергоменеджменте или управлении технической инфраструктурой недвижимости. Вы специалист по управлению объектами или объектный менеджер? Или вы работаете напрямую с клиентом как механик-монтажник HKLS, техник по обслуживанию HKLS, электрик или механик-монтажник холодильных систем? Ищете смену или успешный старт в Германии? Тогда переезд или смена рабочего места может быть правильным решением!",
-      facilityFullJobText: "",
 
       sanitar: "Сантехник",
       sanitarText:
@@ -758,6 +781,16 @@ const resources = {
       // Map
       location: "Мы находимся в Крефельде, но работаем повсюду",
       timeToChange: "Время перемен",
+
+      // Language Modal
+
+      choiceLanguage: "Пожалуйста, выберите язык сайта",
+
+      // Footer
+
+      inhaber: "Собственник: Микола Ситник",
+      street: "Улица Гарн, 12",
+      city: "47798 Крефельд",
     },
   },
 };

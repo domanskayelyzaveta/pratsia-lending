@@ -1,39 +1,39 @@
-import React, {
-  // Suspense,
-  lazy,
-  useState,
-  useEffect,
-  useRef,
-} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
-// import Loader from "./components/Loader/Loader";
+import Loader from "./components/Loader/Loader";
 import "./i18n";
 import Animation from "./components/Animation/Animation";
 import gsap from "gsap";
 import Modal from "./components/Modal/Modal";
 import ModalLangSwitch from "./components/Modal/ModalLangSwitch/ModalLangSwitch";
 
-const Hero = lazy(() => import("./components/Hero/Hero"));
-const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
-const ForCompanies = lazy(() =>
+const Hero = React.lazy(() => import("./components/Hero/Hero"));
+const AboutUs = React.lazy(() => import("./components/AboutUs/AboutUs"));
+const ForCompanies = React.lazy(() =>
   import("./components/ForCompanies/ForCompanies")
 );
-const ForApplicants = lazy(() =>
+const ForApplicants = React.lazy(() =>
   import("./components/ForApplicants/ForApplicants")
 );
-const Appointment = lazy(() => import("./components/Appointment/Appointment"));
-const AppointmentForm = lazy(() =>
+const Appointment = React.lazy(() =>
+  import("./components/Appointment/Appointment")
+);
+const AppointmentForm = React.lazy(() =>
   import("./components/AppointmentForm/AppointmentForm")
 );
-const Location = lazy(() => import("./components/Location/Location"));
-const ImpressumPage = lazy(() => import("./Pages/ImpressumPage/ImpressumPage"));
-const DatenschutzerklärungPage = lazy(() =>
+const Location = React.lazy(() => import("./components/Location/Location"));
+const ImpressumPage = React.lazy(() =>
+  import("./Pages/ImpressumPage/ImpressumPage")
+);
+const DatenschutzerklärungPage = React.lazy(() =>
   import("./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage")
 );
-const Footer = lazy(() => import("./components/Footer/Footer"));
-const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
-const Header = lazy(() => import("./components/Header/Header"));
+const Footer = React.lazy(() => import("./components/Footer/Footer"));
+const DataCompany = React.lazy(() =>
+  import("./components/DataCompany/DataCompany")
+);
+const Header = React.lazy(() => import("./components/Header/Header"));
 
 const App = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("de");
@@ -42,7 +42,7 @@ const App = () => {
   const mainContentRef = useRef(null);
 
   useEffect(() => {
-    if (isAnimationComplete) {
+    if (isAnimationComplete && mainContentRef.current) {
       gsap.fromTo(
         mainContentRef.current,
         { opacity: 0, y: "100vh" },
@@ -109,8 +109,7 @@ const App = () => {
       {!isAnimationComplete ? (
         <Animation onComplete={handleAnimationComplete} />
       ) : (
-        <>
-          {/* <Suspense fallback={<Loader />}> */}
+        <React.Suspense fallback={<Loader />}>
           <Header
             handleSetActiveLink={handleSetActiveLink}
             selectedLanguage={selectedLanguage}
@@ -146,15 +145,16 @@ const App = () => {
             <Footer />
             <DataCompany />
           </div>
-          {/* </Suspense> */}
+        </React.Suspense>
+      )}
 
-          <Modal show={showModal} handleClose={() => setShowModal(false)}>
-            <ModalLangSwitch
-              selectedLanguage={selectedLanguage}
-              setSelectedLanguage={setSelectedLanguage}
-            />
-          </Modal>
-        </>
+      {showModal && (
+        <Modal show={showModal} handleClose={() => setShowModal(false)}>
+          <ModalLangSwitch
+            selectedLanguage={selectedLanguage}
+            setSelectedLanguage={setSelectedLanguage}
+          />
+        </Modal>
       )}
     </>
   );

@@ -1,17 +1,17 @@
 export const dataAppointment = [
   {
     icon: "icon-info-square-Max",
-    text1: "Haben Sie Fragen?",
-    text2: "Wir geben Antworten",
+    text1: "questions",
+    text2: "answers",
   },
   {
     icon: "icon-clipboard-check-Max",
-    text1: "Haben Sie ein Problem?",
-    text2: "Wir finden Lösungen",
+    text1: "problem",
+    text2: "solutions",
   },
   {
     icon: "icon-journal-Max",
-    text1: "Brauchen Sie Urkunde?",
-    text2: "Wir organisieren das",
+    text1: "certificate",
+    text2: "organize",
   },
 ];

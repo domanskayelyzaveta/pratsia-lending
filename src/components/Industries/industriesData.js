@@ -43,7 +43,7 @@ export const industriesData = [
       "medizinJobList6",
       "medizinJobList7",
     ],
-    text: "medizinMobileText",
+    text: "duSuchstInDE",
   },
   {
     title: "sozialarbeit",
