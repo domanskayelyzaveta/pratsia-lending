@@ -1,3 +1,4 @@
+import React from "react";
 import Select, { components } from "react-select";
 import { SvgDEU, SvgUA } from "../SvgFlags";
 import {
@@ -6,7 +7,7 @@ import {
 } from "../CustomDropdownIndicator/CustomDropdownIndicator";
 import i18n from "../../../i18n";
 
-const SelectLang = () => {
+const SelectLang = ({ selectedLanguage, setSelectedLanguage }) => {
   const options = [
     { value: "de", label: "DE" },
     { value: "ua", label: "UA" },
@@ -27,21 +28,20 @@ const SelectLang = () => {
   };
 
   const handleChangeLanguage = (selectedOption) => {
+    setSelectedLanguage(selectedOption.value);
     i18n.changeLanguage(selectedOption.value);
   };
 
-  const CustomOption = (props) => {
-    return (
-      <components.Option {...props}>
-        <span style={{ fontSize: "12px", color: "var(--black-200)" }}>
-          {props.data.label}
-        </span>
-        <div style={{ height: "29px", overflow: "hidden" }}>
-          {getFlagIcon(props.data.value)}
-        </div>
-      </components.Option>
-    );
-  };
+  const CustomOption = (props) => (
+    <components.Option {...props}>
+      <span style={{ fontSize: "12px", color: "var(--black-200)" }}>
+        {props.data.label}
+      </span>
+      <div style={{ height: "29px", overflow: "hidden" }}>
+        {getFlagIcon(props.data.value)}
+      </div>
+    </components.Option>
+  );
 
   const CustomSingleValue = ({ children, ...props }) => (
     <components.SingleValue {...props}>
@@ -49,6 +49,7 @@ const SelectLang = () => {
       {getFlagIcon(props.data.value)}
     </components.SingleValue>
   );
+
   return (
     <Select
       components={{
@@ -58,9 +59,8 @@ const SelectLang = () => {
       }}
       options={options}
       styles={CustomStyles}
-      defaultValue={options.find((option) => option.value === "de")}
+      value={options.find((option) => option.value === selectedLanguage)}
       onChange={handleChangeLanguage}
-      // value={selectedLanguage}
     />
   );
 };
