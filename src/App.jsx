@@ -11,6 +11,8 @@ import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
 import "./i18n";
 import Animation from "./components/Animation/Animation";
 import gsap from "gsap";
+import Modal from "./components/Modal/Modal";
+import ModalLangSwitch from "./components/Modal/ModalLangSwitch/ModalLangSwitch";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -34,6 +36,8 @@ const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
 const Header = lazy(() => import("./components/Header/Header"));
 
 const App = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("de");
+  const [showModal, setShowModal] = useState(false);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const mainContentRef = useRef(null);
 
@@ -56,6 +60,9 @@ const App = () => {
           },
         }
       );
+      setTimeout(() => {
+        setShowModal(true);
+      }, 1000);
     }
   }, [isAnimationComplete]);
 
@@ -104,7 +111,11 @@ const App = () => {
       ) : (
         <>
           {/* <Suspense fallback={<Loader />}> */}
-          <Header handleSetActiveLink={handleSetActiveLink} />
+          <Header
+            handleSetActiveLink={handleSetActiveLink}
+            selectedLanguage={selectedLanguage}
+            setSelectedLanguage={setSelectedLanguage}
+          />
           <div ref={mainContentRef}>
             <main>
               <Routes>
@@ -134,6 +145,13 @@ const App = () => {
             <DataCompany />
           </div>
           {/* </Suspense> */}
+
+          <Modal show={showModal} handleClose={() => setShowModal(false)}>
+            <ModalLangSwitch
+              selectedLanguage={selectedLanguage}
+              setSelectedLanguage={setSelectedLanguage}
+            />
+          </Modal>
         </>
       )}
     </>
