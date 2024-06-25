@@ -7,7 +7,7 @@ export const SectionCompanies = styled.section`
     padding-top: 48px;
   }
   @media screen and (min-width: 1440px) {
-    padding-top: 48px;
+    padding-top: 80px;
     position: relative;
   }
 `;
@@ -115,7 +115,7 @@ export const SecondList = styled.ul`
   }
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: 254px;
+    top: 276px;
     right: 12px;
 
     width: 700px;

@@ -80,16 +80,17 @@ const Footer = () => {
 
       <ContactInfoFooterDiv>
         <HolderDiv>
-          <FooterText>Inhaber: Mykola Sytnyk</FooterText>
+          <FooterText>{t("inhaber")}</FooterText>
           <FooterText>
-            Garnstraße 12 <br />
-            47798 Krefeld
+            {t("street")}
+            <br />
+            {t("city")}
           </FooterText>
         </HolderDiv>
 
         <PhoneEmailDiv>
           <LinkFooterText href="tel:+491701481355">
-            Telefon: 0170 1481355
+            {t("telefon")}: 0170 1481355
           </LinkFooterText>
           <LinkFooterText href="mailto:info@pratsia.de">
             E-Mail: info@pratsia.de
