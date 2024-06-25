@@ -128,10 +128,12 @@ const App = () => {
                   path="/"
                   element={
                     <>
-                      <Hero />
-                      <AboutUs />
+                      <Hero handleSetActiveLink={handleSetActiveLink} />
+                      <AboutUs handleSetActiveLink={handleSetActiveLink} />
                       <ForCompanies />
-                      <ForApplicants />
+                      <ForApplicants
+                        handleSetActiveLink={handleSetActiveLink}
+                      />
                       <Appointment />
                       <AppointmentForm />
                       <Location />

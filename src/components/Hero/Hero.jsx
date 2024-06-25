@@ -11,7 +11,7 @@ import {
   TitleSubTextDiv,
 } from "./Hero.styled";
 
-const Hero = () => {
+const Hero = ({ handleSetActiveLink }) => {
   const { t } = useTranslation();
 
   return (
@@ -38,7 +38,13 @@ const Hero = () => {
       </HeroText>
 
       <BtnHeroDiv className="container">
-        <BtnHero>{t("btn")}</BtnHero>
+        <BtnHero
+          onClick={(e) => {
+            handleSetActiveLink("kontakt", e);
+          }}
+        >
+          {t("btn")}
+        </BtnHero>
       </BtnHeroDiv>
     </HeroSection>
   );
