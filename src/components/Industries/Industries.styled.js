@@ -6,6 +6,9 @@ export const SectionIndustries = styled.div`
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+  }
 `;
 
 export const TitleIndustries = styled.h2`
@@ -71,8 +74,8 @@ export const BtnIndustries = styled.button`
     left: ${({ $isOpened }) => ($isOpened ? "0px" : "292px")};
   }
   @media screen and (min-width: 1440px) {
-    left: ${({ $isOpened }) => ($isOpened ? "0px" : "640px")};
-    top: ${(props) => (props.$isVisible ? "101%" : "-144px")};
+    left: ${({ $isOpened }) => ($isOpened ? "0px" : "420px")};
+    top: ${(props) => (props.$isVisible ? "101%" : "-100px")};
   }
 `;
 
@@ -110,6 +113,10 @@ export const TextSliderTablet = styled.p`
     width: 426px;
     font-size: 19px;
     margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 850px;
   }
 `;
 
@@ -194,8 +201,8 @@ export const ImgIndustries = styled.img`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 624px;
-    height: 320px;
+    width: 408px;
+    height: 230px;
 
     object-fit: cover;
 
