@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const SectionAboutUs = styled.section`
   padding-top: 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 44px;
+  }
 `;
 
 export const TitleWrapper = styled.div`

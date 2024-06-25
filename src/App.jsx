@@ -1,7 +1,6 @@
-import React, { Suspense, lazy, useState, useEffect, useRef } from "react";
+import React, { lazy, useState, useEffect, useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
-import Loader from "./components/Loader/Loader";
 import "./i18n";
 import Animation from "./components/Animation/Animation";
 import gsap from "gsap";
@@ -98,48 +97,46 @@ const App = () => {
     }
   };
   return (
-    <div ref={mainContentRef}>
+    <div>
       {!isAnimationComplete ? (
         <Animation onComplete={handleAnimationComplete} />
       ) : (
         <>
-          <Suspense fallback={<Loader />}>
-            <Header
-              handleSetActiveLink={handleSetActiveLink}
-              selectedLanguage={selectedLanguage}
-              setSelectedLanguage={setSelectedLanguage}
-            />
-            <div>
-              <main>
-                <Routes>
-                  <Route path="/impressum" element={<ImpressumPage />} />
-                  <Route
-                    path="/datenschutzerklarung"
-                    element={<DatenschutzerklärungPage />}
-                  />
-                  <Route
-                    path="/"
-                    element={
-                      <>
-                        <Hero handleSetActiveLink={handleSetActiveLink} />
-                        <AboutUs handleSetActiveLink={handleSetActiveLink} />
-                        <ForCompanies />
-                        <ForApplicants
-                          handleSetActiveLink={handleSetActiveLink}
-                        />
-                        <Appointment />
-                        <AppointmentForm />
-                        <Location />
-                      </>
-                    }
-                  />
-                </Routes>
-                <BtnGoUp />
-              </main>
-              <Footer />
-              <DataCompany />
-            </div>
-          </Suspense>
+          <Header
+            handleSetActiveLink={handleSetActiveLink}
+            selectedLanguage={selectedLanguage}
+            setSelectedLanguage={setSelectedLanguage}
+          />
+          <div ref={mainContentRef}>
+            <main>
+              <Routes>
+                <Route path="/impressum" element={<ImpressumPage />} />
+                <Route
+                  path="/datenschutzerklarung"
+                  element={<DatenschutzerklärungPage />}
+                />
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Hero handleSetActiveLink={handleSetActiveLink} />
+                      <AboutUs handleSetActiveLink={handleSetActiveLink} />
+                      <ForCompanies />
+                      <ForApplicants
+                        handleSetActiveLink={handleSetActiveLink}
+                      />
+                      <Appointment />
+                      <AppointmentForm />
+                      <Location />
+                    </>
+                  }
+                />
+              </Routes>
+              <BtnGoUp />
+            </main>
+            <Footer />
+            <DataCompany />
+          </div>
 
           <Modal show={showModal} handleClose={() => setShowModal(false)}>
             <ModalLangSwitch
