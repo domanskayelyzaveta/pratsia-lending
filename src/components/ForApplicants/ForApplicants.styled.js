@@ -14,6 +14,7 @@ export const ForAppTitle = styled.h2`
   }
 
   @media screen and (min-width: 1440px) {
+    text-align: start;
     margin-bottom: 12px;
     font-size: 32px;
   }
@@ -92,7 +93,7 @@ export const ApplicantsList = styled.ul`
     margin-top: 0px;
 
     position: absolute;
-    top: 180px;
+    top: 206px;
 
     width: 732px;
     margin-bottom: 64px;

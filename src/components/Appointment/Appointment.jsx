@@ -24,8 +24,8 @@ const Appointment = () => {
                 <use href={`${sprite}#${icon}`} />
               </Svg>
               <div>
-                <TextAppointment>{text1}</TextAppointment>
-                <TextAppointment>{text2}</TextAppointment>
+                <TextAppointment>{t(`appointment.${text1}`)}</TextAppointment>
+                <TextAppointment>{t(`appointment.${text2}`)}</TextAppointment>
               </div>
             </ListItemsAppointment>
           ))}
