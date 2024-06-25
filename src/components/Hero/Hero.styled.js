@@ -27,6 +27,8 @@ export const TitleHero = styled.h1`
   @media screen and (min-width: 1440px) {
     font-size: 72px;
     width: 576px;
+
+    margin-bottom: 24px;
   }
 `;
 
@@ -58,8 +60,6 @@ export const ImgDiv = styled.div`
   margin: 0 auto;
   background-image: url(${HeroImg});
 
-  margin-bottom: 12px;
-
   @media screen and (min-width: 768px) {
     width: 400px;
     height: 372px;
@@ -89,24 +89,32 @@ export const HeroText = styled.p`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 731px;
+    width: 734px;
 
-    position: absolute;
-    top: 420px;
-    left: 84px;
+    padding-left: 84px;
+    padding-right: 0px;
+
+    margin-bottom: 116px;
   }
 `;
 
 export const HeroAndTitleDiv = styled.div`
+  margin-bottom: 12px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     gap: 24px;
+
+    margin-bottom: 24px;
   }
+
   @media screen and (min-width: 1440px) {
     display: flex;
     align-items: flex-start;
     gap: 24px;
+
+    margin-bottom: 0px;
   }
 `;
 
@@ -135,6 +143,8 @@ export const BtnHeroDiv = styled.div`
   }
   @media screen and (min-width: 1440px) {
     margin-top: -80px;
+    margin-bottom: 84px;
+    margin-left: 0px;
 
     justify-content: flex-start;
   }

@@ -10,32 +10,49 @@ import {
   TitleHero,
   TitleSubTextDiv,
 } from "./Hero.styled";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = ({ handleSetActiveLink }) => {
   const { t } = useTranslation();
 
+  const isMobileAndTablet = useMediaQuery({ maxWidth: 1439 });
+  const isDesktop = useMediaQuery({ minWidth: 1440 });
+
   return (
     <HeroSection id="starseite">
       <HeroAndTitleDiv>
-        <TitleSubTextDiv className="container">
-          <TitleHero>
-            {t("slogan")}
-            {/* Deine Karriere - &nbsp;Unsere Mission */}
-          </TitleHero>
-          <SubText>
-            {t("heroTitle")}
-            {/* Entdecken Sie Pratsia */}
-          </SubText>
-        </TitleSubTextDiv>
+        <div>
+          <TitleSubTextDiv className="container">
+            <TitleHero>
+              {t("slogan")}
+              {/* Deine Karriere - &nbsp;Unsere Mission */}
+            </TitleHero>
+            <SubText>
+              {t("heroTitle")}
+              {/* Entdecken Sie Pratsia */}
+            </SubText>
+          </TitleSubTextDiv>
+
+          {isDesktop && (
+            <HeroText>
+              {t("textHero")}
+              {/* Willkommen bei der führenden Personalagentur Pratsia - Ihrem
+        zuverlässigen Partner bei der Vermittlung von hochqualifizierten
+        Fachkräften aus der Ukraine nach Deutschland */}
+            </HeroText>
+          )}
+        </div>
         <ImgDiv />
       </HeroAndTitleDiv>
 
-      <HeroText>
-        {t("textHero")}
-        {/* Willkommen bei der führenden Personalagentur Pratsia - Ihrem
+      {isMobileAndTablet && (
+        <HeroText>
+          {t("textHero")}
+          {/* Willkommen bei der führenden Personalagentur Pratsia - Ihrem
         zuverlässigen Partner bei der Vermittlung von hochqualifizierten
         Fachkräften aus der Ukraine nach Deutschland */}
-      </HeroText>
+        </HeroText>
+      )}
 
       <BtnHeroDiv className="container">
         <BtnHero
