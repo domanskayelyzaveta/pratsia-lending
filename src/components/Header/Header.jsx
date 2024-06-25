@@ -16,7 +16,11 @@ import {
 } from "./Header.styled";
 import { useTranslation } from "react-i18next";
 
-const Header = ({ handleSetActiveLink }) => {
+const Header = ({
+  handleSetActiveLink,
+  setSelectedLanguage,
+  selectedLanguage,
+}) => {
   const { t } = useTranslation();
   const [shownModal, setShownModal] = useState(false);
   // const [selectedLanguage, setSelectedLanguage] = useState(null);
@@ -107,7 +111,10 @@ const Header = ({ handleSetActiveLink }) => {
             </StyledNav>
           )}
 
-          <SelectLang />
+          <SelectLang
+            setSelectedLanguage={setSelectedLanguage}
+            selectedLanguage={selectedLanguage}
+          />
 
           {isMobileAndTablet && (
             <BtnBurgerMenu
