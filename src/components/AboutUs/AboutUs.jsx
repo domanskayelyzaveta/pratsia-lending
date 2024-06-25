@@ -30,7 +30,7 @@ import { useState } from "react";
 import { BtnHero } from "../Hero/Hero.styled";
 import { useTranslation } from "react-i18next";
 
-const AboutUs = () => {
+const AboutUs = ({ handleSetActiveLink }) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -189,7 +189,13 @@ const AboutUs = () => {
             {t("teilTeamSubText")}
             {/* Bewerben Sie sich jetzt und entdecken Sie Ihre Zukunft mit uns! */}
           </HighlightedText>
-          <BtnHero> {t("btn")}</BtnHero>
+          <BtnHero
+            onClick={(e) => {
+              handleSetActiveLink("kontakt", e);
+            }}
+          >
+            {t("btn")}
+          </BtnHero>
         </AboutUsDescriptionPartDiv>
       </div>
     </SectionAboutUs>
