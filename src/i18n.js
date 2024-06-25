@@ -125,9 +125,6 @@ const resources = {
         "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? ",
       technikJobText:
         "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-      // technikFullText:
-      //   "Du träumst von spannenden Projekten in führenden High-Tech-Unternehmen? Die wünscht Dir neue Herausforderungen z.B. in Maschinenbau, Fahrzeugtechnik oder Alternativen Energien? Du entwickelst im Team weltweit anerkannte Made in Germany Lösungen, die die Innovationen von morgen prägen.Bist Du Experte in der Solartechnik, dem Automotive, der Industriemontage, des Stahlbaus, der Produktion und der Logistik, der Schweißtechnik oder der Elektrotechnik und Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich!",
-
       facility: "Facility",
       facilityText:
         "Pratsia bringt qualifiziertes Fachpersonal mit innovativen Unternehmen aus dem Bereich des Gebäudemanagement in ganz Deutschland zusammen.",
@@ -270,6 +267,12 @@ const resources = {
       // Language Modal
 
       choiceLanguage: "Wählen Sie bitte die Sprache der Website",
+
+      // Footer
+
+      inhaber: "Inhaber: Mykola Sytnyk",
+      street: "Garnstraße 12",
+      city: "47798 Krefeld",
     },
   },
 
@@ -538,6 +541,12 @@ const resources = {
       // Language Modal
 
       choiceLanguage: "Будь ласка, оберіть мову сайту",
+
+      // Footer
+
+      inhaber: "Власник: Микола Ситник",
+      street: "Вулиця Гарн, 12",
+      city: "47798 Крефельд",
     },
   },
 
@@ -767,6 +776,12 @@ const resources = {
       // Language Modal
 
       choiceLanguage: "Пожалуйста, выберите язык сайта",
+
+      // Footer
+
+      inhaber: "Собственник: Микола Ситник",
+      street: "Улица Гарн, 12",
+      city: "47798 Крефельд",
     },
   },
 };

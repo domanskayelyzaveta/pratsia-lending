@@ -65,7 +65,7 @@ export const FooterText = styled.p`
   width: 150px;
 
   @media screen and (min-width: 768px) {
-    width: 190px;
+    width: 213px;
     font-size: 16px;
 
     text-align: start;
