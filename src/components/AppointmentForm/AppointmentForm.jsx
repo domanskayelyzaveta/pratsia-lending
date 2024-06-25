@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Select from "react-select";
@@ -24,6 +25,8 @@ import MessageForm from "../Modal/MessageForm/MessageForm";
 import { useTranslation } from "react-i18next";
 import { CalendarGlobalStyles } from "./StylesDatePicker";
 
+const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
+
 const AppointmentForm = () => {
   const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
@@ -41,7 +44,7 @@ const AppointmentForm = () => {
 
   const onSubmit = (data) => {
     try {
-      console.log(data);
+      emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, data, VITE_PUBLIC_KEY);
       setStatus("success");
       reset();
     } catch (error) {
