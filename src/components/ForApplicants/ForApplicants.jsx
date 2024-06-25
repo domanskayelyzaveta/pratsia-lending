@@ -25,7 +25,7 @@ import Industries from "../Industries/Industries";
 import JobOffers from "../JobOffers/JobOffers";
 import { useTranslation } from "react-i18next";
 
-const ForApplicants = () => {
+const ForApplicants = ({ handleSetActiveLink }) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(null);
 
@@ -109,7 +109,13 @@ const ForApplicants = () => {
         </ListItems>
       </ApplicantsList>
       <BtnAppDiv>
-        <BtnHero> {t("btn")}</BtnHero>
+        <BtnHero
+          onClick={(e) => {
+            handleSetActiveLink("kontakt", e);
+          }}
+        >
+          {t("btn")}
+        </BtnHero>
       </BtnAppDiv>
       <Industries />
       <JobOffers />
