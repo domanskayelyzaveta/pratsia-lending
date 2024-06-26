@@ -76,7 +76,7 @@ const Modal = ({ show, handleClose, children }) => {
   return createPortal(
     <Backdrop onClick={startClosing}>
       <Content ref={contentRef} onClick={(e) => e.stopPropagation()}>
-        <Button onClick={startClosing}>
+        <Button onClick={startClosing} type="button" aria-label="Close">
           <svg width={24} height={24}>
             <use href={`${sprite}#icon-close`} />
           </svg>

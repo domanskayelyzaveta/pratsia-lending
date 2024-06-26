@@ -35,7 +35,7 @@ const Daten = () => {
 
   return (
     <DatenWrapper className="container">
-      <BtnImpress onClick={handleBackClick}>
+      <BtnImpress type="button" aria-label="Go back" onClick={handleBackClick}>
         <Svg>
           <use href={`${sprite}#icon-arrow-left-short`}></use>
         </Svg>
@@ -62,7 +62,11 @@ const Daten = () => {
         </ListItem>
 
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(1)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(1)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -78,7 +82,11 @@ const Daten = () => {
         </ListItem>
 
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(2)}>
+          <BtnListDaten
+            onClick={() => toggleContent(2)}
+            type="button"
+            aria-label="list open"
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -93,7 +101,11 @@ const Daten = () => {
           )}
         </ListItem>
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(3)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(3)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -108,7 +120,11 @@ const Daten = () => {
           )}
         </ListItem>
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(4)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(4)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -123,7 +139,11 @@ const Daten = () => {
           )}
         </ListItem>
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(5)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(5)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -142,7 +162,11 @@ const Daten = () => {
           )}
         </ListItem>
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(6)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(6)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>
@@ -158,7 +182,11 @@ const Daten = () => {
         </ListItem>
 
         <ListItem>
-          <BtnListDaten onClick={() => toggleContent(7)}>
+          <BtnListDaten
+            type="button"
+            aria-label="list open"
+            onClick={() => toggleContent(7)}
+          >
             <ListWrapper>
               <Svg>
                 <use href={`${sprite}#icon-chevron-bar`}></use>

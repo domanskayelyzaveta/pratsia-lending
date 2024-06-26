@@ -26,7 +26,12 @@ const BtnGoUp = () => {
   return (
     <>
       {isVisible && (
-        <Button onClick={scrollToTop} className="container">
+        <Button
+          onClick={scrollToTop}
+          type="button"
+          aria-label="scroll up"
+          className="container"
+        >
           <svg width="32" height="32">
             <use href={`${sprite}#icon-arrow-up`} />
           </svg>

@@ -27,7 +27,6 @@ const Industries = () => {
   const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
 
-  // const isDesktopOrTablet = useMediaQuery({ minWidth: 768 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
 
@@ -56,7 +55,6 @@ const Industries = () => {
         {industriesData.map((industry, index) => (
           <li key={index}>
             <IndustryItemDiv>
-              {/* {isMobile && <TextIndustries>{industry.title}</TextIndustries>} */}
               {isMobile && <TextIndustries>{t(industry.title)}</TextIndustries>}
               <ImgIndustries
                 src={industry.image}
@@ -80,6 +78,8 @@ const Industries = () => {
                     }}
                   >
                     <BtnIndustries
+                      type="button"
+                      aria-label="Open text"
                       style={{
                         top: isVisible[index] ? "101%" : "auto",
                       }}
@@ -97,7 +97,6 @@ const Industries = () => {
                         <use href={`${sprite}#icon-arrow-down`}></use>
                       </Svg>
                       <TextShowMore>
-                        {/* {isVisible[index] ? "Einstürzen" : "Weiterlesen"} */}
                         {isVisible[index] ? t("einstürzen") : t("weiterlesen")}
                       </TextShowMore>
                     </BtnIndustries>
@@ -107,7 +106,6 @@ const Industries = () => {
                     >
                       {isMobile && (
                         <TextSlider>{t(industry.description)}</TextSlider>
-                        // <TextSlider>{t(industry.mobileText)}</TextSlider>
                       )}
                       {isTabletOrDesktop && (
                         <TextSlider>{industry.tabletSubText}</TextSlider>
@@ -136,6 +134,8 @@ const Industries = () => {
                 }}
               >
                 <BtnIndustries
+                  type="button"
+                  aria-label="open text"
                   $isVisible={isVisible[index]}
                   onClick={() => toggleVisibility(index)}
                   $isOpened={isVisible[index]}
