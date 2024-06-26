@@ -223,6 +223,13 @@ const resources = {
 
       absenden: "Absenden",
 
+      // Modal Form
+
+      formSent: "Ihre Bewerbung wurde erfolgreich abgeschickt!",
+      weWillReply: "Wir werden Sie gleich kontaktieren!",
+      wrong: "Es ist etwas schief gelaufen!",
+      checkConnection: "Prüfen Sie Ihre Internetverbindung!",
+
       // Errors
 
       max64: "Darf maximal 64 Zeichen lang sein",
@@ -499,6 +506,13 @@ const resources = {
 
       absenden: "Відправили",
 
+      // Modal Form
+
+      formSent: "Ваша заявка успішно відправлена!",
+      weWillReply: "Ми скоро з вами зв'яжемося!",
+      wrong: "Щось пішло не так!",
+      checkConnection: "Перевірте ваше інтернет-з'єднання!",
+
       // Errors
 
       max64: "Максимальна довжина поля - 64 символи",
@@ -743,6 +757,13 @@ const resources = {
       placeholder9: "Тема встречи",
 
       absenden: "Отправить",
+
+      // Modal Form
+
+      formSent: "Ваша заявка успешно отправлена!",
+      weWillReply: "Мы скоро с вами свяжемся!",
+      wrong: "Что-то пошло не так!",
+      checkConnection: "Проверьте ваше интернет-соединение!",
 
       // Errors
 
