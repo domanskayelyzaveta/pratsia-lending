@@ -30,6 +30,7 @@ const FormField = ({
       <Input
         type={type}
         name={name}
+        id={name}
         {...register(name, { required })}
         $errors={errors[name]}
         placeholder={placeholder}
