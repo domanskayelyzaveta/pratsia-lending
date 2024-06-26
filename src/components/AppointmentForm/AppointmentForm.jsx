@@ -141,6 +141,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label7")}
+            id="wunschtermin"
             name="wunschtermin"
             errors={errors}
             required
@@ -169,6 +170,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label8")}
             aria-label="Choose an option"
+            id="zeit"
             name="zeit"
             errors={errors}
             component={
