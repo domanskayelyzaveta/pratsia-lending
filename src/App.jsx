@@ -28,10 +28,17 @@ const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
 const Header = lazy(() => import("./components/Header/Header"));
 
 const App = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("de");
+  const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+    return savedLanguage || "de";
+  });
   const [showModal, setShowModal] = useState(false);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const mainContentRef = useRef(null);
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
 
   useEffect(() => {
     if (isAnimationComplete) {

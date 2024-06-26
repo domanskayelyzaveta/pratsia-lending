@@ -164,6 +164,11 @@ export const BtnHero = styled.button`
 
   border-radius: 8px;
   background: var(--blue-200);
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 
   @media screen and (min-width: 768px) {
     width: 502px;
