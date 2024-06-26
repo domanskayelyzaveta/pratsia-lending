@@ -58,7 +58,6 @@ export const CompaniesPhotoAndTextDiv = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
-    // justify-content: space-between;
     align-items: center;
     gap: 24px;
   }

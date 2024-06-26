@@ -170,7 +170,7 @@ const AboutUs = ({ handleSetActiveLink }) => {
 
         <AboutUsDescriptionPartDiv>
           <TextAndPhotoDiv>
-            <ImgAboutUs src={meeting}></ImgAboutUs>
+            <ImgAboutUs src={meeting} alt="Team meeting"></ImgAboutUs>
             <WerdenSieDiv>
               <AboutSubTitle>
                 {t("teilTeam")}

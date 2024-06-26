@@ -15,7 +15,6 @@ const customStyles = {
   control: (provided, state) => {
     const isError = state.selectProps.$errors;
     const isFocused = state.isFocused;
-    //    const hasValue = state.hasValue; //hover
 
     return {
       ...provided,

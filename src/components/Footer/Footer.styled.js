@@ -108,6 +108,12 @@ export const SvgFooter = styled.svg`
 `;
 
 export const ImgIcon = styled.img`
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   width: 24px;
   height: 24px;
 
@@ -150,5 +156,17 @@ export const ContactInfoFooterDiv = styled.div`
 
   @media screen and (min-width: 1440px) {
     gap: 636px;
+  }
+`;
+
+export const StyledA = styled.a`
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    svg {
+      transform: scale(1.1);
+    }
   }
 `;

@@ -23,17 +23,12 @@ const Header = ({
 }) => {
   const { t } = useTranslation();
   const [shownModal, setShownModal] = useState(false);
-  // const [selectedLanguage, setSelectedLanguage] = useState(null);
-  // const localStorageRef = useRef(localStorage);
 
   const [activeLink, setActiveLink] = useState("starseite");
-  // const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
   const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
   const isDesktop1440 = useMediaQuery({ query: "(min-width: 1440px)" });
-
-  // const isDesktop1440 = useMediaQuery({ query: "(min-width: 1440px)" });
 
   const handleNavClick = (id) => {
     const section = document.getElementById(id);
@@ -77,12 +72,6 @@ const Header = ({
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [shownModal]);
-
-  // const handleChangeLanguage = (selectedOption) => {
-  //   setSelectedLanguage(selectedOption);
-  //   i18n.changeLanguage(selectedOption.value);
-  //   localStorageRef.current.setItem("i18next_lng", selectedOption.value);
-  // };
 
   return (
     <Headers>

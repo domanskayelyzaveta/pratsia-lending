@@ -1,5 +1,4 @@
 import { createPortal } from "react-dom";
-// import { useMediaQuery } from "react-responsive";
 import {
   Backdrop,
   BntClose,
@@ -15,7 +14,6 @@ const modalRoot = document.getElementById("modal");
 
 const HeaderMenu = ({ onClose, handleSetActiveLink }) => {
   const { t } = useTranslation();
-  // const isMobileAndTablet = useMediaQuery({ query: "(max-width: 1439px)" });
 
   const handleOverlayClick = (event) => {
     if (event.target === event.currentTarget) {

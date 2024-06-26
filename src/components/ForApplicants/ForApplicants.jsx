@@ -42,7 +42,11 @@ const ForApplicants = ({ handleSetActiveLink }) => {
 
       <ApplicantsList>
         <ListItems>
-          <BtnListAboutUs onClick={toggleContent(0, isOpen, setIsOpen)}>
+          <BtnListAboutUs
+            type="button"
+            aria-label="list open"
+            onClick={toggleContent(0, isOpen, setIsOpen)}
+          >
             <ListItemDiv>
               <Svg
                 style={{
@@ -64,7 +68,11 @@ const ForApplicants = ({ handleSetActiveLink }) => {
           )}
         </ListItems>
         <ListItems>
-          <BtnListAboutUs onClick={toggleContent(1, isOpen, setIsOpen)}>
+          <BtnListAboutUs
+            type="button"
+            aria-label="list open"
+            onClick={toggleContent(1, isOpen, setIsOpen)}
+          >
             <ListItemDiv>
               <Svg
                 style={{
@@ -86,7 +94,11 @@ const ForApplicants = ({ handleSetActiveLink }) => {
           )}
         </ListItems>
         <ListItems>
-          <BtnListAboutUs onClick={toggleContent(2, isOpen, setIsOpen)}>
+          <BtnListAboutUs
+            type="button"
+            aria-label="list open"
+            onClick={toggleContent(2, isOpen, setIsOpen)}
+          >
             <ListItemDiv>
               <Svg
                 style={{
@@ -110,6 +122,8 @@ const ForApplicants = ({ handleSetActiveLink }) => {
       </ApplicantsList>
       <BtnAppDiv>
         <BtnHero
+          type="button"
+          aria-label="list open"
           onClick={(e) => {
             handleSetActiveLink("kontakt", e);
           }}
