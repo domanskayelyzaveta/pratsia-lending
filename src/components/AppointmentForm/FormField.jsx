@@ -20,7 +20,7 @@ const FormField = ({
   component,
 }) => (
   <InputWrapper>
-    <Label for={name}>
+    <Label htmlFor={name}>
       {label}
       {required && <Star />}
     </Label>
