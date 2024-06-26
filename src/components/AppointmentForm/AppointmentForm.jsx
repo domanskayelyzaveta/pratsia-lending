@@ -77,7 +77,6 @@ const AppointmentForm = () => {
             label={t("label2")}
             aria-label="Choose an option"
             name="anrede"
-            id="anrede"
             errors={errors}
             component={
               <Controller
