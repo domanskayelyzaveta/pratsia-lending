@@ -27,9 +27,8 @@ const Location = () => {
           allowFullScreen
           loading="lazy"
           sandbox="allow-scripts allow-same-origin"
-        >
-          Google Maps
-        </iframe>
+          title="Google Maps"
+        ></iframe>
       </MapWrapper>
     </SectionLocation>
   );
