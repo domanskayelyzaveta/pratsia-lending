@@ -72,6 +72,7 @@ const AppointmentForm = () => {
             register={register}
             errors={errors}
             placeholder={t("placeholder1")}
+            autocomplete="firm-name"
           />
           <FormField
             label={t("label2")}
@@ -122,6 +123,7 @@ const AppointmentForm = () => {
             errors={errors}
             required
             placeholder={t("placeholder4")}
+            autocomplete="family-name"
           />
           <FormField
             label={t("label5")}
@@ -132,6 +134,7 @@ const AppointmentForm = () => {
             errors={errors}
             required
             placeholder={t("placeholder5")}
+            autocomplete="email"
           />
         </Block>
         <Block>
@@ -144,6 +147,7 @@ const AppointmentForm = () => {
             errors={errors}
             required
             placeholder={t("placeholder6")}
+            autocomplete="phone-number"
           />
           <FormField
             label={t("label7")}
