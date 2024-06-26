@@ -109,6 +109,7 @@ const AppointmentForm = () => {
             errors={errors}
             required
             placeholder={t("placeholder3")}
+            autocomplete="given-name"
           />
           <FormField
             label={t("label4")}
