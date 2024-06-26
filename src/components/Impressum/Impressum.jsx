@@ -22,7 +22,7 @@ const Impressum = () => {
 
   return (
     <ImpressWrapper className="container">
-      <BtnImpress onClick={handleBackClick}>
+      <BtnImpress type="button" aria-label="Go back" onClick={handleBackClick}>
         <Svg>
           <use href={`${sprite}#icon-arrow-left-short`}></use>
         </Svg>

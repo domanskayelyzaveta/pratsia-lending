@@ -8,6 +8,7 @@ import {
   LinkFooterText,
   ListFooter,
   PhoneEmailDiv,
+  StyledA,
   SvgFooter,
   SvgLogo,
   SvgTitleFooterWrapper,
@@ -31,31 +32,30 @@ const Footer = () => {
       </SvgTitleFooterWrapper>
       <ListFooter>
         <li>
-          <a
+          <StyledA
             href="mailto:info@pratsia.de"
-            // target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open mail"
           >
             <SvgFooter width="24" height="24">
               <use href={`${sprite}#icon-GadgetTablet`} />
             </SvgFooter>
-          </a>
+          </StyledA>
         </li>
 
         <li>
-          <a
+          <StyledA
             href="https://wa.me/+491701481355"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Whats App"
           >
             <ImgIcon src={whatsapp} alt="Icon Whats App"></ImgIcon>
-          </a>
+          </StyledA>
         </li>
 
         <li>
-          <a
+          <StyledA
             href="https://www.facebook.com/profile.php?id=61560061553623"
             target="_blank"
             rel="noopener noreferrer"
@@ -64,17 +64,17 @@ const Footer = () => {
             <SvgFooter>
               <use href={`${sprite}#icon-GadgetTablet-2`} />
             </SvgFooter>
-          </a>
+          </StyledA>
         </li>
         <li>
-          <a
+          <StyledA
             href="https://www.instagram.com/pratsia_recruiting/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Instagram"
           >
             <ImgIcon src={instagram} alt="Icon Instagram"></ImgIcon>
-          </a>
+          </StyledA>
         </li>
       </ListFooter>
 
