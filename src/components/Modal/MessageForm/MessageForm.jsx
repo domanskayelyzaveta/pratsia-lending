@@ -1,19 +1,20 @@
+import { useTranslation } from "react-i18next";
 import { SubTitle, TitleError, TitleSuccess } from "./MessageForm.styled";
 
 const MessageForm = ({ status }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {status === "success" ? (
         <>
-          <TitleSuccess>
-            Ihre Bewerbung wurde erfolgreich abgeschickt!
-          </TitleSuccess>
-          <SubTitle>Wir werden Sie gleich kontaktieren!</SubTitle>
+          <TitleSuccess>{t("formSent")}</TitleSuccess>
+          <SubTitle>{t("weWillReply")}</SubTitle>
         </>
       ) : (
         <>
-          <TitleError>Es ist etwas schief gelaufen!</TitleError>
-          <SubTitle>Prüfen Sie Ihre Internetverbindung!</SubTitle>
+          <TitleError>{t("wrong")}</TitleError>
+          <SubTitle>{t("checkConnection")}</SubTitle>
         </>
       )}
     </>
