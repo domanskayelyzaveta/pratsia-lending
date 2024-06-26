@@ -6,6 +6,8 @@ import Animation from "./components/Animation/Animation";
 import gsap from "gsap";
 import Modal from "./components/Modal/Modal";
 import ModalLangSwitch from "./components/Modal/ModalLangSwitch/ModalLangSwitch";
+import ImpressumPage from "./Pages/ImpressumPage/ImpressumPage";
+import DatenschutzerklärungPage from "./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -20,10 +22,7 @@ const AppointmentForm = lazy(() =>
   import("./components/AppointmentForm/AppointmentForm")
 );
 const Location = lazy(() => import("./components/Location/Location"));
-const ImpressumPage = lazy(() => import("./Pages/ImpressumPage/ImpressumPage"));
-const DatenschutzerklärungPage = lazy(() =>
-  import("./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage")
-);
+
 const Footer = lazy(() => import("./components/Footer/Footer"));
 const DataCompany = lazy(() => import("./components/DataCompany/DataCompany"));
 const Header = lazy(() => import("./components/Header/Header"));
@@ -132,6 +131,7 @@ const App = () => {
                   }
                 />
               </Routes>
+
               <BtnGoUp />
             </main>
             <Footer />
