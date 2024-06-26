@@ -66,6 +66,7 @@ const AppointmentForm = () => {
         <Block>
           <FormField
             label={t("label1")}
+            type="text"
             name="firma"
             register={register}
             errors={errors}
@@ -73,6 +74,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label2")}
+            aria-label="Choose an option"
             name="anrede"
             errors={errors}
             component={
@@ -101,6 +103,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label3")}
+            type="text"
             name="vorname"
             register={register}
             errors={errors}
@@ -109,6 +112,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label4")}
+            type="text"
             name="nachname"
             register={register}
             errors={errors}
@@ -117,6 +121,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label5")}
+            type="email"
             name="email"
             register={register}
             errors={errors}
@@ -127,6 +132,7 @@ const AppointmentForm = () => {
         <Block>
           <FormField
             label={t("label6")}
+            type="tel"
             name="telefon"
             register={register}
             errors={errors}
@@ -162,6 +168,7 @@ const AppointmentForm = () => {
 
           <FormField
             label={t("label8")}
+            aria-label="Choose an option"
             name="zeit"
             errors={errors}
             component={
@@ -190,6 +197,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label9")}
+            type="text"
             name="nachricht"
             register={register}
             errors={errors}
@@ -204,7 +212,9 @@ const AppointmentForm = () => {
             }
           />
         </Block>
-        <BtnForm type="submit">{t("absenden")}</BtnForm>
+        <BtnForm type="submit" aria-label="Button absenden">
+          {t("absenden")}
+        </BtnForm>
       </Form>
 
       <Modal show={showModal} handleClose={() => setShowModal(false)}>
