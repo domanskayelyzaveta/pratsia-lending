@@ -148,7 +148,7 @@ export const ListItemDiv = styled.div`
   }
 `;
 
-export const SubTitleSecondListComp = styled.h4`
+export const SubTitleSecondListComp = styled.h3`
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
