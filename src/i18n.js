@@ -822,7 +822,7 @@ i18n
   // .use(LocalStorageBackend)
   .init({
     resources,
-    lng: localStorage.getItem("i18next_lng") || "de",
+    // lng: localStorage.getItem("i18next_lng") || "de",
     fallbackLng: "de",
     interpolation: {
       escapeValue: false,
@@ -830,6 +830,10 @@ i18n
     backend: {
       keySeparator: false,
       prefix: "i18next_",
+    },
+    detection: {
+      order: ["localStorage"],
+      caches: ["localStorage"],
     },
   });
 

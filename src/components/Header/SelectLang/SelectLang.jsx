@@ -22,6 +22,7 @@ const SelectLang = ({ selectedLanguage, setSelectedLanguage }) => {
         return <SvgUA />;
       case "ru":
         return null;
+      // return <p>&#128169;</p>;
       default:
         return null;
     }
