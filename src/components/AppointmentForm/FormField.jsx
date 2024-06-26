@@ -18,9 +18,10 @@ const FormField = ({
   required,
   placeholder,
   component,
+  id,
 }) => (
   <InputWrapper>
-    <Label htmlFor={name}>
+    <Label htmlFor={id}>
       {label}
       {required && <Star />}
     </Label>
