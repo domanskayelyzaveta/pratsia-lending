@@ -77,6 +77,7 @@ const AppointmentForm = () => {
             label={t("label2")}
             aria-label="Choose an option"
             name="anrede"
+            id="anrede"
             errors={errors}
             component={
               <Controller
@@ -105,6 +106,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label3")}
             type="text"
+            id="vorname"
             name="vorname"
             register={register}
             errors={errors}
@@ -115,6 +117,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label4")}
             type="text"
+            id="nachname"
             name="nachname"
             register={register}
             errors={errors}
@@ -124,6 +127,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label5")}
             type="email"
+            id="email"
             name="email"
             register={register}
             errors={errors}
@@ -135,6 +139,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label6")}
             type="tel"
+            id="telefon"
             name="telefon"
             register={register}
             errors={errors}
@@ -143,6 +148,7 @@ const AppointmentForm = () => {
           />
           <FormField
             label={t("label7")}
+            id="wunschtermin"
             name="wunschtermin"
             errors={errors}
             required
@@ -171,6 +177,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label8")}
             aria-label="Choose an option"
+            id="zeit"
             name="zeit"
             errors={errors}
             component={
@@ -200,6 +207,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label9")}
             type="text"
+            id="nachricht"
             name="nachricht"
             register={register}
             errors={errors}
