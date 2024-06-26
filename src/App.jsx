@@ -1,4 +1,4 @@
-import React, { lazy, useState, useEffect, useRef } from "react";
+import React, { lazy, useState, useEffect, useRef, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
 import "./i18n";
@@ -6,6 +6,7 @@ import Animation from "./components/Animation/Animation";
 import gsap from "gsap";
 import Modal from "./components/Modal/Modal";
 import ModalLangSwitch from "./components/Modal/ModalLangSwitch/ModalLangSwitch";
+import Loader from "./components/Loader/Loader";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -109,30 +110,32 @@ const App = () => {
           />
           <div ref={mainContentRef}>
             <main>
-              <Routes>
-                <Route path="/impressum" element={<ImpressumPage />} />
-                <Route
-                  path="/datenschutzerklarung"
-                  element={<DatenschutzerklärungPage />}
-                />
-                <Route
-                  path="/"
-                  element={
-                    <>
-                      <Hero handleSetActiveLink={handleSetActiveLink} />
-                      <AboutUs handleSetActiveLink={handleSetActiveLink} />
-                      <ForCompanies />
-                      <ForApplicants
-                        handleSetActiveLink={handleSetActiveLink}
-                      />
-                      <Appointment />
-                      <AppointmentForm />
-                      <Location />
-                    </>
-                  }
-                />
-              </Routes>
-              <BtnGoUp />
+              <Suspense fallback={<Loader />}>
+                <Routes>
+                  <Route path="/impressum" element={<ImpressumPage />} />
+                  <Route
+                    path="/datenschutzerklarung"
+                    element={<DatenschutzerklärungPage />}
+                  />
+                  <Route
+                    path="/"
+                    element={
+                      <>
+                        <Hero handleSetActiveLink={handleSetActiveLink} />
+                        <AboutUs handleSetActiveLink={handleSetActiveLink} />
+                        <ForCompanies />
+                        <ForApplicants
+                          handleSetActiveLink={handleSetActiveLink}
+                        />
+                        <Appointment />
+                        <AppointmentForm />
+                        <Location />
+                      </>
+                    }
+                  />
+                </Routes>
+                <BtnGoUp />
+              </Suspense>
             </main>
             <Footer />
             <DataCompany />
