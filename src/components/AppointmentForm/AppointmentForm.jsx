@@ -67,6 +67,7 @@ const AppointmentForm = () => {
           <FormField
             label={t("label1")}
             type="text"
+            id="firma"
             name="firma"
             register={register}
             errors={errors}
