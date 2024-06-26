@@ -11,6 +11,7 @@ import Star from "./Star";
 
 const FormField = ({
   label,
+  type,
   name,
   register,
   errors,
@@ -27,6 +28,7 @@ const FormField = ({
       component
     ) : (
       <Input
+        type={type}
         name={name}
         {...register(name, { required })}
         $errors={errors[name]}
