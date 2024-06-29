@@ -1,7 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-// import LocalStorageBackend from "i18next-localstorage-backend";
 
 const resources = {
   de: {
@@ -82,11 +81,11 @@ const resources = {
       branchenTitle: "Branchen",
       pflege: "Pflege",
       pflegeText:
-        "Als Pflegefachkraft in Deutschland…Du möchtest in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
+        "Als Pflegefachkraft in Deutschland… Möchtest du  in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
       pflegeJobText:
         "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       pflegeMobileText:
-        "Als Pflegefachkraft in Deutschland… Du möchtest in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen? Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+        "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       pflegeJobList1: "Personalmangel",
       pflegeJobList2: "Hoher bürokratischer Aufwand",
       pflegeJobList3: "Mangelnde Wertschätzung",
@@ -360,7 +359,7 @@ const resources = {
 
       pflege: "Догляд",
       pflegeText:
-        "Як медичний фахівець в Німеччині ти бажаєш завжди забезпечувати відповідний догляд за пацієнтами у своїй професії? Ти прагнеш отримати більше визнання за свою щоденну роботу?",
+        "Як медичний фахівець в Німеччині ти бажаєш завжди забезпечувати відповідний догляд за пацієнтами у своїй професії?",
       pflegeJobText:
         "Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work-Life-Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
       pflegeMobileText:
@@ -637,7 +636,7 @@ const resources = {
       branchenTitle: "Отрасли",
       pflege: "Уход",
       pflegeText:
-        "Как медицинский специалист в Германии вы хотите всегда обеспечивать надлежащий уход за пациентами в своей профессии? Вы стремитесь к большему признанию за свою повседневную работу?",
+        "Как медицинский специалист в Германии вы хотите всегда обеспечивать надлежащий уход за пациентами в своей профессии?",
       pflegeJobText:
         "Вы стремитесь к большему признанию за свою повседневную работу? Ищете работу, где ваш работодатель активно способствует вашему развитию, и 'Work - Life - Balance' для вас больше, чем просто фраза? Тогда, безусловно, вы сталкиваетесь с такими вызовами:",
       pflegeJobList1: "Кадровый дефицит",
@@ -698,15 +697,15 @@ const resources = {
 
       aktuelleJob: "Текущие вакансии",
       aktuelleJobItem1:
-        "Специалист в компании временной занятости (место работы - центр для пожилых людей / дом престарелых)",
+        "Медсестра в компании временной занятости (место работы - центр для пожилых людей / дом престарелых)",
       aktuelleJobItem1T:
         "Почасовая оплата 24-28 € в зависимости от опыта работы, независимо от того, работаете ли вы по всей Германии или только в своем регионе. Возможность получить служебный автомобиль, если пользуетесь своим - компенсация 30 центов за километр. Доплаты: суббота 25%, воскресенье 50%, ночь 25%, праздничные дни 100%, 30 дней отпуска, учет рабочего времени, питание + проживание.",
       aktuelleJobItem2:
-        "Специалист в компании временной занятости (место работы - больница / клиника)",
+        "Медсестра в компании временной занятости (место работы - больница / клиника)",
       aktuelleJobItem2T:
         "Почасовая оплата 30-34 € в зависимости от опыта работы, независимо от того, работаете ли вы по всей Германии или только в своем регионе. Возможность получить служебный автомобиль, а при использовании своего - компенсация 30 центов за километр. Доплаты: суббота 25%, воскресенье 50%, ночь 25%, праздничные дни 100%. 30 дней отпуска, учет рабочего времени, питание + проживание.",
       aktuelleJobItem3:
-        "Специалист по признанию квалификации (центр для пожилых людей или больница)",
+        "Медсестра по признанию квалификации (центр для пожилых людей или больница)",
       aktuelleJobItem3T:
         "Почасовая оплата 17 €. Pratsia найдет место, где будет признан ваш диплом, и поддержит вас в прохождении языковых курсов, пока вы работаете на полную ставку в течение периода признания. Обычно также предоставляется проживание.",
       aktuelleJobItem4:
