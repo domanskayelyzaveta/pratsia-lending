@@ -40,6 +40,7 @@ const Impressum = () => {
         <div>
           <TextImpress>{impressumData.registryInfo.register}</TextImpress>
           <TextImpress>{impressumData.registryInfo.court}</TextImpress>
+          <TextImpress>{impressumData.registryInfo.tax}</TextImpress>
         </div>
 
         <div>

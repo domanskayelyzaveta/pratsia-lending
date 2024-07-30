@@ -162,7 +162,7 @@ const resources = {
       aktuelleJobItem3:
         "Fachkraft in Anerkennung (Seniorenzentrum oder Krankenhaus)",
       aktuelleJobItem3T:
-        "Stundenlohn 17 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie während des Anerkennungszeitraums Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
+        "Stundenlohn 17 €. Pratsia findet einen Ort, an dem Ihr Diplom anerkannt wird, und unterstützt Sie bei Sprachkursen, während Sie im Anerkennungszeitraum Vollzeit arbeiten. Oft wird auch eine Unterkunft zur Verfügung gestellt.",
 
       aktuelleJobItem4:
         "Pflegehilfskraft in Zeitarbeitfirma (Einsatzort - Seniorenzentrum / Altenheim /Klinikum)",
