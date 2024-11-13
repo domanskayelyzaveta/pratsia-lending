@@ -24,7 +24,7 @@ const JobOffers = () => {
     <SectionJobOffers>
       <TitleJobOffers>{t("aktuelleJob")}</TitleJobOffers>
       <ListLobOffers>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: 4 }).map((_, index) => (
           <ListItemsLobOffers key={index} $isOpen={isOpen === index}>
             <BtnJobOffers onClick={() => toggleContent(index)}>
               <Svg
