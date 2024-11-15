@@ -110,7 +110,6 @@ const Industries = () => {
                       {isTabletOrDesktop && (
                         <TextSlider>{industry.tabletSubText}</TextSlider>
                       )}
-
                       <ul>
                         {Array.isArray(industry.list) &&
                           industry.list.map((item, idx) => (
@@ -119,6 +118,23 @@ const Industries = () => {
                             </IndustryListItems>
                           ))}
                       </ul>
+
+                      {/* // ADDED NEW CODE  */}
+
+                      {industry.subcategories?.map((subcategory, subIndex) => (
+                        <div key={subIndex}>
+                          <TextSlider>{t(subcategory.title)}</TextSlider>
+                          <ul>
+                            {subcategory.list?.map((item, idx) => (
+                              <IndustryListItems key={idx}>
+                                {t(item)}
+                              </IndustryListItems>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+
+                      {/* /////////////////// */}
                       <SubTextSlider>{t(industry.text)}</SubTextSlider>
                     </SlideWrapper>
                   </div>
@@ -174,6 +190,24 @@ const Industries = () => {
                         </IndustryListItems>
                       ))}
                   </ul>
+
+                  {/* // ADDED NEW CODE  */}
+
+                  {industry.subcategories?.map((subcategory, subIndex) => (
+                    <div key={subIndex}>
+                      <TextSlider>{t(subcategory.title)}</TextSlider>
+                      <ul>
+                        {subcategory.list?.map((item, idx) => (
+                          <IndustryListItems key={idx}>
+                            {t(item)}
+                          </IndustryListItems>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+
+                  {/* /////////////////// */}
+
                   <SubTextSlider>{t(industry.text)}</SubTextSlider>
                 </SlideWrapper>
               </div>

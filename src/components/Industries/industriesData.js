@@ -38,12 +38,22 @@ export const industriesData = [
       "medizinJobList1",
       "medizinJobList2",
       "medizinJobList3",
-      "medizinJobList4",
-      "medizinJobList5",
-      "medizinJobList6",
-      "medizinJobList7",
+      // "medizinJobList4",
+      // "medizinJobList5",
+      // "medizinJobList6",
+      // "medizinJobList7",
     ],
-    text: "duSuchstInDE",
+    text: "deText",
+    subcategories: [
+      {
+        title: "subTitle1",
+        list: ["subTitleList1_1", "subTitleList1_2", "subTitleList1_3"],
+      },
+      {
+        title: "subTitle2",
+        list: ["subTitleList2_1", "subTitleList2_2", "subTitleList2_3"],
+      },
+    ],
   },
   {
     title: "sozialarbeit",

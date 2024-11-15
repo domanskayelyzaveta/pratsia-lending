@@ -96,20 +96,54 @@ const resources = {
       duSuchstInDE:
         "Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen. Wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
 
-      medizin: "Medizin",
+      // medizin: "Medizin",
+      medizin: "Ärzte",
+      // medizinText:
+      //   "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden?",
       medizinText:
-        "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden?",
-      medizinJobText:
-        "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
-      medizinMobileText:
-        "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
-      medizinJobList1: "Fachkräftemangel in den Einrichtungen",
-      medizinJobList2: "Bürokratie und administrative Belastung",
-      medizinJobList3: "Mangel an Zeit für Patienten",
-      medizinJobList4: "Vereinbarkeit von Familie und Beruf",
-      medizinJobList5: "Unzureichende Digitalisierung",
-      medizinJobList6: "Fehlende Weiterbildungsmöglichkeiten",
-      medizinJobList7: "Unterfinanzierung des Gesundheitswesens",
+        "Unser Unternehmen ist auf die Beschäftigung von Ärzten in Deutschland spezialisiert. Wir helfen Ärzten, Kliniken und Krankenhäuser zu finden, die bereit sind, sie nach Bestehen des FSP für einen Zeitraum von zwei Jahren zur Anerkennung als Arzt zu beschäftigen.",
+      // medizinJobText:
+      //   "Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist?Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      medizinJobText: "Wir bieten:",
+      // medizinMobileText:
+      //   "Möchtest du sicherstellen, dass deine Patienten stets angemessen medizinisch versorgt werden? Möchtest du aktiv Menschen helfen und keine Zeit mit Verwaltungsaufgaben verschwenden? Wünschst du dir, dass 'Work-Life-Balance' mehr als nur eine Floskel deines Arbeitgebers ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      // medizinJobList1: "Fachkräftemangel in den Einrichtungen",
+      // medizinJobList2: "Bürokratie und administrative Belastung",
+      // medizinJobList3: "Mangel an Zeit für Patienten",
+      // medizinJobList4: "Vereinbarkeit von Familie und Beruf",
+      // medizinJobList5: "Unzureichende Digitalisierung",
+      // medizinJobList6: "Fehlende Weiterbildungsmöglichkeiten",
+      // medizinJobList7: "Unterfinanzierung des Gesundheitswesens",
+      medizinJobList1:
+        "Die Suche nach Stellenangeboten für Ärzte, die nach Bestehen des FSP in Deutschland arbeiten möchten.",
+      medizinJobList2:
+        "Ein wettbewerbsfähiges Gehalt, das je nach Bundesland und Fachrichtung variiert.",
+      medizinJobList3:
+        "Individuelle Stellenangebote, die Ihren Wünschen bezüglich Region oder Stadt sowie bestimmten Kliniken oder Krankenhäusern, sowohl privat als auch staatlich, entsprechen.",
+
+      //SubTitle 1
+
+      subTitle1: "Bedingungen für die Beschäftigung:",
+      subTitleList1_1:
+        "Nach Bestehen des FSP und Erhalt der Genehmigung zur Arbeit als Assistenzarzt finden wir eine Klinik oder ein Krankenhaus, das Ihnen die besten Arbeitsbedingungen, einschließlich eines wettbewerbsfähigen Gehalts, anbietet.",
+      subTitleList1_2:
+        "Für Ärzte, die bereits ein anerkanntes Diplom haben, bieten wir die Möglichkeit der Beschäftigung mit einem Gehalt von mindestens 7000 Euro pro Monat, plus Zulagen.",
+      subTitleList1_3:
+        "Für Ärzte, die eine Anerkennung des Diploms anstreben, beträgt das Gehalt im Durchschnitt mindestens 5000 Euro pro Monat, plus Zulagen.",
+
+      //SubTitle 2
+
+      subTitle2: "Anforderungen:",
+      subTitleList2_1:
+        "Diplom eines Arztes mit Möglichkeit der Anerkennung in Deutschland",
+      subTitleList2_2:
+        "Kenntnisse der deutschen Sprache auf mindestens C1- Niveau sind erforderlich.",
+      subTitleList2_3: "Wunsch, im Team zu arbeiten und Patienten zu helfen.",
+
+      deText:
+        "Wir streben danach, Ihnen die besten Stellenangebote zu finden, die Ihren beruflichen Zielen und Wünschen entsprechen, und bieten Unterstützung in allen Phasen Ihrer Karriere in Deutschland.",
+
+      /////////////
 
       sozialarbeit: "Sozialarbeit",
       sozialarbeitFullText:
@@ -374,7 +408,9 @@ const resources = {
       duSuchstInDE:
         "Ти шукаєш зміни або вдалий старт в Німеччині? Тоді, можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
 
-      medizin: "Медицина",
+      //Main
+      // medizin: "Медицина",
+      medizin: "Лікарі",
       medizinText:
         // "Хочеш бути впевненим, що твої пацієнти завжди отримують відповідну медичну допомогу?",
         "Наша компанія спеціалізується на працевлаштуванні лікарів у Німеччині. Ми допомагаємо лікарям знайти клініки та лікарні, готові прийняти їх на роботу після складання FSP, упродовж двох років для отримання визнання як лікаря.",
@@ -399,6 +435,28 @@ const resources = {
       // medizinJobList6: "Відсутність можливостей для професійного зростання",
       // medizinJobList7: "Недофінансування системи охорони здоров'я",
 
+      //SubTitle 1
+
+      subTitle1: "Умови працевлаштування:",
+      subTitleList1_1:
+        "Після складання FSP і отримання дозволу на роботу асистентом лікаря ми знайдемо клініку або лікарню, яка запропонує вам найкращі умови роботи, включно з конкурентною заробітною платою.",
+      subTitleList1_2:
+        "Для лікарів з визнаним дипломом ми пропонуємо можливість працевлаштування з зарплатою від 7000 євро на місяць (залежно від регіону) плюс надбавки.",
+      subTitleList1_3:
+        "Для лікарів, які планують визнання диплома, зарплата становитиме в середньому від 5000 євро на місяць (залежно від регіону) плюс надбавки.",
+
+      //SubTitle 2
+
+      subTitle2: "Вимоги:",
+      subTitleList2_1: "Диплом лікаря з можливістю визнання в Німеччині.",
+      subTitleList2_2:
+        "Знання німецької мови на рівні не нижче C1 обов’язкове.",
+      subTitleList2_3: "Бажання працювати в команді та допомагати пацієнтам.",
+
+      deText:
+        "Ми прагнемо допомогти вам знайти найкращі вакансії, які відповідають вашим професійним цілям і побажанням, забезпечуючи підтримку на всіх етапах вашої кар’єри в Німеччині.",
+
+      //Main sozialarbeit
       sozialarbeit: "Соціальна робота",
       sozialarbeitFullText:
         "В галузі соціальної роботи та педагогіки людина завжди знаходиться в центрі уваги. Незалежно від того, чи йдеться про виховання дітей чи навчання дорослих, робота з людьми потребує особливого відчуття відповідальності і тонкої взаємодії. Для належного супроводу дорослих, підлітків або дітей потрібне правильне поєднання співчуття і професійних знань. Ми розуміємо, що важливо в соціальних і педагогічних професіях і пропонуємо кваліфікований персонал, який завжди має відчуття відповідальності і зберігає спокій у стресових ситуаціях.Ти вихователь / вихователька, соціальний педагог / педагогиня, педагог-дефектолог / дефектолог, або доглядальник / доглядальниця за дітьми і шукаєш зміну або успішний старт в Німеччині? Тоді, можливо, переїзд або зміна робочого місця саме те, що тобі потрібно!",
@@ -666,10 +724,10 @@ const resources = {
       medizinJobList1: "Недостаточный кадровый потенциал в отрасли",
       medizinJobList2: "Бюрократия и административные нагрузки",
       medizinJobList3: "Недостаток времени для пациентов",
-      medizinJobList4: "Сочетание семейной жизни и профессиональной карьеры",
-      medizinJobList5: "Недостаточная дигитализация",
-      medizinJobList6: "Отсутствие возможностей для профессионального роста",
-      medizinJobList7: "Недофинансирование системы здравоохранения",
+      // medizinJobList4: "Сочетание семейной жизни и профессиональной карьеры",
+      // medizinJobList5: "Недостаточная дигитализация",
+      // medizinJobList6: "Отсутствие возможностей для профессионального роста",
+      // medizinJobList7: "Недофинансирование системы здравоохранения",
       sozialarbeit: "Социальная работа",
       sozialarbeitFullText:
         "В области социального и педагогического труда человек всегда находится в центре внимания. Независимо от того, идет ли речь о воспитании детей или образовании взрослых, работа с людьми требует особой чуткости. Чтобы правильно сопровождать взрослых, подростков или детей, необходим правильный баланс между эмпатией и профессиональными знаниями. Мы точно знаем, что важно в социальных и педагогических профессиях, и предлагаем вам квалифицированный персонал, который всегда находит правильный подход и сохраняет спокойствие даже в стрессовых ситуациях.Вы воспитатель, социальный педагог, специалист по уходу за людьми с ограниченными возможностями, помощник воспитателя и ищете изменения или хороший старт в Германии? Тогда переезд или смена работы может быть именно тем, что вам нужно!",
