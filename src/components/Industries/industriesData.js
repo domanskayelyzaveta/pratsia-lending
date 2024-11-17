@@ -24,7 +24,33 @@ export const industriesData = [
       "pflegeJobList6",
       "pflegeJobList7",
     ],
-    text: "duSuchstInDE",
+    text: "deText",
+    subcategories: [
+      {
+        title: "subTitlePflege1",
+        list: ["subTitlePflegeList1_1", "subTitlePflegeList1_2"],
+      },
+      {
+        title: "subTitlePflege2",
+        list: [
+          "subTitleListPflege2_1",
+          "subTitleListPflege2_2",
+          "subTitleListPflege2_3",
+        ],
+      },
+      {
+        title: "subTitlePflege3",
+        list: [
+          "subTitlePflegeText3",
+          "subTitleListPflege3_1",
+          "subTitleListPflege3_2",
+        ],
+      },
+      {
+        title: "subTitlePflegeSecondText3",
+        list: ["subTitleListPflege3_3", "subTitleListPflege3_4"],
+      },
+    ],
   },
   {
     title: "medizin",

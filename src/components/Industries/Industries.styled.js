@@ -75,7 +75,7 @@ export const BtnIndustries = styled.button`
   }
   @media screen and (min-width: 1440px) {
     left: ${({ $isOpened }) => ($isOpened ? "0px" : "420px")};
-    top: ${(props) => (props.$isVisible ? "101%" : "-116px")};
+    top: ${(props) => (props.$isVisible ? "101%" : "-94px")};
   }
 `;
 
@@ -116,7 +116,7 @@ export const TextSliderTablet = styled.p`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 850px;
+    width: 890px;
   }
 `;
 
