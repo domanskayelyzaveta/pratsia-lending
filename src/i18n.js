@@ -79,22 +79,67 @@ const resources = {
       einstürzen: "Einstürzen",
 
       branchenTitle: "Branchen",
+
+      //Main pflege
+
       pflege: "Pflege",
+      // pflegeText:
+      //   "Als Pflegefachkraft in Deutschland… Möchtest du  in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
       pflegeText:
-        "Als Pflegefachkraft in Deutschland… Möchtest du  in deinem Beruf stets eine angemessene Versorgung der Patienten sicherstellen?",
-      pflegeJobText:
-        "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
-      pflegeMobileText:
-        "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
-      pflegeJobList1: "Personalmangel",
-      pflegeJobList2: "Hoher bürokratischer Aufwand",
-      pflegeJobList3: "Mangelnde Wertschätzung",
-      pflegeJobList4: "Niedrige Vergütung",
-      pflegeJobList5: "Fehlende Weiterbildungsmöglichkeiten",
-      pflegeJobList6: "Schlechte Arbeitsbedingungen",
-      pflegeJobList7: "Keine Perspektive auf eine Führungsposition",
-      duSuchstInDE:
-        "Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen. Wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
+        "In unserem Unternehmen sind Stellenangebote für Pflegefachkräfte und Pflegehelfer verfügbar. Sie sind verantwortlich für die Unterstützung der Patienten, Durchführung von Behandlungen und Gewährleistung eines angenehmen Aufenthalts in der Klinik oder im Altenheim.",
+      // pflegeJobText:
+      //   "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      pflegeJobText: "Wir bieten:",
+      // pflegeMobileText:
+      //   "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
+      // pflegeJobList1: "Personalmangel",
+      // pflegeJobList2: "Hoher bürokratischer Aufwand",
+      // pflegeJobList3: "Mangelnde Wertschätzung",
+      // pflegeJobList4: "Niedrige Vergütung",
+      // pflegeJobList5: "Fehlende Weiterbildungsmöglichkeiten",
+      // pflegeJobList6: "Schlechte Arbeitsbedingungen",
+      // pflegeJobList7: "Keine Perspektive auf eine Führungsposition",
+
+      pflegeJobList1:
+        "Ein wettbewerbsfähiges Gehalt ab 4000 Euro pro Monat, plus Zuschläge.",
+      pflegeJobList2: "Kostenlose Unterkunft für unsere Mitarbeiter.",
+      pflegeJobList3:
+        "Individuelle Stellenvermittlung: Wir finden für Sie einen Job, der Ihren Wünschen entspricht – sei es ein Altenheim, eine Klinik oder ein Krankenhaus, und wir berücksichtigen auch den geografischen Standort (in einem bestimmten Bundesland oder einer Stadt).",
+      pflegeJobList4:
+        "Ständige Zusammenarbeit mit Krankenhäusern, Kliniken und Altenheimen, die regelmäßig Pflegekräfte mit anerkannten Diplomen benötigen und bereit sind, Ihr Diplom anzuerkennen.",
+
+      //SubTitle 1
+
+      subTitlePflege1: "Bedingungen für die Beschäftigung:",
+      subTitlePflegeList1_1:
+        "Wenn Sie bereits ein anerkanntes Diplom haben, können Sie ab 4000 Euro pro Monat verdienen, plus Zuschläge und kostenlose Unterkunft und Verpflegung.",
+      subTitlePflegeList1_2:
+        "Wenn Sie Ihr Diplom anerkennen lassen möchten, liegt Ihr Gehalt im Durchschnitt bei ab 3200 Euro pro Monat, plus Zuschläge und Unterkunft und Verpflegung.",
+
+      // duSuchstInDE:
+      //   "Du suchst eine Veränderung oder einen guten Start in Deutschland? Dann ist ein Umzug oder Wechsel vielleicht genau das Richtige für dich! Mit Pratsia Recruiting wirst du bei den Top-Arbeitgebern des Landes vorgeschlagen. Wir finden für dich den idealen Arbeitgeber, der deinen Erwartungen entspricht.",
+
+      //SubTitle 2
+
+      subTitlePflege2: "Anforderungen:",
+      subTitleListPflege2_1:
+        "Diplom als Krankenschwester oder der Wunsch, ein Diplom anerkennen zu lassen.",
+      subTitleListPflege2_2:
+        "Deutschkenntnisse auf mindestens B1-Niveau (bevorzugt B2- Niveau).",
+      subTitleListPflege2_3: "Der Wunsch, zu arbeiten und Menschen zu helfen.",
+
+      //SubTitle 3
+
+      subTitlePflege3:
+        "Anerkennung des Diploms. Wir bieten individuelle Unterstützung für Krankenschwestern, die ihren Abschluss anerkennen lassen möchten.",
+      subTitlePflegeText3: "Wir unterstützen beide Anerkennungswege:",
+      subTitleListPflege3_1: "Praktikum",
+      subTitleListPflege3_2: "Prüfung",
+      subTitlePflegeSecondText3:
+        "In Zusammenarbeit mit verschiedenen Organisationen, wie Übersetzungsbüros und medizinischen Akademien, bieten wir eine umfassende Begleitung im Anerkennungsprozess.",
+      subTitleListPflege3_3:
+        "Wir helfen bei der Einreichung aller erforderlichen Anträge.",
+      subTitleListPflege3_4: "Wir finden eine Klinik für das Praktikum.",
 
       // medizin: "Medizin",
       medizin: "Ärzte",
@@ -410,6 +455,9 @@ const resources = {
       // pflegeJobList5: "Відсутність можливостей для професійного зростання",
       // pflegeJobList6: "Погані умови праці",
       // pflegeJobList7: "Відсутність перспективи на керівну посаду",
+      // duSuchstInDE:
+      //   "Ти шукаєш зміни або вдалий старт в Німеччині? Тоді, можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
+
       pflegeJobList1:
         "Конкурентну зарплату від 4000 євро на місяць, плюс надбавки.",
       pflegeJobList2: "Безкоштовне житло для наших співробітників.",
@@ -425,9 +473,6 @@ const resources = {
         "Якщо ви вже визнали диплом, ви можете заробляти від 4000 євро на місяць, плюс надбавки, а також отримати безкоштовне житло.",
       subTitlePflegeList1_2:
         "Якщо ви плануєте визнавати диплом, ваша зарплата становитиме в середньому від 3200 євро на місяць, плюс надбавки та житло.",
-
-      // duSuchstInDE:
-      //   "Ти шукаєш зміни або вдалий старт в Німеччині? Тоді, можливо, переїзд або зміна місця роботи саме те, що тобі потрібно! Ми знайдемо для тебе ідеального роботодавця, який відповідає твоїм очікуванням.",
 
       //SubTitle 2
 
@@ -449,6 +494,7 @@ const resources = {
         "Співпрацюючи з різними організаціями, такими як бюро перекладів та медичні академії, ми забезпечуємо повний супровід у процесі підтвердження кваліфікації",
       subTitleListPflege3_3: "Допоможемо з подачею всіх необхідних заяв.",
       subTitleListPflege3_4: "Підберемо клініку для проходження практики.",
+
       //Main medizin
 
       // medizin: "Медицина",
@@ -744,22 +790,63 @@ const resources = {
       einstürzen: "Свернуть",
 
       branchenTitle: "Отрасли",
-      pflege: "Уход",
-      pflegeText:
-        "Как медицинский специалист в Германии вы хотите всегда обеспечивать надлежащий уход за пациентами в своей профессии?",
-      pflegeJobText:
-        "Вы стремитесь к большему признанию за свою повседневную работу? Ищете работу, где ваш работодатель активно способствует вашему развитию, и 'Work - Life - Balance' для вас больше, чем просто фраза? Тогда, безусловно, вы сталкиваетесь с такими вызовами:",
-      pflegeJobList1: "Кадровый дефицит",
-      pflegeJobList2: "Бюрократические сложности",
-      pflegeJobList3: "Отсутствие признания",
-      pflegeJobList4: "Низкая оплата",
-      pflegeJobList5: "Отсутствие возможностей для профессионального роста",
-      pflegeJobList6: "Плохие условия труда",
-      pflegeJobList7: "Отсутствие перспективы на руководящую должность",
-      duSuchstInDE:
-        "Ищете смену или удачный старт в Германии? Тогда, возможно, переезд или смена места работы именно то, что вам нужно! Мы найдем для вас идеального работодателя, который соответствует вашим ожиданиям.",
 
-      //Main
+      pflege: "Уход",
+      // pflegeText:
+      //   "Как медицинский специалист в Германии вы хотите всегда обеспечивать надлежащий уход за пациентами в своей профессии?",
+      pflegeText:
+        "В нашей компании открыты вакансии для медицинских сестер и санитаров. Вы будете отвечать за помощь пациентам, проведение процедур и обеспечение комфортного пребывания в клинике или доме престарелых.",
+      // pflegeJobText:
+      //   "Вы стремитесь к большему признанию за свою повседневную работу? Ищете работу, где ваш работодатель активно способствует вашему развитию, и 'Work - Life - Balance' для вас больше, чем просто фраза? Тогда, безусловно, вы сталкиваетесь с такими вызовами:",
+      pflegeJobText: "Мы предлагаем:",
+      // pflegeJobList1: "Кадровый дефицит",
+      // pflegeJobList2: "Бюрократические сложности",
+      // pflegeJobList3: "Отсутствие признания",
+      // pflegeJobList4: "Низкая оплата",
+      // pflegeJobList5: "Отсутствие возможностей для профессионального роста",
+      // pflegeJobList6: "Плохие условия труда",
+      // pflegeJobList7: "Отсутствие перспективы на руководящую должность",
+      // duSuchstInDE:
+      //   "Ищете смену или удачный старт в Германии? Тогда, возможно, переезд или смена места работы именно то, что вам нужно! Мы найдем для вас идеального работодателя, который соответствует вашим ожиданиям.",
+
+      pflegeJobList1:
+        "Конкурентную зарплату от 4000 евро в месяц, плюс надбавки.",
+      pflegeJobList2: "Бесплатное жилье для наших сотрудников",
+      pflegeJobList3:
+        "Индивидуальный подбор вакансий: мы найдем для вас работу, которая соответствует вашим пожеланиям – будь то дом престарелых, клиника или больница, а также учитываем географическое расположение (в определенной земле или городе).",
+      pflegeJobList4:
+        "Постоянное сотрудничество с больницами, клиниками и домами престарелых, которые регулярно нуждаются в медсестрах с признанным дипломом и готовы признать ваш диплом.",
+
+      //SubTitle 1
+
+      subTitlePflege1: "Условия трудоустройства:",
+      subTitlePflegeList1_1:
+        "Если вы уже признали диплом, вы можете зарабатывать от 4000 евро в месяц, плюс надбавки, а также получить бесплатное жилье и питание.",
+      subTitlePflegeList1_2:
+        "Если вы планируете признавать диплом, ваша зарплата составит в среднем от 3200 евро в месяц, плюс надбавки, бесплатное жилье и питание",
+
+      //SubTitle 2
+
+      subTitlePflege2: "Требования:",
+      subTitleListPflege2_1:
+        "Диплом медицинской сестры или желание признать диплом.",
+      subTitleListPflege2_2:
+        "Знание немецкого языка от уровня B1 (желательно уровень B2).",
+      subTitleListPflege2_3: "Желание работать и помогать людям.",
+
+      //SubTitle 3
+
+      subTitlePflege3:
+        "Признание диплома. Мы предлагаем индивидуальную поддержку медсестрам, которые стремятся признать свой диплом.",
+      subTitlePflegeText3: "Мы поддерживаем оба варианта признания:",
+      subTitleListPflege3_1: "Прохождение практики",
+      subTitleListPflege3_2: "Cдача экзамена",
+      subTitlePflegeSecondText3:
+        "Сотрудничая с различными организациями, такими как бюро переводов и медицинские академии, мы обеспечиваем полный сопровождение в процессе подтверждения квалификации.",
+      subTitleListPflege3_3: "Поможем с подачей всех необходимых заявлений.",
+      subTitleListPflege3_4: "Подберем клинику для прохождения практики.",
+
+      //Main medizin
 
       // medizin: "Медицина",
       medizin: "Врачи",

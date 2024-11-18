@@ -20,9 +20,9 @@ export const industriesData = [
       "pflegeJobList2",
       "pflegeJobList3",
       "pflegeJobList4",
-      "pflegeJobList5",
-      "pflegeJobList6",
-      "pflegeJobList7",
+      // "pflegeJobList5",
+      // "pflegeJobList6",
+      // "pflegeJobList7",
     ],
     text: "deText",
     subcategories: [
