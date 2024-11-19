@@ -90,6 +90,7 @@ const resources = {
       // pflegeJobText:
       //   "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       pflegeJobText: "Wir bieten:",
+      pflegeMobileText: "Wir bieten:",
       // pflegeMobileText:
       //   "Du wünschst dir mehr Anerkennung für deine tägliche Arbeit? Du suchst einen Job, in dem dein Arbeitgeber aktiv deine Entwicklung fördert und 'Work-Life-Balance' mehr als nur ein Schlagwort ist? Dabei bist du sicherlich auf folgende Herausforderungen gestoßen:",
       // pflegeJobList1: "Personalmangel",
@@ -130,9 +131,11 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3:
-        "Anerkennung des Diploms. Wir bieten individuelle Unterstützung für Krankenschwestern, die ihren Abschluss anerkennen lassen möchten.",
-      subTitlePflegeText3: "Wir unterstützen beide Anerkennungswege:",
+      subTitlePflege3: "Anerkennung des Diploms:",
+      // subTitlePflegeText3: "Wir unterstützen beide Anerkennungswege:",
+      // Wir unterstützen beide Anerkennungswege:
+      subTitlePflege3_1:
+        "Wir bieten individuelle Unterstützung für Krankenschwestern, die ihren Abschluss anerkennen lassen möchten. Wir unterstützen beide Anerkennungswege:",
       subTitleListPflege3_1: "Praktikum",
       subTitleListPflege3_2: "Prüfung",
       subTitlePflegeSecondText3:
@@ -442,12 +445,14 @@ const resources = {
       // pflegeText:
       //   "Як медичний фахівець в Німеччині ти бажаєш завжди забезпечувати відповідний догляд за пацієнтами у своїй професії?",
       pflegeText:
-        "У нашій компанії відкриті вакансії для медичних сестер та санітарів. Ви будете відповідальні за надання допомоги пацієнтам, проведення процедур та забезпечення комфортного перебування в клініці або будинку престарілих. Ми пропонуємо:",
+        "У нашій компанії відкриті вакансії для медичних сестер та санітарів. Ви будете відповідальні за надання допомоги пацієнтам, проведення процедур та забезпечення комфортного перебування в клініці або будинку престарілих.",
       // pflegeJobText:
       //   "Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work-Life-Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
+
       pflegeJobText: "Ми пропонуємо:",
       // pflegeMobileText:
       //   "Як медичний фахівець в Німеччині... Ти бажаєш завжди забезпечувати адекватний догляд за пацієнтами у своїй професії? Ти прагнеш отримати більше визнання за свою щоденну роботу? Ти шукаєш роботу, де твій роботодавець активно сприяє твоєму розвитку, і 'Work-Life-Balance' для тебе більше, ніж просто фраза? Тоді безумовно ти стикаєшся з такими викликами:",
+      pflegeMobileText: "Ми пропонуємо:",
       // pflegeJobList1: "Кадровий дефіцит",
       // pflegeJobList2: "Бюрократичні складності",
       // pflegeJobList3: "Відсутність визнання",
@@ -485,9 +490,10 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3:
-        "Визнання диплому. Ми пропонуємо індивідуальну підтримку медсестрам які прагнуть визнати свій диплом.",
-      subTitlePflegeText3: "Ми підтримуємо обидва варіанти визнання:",
+      subTitlePflege3: "Визнання диплому:",
+      subTitlePflege3_1:
+        "Ми пропонуємо індивідуальну підтримку медсестрам які прагнуть визнати свій диплом. Ми підтримуємо обидва варіанти визнання:",
+      // subTitlePflegeText3: "Ми підтримуємо обидва варіанти визнання:",
       subTitleListPflege3_1: "Проходження практики",
       subTitleListPflege3_2: "Складання іспиту",
       subTitlePflegeSecondText3:
@@ -799,6 +805,8 @@ const resources = {
       // pflegeJobText:
       //   "Вы стремитесь к большему признанию за свою повседневную работу? Ищете работу, где ваш работодатель активно способствует вашему развитию, и 'Work - Life - Balance' для вас больше, чем просто фраза? Тогда, безусловно, вы сталкиваетесь с такими вызовами:",
       pflegeJobText: "Мы предлагаем:",
+      pflegeMobileText: "Мы предлагаем:",
+
       // pflegeJobList1: "Кадровый дефицит",
       // pflegeJobList2: "Бюрократические сложности",
       // pflegeJobList3: "Отсутствие признания",
@@ -836,9 +844,9 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3:
-        "Признание диплома. Мы предлагаем индивидуальную поддержку медсестрам, которые стремятся признать свой диплом.",
-      subTitlePflegeText3: "Мы поддерживаем оба варианта признания:",
+      subTitlePflege3: "Признание диплома:",
+      subTitlePflege3_1:
+        "Мы предлагаем индивидуальную поддержку медсестрам, которые стремятся признать свой диплом. Мы поддерживаем оба варианта признания:",
       subTitleListPflege3_1: "Прохождение практики",
       subTitleListPflege3_2: "Cдача экзамена",
       subTitlePflegeSecondText3:

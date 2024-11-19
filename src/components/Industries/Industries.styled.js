@@ -68,10 +68,13 @@ export const BtnIndustries = styled.button`
 
   position: absolute;
   top: -14px;
+
   z-index: 1;
 
   @media screen and (min-width: 768px) {
     left: ${({ $isOpened }) => ($isOpened ? "0px" : "292px")};
+    bottom: ${({ $isOpened }) => ($isOpened ? "-24px" : "0px")};
+    top: ${({ $isOpened }) => ($isOpened ? "auto" : "-22px")};
   }
   @media screen and (min-width: 1440px) {
     left: ${({ $isOpened }) => ($isOpened ? "0px" : "420px")};
@@ -111,12 +114,13 @@ export const TextSliderTablet = styled.p`
 
   @media screen and (min-width: 768px) {
     width: 426px;
-    font-size: 19px;
+    font-size: 16px;
     margin-top: 0px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 890px;
+    font-size: 19px;
   }
 `;
 
@@ -172,7 +176,8 @@ export const IndustryListItems = styled.li`
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
+    // top: 50%;
+    top: 10px;
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
@@ -182,6 +187,10 @@ export const IndustryListItems = styled.li`
 
   @media screen and (min-width: 768px) {
     font-size: 19px;
+
+    &::before {
+      top: 14px;
+    }
   }
 `;
 

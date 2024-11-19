@@ -91,7 +91,7 @@ export const TextListCompanies = styled.p`
     font-size: 20px;
     padding-left: 20px;
 
-    &::before {
+    &:: {
       width: 8px;
       height: 8px;
     }

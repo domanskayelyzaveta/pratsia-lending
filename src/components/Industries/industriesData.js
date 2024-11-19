@@ -38,13 +38,10 @@ export const industriesData = [
           "subTitleListPflege2_3",
         ],
       },
+      { title: "subTitlePflege3" },
       {
-        title: "subTitlePflege3",
-        list: [
-          "subTitlePflegeText3",
-          "subTitleListPflege3_1",
-          "subTitleListPflege3_2",
-        ],
+        title: "subTitlePflege3_1",
+        list: ["subTitleListPflege3_1", "subTitleListPflege3_2"],
       },
       {
         title: "subTitlePflegeSecondText3",
@@ -56,9 +53,9 @@ export const industriesData = [
     title: "medizin",
     image: medizin,
     alt: "medicine photo",
-    description: "medizinMobileText",
+    description: "medizinText",
     tabletText: "medizinText",
-    mobileText: "medizinMobileText",
+    mobileText: "medizinJobText",
     tabletSubText: "medizinJobText",
     list: [
       "medizinJobList1",

@@ -81,7 +81,7 @@ const Industries = () => {
                       type="button"
                       aria-label="Open text"
                       style={{
-                        top: isVisible[index] ? "101%" : "auto",
+                        top: isVisible[index] ? "100%" : "auto",
                       }}
                       onClick={() => toggleVisibility(index)}
                     >
@@ -105,7 +105,10 @@ const Industries = () => {
                       height={heights[index]}
                     >
                       {isMobile && (
-                        <TextSlider>{t(industry.description)}</TextSlider>
+                        <>
+                          <TextSlider>{t(industry.description)}</TextSlider>
+                          <TextSlider>{t(industry.tabletSubText)}</TextSlider>
+                        </>
                       )}
                       {isTabletOrDesktop && (
                         <TextSlider>{industry.tabletSubText}</TextSlider>
