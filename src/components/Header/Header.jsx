@@ -83,7 +83,7 @@ const Header = ({
             </svg>
           </a>
 
-          {isTablet && <Text>{t("telefon")}: 0170 1481355</Text>}
+          {isTablet && <Text>{t("telefon")}: 0170 1272124</Text>}
 
           {isDesktop1440 && (
             <StyledNav>

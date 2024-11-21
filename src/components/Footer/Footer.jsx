@@ -45,7 +45,7 @@ const Footer = () => {
 
         <li>
           <StyledA
-            href="https://wa.me/+491701481355"
+            href="https://wa.me/+491701272124"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to open Whats App"
@@ -89,8 +89,8 @@ const Footer = () => {
         </HolderDiv>
 
         <PhoneEmailDiv>
-          <LinkFooterText href="tel:+491701481355">
-            {t("telefon")}: 0170 1481355
+          <LinkFooterText href="tel:+491701272124">
+            {t("telefon")}: 0170 1272124
           </LinkFooterText>
           <LinkFooterText href="mailto:info@pratsia.de">
             E-Mail: info@pratsia.de
