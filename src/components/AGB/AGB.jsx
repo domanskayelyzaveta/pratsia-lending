@@ -1,10 +1,15 @@
 import React from "react";
 import { AboutSubTitle } from "../AboutUs/AboutUs.styled";
 import { TextAbg } from "./Abg.styled";
+import { TitleImpress } from "../Impressum/Impressum.styled";
 
 const AGB = () => {
   return (
     <div>
+      <TitleImpress>
+        Allgemeine Geschäftsbedingungen Pratsia UG (haftungsbeschränkt)
+      </TitleImpress>
+      <p>(Stand: 1.07.2024)</p>
       <AboutSubTitle> 1. Geltungsbereich</AboutSubTitle>
       <TextAbg>
         Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle
