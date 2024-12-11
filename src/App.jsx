@@ -8,6 +8,7 @@ import Modal from "./components/Modal/Modal";
 import ModalLangSwitch from "./components/Modal/ModalLangSwitch/ModalLangSwitch";
 import ImpressumPage from "./Pages/ImpressumPage/ImpressumPage";
 import DatenschutzerklärungPage from "./Pages/DatenschutzerklärungPage/DatenschutzerklärungPage";
+import AgbPage from "./Pages/AGBPage/AgbPage";
 
 const Hero = lazy(() => import("./components/Hero/Hero"));
 const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
@@ -121,6 +122,7 @@ const App = () => {
                   path="/datenschutzerklarung"
                   element={<DatenschutzerklärungPage />}
                 />
+                <Route path="/agb" element={<AgbPage />} />
                 <Route
                   path="/"
                   element={
