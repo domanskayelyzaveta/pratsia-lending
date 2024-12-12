@@ -11,6 +11,9 @@ const DataCompany = () => {
       <DataLink as={Link} to="/datenschutzerklarung">
         Datenschutzerklärung
       </DataLink>
+      <DataLink as={Link} to="/agb">
+        AGB
+      </DataLink>
     </DataSectionDiv>
   );
 };
