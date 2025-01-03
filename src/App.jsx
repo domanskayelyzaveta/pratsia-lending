@@ -1,5 +1,5 @@
 import React, { lazy, useState, useEffect, useRef } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import BtnGoUp from "./components/BtnGoUp/BtnGoUp";
 import "./i18n";
 import Animation from "./components/Animation/Animation";
@@ -36,6 +36,11 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const mainContentRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     localStorage.setItem("selectedLanguage", selectedLanguage);
