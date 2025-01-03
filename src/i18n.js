@@ -20,9 +20,9 @@ const resources = {
       // Hero
 
       heroTitle: "Entdecken Sie Pratsia",
-      slogan: "Deine Karriere - Unsere Mission",
+      slogan: "Ihre Karriere – Unsere Mission",
       textHero:
-        "Willkommen bei der führenden Personalagentur Pratsia - Ihrem zuverlässigen Partner bei der Vermittlung von hochqualifizierten Fachkräften aus der Ukraine nach Deutschland",
+        "Willkommen bei Pratsia, der führenden Personalagentur. Wir sind Ihr zuverlässiger. Partner bei der Vermittlung von hochqualifizierten Fachkräften nach Deutschland.",
       btn: "Interviewtermin",
 
       // About us
@@ -665,7 +665,7 @@ const resources = {
       label9: "Коментар",
       placeholder9: "Тема зустрічі",
 
-      absenden: "Відправили",
+      absenden: "Відправити",
 
       // Modal Form
 
@@ -1052,6 +1052,385 @@ const resources = {
       inhaber: "Собственник: Николай Сытник",
       street: "Улица Гарн, 12",
       city: "47798 Крефельд",
+    },
+  },
+
+  // EN ============================================================
+
+  en: {
+    translation: {
+      telefon: "Phone number",
+
+      nav: {
+        menuStart: "Home Page",
+        menuAboutUs: "About Us",
+        menuForCompanies: "For Companies",
+        menuForApp: "For Candidates",
+        menuAppointment: "Interview Appointment",
+        menuContact: "Contacts",
+      },
+
+      heroTitle: "Discover 'Pratsia'",
+      slogan: "Your Career - Our Mission",
+      textHero:
+        "Welcome to Pratsia, the leading recruitment agency – your reliable partner in connecting highly skilled professionals with employers in Germany.",
+      btn: "Book an Interview",
+
+      aboutUsSect: "About us",
+      aboutUsSubTitle:
+        "We build long-term and successful partnerships based on trust and respect",
+      aboutUsText:
+        "Our years of experience, deep industry knowledge, and international network enable us to offer tailored recruitment solutions that meet the needs of our clients.",
+
+      aboutUsItemList1: "Specialization",
+      aboutUsItemList2: "Integrated Approach",
+      aboutUsItemList3: "Fundamental Work",
+      spezial_text:
+        "We specialize in recruiting talented professionals in fields such as medicine, caregiving, social work, facility management, plumbing, electrical engineering, and auto mechanics.",
+      ein_text:
+        "Our comprehensive approach encompasses not only recruitment mediation but also additional services, such as preparatory and advanced German language courses and support in the process of diploma recognition in relevant fields.",
+      fundierte_text:
+        "Our work is grounded in ethical business practices and transparent communication. 'Pratsia' can help you attract top talent for your company and achieve your recruitment goals. We ensure a smooth integration into the German labor market.",
+      teilTeam: "Join the Team!",
+      teilTeamText:
+        "Looking for new professional challenges? Our recruitment agency offers exciting career opportunities across various industries. Submit your application now and start building your future with us!",
+      teilTeamSubText:
+        "Submit your application now and start building your future with us!",
+      forUnternehmentTitle: "For Businesses",
+      unternehmentText1: "Ethical Standards",
+      unternehmentText2: "Transparency in all business relationships",
+      unternehmentText3: "High-quality hiring process",
+      unternehmentListItem1: "Our Skills",
+      unternehmentListItem2: "Our Services",
+      fahigkeitenText:
+        "Pratsia provides its services to companies across Germany. Our extensive network and effective recruitment strategies enable us to facilitate the employment of highly skilled professionals in various cities and regions of Germany.",
+      dienstText:
+        "Our commitment to high-quality service knows no bounds, and we take pride in providing our clients across Germany with top-notch support. Our services include recruiting, consulting and needs analysis, job placement and marketing, candidate selection and pre-screening, visa and work permit assistance, onboarding support, post-retirement services, German language courses, and assistance in qualifications recognition.",
+      forBewerberitle: "For Candidates",
+      forBewerberSubitle: "Dreaming of the perfect job? We can help!",
+      bewerberListItem1: "Integrated Approach",
+      bewerberListItem2: "Extensive Industry Knowledge",
+      bewerberListItem3: "Support for Companies and Employees",
+      integrierter:
+        "Our company offers a comprehensive approach that not only covers finding the ideal job but also additional services such as German language courses and assistance in diploma recognition to ensure successful integration.",
+      branchenwissen:
+        "Pratsia has extensive industry knowledge in areas such as healthcare, caregiving, social work, facility management, plumbing, electrical engineering, and automotive mechanics. This enables us to find tailored solutions for candidates. The foundation lies in personalized career consultations, development opportunities, and further job matching that aligns with candidates' qualifications and interests.",
+      unterstutzung:
+        "To optimally address the needs and requirements of both parties, the employment agency places great importance on individualized support for both companies and workers. This includes consulting and assistance with visa and immigration procedures, obtaining work and residence permits, as well as help with relocation preparation, finding accommodation, and other practical aspects of moving to Germany.",
+
+      // * Branchen
+      weiterlesen: "Read more",
+      einstürzen: "Read less",
+
+      branchenTitle: "Industries",
+
+      // pflege: "Care",
+
+      // pflegeText:
+      //   "Our company has job openings for nurses and caregivers. You will be responsible for assisting patients, performing procedures, and ensuring a comfortable stay in a clinic or nursing home.",
+      // pflegeJobText: "We offer:",
+      // pflegeMobileText: "We offer:",
+
+      // pflegeJobList1:
+      //   "A competitive salary starting from 4000 EUR per month, plus bonuses.",
+      // pflegeJobList2: "Free accommodation for our employees.",
+      // pflegeJobList3:
+      //   "Personalized job selection: We will find a job for you that fits your preferences—whether it's a nursing home, clinic, or hospital, and we also consider geographic location (in a specific state or city).",
+      // pflegeJobList4:
+      //   "Ongoing collaboration with hospitals, clinics, and nursing homes that regularly need nurses with recognized diplomas and are ready to recognize your diploma.",
+
+      // //SubTitle 1
+
+      // subTitlePflege1: "Employment conditions:",
+      // subTitlePflegeList1_1:
+      //   "If your diploma is already recognized, you can earn from 4000 EUR per month, plus bonuses, as well as receive free accommodation and meals.",
+      // subTitlePflegeList1_2:
+      //   "If you plan to recognize your diploma, your salary will be on average from 3200 EUR per month, plus bonuses, with free accommodation and meals.",
+
+      // //SubTitle 2
+
+      // subTitlePflege2: "Requirements:",
+      // subTitleListPflege2_1:
+      //   "Nurse diploma or desire to recognize your diploma.",
+      // subTitleListPflege2_2:
+      //   "German language skills from B1 level (B2 level preferred).",
+      // subTitleListPflege2_3: "Desire to work and help people.",
+
+      // //SubTitle 3
+
+      // subTitlePflege3: "Diploma recognition:",
+      // subTitlePflege3_1:
+      //   "We offer personalized support to nurses who wish to recognize their diploma. We support both recognition options:",
+      // subTitleListPflege3_1: "Practical training",
+      // subTitleListPflege3_2: "Taking an exam",
+      // subTitlePflegeSecondText3:
+      //   "By collaborating with various organizations such as translation offices and medical academies, we provide full support in the qualification recognition process.",
+      // subTitleListPflege3_3:
+      //   "We assist with submitting all necessary applications.",
+      // subTitleListPflege3_4: "We help find a clinic for practical training.",
+      pflege: "Care",
+
+      pflegeText:
+        "Our company has job openings for nurses and caregivers. You will be responsible for assisting patients, performing procedures, and ensuring a comfortable stay in a clinic or nursing home.",
+      pflegeJobText: "We offer:",
+      pflegeMobileText: "We offer:",
+
+      pflegeJobList1:
+        "A competitive salary starting from 4000 EUR per month, plus bonuses.",
+      pflegeJobList2: "Free accommodation for our employees.",
+      pflegeJobList3:
+        "Personalized job selection: We will find a job for you that fits your preferences—whether it's a nursing home, clinic, or hospital, and we also consider geographic location (in a specific state or city).",
+      pflegeJobList4:
+        "Ongoing collaboration with hospitals, clinics, and nursing homes that regularly need nurses with recognized diplomas and are ready to recognize your diploma.",
+
+      subTitlePflege1: "Employment conditions:",
+      subTitlePflegeList1_1:
+        "If your diploma is already recognized, you can earn from 4000 EUR per month, plus bonuses, as well as receive free accommodation and meals.",
+      subTitlePflegeList1_2:
+        "If you plan to recognize your diploma, your salary will be on average from 3200 EUR per month, plus bonuses, with free accommodation and meals.",
+
+      subTitlePflege2: "Requirements:",
+      subTitleListPflege2_1:
+        "Nurse diploma or desire to recognize your diploma.",
+      subTitleListPflege2_2:
+        "German language skills from A2-B1 level (B2 level preferred).",
+      subTitleListPflege2_3: "Desire to work and help people.",
+
+      subTitlePflege3: "Diploma recognition:",
+      subTitlePflege3_1:
+        "We offer personalized support to nurses who wish to recognize their diploma. We support both recognition options:",
+      subTitleListPflege3_1: "Practical training",
+      subTitleListPflege3_2: "Taking an exam",
+      subTitlePflegeSecondText3:
+        "By collaborating with various organizations such as translation offices and medical academies, we provide full support in the qualification recognition process.",
+      subTitleListPflege3_3:
+        "We assist with submitting all necessary applications.",
+      subTitleListPflege3_4: "We help find a clinic for practical training.",
+
+      pflegeSupportText: "For EU Citizens:",
+      pflegeSupportList1:
+        "Simplified Process: No visa is required. You can relocate to Germany immediately and start the diploma recognition process.",
+      pflegeSupportList2:
+        "Fast Diploma Recognition: Your EU education significantly accelerates the recognition process, allowing you to start working as a certified nurse sooner.",
+
+      pflegeSupportText2: "For Non-EU Citizens:",
+      pflegeSupportList3:
+        "Visa Assistance: We guide you through the visa application process and ensure all necessary documents are properly prepared.",
+      pflegeSupportList4:
+        "Diploma Recognition Support: We help you collect, translate, and submit all the required documents for diploma recognition in Germany.",
+
+      pflegeSupportText3: "German Language Certification:",
+      pflegeSupportList5:
+        "You can begin with German language skills at the A2-B1 level, and we’ll assist you in achieving the B2 level required for full recognition.",
+
+      pflegeSupportText4: "Relocation Assistance:",
+      pflegeSupportList6:
+        "We help with housing arrangements, paperwork, and integration into your new life in Germany.",
+
+      pflegeSupportText5: "Job Placement:",
+      pflegeSupportList7:
+        "We secure a job for you during the diploma recognition process, allowing you to work as an assistant nurse with a starting salary of €2,800 per month.",
+      pflegeSupportList8:
+        "Once your diploma is fully recognized, you can work as a certified nurse, earning a salary starting from €4,000 per month.",
+
+      pflegeSupportText6: "Ongoing Support:",
+      pflegeSupportList9:
+        "We will support you every step of the way – from paperwork to practical matters – to ensure a smooth and successful transition.",
+      //Main medizin
+
+      // medizin: "Медицина",
+      medizin: "Doctors",
+      // medizinText:
+
+      medizinText:
+        "Our company specializes in employing doctors in Germany. We help doctors find clinics and hospitals ready to hire them after passing the FSP, within two years to obtain recognition as a physician.",
+      medizinJobText: "We offer:",
+      medizinJobList1:
+        "Find job opportunities for doctors who want to work in Germany after passing the FSP.",
+      medizinJobList2:
+        "Competitive salaries that vary depending on the region and the doctor's specialization.",
+      medizinJobList3:
+        "Personalized job selection according to your preferences regarding region or city, as well as specific hospitals or clinics, whether private or public.",
+
+      //SubTitle 1
+
+      subTitle1: "Employment conditions:",
+      subTitleList1_1:
+        "After passing the FSP and obtaining a work permit as a medical assistant, we will find a clinic or hospital that offers you the best working conditions, including a competitive salary.",
+      subTitleList1_2:
+        "For doctors with a recognized diploma, we offer employment opportunities with a salary starting at €7,000 per month (depending on the region) plus bonuses.",
+      subTitleList1_3:
+        "For doctors planning to have their diploma recognized, the salary will average €5,000 per month (depending on the region) plus bonuses.",
+
+      //SubTitle 2
+
+      subTitle2: "Requirements:",
+      subTitleList2_1: "Medical degree eligible for recognition in Germany",
+      subTitleList2_2: "German language proficiency at C1 level is mandatory.",
+      subTitleList2_3: "Willingness to work in a team and help patients.",
+
+      deText:
+        "We strive to help you find the best job opportunities that align with your professional goals and preferences, providing support at every stage of your career in Germany.",
+
+      //Main sozialarbeit
+
+      sozialarbeit: "Social Work",
+      sozialarbeitFullText:
+        "In the field of social work and pedagogy, people are always at the center of attention. Properly supporting adults, teenagers, or children requires the right combination of compassion and professional expertise. We understand the critical aspects of socialand educational professions and provide qualified personnel who are responsible and remain calm in stressful situations. Are you a teacher, social educator, special education teacher, or childcare worker looking for a change or a successful start in Germany? A career move or relocation might be exactly what you need!",
+      sozialarbeitText:
+        "In the field of social work and pedagogy, the person is always at the center of attention.",
+      sozialarbeitJobText:
+        "Proper support for adults, teenagers, or children requires the right combination of empathy and professional knowledge. We understand what is important in social and pedagogical professions and offer qualified personnel who always have a sense of responsibility and remain calm in stressful situations. Are you an educator, social worker, special education teacher, or nanny looking for a change or a successful start in Germany? Then maybe relocating or changing your workplace is exactly what you need!",
+
+      // Technik
+
+      technik: "Technology and Logistics",
+      technikText:
+        "Do you dream of working on exciting projects at leading high-tech companies?",
+      technikJobText:
+        "Are you seeking new challenges in mechanical engineering, automotive technology, or renewable energy? Together with your team, you’ll create globally recognized 'Made inGermany' solutions that drive future innovations. If you’re an expert in solar energy, the automotive industry, industrial assembly, steel construction, manufacturing and logistics, welding, or electrical engineering, and you’re looking for a change or a successful start in Germany, a career move or relocation could be just what you need!",
+
+      //Facility Management
+
+      facility: "Facility Management",
+      facilityText:
+        "Pratsia connects skilled professionals with innovative companies in the field of facility management across Germany.",
+      facilityJobText:
+        "We specialize in mediating technical specialists, whether it involves design, maintenance, storage, energy management, or managing the technical infrastructure of real estate. Are you a facility manager or asset manager? Or do you work directly with clients as an HVAC mechanic, HVAC service technician, electrician, or refrigeration system mechanic? Looking for a change or a successful start in Germany? Then relocating or changing your job could be the right solution!",
+
+      // Plumbing
+
+      sanitar: "Plumbing",
+      sanitarText:
+        "Pratsia supports you in finding top-tier opportunities in the plumbing, heating, and air conditioning (HVAC) sector across Germany.",
+      sanitarJobText:
+        "We understand the HVAC industry in all its aspects: from industry and wholesale trade to equipment manufacturers and installation companies. Each of these segments has its own specific requirements and conditions that must be met. Our core competence is professionalism and industry knowledge, as well as years of experience in the market. We work diligently every day to provide the best services. Are you looking for a change or a successful start in Germany? Then relocating or changing jobs might be exactly what you need!",
+      sanitarFullText:
+        "''Pratsia' supports you in finding the best jobs in the field of plumbing, heating, and air conditioning (HVAC). Our core strengths are expertise, in-depth industry knowledge, and years of experience in the market. We work diligently every day to provide the best services possible. Are you looking for a change or a successful start in Germany? A career move or relocation might be just what you need!",
+
+      //Mechanic
+
+      mechanik: "Automotive Mechanic / Mechatronics Technician",
+      mechanikText:
+        "Start your career right now - with us, you will gain access to an exclusive job market, free and tailored to you.",
+      mechanikJobText:
+        "In a country of global leaders in the automotive industry. Gasoline in your veins and technical understanding? A great combination! And that's exactly what we are looking for! If you're also interested in new technologies in the automotive industry, then you're on the right track as an experienced mechanic or mechatronics specialist! Are you looking for a change or a successful start in Germany? Then relocation or a job change might be exactly what you need! With Pratsia Recruiting, we will offer you jobs in the leading companies in the country. We will find the ideal employer for you, one that meets your expectations.",
+      mechanikFullText:
+        "Boost your career now, with us you will gain access to an exclusive job market – free and specially tailored for you. In a country of global leaders in the automotive industry. Gasoline in your veins and technical understanding? A perfect combination! And that's exactly the combination we are looking for! If you are also passionate about new technologies in the automotive industry, then you are in the right place with us as a qualified mechanic or mechatronics specialist! Are you looking for a change or a great start in Germany? Then relocation or a job change might be exactly what you need! With Pratsia Recruiting, you will be offered positions with the best employers in the country. We will find the ideal employer for you, one that meets your expectations.",
+
+      aktuelleJob: "Current Vacancies",
+      aktuelleJobItem1:
+        "Nurse in a temporary employment company (workplace - elderly care center / nursing home)",
+      aktuelleJobItem1T:
+        "Hourly pay 24-28 € depending on experience, whether you work throughout Germany or just in your region. Option to get a company car, or if you use your own, reimbursement of 30 cents per kilometer. Additional payments: Saturday 25%, Sunday 50%, night 25%, holidays 100%, 30 days of vacation, time tracking, meals + accommodation.",
+      aktuelleJobItem2:
+        "Nurse in a temporary employment company (workplace - hospital / clinic)",
+      aktuelleJobItem2T:
+        "Hourly pay 30-34 € depending on experience, whether you work throughout Germany or just in your region. Option to get a company car, or if you use your own, reimbursement of 30 cents per kilometer. Additional payments: Saturday 25%, Sunday 50%, night 25%, holidays 100%. 30 days of vacation, time tracking, meals + accommodation.",
+      aktuelleJobItem3:
+        "Nurse for qualification recognition (elderly care center or hospital)",
+      aktuelleJobItem3T:
+        "Hourly pay 17 €. Pratsia will find a place where your diploma will be recognized and support you in attending language courses while working full-time during the recognition period. Accommodation is usually also provided.",
+      aktuelleJobItem4:
+        "Auxiliary medical staff in a temporary employment company (workplace - elderly care center / nursing home / hospital)",
+      aktuelleJobItem4T:
+        "Hourly pay 17 €. Option to get a company car, or if you use your own, reimbursement of 30 cents per kilometer. Additional payments: Saturday 25%, Sunday 50%, night 25%, holidays 100%. 30 days of vacation, time tracking, meals + accommodation.",
+
+      interviewtermin: "Sign up for an interview",
+
+      appointment: {
+        questions: "Have questions?",
+        answers: "We provide answers",
+        problem: "Do you have a problem?",
+        solutions: "We find solutions",
+        certificate: "Need a certificate?",
+        organize: "We will organize it.",
+      },
+
+      beraten: "We are happy to advise you personally!",
+      vereinbaren: "Make an appointment with us",
+
+      // FORM
+
+      label1: "Company",
+      placeholder1: "Company",
+      label2: "Salutation",
+      placeholder2: "Salutation",
+      select1H: "Mr.",
+      select1F: "Ms.",
+      label3: "First Name",
+      placeholder3: "First Name",
+      label4: "Last Name",
+      placeholder4: "Last Name",
+      label5: "E-Mail",
+      placeholder5: "E-Mail",
+      label6: "Phone",
+      placeholder6: "Phone",
+      label7: "Preferred Date",
+      placeholder7: "Select a date",
+      label8: "Preferred Time",
+      placeholder8: "After noon",
+      select3N: "After noon",
+      select3V: "Before noon",
+      label9: "Comment",
+      placeholder9: "Meeting subject",
+
+      absenden: "Send",
+
+      // Modal Form
+
+      formSent: "Your application has been successfully submitted!",
+      weWillReply: "We will contact you soon!",
+      wrong: "Something went wrong!",
+      checkConnection: "Check your internet connection!",
+
+      // Errors
+
+      max64: "Maximum field length is 64 characters",
+      requiredField: "This field is required",
+      vornameMinLength: "First name must be at least 3 characters",
+      vornameMaxLength: "First name must be no more than 64 characters",
+      nachnameMinLength: "Last name must be at least 3 characters",
+      nachnameMaxLength: "Last name must be no more than 64 characters",
+      notValidEmail: "Email is incorrect",
+      phoneValid: "Phone number must be valid",
+      timeInThePast: "The selected date cannot be in the past",
+      message: "Message must be no longer than 500 characters",
+
+      // Calendar
+      sun: "Sunday",
+      mon: "Monday",
+      tue: "Tuesday",
+      wed: "Wednesday",
+      thu: "Thursday",
+      fri: "Friday",
+      sat: "Saturday",
+      jan: "January",
+      feb: "February",
+      mar: "March",
+      apr: "April",
+      may: "May",
+      jun: "June",
+      jul: "July",
+      aug: "August",
+      sep: "September",
+      oct: "October",
+      nov: "November",
+      dec: "December",
+
+      // Map
+      location: "We are located in Krefeld, but our work is everywhere",
+      timeToChange: "Time for change",
+
+      // Language Modal
+
+      choiceLanguage: "Please select the website language",
+
+      // Footer
+
+      inhaber: "Inhaber: Mykola Sytnyk",
+      street: "Garnstraße 12",
+      city: "47798 Krefeld",
     },
   },
 };
