@@ -57,7 +57,7 @@ const resources = {
       unternehmentListItem1: "Unsere Fähigkeiten",
       unternehmentListItem2: "Unsere Dienstleistungen",
       fahigkeitenText:
-        "Pratsia bietet seine Dienstleistungen Unternehmen in ganz Deutschland an. Unser umfangreiches Netzwerk und effektive Rekrutierungsstrategien ermöglichen es uns, hochqualifizierte ukrainische Fachkräfte an Unternehmen in verschiedenen Städten und Regionen Deutschlands zu vermitteln. Mit einem starken Netzwerk in der Ukraine und in Deutschland hat Pratsia Zugang zu einem breiten Spektrum hochqualifizierter Fachkräfte und bringt diese effektiv mit Unternehmen in Deutschland zusammen.",
+        "Pratsia bietet seine Dienstleistungen Unternehmen in ganz Deutschland an. Unser umfangreiches Netzwerk und effektive Rekrutierungsstrategien ermöglichen es uns, hochqualifizierte Fachkräfte aus Europa an Unternehmen in verschiedenen Städten und Regionen Deutschlands zu vermitteln. Mit einem starken Netzwerk in Europa und in Deutschland hat Pratsia Zugang zu einem breiten Spektrum hochqualifizierter Fachkräfte und bringt diese effektiv mit Unternehmen in Deutschland zusammen.",
       dienstText:
         "Unser Engagement für exzellenten Service kennt keine Grenzen und wir sind stolz darauf, unseren Kunden in ganz Deutschland erstklassige Unterstützung zu bieten. Unsere Dienstleistungen umfassen Rekrutierung, Beratung und Bedarfsanalyse, Stellenausschreibung und -marketing, Kandidatenauswahl und -vorauswahl, Unterstützung bei Visum und Arbeitserlaubnis, Onboarding, Dienstleistungen nach der Pensionierung, Deutschkurse und Unterstützung bei der Anerkennung von Qualifikationen.",
 
@@ -382,7 +382,7 @@ const resources = {
       heroTitle: "Відкрийте 'Pratsia'",
       slogan: "Ваша кар'єра - Наша місія",
       textHero:
-        "Ласкаво просимо до провідного кадрового агентства Pratsia - вашого надійного партнера у пошуку висококваліфікованих фахівців з України для роботодавців у Німеччині",
+        "Ласкаво просимо до Pratsia, провідної агентства з працевлаштування. Ми — ваш надійний партнер у підборі висококваліфікованих фахівців до Німеччини.",
       btn: "Записатися на співбесіду",
 
       // About us
@@ -417,7 +417,7 @@ const resources = {
       unternehmentListItem1: "Наші навички",
       unternehmentListItem2: "Наші послуги",
       fahigkeitenText:
-        "Pratsia надає свої послуги компаніям по всій Німеччині. Наша широка мережа та ефективні стратегії рекрутингу дозволяють нам сприяти працевлаштуванню висококваліфікованих українських фахівців до компаній у різних містах і регіонах Німеччини. Завдяки міцній мережі в Україні та Німеччині Pratsia має доступ до широкого спектру висококваліфікованих спеціалістів і успішно забезпечує їхню взаємодію з компаніями в Німеччині.",
+        "Pratsia надає свої послуги компаніям по всій Німеччині. Наша широка мережа та ефективні стратегії рекрутингу дозволяють нам сприяти працевлаштуванню висококваліфікованих європейських фахівців до компаній у різних містах і регіонах Німеччини. Завдяки міцній мережі в Європі та Німеччині Pratsia має доступ до широкого спектру висококваліфікованих спеціалістів і успішно забезпечує їхню взаємодію з компаніями в Німеччині.",
       dienstText:
         "Наше зобов'язання до високоякісного обслуговування не має меж, і ми пишаємося наданням нашим клієнтам по всій Німеччині першокласної підтримки. Наші послуги включають рекрутинг, консультування і аналіз потреб, розміщення вакансій і маркетинг, відбір і попередній відбір кандидатів, підтримку у візових питаннях і отриманні робочих дозволів, введення на роботу, послуги після виходу на пенсію, курси німецької мови і підтримку у визнанні кваліфікацій.",
 
@@ -745,7 +745,7 @@ const resources = {
       heroTitle: "Откройте 'Pratsia'",
       slogan: "Ваша карьера - Наша миссия",
       textHero:
-        "Добро пожаловать в ведущую кадровую агенцию Pratsia - вашего надежного партнера в поиске высококвалифицированных специалистов из Украины для работодателей в Германии",
+        "Добро пожаловать в ведущую кадровую агенцию Pratsia - вашего надежного партнера в поиске высококвалифицированных специалистов из Европы для работодателей в Германии",
       btn: "Записаться на собеседование",
 
       aboutUsSect: "Про нас",
@@ -775,7 +775,7 @@ const resources = {
       unternehmentListItem1: "Наши навыки",
       unternehmentListItem2: "Наши услуги",
       fahigkeitenText:
-        "Pratsia предоставляет свои услуги компаниям по всей Германии. Наша широкая сеть и эффективные стратегии рекрутинга позволяют нам способствовать трудоустройству высококвалифицированных украинских специалистов в компании в различных городах и регионах Германии. Благодаря прочной сети в Украине и Германии, Pratsia имеет доступ к широкому спектру высококвалифицированных специалистов и успешно обеспечивает их взаимодействие с компаниями в Германии.",
+        "Pratsia предоставляет свои услуги компаниям по всей Германии. Наша широкая сеть и эффективные стратегии рекрутинга позволяют нам способствовать трудоустройству высококвалифицированных специалистов из Европы в компании в различных городах и регионах Германии. Благодаря прочной сети в Европе и Германии, Pratsia имеет доступ к широкому спектру высококвалифицированных специалистов и успешно обеспечивает их взаимодействие с компаниями в Германии.",
       dienstText:
         "Наше обязательство к высококачественному обслуживанию не имеет границ, и мы гордимся предоставлением нашим клиентам по всей Германии первоклассной поддержки. Наши услуги включают рекрутинг, консультирование и анализ потребностей, размещение вакансий и маркетинг, отбор и предварительный отбор кандидатов, поддержку в визовых вопросах и получении разрешений на работу, введение в работу, услуги после выхода на пенсию, курсы немецкого языка и поддержку в признании квалификаций.",
       forBewerberitle: "Для кандидатов",
@@ -1354,8 +1354,8 @@ const resources = {
 
       label1: "Company",
       placeholder1: "Company",
-      label2: "Salutation",
-      placeholder2: "Salutation",
+      label2: "Title",
+      placeholder2: "Title",
       select1H: "Mr.",
       select1F: "Ms.",
       label3: "First Name",
