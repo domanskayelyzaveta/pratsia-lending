@@ -1,6 +1,6 @@
 import React from "react";
 import Select, { components } from "react-select";
-import { SvgDEU, SvgUA } from "../SvgFlags";
+import { SvgDEU, SvgEN, SvgUA } from "../SvgFlags";
 import {
   CustomDropdownIndicator,
   CustomStyles,
@@ -11,6 +11,7 @@ const SelectLang = ({ selectedLanguage, setSelectedLanguage }) => {
   const options = [
     { value: "de", label: "DE" },
     { value: "ua", label: "UA" },
+    { value: "en", label: "EN" },
     { value: "ru", label: "RU" },
   ];
 
@@ -20,6 +21,8 @@ const SelectLang = ({ selectedLanguage, setSelectedLanguage }) => {
         return <SvgDEU />;
       case "ua":
         return <SvgUA />;
+      case "en":
+        return <SvgEN />;
       case "ru":
         return null;
       // return <p>&#128169;</p>;

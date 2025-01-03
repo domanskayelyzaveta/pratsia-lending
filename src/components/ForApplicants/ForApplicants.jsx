@@ -22,7 +22,7 @@ import {
 } from "./ForApplicants.styled";
 import { BtnHero } from "../Hero/Hero.styled";
 import Industries from "../Industries/Industries";
-import JobOffers from "../JobOffers/JobOffers";
+// import JobOffers from "../JobOffers/JobOffers";
 import { useTranslation } from "react-i18next";
 
 const ForApplicants = ({ handleSetActiveLink }) => {
@@ -132,7 +132,7 @@ const ForApplicants = ({ handleSetActiveLink }) => {
         </BtnHero>
       </BtnAppDiv>
       <Industries />
-      <JobOffers />
+      {/* <JobOffers /> */}
     </SectionCompanies>
   );
 };
