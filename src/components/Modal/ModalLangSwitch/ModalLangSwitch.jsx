@@ -1,6 +1,6 @@
 import React from "react";
 import i18n from "../../../i18n";
-import { SvgDEU, SvgUA } from "../../Header/SvgFlags";
+import { SvgDEU, SvgEN, SvgUA } from "../../Header/SvgFlags";
 import { Title, Block } from "./ModalLangSwitch.styled";
 import LangButton from "./LangButton";
 import { useTranslation } from "react-i18next";
@@ -31,6 +31,14 @@ const ModalLangSwitch = ({ selectedLanguage, setSelectedLanguage }) => {
           Flag={SvgUA}
         >
           Українська
+        </LangButton>
+        <LangButton
+          language="en"
+          checked={selectedLanguage === "en"}
+          onChange={() => handleChangeLanguage("en")}
+          Flag={SvgEN}
+        >
+          English
         </LangButton>
         <LangButton
           language="ru"
