@@ -168,6 +168,10 @@ const AppointmentForm = () => {
                     dateFormat="dd.MM.yyyy"
                     calendarStartDay={1}
                     formatWeekDay={(day) => day.substr(0, 2)}
+                    filterDate={(date) => {
+                      const day = date.getDay(); // 0 - воскресенье, 6 - суббота
+                      return day !== 0 && day !== 6; // Разрешаем только будние дни
+                    }}
                     $errors={!!errors.wunschtermin}
                   />
                 )}

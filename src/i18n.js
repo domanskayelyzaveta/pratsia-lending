@@ -1168,43 +1168,44 @@ const resources = {
       // subTitleListPflege3_3:
       //   "We assist with submitting all necessary applications.",
       // subTitleListPflege3_4: "We help find a clinic for practical training.",
-      pflege: "Care",
+      pflege: "Nursing Career",
 
       pflegeText:
-        "Our company has job openings for nurses and caregivers. You will be responsible for assisting patients, performing procedures, and ensuring a comfortable stay in a clinic or nursing home.",
-      pflegeJobText: "We offer:",
-      pflegeMobileText: "We offer:",
+        "Our program makes it simple and easy for EU citizens with nursing education to start their careers in Germany. If you have completed your education within the EU, you can move to Germany without the need for a visa and begin the process of diploma recognition right away.",
+      pflegeJobText: "What We Offer:",
+      pflegeMobileText: "What We Offer:",
 
       pflegeJobList1:
-        "A competitive salary starting from 4000 EUR per month, plus bonuses.",
-      pflegeJobList2: "Free accommodation for our employees.",
+        "Simplified Process: No visa is required. You can relocate to Germany immediately and start the recognition process for your nursing diploma.",
+      pflegeJobList2:
+        "Fast Diploma Recognition: Diplomas earned within the EU are recognized more quickly, enabling you to begin working as a certified nurse in a shorter timeframe.",
       pflegeJobList3:
-        "Personalized job selection: We will find a job for you that fits your preferences—whether it's a nursing home, clinic, or hospital, and we also consider geographic location (in a specific state or city).",
+        "Language Support: We help you improve your German language skills. Starting with A2-B1, we will guide you to reach the B2 level required for full recognition.",
       pflegeJobList4:
-        "Ongoing collaboration with hospitals, clinics, and nursing homes that regularly need nurses with recognized diplomas and are ready to recognize your diploma.",
+        "Relocation Assistance:We provide support with finding accommodation, registering locally, and handling paperwork to make your transition as smooth as possible.",
 
-      subTitlePflege1: "Employment conditions:",
+      subTitlePflege1: "Job Placement:",
       subTitlePflegeList1_1:
-        "If your diploma is already recognized, you can earn from 4000 EUR per month, plus bonuses, as well as receive free accommodation and meals.",
+        "During the recognition process, you can work as an assistant nurse, earning a salary starting from €2,800 per month.",
       subTitlePflegeList1_2:
-        "If you plan to recognize your diploma, your salary will be on average from 3200 EUR per month, plus bonuses, with free accommodation and meals.",
+        "After diploma recognition, certified nurses earn salaries starting at €4,000 per month.",
 
       subTitlePflege2: "Requirements:",
       subTitleListPflege2_1:
-        "Nurse diploma or desire to recognize your diploma.",
-      subTitleListPflege2_2:
-        "German language skills from A2-B1 level (B2 level preferred).",
-      subTitleListPflege2_3: "Desire to work and help people.",
+        "A completed nursing diploma from an EU institution.",
+      subTitleListPflege2_2: "A strong desire to work as a nurse in Germany.",
+      subTitleListPflege2_3:
+        "German language skills at a minimum of A2-B1 level (we will help you achieve B2).",
 
       subTitlePflege3: "Diploma recognition:",
       subTitlePflege3_1:
         "We offer personalized support to nurses who wish to recognize their diploma. We support both recognition options:",
       subTitleListPflege3_1: "Practical training",
       subTitleListPflege3_2: "Taking an exam",
-      subTitlePflegeSecondText3:
-        "By collaborating with various organizations such as translation offices and medical academies, we provide full support in the qualification recognition process.",
+
+      subTitlePflegeSecondText3: "Comprehensive Support:",
       subTitleListPflege3_3:
-        "We assist with submitting all necessary applications.",
+        "We assist you at every stage – from document preparation to practical matters – ensuring a hassle-free transition into your new career.",
       subTitleListPflege3_4: "We help find a clinic for practical training.",
 
       pflegeSupportText: "For EU Citizens:",
@@ -1243,31 +1244,34 @@ const resources = {
       // medizinText:
 
       medizinText:
-        "Our company specializes in employing doctors in Germany. We help doctors find clinics and hospitals ready to hire them after passing the FSP, within two years to obtain recognition as a physician.",
-      medizinJobText: "We offer:",
+        "At Pratsia, we specialize in helping EU doctors navigate the process of starting a medical career in Germany with ease and efficiency. Our comprehensive support covers everything from diploma recognition to securing the right job opportunities.",
+      medizinJobText: "Recognition of Qualifications and Licensing",
       medizinJobList1:
-        "Find job opportunities for doctors who want to work in Germany after passing the FSP.",
+        "As an EU-trained doctor, your qualifications are typically recognized in Germany with fewer administrative hurdles.",
       medizinJobList2:
-        "Competitive salaries that vary depending on the region and the doctor's specialization.",
+        "Assistance is provided to help you obtain your Approbation (license to practice) and navigate the formalities.",
       medizinJobList3:
-        "Personalized job selection according to your preferences regarding region or city, as well as specific hospitals or clinics, whether private or public.",
+        "You can prepare for C1 Medical German exams, with a minimum B2 German proficiency required to start the process.",
 
       //SubTitle 1
 
-      subTitle1: "Employment conditions:",
+      subTitle1: "Career Opportunities and Salary",
       subTitleList1_1:
-        "After passing the FSP and obtaining a work permit as a medical assistant, we will find a clinic or hospital that offers you the best working conditions, including a competitive salary.",
+        "We connect you with employers offering positions that match your qualifications and specialization.",
       subTitleList1_2:
-        "For doctors with a recognized diploma, we offer employment opportunities with a salary starting at €7,000 per month (depending on the region) plus bonuses.",
+        "Fully licensed doctors can earn starting salaries of €7,000 per month, plus bonuses depending on the region.",
       subTitleList1_3:
-        "For doctors planning to have their diploma recognized, the salary will average €5,000 per month (depending on the region) plus bonuses.",
+        "There are opportunities for further specialization and career growth within the German healthcare system.",
 
       //SubTitle 2
 
-      subTitle2: "Requirements:",
-      subTitleList2_1: "Medical degree eligible for recognition in Germany",
-      subTitleList2_2: "German language proficiency at C1 level is mandatory.",
-      subTitleList2_3: "Willingness to work in a team and help patients.",
+      subTitle2: "Relocation and Integration Support",
+      subTitleList2_1:
+        "We assist you in finding and renting suitable accommodations in Germany.",
+      subTitleList2_2:
+        "Guidance is provided to help you integrate into the German healthcare system and understand its operations.",
+      subTitleList2_3:
+        "You’ll receive advice on regional living conditions and cultural adaptation to make your transition smoother.",
 
       deText:
         "We strive to help you find the best job opportunities that align with your professional goals and preferences, providing support at every stage of your career in Germany.",
@@ -1278,7 +1282,7 @@ const resources = {
       sozialarbeitFullText:
         "In the field of social work and pedagogy, people are always at the center of attention. Properly supporting adults, teenagers, or children requires the right combination of compassion and professional expertise. We understand the critical aspects of socialand educational professions and provide qualified personnel who are responsible and remain calm in stressful situations. Are you a teacher, social educator, special education teacher, or childcare worker looking for a change or a successful start in Germany? A career move or relocation might be exactly what you need!",
       sozialarbeitText:
-        "In the field of social work and pedagogy, the person is always at the center of attention.",
+        "In the field of social work and pedagogy, the person is always at the center of attention. These professions require empathy, dedication, and a genuine commitment to making a positive impact on people's lives.",
       sozialarbeitJobText:
         "Proper support for adults, teenagers, or children requires the right combination of empathy and professional knowledge. We understand what is important in social and pedagogical professions and offer qualified personnel who always have a sense of responsibility and remain calm in stressful situations. Are you an educator, social worker, special education teacher, or nanny looking for a change or a successful start in Germany? Then maybe relocating or changing your workplace is exactly what you need!",
 
@@ -1286,7 +1290,7 @@ const resources = {
 
       technik: "Technology and Logistics",
       technikText:
-        "Do you dream of working on exciting projects at leading high-tech companies?",
+        "Do you dream of working on exciting projects at leading high-tech companies? Join us and be a part of innovative solutions that are transforming the future of industries worldwide!",
       technikJobText:
         "Are you seeking new challenges in mechanical engineering, automotive technology, or renewable energy? Together with your team, you’ll create globally recognized 'Made inGermany' solutions that drive future innovations. If you’re an expert in solar energy, the automotive industry, industrial assembly, steel construction, manufacturing and logistics, welding, or electrical engineering, and you’re looking for a change or a successful start in Germany, a career move or relocation could be just what you need!",
 
