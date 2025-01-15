@@ -38,15 +38,15 @@ export const industriesData = [
           "subTitleListPflege2_3",
         ],
       },
-      { title: "subTitlePflege3" },
-      {
-        title: "subTitlePflege3_1",
-        list: ["subTitleListPflege3_1", "subTitleListPflege3_2"],
-      },
-      {
-        title: "subTitlePflegeSecondText3",
-        list: ["subTitleListPflege3_3", "subTitleListPflege3_4"],
-      },
+      // { title: "subTitlePflege3" },
+      // {
+      //   title: "subTitlePflege3_1",
+      //   list: ["subTitleListPflege3_1", "subTitleListPflege3_2"],
+      // },
+      // {
+      //   title: "subTitlePflegeSecondText3",
+      //   list: ["subTitleListPflege3_3", "subTitleListPflege3_4"],
+      // },
     ],
   },
   {

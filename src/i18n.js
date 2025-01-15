@@ -131,18 +131,18 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3: "Anerkennung des Diploms:",
-      // subTitlePflegeText3: "Wir unterstützen beide Anerkennungswege:",
-      // Wir unterstützen beide Anerkennungswege:
-      subTitlePflege3_1:
-        "Wir bieten individuelle Unterstützung für Krankenschwestern, die ihren Abschluss anerkennen lassen möchten. Wir unterstützen beide Anerkennungswege:",
-      subTitleListPflege3_1: "Praktikum",
-      subTitleListPflege3_2: "Prüfung",
-      subTitlePflegeSecondText3:
-        "In Zusammenarbeit mit verschiedenen Organisationen, wie Übersetzungsbüros und medizinischen Akademien, bieten wir eine umfassende Begleitung im Anerkennungsprozess.",
-      subTitleListPflege3_3:
-        "Wir helfen bei der Einreichung aller erforderlichen Anträge.",
-      subTitleListPflege3_4: "Wir finden eine Klinik für das Praktikum.",
+      // subTitlePflege3: "Anerkennung des Diploms:",
+      // // subTitlePflegeText3: "Wir unterstützen beide Anerkennungswege:",
+      // // Wir unterstützen beide Anerkennungswege:
+      // subTitlePflege3_1:
+      //   "Wir bieten individuelle Unterstützung für Krankenschwestern, die ihren Abschluss anerkennen lassen möchten. Wir unterstützen beide Anerkennungswege:",
+      // subTitleListPflege3_1: "Praktikum",
+      // subTitleListPflege3_2: "Prüfung",
+      // subTitlePflegeSecondText3:
+      //   "In Zusammenarbeit mit verschiedenen Organisationen, wie Übersetzungsbüros und medizinischen Akademien, bieten wir eine umfassende Begleitung im Anerkennungsprozess.",
+      // subTitleListPflege3_3:
+      //   "Wir helfen bei der Einreichung aller erforderlichen Anträge.",
+      // subTitleListPflege3_4: "Wir finden eine Klinik für das Praktikum.",
 
       // medizin: "Medizin",
       medizin: "Ärzte",
@@ -490,16 +490,16 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3: "Визнання диплому:",
-      subTitlePflege3_1:
-        "Ми пропонуємо індивідуальну підтримку медсестрам які прагнуть визнати свій диплом. Ми підтримуємо обидва варіанти визнання:",
-      // subTitlePflegeText3: "Ми підтримуємо обидва варіанти визнання:",
-      subTitleListPflege3_1: "Проходження практики",
-      subTitleListPflege3_2: "Складання іспиту",
-      subTitlePflegeSecondText3:
-        "Співпрацюючи з різними організаціями, такими як бюро перекладів та медичні академії, ми забезпечуємо повний супровід у процесі підтвердження кваліфікації",
-      subTitleListPflege3_3: "Допоможемо з подачею всіх необхідних заяв.",
-      subTitleListPflege3_4: "Підберемо клініку для проходження практики.",
+      // subTitlePflege3: "Визнання диплому:",
+      // subTitlePflege3_1:
+      //   "Ми пропонуємо індивідуальну підтримку медсестрам які прагнуть визнати свій диплом. Ми підтримуємо обидва варіанти визнання:",
+      // // subTitlePflegeText3: "Ми підтримуємо обидва варіанти визнання:",
+      // subTitleListPflege3_1: "Проходження практики",
+      // subTitleListPflege3_2: "Складання іспиту",
+      // subTitlePflegeSecondText3:
+      //   "Співпрацюючи з різними організаціями, такими як бюро перекладів та медичні академії, ми забезпечуємо повний супровід у процесі підтвердження кваліфікації",
+      // subTitleListPflege3_3: "Допоможемо з подачею всіх необхідних заяв.",
+      // subTitleListPflege3_4: "Підберемо клініку для проходження практики.",
 
       //Main medizin
 
@@ -831,7 +831,7 @@ const resources = {
       subTitlePflegeList1_1:
         "Если вы уже признали диплом, вы можете зарабатывать от 4000 евро в месяц, плюс надбавки, а также получить бесплатное жилье и питание.",
       subTitlePflegeList1_2:
-        "Если вы планируете признавать диплом, ваша зарплата составит в среднем от 3200 евро в месяц, плюс надбавки, бесплатное жилье и питание",
+        "Если вы планируете признавать диплом, ваша зарплата составит в среднем от 3200 евро в месяц, плюс надбавки, бесплатное жилье и питание.",
 
       //SubTitle 2
 
@@ -844,15 +844,15 @@ const resources = {
 
       //SubTitle 3
 
-      subTitlePflege3: "Признание диплома:",
-      subTitlePflege3_1:
-        "Мы предлагаем индивидуальную поддержку медсестрам, которые стремятся признать свой диплом. Мы поддерживаем оба варианта признания:",
-      subTitleListPflege3_1: "Прохождение практики",
-      subTitleListPflege3_2: "Cдача экзамена",
-      subTitlePflegeSecondText3:
-        "Сотрудничая с различными организациями, такими как бюро переводов и медицинские академии, мы обеспечиваем полный сопровождение в процессе подтверждения квалификации.",
-      subTitleListPflege3_3: "Поможем с подачей всех необходимых заявлений.",
-      subTitleListPflege3_4: "Подберем клинику для прохождения практики.",
+      // subTitlePflege3: "Признание диплома:",
+      // subTitlePflege3_1:
+      //   "Мы предлагаем индивидуальную поддержку медсестрам, которые стремятся признать свой диплом. Мы поддерживаем оба варианта признания:",
+      // subTitleListPflege3_1: "Прохождение практики",
+      // subTitleListPflege3_2: "Cдача экзамена",
+      // subTitlePflegeSecondText3:
+      //   "Сотрудничая с различными организациями, такими как бюро переводов и медицинские академии, мы обеспечиваем полный сопровождение в процессе подтверждения квалификации.",
+      // subTitleListPflege3_3: "Поможем с подачей всех необходимых заявлений.",
+      // subTitleListPflege3_4: "Подберем клинику для прохождения практики.",
 
       //Main medizin
 
@@ -1182,7 +1182,7 @@ const resources = {
       pflegeJobList3:
         "Language Support: We help you improve your German language skills. Starting with A2-B1, we will guide you to reach the B2 level required for full recognition.",
       pflegeJobList4:
-        "Relocation Assistance:We provide support with finding accommodation, registering locally, and handling paperwork to make your transition as smooth as possible.",
+        "Relocation Assistance: We provide support with finding accommodation, registering locally, and handling paperwork to make your transition as smooth as possible.",
 
       subTitlePflege1: "Job Placement:",
       subTitlePflegeList1_1:
@@ -1197,11 +1197,11 @@ const resources = {
       subTitleListPflege2_3:
         "German language skills at a minimum of A2-B1 level (we will help you achieve B2).",
 
-      subTitlePflege3: "Diploma recognition:",
-      subTitlePflege3_1:
-        "We offer personalized support to nurses who wish to recognize their diploma. We support both recognition options:",
-      subTitleListPflege3_1: "Practical training",
-      subTitleListPflege3_2: "Taking an exam",
+      // subTitlePflege3: "Diploma recognition:",
+      // subTitlePflege3_1:
+      //   "We offer personalized support to nurses who wish to recognize their diploma. We support both recognition options:",
+      // subTitleListPflege3_1: "Practical training",
+      // subTitleListPflege3_2: "Taking an exam",
 
       subTitlePflegeSecondText3: "Comprehensive Support:",
       subTitleListPflege3_3:
