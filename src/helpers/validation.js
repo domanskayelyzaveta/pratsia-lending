@@ -1,7 +1,8 @@
 import * as yup from "yup";
 
 const emailRegexp = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-const telefonRegexp = /^(\+380\d{9}|0\d{9})$|^(\+49\d{10}|0\d{10})$/;
+// const telefonRegexp = /^(\+380\d{9}|0\d{9})$|^(\+49\d{10}|0\d{10})$/;
+const telefonRegexp = /^(\+380\d{9}|0\d{9})$|^(\+49\d{10,11}|0\d{10,11})$/;
 
 export const formaSchema = (t) =>
   yup.object().shape({
