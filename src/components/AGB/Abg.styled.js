@@ -25,6 +25,18 @@ export const TextAbg = styled.p`
   }
 `;
 
+export const TextAddress = styled.a`
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 240px;
+  }
+`;
+
 export const ListAgb = styled.ul`
   display: flex;
   flex-direction: column;

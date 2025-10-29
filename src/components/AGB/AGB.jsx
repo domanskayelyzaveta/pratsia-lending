@@ -6,6 +6,7 @@ import {
   ListAgb,
   ListItemAgb,
   TextAbg,
+  TextAddress,
 } from "./Abg.styled";
 import { TitleImpress } from "../Impressum/Impressum.styled";
 import { agbData } from "./dataAgb";
@@ -15,6 +16,7 @@ const AGB = () => {
     <AgbWrapper>
       <TitleImpress>{agbData.title}</TitleImpress>
       <TextAbg>{agbData.date}</TextAbg>
+      <TextAddress>{agbData.text}</TextAddress>
       {agbData.sections.map((section, index) => (
         <ItemsWrapper key={index}>
           <AboutSubTitle>{section.title}</AboutSubTitle>

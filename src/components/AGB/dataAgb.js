@@ -1,17 +1,17 @@
 export const agbData = {
   title: "Allgemeine Geschäftsbedingungen Pratsia UG (haftungsbeschränkt)",
-  date: "(Stand: 1.07.2024)",
+  date: "(Stand: 1.01.2025)",
+  text: "Pratsia UG (haftungsbeschränkt) Garnstraße 12, 47798 Krefeld, Deutschland Telefon: +49 170 1272124 E-Mail: info@pratsia.de",
   sections: [
     {
       title: "1. Geltungsbereich",
       content: [
         {
-          text: `Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle
-                    Dienstleistungen, die von Pratsia UG (haftungsbeschränkt) (im
-                    Folgenden „Agentur“ genannt) gegenüber Arbeitssuchenden (im Folgenden
-                    „Bewerber“ genannt) und möglichen Arbeitgebern (im Folgenden
-                    „Partner“) erbracht werden. Mit der Nutzung der Dienstleistungen der
-                    Agentur erkennt der Kunde die AGB in der jeweils gültigen Fassung an.`,
+          text: `Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Dienstleistungen, die von
+                Pratsia UG (haftungsbeschränkt) (im Folgenden „Agentur“ genannt) gegenüber
+                Arbeitssuchenden (im Folgenden „Arbeitnehmer“ genannt) und möglichen Arbeitgebern
+                (im Folgenden „Arbeitgeber“) erbracht werden. Mit der Nutzung der Dienstleistungen der
+                Agentur erkennt der Kunde die AGB in der jeweils gültigen Fassung an.`,
         },
       ],
     },
@@ -43,7 +43,7 @@ export const agbData = {
           ],
         },
         {
-          text: "Die Agentur garantiert keinen Erfolg bei der Vermittlung einer Arbeitsstelle oder bei der Anerkennung von Berufsabschlüssen. Der Kunde trägt die Verantwortung dafür, die Bedingungen eines Arbeitsvertrages sorgfältig zu prüfen, bevor er diesen unterzeichnet.",
+          text: "Die Agentur garantiert keinen Erfolg bei der Vermittlung einer Arbeitsstelle oder bei der Anerkennung von Berufsabschlüssen. Der Arbeitsnehmer trägt die Verantwortung dafür, die Bedingungen eines Arbeitsvertrages sorgfältig zu prüfen, bevor er diesen unterzeichnet.",
         },
       ],
     },
@@ -52,7 +52,7 @@ export const agbData = {
       title: "4. Pflichten des Kunden und Pflichten der Agentur",
       content: [
         {
-          text: "Der Kunde verpflichtet sich, der Agentur alle notwendigen Informationen und Dokumente wahrheitsgemäß und vollständig zur Verfügung zu stellen. Dazu gehören insbesondere:",
+          text: "DDer Arbeitsnehmer verpflichtet sich, der Agentur alle notwendigen Informationen und Dokumente wahrheitsgemäß und vollständig zur Verfügung zu stellen. Dazu gehören insbesondere:",
           list: [
             "Persönliche Daten (z. B. Name, Adresse, Kontaktinformationen).",
             "Nachweise über Qualifikationen und Berufsabschlüsse.",
@@ -68,20 +68,28 @@ export const agbData = {
           ],
         },
       ],
-      footer: `Die Agentur garantiert keinen Erfolg bei der Vermittlung einer
-           Arbeitsstelle oder bei der Anerkennung von Berufsabschlüssen. Der
-           Kunde trägt die Verantwortung dafür, die Bedingungen eines
-           Arbeitsvertrages sorgfältig zu prüfen, bevor er diesen unterzeichnet.`,
+      footer: `Der Arbeitsgeber übernimmt die Kosten für die Übersetzung von Dokumenten, die für die
+              Anerkennung von Berufsabschlüssen erforderlich sind, sowie sämtliche Gebühren und
+              Kommissionen, die während des Anerkennungsverfahrens anfallen.`,
     },
     //========= 5 ===========
     {
       title: "5. Kosten und Vergütung",
       content: [
         {
-          text: `Alle Dienstleistungen der Agentur für den Arbeitssuchenden sind für
-             den Kunden kostenlos. Die Kosten für die Übersetzung von Dokumenten
-             sowie für Gebühren und Kommissionen während des Anerkennungsverfahrens
-             trägt die Agentur.`,
+          text: "Alle Dienstleistungen der Agentur für den Arbeitnehmer sind kostenlos.",
+        },
+        {
+          text: `Die Vermittlung gilt als erfolgreich und das Honorar als geschuldet, sobald zwischen dem
+Arbeitgeber und dem durch die Agentur vorgestellten Arbeitnehmer innerhalb eines
+Zeitraums von sechs Monaten nach dem Vorstellungsgespräch ein Arbeitsvertrag
+abgeschlossen wird – unabhängig davon, ob die Anstellung in der ursprünglich
+vorgesehenen Einrichtung erfolgt oder in einer anderen Einrichtung desselben
+Unternehmens oder eines verbundenen Unternehmens. Dies gilt insbesondere für
+Unternehmen, die mehrere Standorte, Pflegeeinrichtungen oder Tochtergesellschaften
+betreiben.
+Ein Wechsel des Einsatzortes innerhalb derselben Unternehmensgruppe hat keinen Einfluss
+auf die Verpflichtung zur Zahlung des Vermittlungshonorars.`,
         },
       ],
     },
@@ -90,12 +98,14 @@ export const agbData = {
       title: "6. Datenschutz (DSGVO)",
       content: [
         {
-          text: `Die Agentur verpflichtet sich, die personenbezogenen Daten des Kunden
-                 gemäß der Datenschutz-Grundverordnung (DSGVO) zu schützen. Die Daten
-                 werden ausschließlich für die Arbeitsvermittlung und damit verbundene
-                 Dienstleistungen verwendet. Eine Weitergabe an Dritte erfolgt nur,
-                 soweit dies für die Vermittlung erforderlich ist (z. B. an potenzielle
-                 Arbeitgeber). Der Arbeitssuchende kann jederzeit:`,
+          text: `Die Agentur verpflichtet sich, die personenbezogenen Daten von Arbeitgebern und
+                Arbeitnehmern gemäß der Datenschutz-Grundverordnung (DSGVO) zu schü tzen. Die Daten
+                werden ausschließlich fü r die Arbeitsvermittlung und damit verbundene Dienstleistungen
+                verwendet. Eine Weitergabe an Dritte erfolgt nur, soweit dies fü r die Vermittlung
+                erforderlich ist (z. B. an potenzielle Arbeitgeber oder zuständige Behörden):`,
+        },
+        {
+          text: "Arbeitgeber und Arbeitnehmer können jederzeit:",
           list: [
             "Auskunft über die Verarbeitung seiner Daten verlangen.",
             "die Berichtigung oder Löschung seiner Daten beantragen.",
@@ -103,8 +113,11 @@ export const agbData = {
           ],
         },
         {
-          text: `Anfragen zur Datenverarbeitung können schriftlich per E-Mail an
-                 info@pratsia.de gerichtet werden.`,
+          text: `Anfragen zur Datenverarbeitung kö nnen schriftlich per E-Mail an info@pratsia.de gerichtet
+                werden. Sämtliche dem Arbeitgeber überlassenen Daten- und Informationsmaterialien
+                sowie sonstige Angaben werden von der Agentur streng vertraulich behandelt,
+                ausschließlich zu Zwecken der Vermittlungstätigkeit genutzt und nicht an Dritte
+                weitergegeben.`,
         },
       ],
     },
@@ -149,16 +162,25 @@ export const agbData = {
       title: "10. Anwendbares Recht und Gerichtsstand",
       content: [
         {
-          text: "Für alle Rechtsbeziehungen zwischen der Agentur und dem Kunden gilt deutsches Recht. Gerichtsstand ist Krefeld, Deutschland.",
+          text: "Für alle Rechtsbeziehungen zwischen der Agentur und dem Arbeitgeber sowie dem Arbeitnehmer gilt deutsches Recht. Gerichtsstand ist – soweit gesetzlich zulässig – Krefeld, Deutschland.",
         },
       ],
     },
     //========= 11 ===========
     {
-      title: "11. Salvatorische Klausel",
+      title: "11. Verzugszinsen bei Zahlungsverzug",
       content: [
         {
-          text: "Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleiben die übrigen Bestimmungen davon unberührt.",
+          text: "Kommt der Arbeitgeber mit der Zahlung in Verzug, so ist die Agentur berechtigt, Verzugszinsen in Hö he von 9 Prozentpunkten ü ber dem Basiszinssatz pro Jahr zu verlangen, sofern der Arbeitgeber kein Verbraucher ist (§ 288 Abs. 2 BGB). Außerdem kann die Agentur einen pauschalen Verzugsschaden (Mahnungskosten) ebenfalls geltend machen, soweit dies rechtlich zulässig ist.",
+        },
+      ],
+    },
+    //========= 12 ===========
+    {
+      title: "12. Salvatorische Klausel",
+      content: [
+        {
+          text: "Kommt der Arbeitgeber mit der Zahlung in Verzug, so ist die Agentur berechtigt, Verzugszinsen in Hö he von 9 Prozentpunkten ü ber dem Basiszinssatz pro Jahr zu verlangen, sofern der Arbeitgeber kein Verbraucher ist (§ 288 Abs. 2 BGB). Außerdem kann die Agentur einen pauschalen Verzugsschaden (Mahnungskosten) ebenfalls geltend machen, soweit dies rechtlich zulässig ist.",
         },
       ],
     },
