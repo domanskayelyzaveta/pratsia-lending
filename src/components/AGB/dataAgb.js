@@ -80,16 +80,14 @@ export const agbData = {
           text: "Alle Dienstleistungen der Agentur für den Arbeitnehmer sind kostenlos.",
         },
         {
-          text: `Die Vermittlung gilt als erfolgreich und das Honorar als geschuldet, sobald zwischen dem
-Arbeitgeber und dem durch die Agentur vorgestellten Arbeitnehmer innerhalb eines
-Zeitraums von sechs Monaten nach dem Vorstellungsgespräch ein Arbeitsvertrag
-abgeschlossen wird – unabhängig davon, ob die Anstellung in der ursprünglich
-vorgesehenen Einrichtung erfolgt oder in einer anderen Einrichtung desselben
-Unternehmens oder eines verbundenen Unternehmens. Dies gilt insbesondere für
-Unternehmen, die mehrere Standorte, Pflegeeinrichtungen oder Tochtergesellschaften
-betreiben.
-Ein Wechsel des Einsatzortes innerhalb derselben Unternehmensgruppe hat keinen Einfluss
-auf die Verpflichtung zur Zahlung des Vermittlungshonorars.`,
+          text: `Die Vermittlung gilt als erfolgreich, und das vereinbarte Honorar wird fällig, sobald zwischen dem Arbeitgeber und dem durch die Agentur vorgestellten Arbeitnehmer innerhalb von sechs Monaten nach dem Vorstellungsgespräch ein Arbeitsvertrag zustande kommt – unabhängig davon, ob die Anstellung in der ursprünglich vorgesehenen Einrichtung, in einer anderen Einrichtung desselben Unternehmens oder in einem mit diesem verbundenen Unternehmen erfolgt.
+          `,
+        },
+        {
+          text: "Dies gilt insbesondere für Unternehmen, die mehrere Standorte, Pflegeeinrichtungen oder Tochtergesellschaften betreiben. Ein Wechsel des Einsatzortes innerhalb derselben Unternehmensgruppe hat keinen Einfluss auf die Verpflichtung zur Zahlung des Vermittlungshonorars.",
+        },
+        {
+          text: " Wird das Arbeitsverhältnis zwischen dem Arbeitgeber und dem vermittelten Arbeitnehmer innerhalb von sechs Monaten nach Beginn beendet und nimmt der Arbeitnehmer innerhalb von sechs Monaten nach Beendigung eine neue Anstellung in einer anderen Einrichtung desselben Unternehmens oder eines verbundenen Unternehmens auf, so gilt der Vermittlungsvertrag als weiterhin wirksam, und das Vermittlungshonorar bleibt geschuldet.",
         },
       ],
     },
